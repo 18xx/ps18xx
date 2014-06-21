@@ -204,7 +204,7 @@ for my $gmfile (<*-.ps>) {
 
 	(my $maps = $titles{$var}) =~ s/M$var/$serial-MAP/g;
 	print OUT "$serial: $maps\n";
-	print OUT "$maps: "; 
+	print OUT "$maps: ";
 	print OUT "$serial-.ps \$(SOURCES) \$(MAPSOURCES) src/$var-tc.ps src/$var-map.ps\n";
 	print OUT "\t\@echo \"make game status for $serial (variant $var)\"\n";
 	print OUT "\tperl concat.pl ";

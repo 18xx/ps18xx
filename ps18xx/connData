@@ -1,4 +1,6 @@
+1825u1: valid Village City
 1825u2: valid Village City
+1825u3: valid Village City
 1832: valid Village City
 1837: valid Village Village/Plain
 1841: valid Plain Pass
@@ -807,4 +809,3 @@
 797: Village d0-d4,d1-d2,d1-d3,d4-d5
 798: Village d0-d1,d0-d5,d2-d3,d4-d5
 799: Village 0-1,d0-d4,d2-d3,d4-d5
-800: City 0-5-4,1,2,3

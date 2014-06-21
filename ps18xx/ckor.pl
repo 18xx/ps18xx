@@ -4,13 +4,13 @@ use strict;
 use warnings;
 use Getopt::Std;
 
-# Usage: ckor [ -d SRC ] file ...
+# Usage: ckor [ -d src ] file ...
 # Check that upgrade paths specified in the named files correspond to
 # legal upgrades deduced from known connectivity.
 #
 # Parse the file conndata (in .) to learn about the connectivity of
 # generic tiles.  Also, learn about which type mismatches are allowed.
-# Look in SRC directory (SRC if not specified) for the named files
+# Look in src directory (src if not specified) for the named files
 # (which are globbed, so *-tc.ps gets the lot).  In these files look for
 # lines of the form:
 #	tileCodes <spec> [ <generic> <or} ... ] put
@@ -33,9 +33,9 @@ sub rot ($$);
 sub isasubset ($$);
 sub allthere ($$);
 sub fiddleGauge ($);
-		
+
 my %opts;
-$opts{d} = "SRC";
+$opts{d} = "src";
 $opts{o} = "-";
 getopts ('d:o:v', \%opts);
 

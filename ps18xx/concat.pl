@@ -5,21 +5,21 @@ use warnings;
 use Getopt::Std;
 use charnames ':full';
 
-# Usage: concat [ -d SRC ] GTILES.ps		- Produce generic tile sheets
-#		 concat [ -d SRC ] Txxx.ps			- Produce tile sheet for 18xxx
-#		 concat [ -d SRC ] wTxxx.ps			- Ditto, alternative format
-#		 concat [ -d SRC ] Pxxx.ps			- Ditto, for playable set
-# 		 concat [ -d SRC ] Mxxx.ps			- Produce map for 18xxx
-# 		 concat [ -d SRC ] yyy-MAP.ps xxx	- Produce map for game yyy of 18xxx
+# Usage: concat [ -d src ] GTILES.ps		- Produce generic tile sheets
+#		 concat [ -d src ] Txxx.ps			- Produce tile sheet for 18xxx
+#		 concat [ -d src ] wTxxx.ps			- Ditto, alternative format
+#		 concat [ -d src ] Pxxx.ps			- Ditto, for playable set
+# 		 concat [ -d src ] Mxxx.ps			- Produce map for 18xxx
+# 		 concat [ -d src ] yyy-MAP.ps xxx	- Produce map for game yyy of 18xxx
 #
 # Concatenate the components of various forms of maps and tile sheets
 # for 18xx games in PostScript.  All need the files LICENCE,
 # 18-pcode.ps, 18-defs.ps, and some bits of 18-gentl.ps, all of which
-# are to be found in the directory SRC (. if not specified).  GTILES.ps
-# needs SRC/18-gtlst.ps.  Txxx.ps needs SRC/xxx-tc.ps and
-# SRC/18-talst.ps.  Mxxx.ps needs SRC/xxx-tc.ps, SRC/xxx-map.ps, and
-# SRC/18-map.ps.  Game maps need the last three plus yyy-.ps (always
-# from ., not SRC).
+# are to be found in the directory src (. if not specified).  GTILES.ps
+# needs src/18-gtlst.ps.  Txxx.ps needs src/xxx-tc.ps and
+# src/18-talst.ps.  Mxxx.ps needs src/xxx-tc.ps, src/xxx-map.ps, and
+# src/18-map.ps.  Game maps need the last three plus yyy-.ps (always
+# from ., not src).
 #
 # In addition we calculate and supply various bits of glue.  For game
 # maps if -t is specified also produce yyy-MAP.tl containing a list of
@@ -56,7 +56,7 @@ use charnames ':full';
 # 1.11 Warn about mismatched parentheses in token lists
 # 1.12 Warn about placing too many or invalid tokens; support new privates
 # 1.13 Add support for printing tile sheets for cutting out
-# 1.14 Suppress wornings for too many tiles when really unlimited.
+# 1.14 Suppress warnings for too many tiles when really unlimited.
 # 1.15 5/2/11 Cutting-out tile sheets are 28 tiles per page
 # 1.16 6/2/11 Fix LayFlash lines
 # 1.17 24/2/11 Support -e, -i, -s to enhance *-MAP.tl files
@@ -357,7 +357,7 @@ sub copyTileFile($$) {
 			} keys %tileMap) {
 		my $t = $tileMap{$k};
 		$t->{idx} = $idx;
-		printOut "tileCodes $idx [ $t->{generic} $t->{orient} ", 
+		printOut "tileCodes $idx [ $t->{generic} $t->{orient} ",
 		"//tl$t->{colour} //tl$t->{terrain} ($t->{label}) ($t->{value}) ",
 		"$t->{count} ($t->{spec}) ] put\n";
 		$idx++;
@@ -396,7 +396,7 @@ sub processTileFile ($$) {
 
 		if (my ($token, $count) = /^\s*%\s*Token\s+(\S+)\s+(\d+)\s*$/) {
 			$token = uc $token;
-			print STDERR "Warning: resetting count of $token from ", 
+			print STDERR "Warning: resetting count of $token from ",
 				"$maxTokens{$token} to $count\n"
 					if defined ($maxTokens{$token});
 			$maxTokens{$token} = $count;
@@ -585,7 +585,7 @@ sub processMapFile ($) {
 		unless (defined $coordMap{$coord}) {
 			# This is the first reference to this coordinate.  Make sure
 			# that it's a background tile.
-			print STDERR "Warning: Placing player tile #$use$number (", 
+			print STDERR "Warning: Placing player tile #$use$number (",
 				$tileMap{$number}{colour}, ") at coord ", $coord, "\n"
 				unless $use eq '-';
 			# And that it's opaque
@@ -642,7 +642,7 @@ sub processMapFile ($) {
 					$tileMap{$number}{colour}, ") at coord $coord\n"
 					unless grep {$_ eq $tileMap{$number}{colour}}
 						@{$legalUpgrades{$tileMap{$t}{colour}}}
-						or $use eq '-'; 
+						or $use eq '-';
 			}
 			foreach my $s (@{$coordMap{$coord}{valid}}) {
 				# We're replacing tiles here, so decrement the number of
@@ -739,7 +739,7 @@ sub produceMAP ($) {
 	checkTokens();
 	printOut "showpage\n";
 	outputEOF();
-	closeOutput(); 
+	closeOutput();
 }
 
 # Produce a tile sheet for the specified game.
@@ -786,7 +786,7 @@ sub produceTILE ($) {
 		printOut "showpage\n";
 	}
 	outputEOF();
-	closeOutput(); 
+	closeOutput();
 }
 
 sub produceGMAP ($$) {
@@ -815,7 +815,7 @@ sub produceGMAP ($$) {
 	checkTokens();
 	printOut "showpage\n";
 	outputEOF();
-	closeOutput(); 
+	closeOutput();
 
 	return unless $opts{t};
 

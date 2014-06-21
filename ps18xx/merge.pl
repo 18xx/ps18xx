@@ -33,7 +33,7 @@ while (<GENTL>) {
 	}
 	else {
 		print OUT $_;
-	}	
+	}
 }
 close GENTL;
 

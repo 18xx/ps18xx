@@ -3,8 +3,8 @@
 use strict;
 use Getopt::Std;
 
-# Usage: concord [ -d SRC ] [<generic> ...]
-# Look in SRC directory (. if not specified) for files *-tc.ps.  For
+# Usage: concord [ -d src ] [<generic> ...]
+# Look in src directory (. if not specified) for files *-tc.ps.  For
 # each such file find the corresponding *-map.ps file, if any.  In the
 # tc file look for lines:
 #	tileCodes <spec> [ <generic> ... <count> ] put

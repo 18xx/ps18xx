@@ -3,8 +3,8 @@
 use strict;
 use Getopt::Std;
 
-# Usage: tlist [-p] [ -d SRC ] [-o out]
-# Look in SRC directory (. if not specified) for files *-tc.ps.
+# Usage: tlist [-p] [ -d src ] [-o out]
+# Look in src directory (. if not specified) for files *-tc.ps.
 # In the tc file look for lines:
 #	tileCodes <spec> [ <generic> <orientation> <colour> <terrain>
 #		<value> <label> <count> ] put

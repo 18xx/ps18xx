@@ -168,6 +168,13 @@ my %layout = (
 		roundfont => "/Bookman 40",
 		roundcoord => 'R11',
 	},
+  "25u3" => {
+    nameformat => "'%s",
+    namefont => "/Bookman 80",
+    namecoord => 'A6',
+    roundfont => "/Bookman 80",
+    roundcoord => "A11",
+  },
 	"26" => {		# the name of the game
 		copycoords => [ qw( C11 C13 E5 I7 K17 L14 M3 ) ],
 					# the coordinates of lines we wish to copy
@@ -847,7 +854,7 @@ if ($opts{m}) {
 }
 
 if ($opts{t}) {
-	system "make", "18$title";	
+	system "make", "18$title";
 	if ($opts{e}) {
 		my @tilefiles = glob("w*T$title.ps");
 		push @tilefiles, "T$title.ps" if -e "T$title.ps";

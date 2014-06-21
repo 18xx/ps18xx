@@ -8,7 +8,7 @@ use PsConfig;
 # Usage: oldgame [-d OldGames] [-mg] 18xxAdd
 #
 # Remove an existing game from the active list.
-# 
+#
 # If -g is specified, move Add-.ps to OldMaps
 #
 # If -m is specified, remake Makefile to reflect the disappearance of
