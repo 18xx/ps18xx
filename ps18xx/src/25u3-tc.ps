@@ -1,0 +1,149 @@
+% 1825 unit 3 tile codes
+%
+% Variant assembled by Justin Rebelo.
+
+/18xxVariant (1825-unit-3) def
+
+/maxTile 450 def
+
+	/tileCodes //maxTile array def
+
+  % Yellow Tile Supply
+	tileCodes   1 [   1 0 //tlYellow //tlPlain ()    (10)  1 ] put
+	tileCodes   2 [   2 0 //tlYellow //tlPlain ()    (10)  1 ] put
+	tileCodes   3 [   3 0 //tlYellow //tlPlain ()    (10)  1 ] put
+	tileCodes   4 [   4 0 //tlYellow //tlPlain ()    (10)  3 ] put
+	tileCodes   5 [   5 0 //tlYellow //tlPlain ()    (20)  2 ] put
+	tileCodes   6 [   6 0 //tlYellow //tlPlain ()    (20)  2 ] put
+	tileCodes   7 [   7 5 //tlYellow //tlPlain ()    ()    3 ] put
+	tileCodes   8 [   8 4 //tlYellow //tlPlain ()    ()    6 ] put
+	tileCodes   9 [   9 0 //tlYellow //tlPlain ()    ()    5 ] put
+	tileCodes  55 [  55 0 //tlYellow //tlPlain ()    (10)  1 ] put
+	tileCodes  56 [  56 0 //tlYellow //tlPlain ()    (10)  1 ] put
+	tileCodes 115 [ 510 0 //tlYellow //tlPlain ()    (20)  1 ] put
+
+  % Green Tile Supply
+	tileCodes  12 [  12 0 //tlGreen  //tlPlain ()    (30)  2 ] put
+	tileCodes  13 [  13 0 //tlGreen  //tlPlain ()    (30)  1 ] put
+	tileCodes  14 [  14 0 //tlGreen  //tlPlain ()    (30)  3 ] put
+	tileCodes  15 [  15 0 //tlGreen  //tlPlain ()    (30)  3 ] put
+	tileCodes  16 [  16 0 //tlGreen  //tlPlain ()    ()    1 ] put
+	tileCodes  19 [  19 0 //tlGreen  //tlPlain ()    ()    1 ] put
+	tileCodes  23 [  23 0 //tlGreen  //tlPlain ()    ()    3 ] put
+	tileCodes  24 [  24 0 //tlGreen  //tlPlain ()    ()    3 ] put
+	tileCodes  26 [  26 0 //tlGreen  //tlPlain ()    ()    1 ] put
+	tileCodes  27 [  27 0 //tlGreen  //tlPlain ()    ()    1 ] put
+	tileCodes  28 [  28 0 //tlGreen  //tlPlain ()    ()    1 ] put
+	tileCodes  29 [  29 0 //tlGreen  //tlPlain ()    ()    1 ] put
+	tileCodes  52 [  59 2 //tlGreen  //tlPlain ()    (40)  2 ] put
+  tileCodes  81 [  40 0 //tlGreen  //tlPlain ()    ()    1 ] put
+
+  % Russet Tile Supply
+	tileCodes  34 [  34 0 //tlRusset //tlPlain (BGM) (50)  1 ] put
+	tileCodes  38 [  38 0 //tlRusset //tlPlain ()    (40)  2 ] put
+	tileCodes  39 [  39 0 //tlRusset //tlPlain ()    ()    1 ] put
+	tileCodes  41 [  41 0 //tlRusset //tlPlain ()    ()    1 ] put
+	tileCodes  42 [  42 0 //tlRusset //tlPlain ()    ()    1 ] put
+	tileCodes  43 [  43 0 //tlRusset //tlPlain ()    ()    1 ] put
+	tileCodes  44 [  44 0 //tlRusset //tlPlain ()    ()    1 ] put
+	tileCodes  45 [  45 0 //tlRusset //tlPlain ()    ()    1 ] put
+	tileCodes  46 [  46 0 //tlRusset //tlPlain ()    ()    1 ] put
+	tileCodes  47 [  47 0 //tlRusset //tlPlain ()    ()    1 ] put
+  tileCodes  63 [  63 0 //tlRusset //tlPlain ()    (40)  2 ] put
+	tileCodes  66 [  66 0 //tlRusset //tlPlain ()    (50)  1 ] put
+	tileCodes  67 [  67 0 //tlRusset //tlPlain ()    (50)  1 ] put
+	tileCodes 118 [  54 0 //tlRusset //tlPlain ()    (40)  1 ] put
+
+
+	% tile codes for map definition
+
+	% Plain hexes
+	tileCodes 401 [ 500 0 //tlGround //tlPlain    ()     ()   0 ] put
+  tileCodes 402 [ 500 4 //tlGround //tlMountain (£100) ()   0 ] put
+
+	% Small station
+	tileCodes 403 [ 245 0 //tlGround //tlPlain    ()     ()   0 ] put
+	tileCodes 404 [ 242 0 //tlGround //tlMountain (£100) ()   0 ] put
+	tileCodes 405 [ 242 0 //tlGround //tlMountain (£140) ()   0 ] put
+
+	% Double small station
+	tileCodes 406 [ 502 0 //tlGround //tlPlain    ()     ()   0 ] put
+  tileCodes 407 [ 502 0 //tlGround //tlWater    (£120) ()   0 ] put
+
+	% Large station
+	tileCodes 408 [ 337 0 //tlGround //tlPlain    ()     ()   0 ] put
+  tileCodes 409 [ 553 0 //tlGround //tlWater    (£80)  ()   0 ] put
+  % HR Home Hex
+  tileCodes 410 [   5 0 //tlBrown  //tlPlain    ()     (20) 0 ] put
+  % GN Home Hex
+  tileCodes 411 [ 510 0 //tlBrown  //tlPlain    ()     (30) 0 ] put
+  % E7 $10 Brown City
+  tileCodes 412 [  14 0 //tlBrown  //tlPlain    ()     (10) 0 ] put
+  % K7 Custom Hex
+  tileCodes 413 [   8 0 //tlBrown //tlPlain     ()     ()   0 ] put
+  tileCodes 414 [ 531 0 //tlTransparent //tlPlain ()   (10) 0 ] put
+
+  % OO City Hex
+	tileCodes 415 [ 504 0 //tlYellow //tlPlain    ()       () 0 ] put
+	tileCodes 416 [ 504 0 //tlYellow //tlPlain    (£40)    () 0 ] put
+
+  % Glasgow
+	tileCodes 417 [ 525 0 //tlGreen  //tlPlain    (BGM)  (40) 0 ] put
+
+  % F10 Custom Hex
+  tileCodes 418 [   7 0 //tlBrown  //tlPlain    ()      () 0 ] put
+  tileCodes 419 [ 513 0 //tlTransparent //tlPlain ()  (10) 0 ] put
+
+  % F2 custom hex
+  tileCodes 420 [ 572 0 //tlBrown  //tlPlain    ()     (10) 0 ] put
+
+  % Water overlay for Mountain + Water hex F4
+  tileCodes 421 [ 529 0 //tlTransparent //tlWater () () 0 ] put
+
+
+% Upgrade Plain 401 => 7/* 8/* 9/*
+% Upgrade Plain 402 => 7/* 8/* 9/*
+% Upgrade Village 403 => 3/* 4/*
+% Upgrade Village 404 => 3/* 4/*
+% Upgrade Village 405 => 3/* 4/*
+% Upgrade City 408 => 5/* 6/*
+% Upgrade City 409 => 5/* 6/*
+% Upgrade DoubleDot 406 => 1/* 2/* 55/* 56/*
+% Upgrade DoubleDot 407 => 1/* 2/* 55/* 56/*
+% Upgrade OOCity 415 => 52/*
+% Upgrade OOCity 416 => 52/*
+% Upgrade BGM 417 => 34/024
+
+% Upgrade Village 1 => 14/14
+% Upgrade City 2 => 15/3
+% Upgrade City 3 => 12/01 14/14 15/045
+% Upgrade City 4 => 14/0134 15/03
+% Upgrade City 5 => 12/05 14/03 15/345
+% Upgrade City 6 => 12/5 13/024 14/14 15/34
+% Upgrade Plain 7 => 26/0 27/5 28/0 29/5
+% Upgrade Plain 8 => 16/05 19/5 23/0 24/4 28/0 29/4 81/024
+% Upgrade Plain 9 => 19/03 23/03 24/03 26/03 27/03
+% Upgrade DoubleDot 55 => 14/03
+% Upgrade DoubleDot 56 => 15/4
+% Upgrade City 115 => 12/015 13/024 14/0134 15/0345
+
+% Upgrade City 12 => 38/3
+% Upgrade City 13 => 38/024
+% Upgrade City 14 => 63/*
+% Upgrade City 15 => 15/0
+% Upgrade Plain 16 => 43/4
+% Upgrade Plain 19 => 45/3 46/3
+% Upgrade Plain 23 => 41/0 43/3 45/0 47/14
+% Upgrade Plain 24 => 42/0 43/0 46/0 47/03
+% Upgrade Plain 26 => 42/3 44/25 45/3
+% Upgrade Plain 27 => 41/3 44/03 46/3
+% Upgrade Plain 28 => 39/5 43/4 46/2
+% Upgrade Plain 29 => 39/1 43/5 45/4
+% Upgrade OOCity 52 => 66/05 67/024 118/05
+
+% Token HR
+% Token GN
+% Token NB
+% Token GS
+% Token CR
+% Token MC

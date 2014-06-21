@@ -1,0 +1,90 @@
+% 1825 unit 3 map definition
+%
+% Variant assembled by Justin Rebelo.
+
+	newpath
+
+	/mapRows 11 def
+	/mapCols 15 def
+	/rowStart 1 def
+	/mapScale 0.70 def
+	/CM { 28.35 1 mapScale div mul mul } def
+	mapScale dup scale
+
+	/mapFrame {
+    0.6 CM 1.2 CM mapCols mapRows 0.5 CM 0.5 CM 1.5 CM 0.5 CM Map
+	} def
+	mapFrame
+
+(B8/0) -410 [(HR)] LayTile % City
+(B12/0) -411 [(GN)] LayTile % City
+
+(C7/0) -404 [] LayTile % Village
+(C9/0) -402 [] LayTile % Plain
+(C11/0) -401 [] LayTile % Plain
+
+(D2/0) -402 [] LayTile % Plain
+(D4/0) -402 [] LayTile % Plain
+(D6/0) -402 [] LayTile % Plain
+(D8/0) -402 [] LayTile % Plain
+(D10/0) -403 [] LayTile % Village
+
+(E1/4) -410 [] LayTile % City
+(E3/0) -402 [] LayTile % Plain
+(E5/0) -402 [] LayTile % Plain
+(E7/0) -412 [] LayTile % City
+(E9/0) -409 [] LayTile % City
+
+(F2/2) -420 [] LayTile % DoubleDot
+(F4/0) -405 [] LayTile % Village
+(F4/0) -421 [] LayTile % Village
+(F6/0) -403 [] LayTile % Village
+(F8/1) -407 [] LayTile % DoubleDot
+(F10/5) -418 [] LayTile
+(F10/2) -419 [] LayTile % Village
+
+(G3/0) -408 [] LayTile % City
+(G5/1) -417 [(GS)(NB)(CR)] LayTile % BGM
+(G7/0) -406 [] LayTile % DoubleDot
+(G9/0) -415 [] LayTile % OOCity
+(G11/0) -401 [] LayTile % Plain
+
+(H4/2) -406 [(#GSWR Reserved)] LayTile % DoubleDot
+(H6/0) -408 [] LayTile % City
+(H8/0) -402 [] LayTile % Plain
+(H10/0) -402 [] LayTile % Plain
+(H12/0) -401 [] LayTile % Plain
+(H14/0) -401 [] LayTile % Plain
+
+(I3/0) -402 [] LayTile % Plain
+(I5/0) -401 [] LayTile % Plain
+(I7/0) -402 [] LayTile % Plain
+(I9/0) -402 [] LayTile % Plain
+(I11/0) -402 [] LayTile % Plain
+(I13/0) -406 [] LayTile % DoubleDot
+
+(J2/0) -408 [] LayTile % City
+(J4/0) -402 [] LayTile % Plain
+(J6/0) -408 [] LayTile % City
+(J8/0) -401 [] LayTile % Plain
+(J10/0) -408 [] LayTile % City
+(J12/0) -402 [] LayTile % Plain
+(J14/0) -416 [] LayTile % OOCity
+
+(K7/3) -413 [] LayTile
+(K7/5) -414 [(MC)] LayTile
+(K9/0) -402 [] LayTile % Plain
+(K11/0) -402 [] LayTile % Plain
+(K13/0) -403 [] LayTile % Village
+(K15/0) -406 [] LayTile % DoubleDot
+
+  /Bookman 80 selectfont
+(A1/0) LayText moveto (1825) show
+  /Bookman 80 selectfont
+(B2/0) LayText moveto (Unit 3) show
+
+	% =================================
+	% INSERT YOUR TILES AND TOKENS HERE
+	% =================================
+ 
+	mapFrame
