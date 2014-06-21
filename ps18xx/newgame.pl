@@ -169,11 +169,11 @@ my %layout = (
 		roundcoord => 'R11',
 	},
   "25u3" => {
-    nameformat => "'%s",
+    nameformat => "%s",
     namefont => "/Bookman 80",
     namecoord => 'A6',
     roundfont => "/Bookman 80",
-    roundcoord => "A11",
+    roundcoord => "A10",
   },
 	"26" => {		# the name of the game
 		copycoords => [ qw( C11 C13 E5 I7 K17 L14 M3 ) ],
@@ -393,6 +393,13 @@ my %layout = (
 	},
 	"60" => {
 		nameformat => "'%s",
+		namefont => "/Bookman 80",
+		namecoord => "J12",
+		roundfont => "/Bookman 80",
+		roundcoord => "A2",
+	},
+	"60v2" => {
+		nameformat => "%s",
 		namefont => "/Bookman 80",
 		namecoord => "J12",
 		roundfont => "/Bookman 80",
