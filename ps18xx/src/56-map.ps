@@ -1,0 +1,150 @@
+%
+% $Header: 56-map.ps[1.3] Tue Apr 23 11:08:50 1996 doko@cs.tu-berlin.de saved $
+%
+
+% ----------------------------------------------------------------------
+% the 1856 variant was done by Steve Thomas (Steve.Thomas@insignia.co.uk)
+% ----------------------------------------------------------------------
+% 1856 map
+
+	newpath
+
+	/mapRows 22 def
+	/mapCols 17 def
+	/mapScale 0.5 def
+	/CM { 28.35 1 mapScale div mul mul } def
+	mapScale dup scale
+	21 CM 0 translate
+	90 rotate
+	/axesSwapped true def
+	/mapFrame {
+		1.5 CM 1.2 CM mapCols mapRows
+		//hexSide -0.5 mul dup //hexHeight -0.75 mul //hexHeight neg Map
+	} def
+	mapFrame
+
+	(N1/0)	-406	[]	LayTile
+
+	(K2/5)	-405	[]	LayTile
+	(M2/0)	-410	[]	LayTile	% Plain
+	(O2/5)	-408	[]	LayTile
+
+	(L3/0)	-439	[]	LayTile	% Plain
+	(N3/4)	-416	[]	LayTile	% LCity
+	(P3/0)	-410	[]	LayTile	% Plain
+
+	(K4/0)	-410	[]	LayTile	% Plain
+	(M4/0)	-429	[(CPR)(#Barrie)]	LayTile	% Barrie
+	(O4/0)	-410	[]	LayTile	% Plain
+
+	(H5/5)	-404	[]	LayTile
+	(J5/0)	-417	[]	LayTile	% Plain
+	(L5/0)	-410	[]	LayTile	% Plain
+	(N5/0)	-436	[]	LayTile
+	(P5/0)	-410	[]	LayTile	% Plain
+
+	(I6/0)	-410	[]	LayTile	% Plain
+	(K6/0)	-410	[]	LayTile	% Plain
+	(M6/0)	-440	[]	LayTile	% Plain
+	(O6/0)	-410	[]	LayTile	% Plain
+
+	(H7/0)	-418	[]	LayTile % Plain
+	(J7/0)	-410	[]	LayTile	% Plain
+	(L7/0)	-410	[]	LayTile	% Plain
+	(N7/0)	-410	[]	LayTile	% Plain
+	(P7/0)	-411	[]	LayTile	% Plain
+
+	(G8/0)	-410	[]	LayTile	% Plain
+	(I8/0)	-413	[]	LayTile	% Plain
+	(K8/4)	-413	[(TGB)(#Orangeville)]	LayTile	% Plain
+	(M8/0)	-410	[]	LayTile	% Plain
+	(O8/0)	-410	[]	LayTile	% Plain
+	(Q8/1)	-406	[]	LayTile
+
+	(F9/1)	-435	[]	LayTile
+	(H9/0)	-410	[]	LayTile	% Plain
+	(J9/0)	-440	[]	LayTile	% Plain
+	(L9/0)	-440	[]	LayTile	% Plain
+	(N9/0)	-440	[]	LayTile	% Plain
+	(P9/4)	-415	[(GT)(#Oshawa)]	LayTile	% LCity
+
+	(G10/0)	-410	[]	LayTile	% Plain
+	(I10/0)	-410	[]	LayTile	% Plain
+	(K10/0)	-412	[]	LayTile	% Plain
+	(M10/0)	-441	[]	LayTile % Plain
+	(O10/0)	-410	[]	LayTile	% Plain
+	(Q10/2)	-409	[]	LayTile
+
+	(F11/0)	-410	[]	LayTile	% Plain
+	(H11/0)	-437	[]	LayTile	% Plain
+	(J11/4)	-413	[(WGB)(#Guelph)]	LayTile	% Plain
+	(L11/0)	-410	[]	LayTile	% Plain
+	(N11/1)	-433	[(CV)( )(#Toronto)]	LayTile	% Toronto
+
+	(E12/0)	-410	[]	LayTile	% Plain
+	(G12/0)	-413	[]	LayTile	% Plain
+	(I12/1)	-430	[(#Kitchener)]	LayTile	% OOCity
+	(K12/0)	-412	[]	LayTile	% Plain
+	(M12/0)	-410	[]	LayTile	% Plain
+
+	(B13/5)	-403	[]	LayTile
+	(D13/0)	-410	[]	LayTile	% Plain
+	(F13/0)	-441	[]	LayTile % Plain
+	(H13/0)	-410	[]	LayTile	% Plain
+	(J13/4)	-413	[(#Galt)]	LayTile	% Plain
+	(L13/4)	-415	[(#Burlington)]	LayTile	% LCity
+
+	(C14/4)	-414	[(LPS)(#Maudaumin)]	LayTile	% LCity
+	(E14/0)	-410	[]	LayTile	% Plain
+	(G14/0)	-410	[]	LayTile	% Plain
+	(I14/1)	-441	[(#Drumbo)]	LayTile % Plain
+	(K14/0)	-412	[]	LayTile	% Plain
+
+	(B15/0)	-410	[]	LayTile	% Plain
+	(D15/0)	-410	[]	LayTile	% Plain
+	(F15/0)	-428	[(GW)(#London)]	LayTile	% London
+	(H15/4)	-413	[(#Woodstock)]	LayTile	% Plain
+	(J15/4)	-413	[(BBG)(#Brantford)]	LayTile	% Plain
+	(L15/1)	-431	[(THB)( )(#Hamilton)]	LayTile	% Hamilton
+	(N15/0)	-412	[]	LayTile	% Plain
+
+	(C16/0)	-410	[]	LayTile	% Plain
+	(E16/0)	-410	[]	LayTile	% Plain
+	(G16/0)	-410	[]	LayTile	% Plain
+	(I16/0)	-410	[]	LayTile	% Plain
+	(K16/0)	-440	[]	LayTile	% Plain
+	(M16/0)	-412	[]	LayTile	% Plain
+	(O16/4)	-413	[(WR)(#Niagara Falls)]	LayTile	% Plain
+
+	(B17/0)	-410	[]	LayTile	% Plain
+	(D17/4)	-413	[(CA)(#Glencoe)]	LayTile	% Plain
+	(F17/4)	-414	[(#St Thomas)]	LayTile	% LCity
+	(H17/0)	-417	[]	LayTile	% Plain
+	(J17/0)	-418	[]	LayTile % Plain
+	(L17/0)	-410	[]	LayTile	% Plain
+	(N17/1)	-430	[(#Welland)]	LayTile	% OOCity
+	(P17/1)	-407	[]	LayTile
+
+	(C18/0)	-410	[]	LayTile	% Plain
+	(E18/0)	-418	[]	LayTile % Plain
+	(G18/0)	-410	[]	LayTile	% Plain
+	(I18/0)	-410	[]	LayTile	% Plain
+	(K18/0)	-410	[]	LayTile	% Plain
+	(M18/0)	-417	[]	LayTile	% Plain
+	(O18/4)	-414	[(#Fort Erie)]	LayTile	% LCity
+
+	(B19/4)	-415	[(#Chatham)]	LayTile	% LCity
+	(D19/0)	-417	[]	LayTile	% Plain
+	(N19/0)	-412	[]	LayTile	% Plain
+	(P19/2)	-434	[]	LayTile
+
+	(A20/4)	-402	[]	LayTile
+	(C20/0)	-410	[]	LayTile	% Plain
+
+	(B21/0)	-410	[]	LayTile	% Plain
+
+	% =================================
+	% INSERT YOUR TILES AND TOKENS HERE
+	% =================================
+
+	mapFrame

@@ -1,0 +1,109 @@
+%
+% $Header: $
+%
+
+%!
+% ----------------------------------------------------------------------
+% 18fl map
+
+	newpath
+
+	/mapRows 14 def
+	/mapCols 28 def
+	/mapScale 0.45 def
+	/CM { 28.35 1 mapScale div mul mul } def
+	mapScale dup scale
+	21 CM 0 translate
+	90 rotate
+	/mapFrame {
+	1.5 CM 1.2 CM mapCols mapRows 0 //hexHeight 1 mul
+		//hexHeight -0.3 mul //hexHeight -0.3 mul Map
+	} def
+	mapFrame
+
+	(A4/5)	-422	[]	LayTile	% Plain
+	(A6/0)	-422	[]	LayTile	% Plain
+	(A22/5)	-433	[]	LayTile
+	(A22/5)	-440	[(#Savannah)]	LayTile
+
+	(B1/4)	-430	[(#New Orleans)]	LayTile
+	(B3/0)	-400	[]	LayTile	% Plain
+	(B5/1)	-411	[(L&N)(#Mobile)]	LayTile	% Plain
+	(B7/0)	-420	[(#Pensacola)]	LayTile	% Plain
+	(B9/0)	-400	[]	LayTile	% Plain
+	(B11/0)	-400	[]	LayTile	% Plain
+	(B13/0)	-420	[(#Chattahoochee)]	LayTile	% Plain
+	(B15/0)	-412	[(PLA)]	LayTile	% Plain
+	(B15/4)	-440	[(#Tallahassee)]	LayTile
+	(B17/0)	-400	[]	LayTile	% Plain
+	(B19/0)	-420	[(#Lake City)]	LayTile	% Plain
+	(B21/0)	-400	[]	LayTile	% Plain
+	(B23/5)	-413	[(SR)(SAL)]	LayTile	% Plain
+	(B23/5)	-440	[(#Jacksonville)]	LayTile
+
+	(C12/0)	-400	[]	LayTile	% Plain
+	(C14/0)	-420	[(#St Marks)]	LayTile	% Plain
+	(C16/0)	-400	[]	LayTile	% Plain
+	(C18/0)	-400	[]	LayTile	% Plain
+	(C20/0)	-400	[]	LayTile	% Plain
+	(C22/0)	-400	[]	LayTile	% Plain
+	(C24/0)	-420	[(#St Augustine)]	LayTile	% Plain
+
+	(D19/0)	-420	[(#Cedar Key)]	LayTile	% Plain
+	(D21/0)	-400	[]	LayTile	% Plain
+	(D23/0)	-420	[(#Palatka)]	LayTile	% Plain
+	(D25/0)	-420	[(#Daytona)]	LayTile	% Plain
+
+	(E20/0)	-400	[]	LayTile	% Plain
+	(E22/0)	-400	[]	LayTile	% Plain
+	(E24/0)	-400	[]	LayTile	% Plain
+	(E26/0)	-420	[(#Titusville)]	LayTile	% Plain
+
+	(F21/0)	-400	[]	LayTile	% Plain
+	(F23/0)	-410	[(#Orlando)]	LayTile	% Plain
+	(F25/0)	-400	[]	LayTile	% Plain
+
+	(G20/5)	-415	[(ACL)(#Tampa)]	LayTile	% Plain
+	(G22/0)	-400	[]	LayTile	% Plain
+	(G24/0)	-401	[]	LayTile	% Plain
+	(G26/0)	-400	[]	LayTile	% Plain
+
+	(H21/0)	-400	[]	LayTile	% Plain
+	(H23/0)	-401	[]	LayTile	% Plain
+	(H25/0)	-401	[]	LayTile	% Plain
+	(H27/0)	-400	[]	LayTile	% Plain
+
+	(I22/0)	-420	[(#Punta Gorda)]	LayTile	% Plain
+	(I24/0)	-401	[]	LayTile	% Plain
+	(I26/0)	-401	[]	LayTile	% Plain
+	(I28/0)	-420	[(#West Palm Beach)]	LayTile	% Plain
+
+	(J23/0)	-401	[]	LayTile	% Plain
+	(J25/0)	-401	[]	LayTile	% Plain
+	(J27/0)	-410	[(#Ft Lauderdale)]	LayTile	% Plain
+
+	(K24/0)	-401	[]	LayTile	% Plain
+	(K26/0)	-401	[]	LayTile	% Plain
+	(K28/2)	-415	[(FEC)(#Miami)]	LayTile	% Plain
+
+	(L27/0)	-401	[]	LayTile	% Plain
+
+	(M24/5)	-421	[(#Key West)]	LayTile	% Keys
+	(M26/0)	-402	[]	LayTile	% Keys
+
+	(N23/3)	-432	[(#Havana)]	LayTile
+
+		/Bookman 120 selectfont
+	(E1/7) LayText moveto (18fl) show 
+
+	% =================================
+	% INSERT YOUR TILES AND TOKENS HERE
+	% =================================
+
+	mapFrame
+
+	(H25/E)	Barrier
+	(H25/SE)	Barrier
+	(H27/SW)	Barrier
+	(K26/SE)	Barrier
+

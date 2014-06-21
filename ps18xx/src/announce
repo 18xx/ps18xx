@@ -1,0 +1,120 @@
+	ps18xx -- generate 18xx postscript maps and tile lists
+				(c) M. Klose
+----------------------------------------------------------------------
+
+ps18xx lets you generate tile lists and maps for several 18xx style
+games in the PostScript format. New tiles and tokens are laid on the
+map by adding line by line to a file.
+
+To print these maps you need a PostScript capable printer (or a
+"converter" like ghostscript).
+To view the maps on the screen, you need Display PostScript or a
+PostScript Viewer like GSView or GhostView.
+
+Available maps:	1825u1	- South Britain (Unit 1)
+		1829n	- North Britain
+		1829s	- South Britain
+		1830	- NorthEast US
+		1830r	- NorthEast US (Reading)
+		1835	- Germany
+		1837	- Austria
+		1841	- North Italy
+		1842	- Schleswig-Holstein (Germany)
+		1847	- Pfalz (Germany)
+		1849	- Sicily
+		1853	- India
+		1856	- Canada
+		1870	- South US
+		1876-30	- Trinidad (1830 variant)
+		1876-35	- Trinidad (1835 variant)
+		1899	- China
+
+NEW: Separate packages are available now for each game.
+check out http://swt.cs.tu-berlin.de/~doko/ps18xx/
+
+New in version 1.5:
+      - new game: 1830r
+      - renamed 1839i to 1841, renamed 1850s to 1849
+      - 1853: pre-existing track is dual gauge (fix by A. Lange)
+      - 1850/1853: #96, #97 have double stations
+	(All following changes in this version by Steve Thomas)
+      - home stations in 1841
+      - new games: 1842, 1847, 1876-30, 1876-35
+
+New in version 1.4:
+      - detection of device type: color or b/w
+	(All changes in this version by Steve Thomas)
+      - 1825u1 (South Britain (Unit 1)) and 1899 (China) have been added.
+      - some bugs fixed in 1856
+      - inserted national frontiers in 1839i
+
+New in version 1.3.1:
+      - some bugs fixed in 1853 (thanks to Andy Lange)
+
+New in version 1.3:
+      - file sizes reduced
+      - ports in 1829 (both boards)
+      - colors for special areas (1837 Bosnia and 1853 Ganges) and
+	a small border around South Tirol (1837)
+
+	(All following changes in this version by Steve Thomas)
+      - 1850s (Sicily) and 1839i (Italy) have been added.  This involves
+	three new terrain types - ports, alpine passes, and appennine
+	passes - and appennine and alpine track.
+      - Support for impassable hexsides has been added.  The 1830, 1835,
+	and 1870 maps now take advantage of this feature, as well as the
+	new 1839i and 1850s maps.
+      - Support for tiles "sitting" has been added.  This is used for
+	the revised 1856 map, as well as the new maps.
+      - Support for swapping the numerical and alphabetic axes has been
+	added. This is used in the revised 1856 map.
+      - The boxes for the values for off-board areas now are sized
+	according to the lengths of the strings.  This improves the
+	appearance of the 1856 and 1870 maps.
+      - If a value is >= 100, the value circle becomes an oval.  This
+	improves the appearance of the Toronto gray tile in 1856.
+      - The 1870 map has had the major city names added.
+      - The mechanism for printing multipage tile availability lists is
+	changed to move to a new page after printing a full page.
+
+New in version 1.2:
+      - 1870 (without destinations)
+      - 1830-map bug fixed
+      - poster code included (to print larger maps on more than one sheet)
+	Thanks to Jos van Eijndhoven (email: J.T.J.v.Eijndhoven@ele.tue.nl)
+
+New in version 1.1:
+      - 1837, 1856 (without destinations)
+      - bridges for crossing tracks
+      - all value boxes on white ground
+
+----------------------------------------------------------------------
+The ps18xx home page is http://swt.cs.tu-berlin.de/~doko/ps18xx/
+
+The ps18xx package is available via FTP and mail server:
+
+        ftp://ftp.cs.tu-berlin.de/pub/games/board/18xx/ps18xx-1.4.tar.gz
+        ftp://ftp.cs.tu-berlin.de/pub/games/board/18xx/ps18xx-1.4.zip
+
+The map and tile lists are available as separate packages too:
+
+        ftp://ftp.cs.tu-berlin.de/pub/games/board/18xx/ps18XX.tar.gz
+        ftp://ftp.cs.tu-berlin.de/pub/games/board/18xx/ps18XX.zip
+
+where 18XX stands for the game name.
+
+        mail server: message to mail-server@cs.tu-berlin.de
+                     with the word 'HELP' in any line of the body.
+
+
+----------------------------------------------------------------------
+Thanks to Paul R. Work, Nick Roworth and Steve Thomas, who made many
+contributions to this package.
+
+ps18xx is "postcard" ware. If you use this code or part of this,
+you are invited to send me a nice railway postcard to the address below.
+In October I received the first card :-)
+
+							Matthias Klose
+							Dillgesstr. 30
+							D-12249 Berlin

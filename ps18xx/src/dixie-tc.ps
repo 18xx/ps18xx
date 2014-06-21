@@ -1,0 +1,204 @@
+%
+% $Header:  $
+%
+
+% ----------------------------------------------------------------------
+% 18Dixie tile codes
+
+/18xxVariant (18dixie) def
+/maxTile 650 def
+
+	/tileCodes //maxTile array def
+
+	tileCodes   3 [   3 5 //tlYellow //tlPlain ()    (10)  5 ] put
+	tileCodes   4 [   4 0 //tlYellow //tlPlain ()    (10)  7 ] put
+	tileCodes   5 [   5 0 //tlYellow //tlPlain ()    (20) 10 ] put
+	tileCodes   6 [   6 0 //tlYellow //tlPlain ()    (20) 10 ] put
+	tileCodes   7 [   7 5 //tlYellow //tlPlain ()    ()    6 ] put
+	tileCodes   8 [   8 4 //tlYellow //tlPlain ()    ()   29 ] put
+	tileCodes   9 [   9 0 //tlYellow //tlPlain ()    ()   30 ] put
+	tileCodes  57 [  57 0 //tlYellow //tlPlain ()    (20) 10 ] put
+	tileCodes  58 [  58 4 //tlYellow //tlPlain ()    (10)  8 ] put
+	tileCodes  X1 [  49 3 //tlYellow //tlPlain (Atl) (20)  1 ] put
+
+	tileCodes  14 [  14 0 //tlGreen  //tlPlain ()    (30)  6 ] put
+	tileCodes  15 [  15 3 //tlGreen  //tlPlain ()    (30)  8 ] put
+	tileCodes  16 [  16 5 //tlGreen  //tlPlain ()    ()    3 ] put
+	tileCodes  18 [  18 3 //tlGreen  //tlPlain ()    ()    1 ] put
+	tileCodes  19 [  19 0 //tlGreen  //tlPlain ()    ()    3 ] put
+	tileCodes  20 [  20 5 //tlGreen  //tlPlain ()    ()    3 ] put
+
+	tileCodes  23 [  23 0 //tlGreen  //tlPlain ()    ()    6 ] put
+	tileCodes  24 [  24 0 //tlGreen  //tlPlain ()    ()    6 ] put
+	tileCodes  25 [  25 0 //tlGreen  //tlPlain ()    ()    6 ] put
+	tileCodes  26 [  26 0 //tlGreen  //tlPlain ()    ()    3 ] put
+	tileCodes  27 [  27 3 //tlGreen  //tlPlain ()    ()    3 ] put
+	tileCodes  28 [  28 0 //tlGreen  //tlPlain ()    ()    4 ] put
+	tileCodes  29 [  29 4 //tlGreen  //tlPlain ()    ()    4 ] put
+
+	tileCodes  87 [  87 3 //tlGreen  //tlPlain ()    (10)  3 ] put
+	tileCodes  88 [  88 0 //tlGreen  //tlPlain ()    (10)  3 ] put
+	tileCodes 143 [ 143 0 //tlGreen  //tlPlain ()    (10)  2 ] put
+	tileCodes 204 [ 204 4 //tlGreen  //tlPlain ()    (10)  2 ] put
+	tileCodes 599 [ 121 0 //tlGreen  //tlPlain (Cha) (40)  1 ] put
+	tileCodes 619 [  38 3 //tlGreen  //tlPlain ()    (30)  6 ] put
+
+	tileCodes 442 [  38 2 //tlGreen  //tlPlain (Bhm) (30)  1 ] put
+	tileCodes 443 [  51 0 //tlGreen  //tlPlain (Mgm) (40)  1 ] put
+	tileCodes 393 [  15 5 //tlGreen  //tlPlain (Aug) (30)  1 ] put
+	tileCodes  X2 [  15 3 //tlGreen  //tlPlain (Mo)  (30)  1 ] put
+	tileCodes  X3 [ 209 0 //tlGreen  //tlPlain (Atl) (20)  1 ] put
+
+	tileCodes  39 [  39 0 //tlBrown  //tlPlain ()    ()    2 ] put
+	tileCodes  40 [  40 0 //tlBrown  //tlPlain ()    ()    2 ] put
+	tileCodes  41 [  41 0 //tlBrown  //tlPlain ()    ()    4 ] put
+	tileCodes  42 [  42 0 //tlBrown  //tlPlain ()    ()    4 ] put
+	tileCodes  43 [  43 3 //tlBrown  //tlPlain ()    ()    3 ] put
+	tileCodes  44 [  44 5 //tlBrown  //tlPlain ()    ()    2 ] put
+	tileCodes  45 [  45 3 //tlBrown  //tlPlain ()    ()    3 ] put
+	tileCodes  46 [  46 3 //tlBrown  //tlPlain ()    ()    3 ] put
+	tileCodes  47 [  47 0 //tlBrown  //tlPlain ()    ()    5 ] put
+
+	tileCodes  63 [  63 0 //tlBrown  //tlPlain ()    (40) 12 ] put
+	tileCodes 170 [  51 2 //tlBrown  //tlPlain (P)   (50)  3 ] put
+	tileCodes 396 [  15 5 //tlBrown  //tlPlain (Aug) (50)  1 ] put
+	tileCodes 444 [  51 0 //tlBrown  //tlPlain (B/M) (50)  1 ] put
+	tileCodes 457 [  51 0 //tlBrown  //tlPlain (Bru) (40)  1 ] put
+	tileCodes 1458 [ 51 0 //tlBrown  //tlPlain (Mac) (50)  1 ] put
+	tileCodes  X4 [ 522 0 //tlBrown  //tlPlain (Atl) (60)  1 ] put
+	tileCodes  X5 [ 124 0 //tlBrown  //tlPlain (Mo)  (40)  1 ] put
+
+	tileCodes 513 [ 522 0 //tlGray   //tlPlain ()    (60)  1 ] put
+	tileCodes 446 [ 522 0 //tlGray   //tlPlain (Bhm) (70)  1 ] put
+	tileCodes  X6 [ 375 5 //tlGray   //tlPlain (Atl) (80)  1 ] put
+
+	% tile codes for map definition
+	% off-board areas
+	tileCodes 401 [ 506 0 //tlRed    //tlPlain    ()     (50/80) 0 ] put
+	tileCodes 402 [ 506 0 //tlRed    //tlPlain    ()     (40/60) 0 ] put
+	tileCodes 403 [ 506 0 //tlRed    //tlPlain    ()     (60/40) 0 ] put
+	tileCodes 404 [ 507 0 //tlRed    //tlPlain    ()     (20/40) 0 ] put
+	tileCodes 405 [ 506 0 //tlRed    //tlPlain    ()     (30/50) 0 ] put
+	tileCodes 406 [ 506 0 //tlRed    //tlPlain    ()     (30/60) 0 ] put
+	tileCodes 407 [ 585 0 //tlRed    //tlPlain    ()     (30/60) 0 ] put
+	tileCodes 408 [   5 0 //tlRed    //tlPlain    ()     (30/60) 0 ] put
+	tileCodes 409 [ 510 0 //tlRed    //tlPlain    ()     (50/80) 0 ] put
+
+	% plain track
+	tileCodes 410 [ 500 0 //tlGround //tlPlain    ()     ()      0 ] put
+	tileCodes 411 [ 500 0 //tlGround //tlWater2   ($40)  ()      0 ] put
+	tileCodes 412 [ 500 0 //tlGround //tlWater3   ($60)  ()      0 ] put
+	tileCodes 413 [ 500 0 //tlGround //tlHill     ($60)  ()      0 ] put
+	tileCodes 414 [ 500 0 //tlGround //tlMountain ($120) ()      0 ] put
+	tileCodes 415 [ 500 0 //tlGround //tlWater    ($20)  ()      0 ] put
+
+	% small cities
+	tileCodes 420 [ 501 0 //tlGround //tlPlain    ()     ()      0 ] put
+	tileCodes 421 [ 501 0 //tlGround //tlWater2   ($40)  ()      0 ] put
+	tileCodes 422 [ 501 0 //tlGround //tlWater    ($20)  ()      0 ] put
+
+	% large cities
+	tileCodes 430 [ 246 0 //tlGround //tlPlain    ()     ()      0 ] put
+	tileCodes 431 [ 519 0 //tlGround //tlWater    (Atl)  ()      0 ] put
+	tileCodes 432 [ 246 0 //tlGround //tlWater2   ($40)  ()      0 ] put
+	tileCodes 433 [ 246 0 //tlGround //tlWater3   ($60)  ()      0 ] put
+	tileCodes 434 [ 244 0 //tlGray   //tlPlain    ()     (30)    0 ] put
+	tileCodes 435 [   6 0 //tlYellow //tlPlain    (P)    (20)    0 ] put
+	tileCodes 436 [ 405 0 //tlGray   //tlPlain    ()     (30/60) 0 ] put
+	tileCodes 437 [ 246 0 //tlGround //tlWater    ($20)  ()      0 ] put
+	tileCodes 438 [  15 0 //tlGray   //tlPlain    ()     (30/60) 0 ] put
+	tileCodes 439 [ 721 0 //tlGray   //tlPlain    ()     ()      0 ] put
+
+	% overlays
+	tileCodes 450 [ 500 0 //tlTransparent //tlPlain ()   ()      0 ] put
+	tileCodes 451 [ 550 0 //tlTransparent //tlPlain ()   ()      0 ] put
+	tileCodes 452 [ 500 0 //tlTransparent //tlPlain (P)  ()      0 ] put
+	tileCodes 453 [ 500 0 //tlTransparent //tlPlain ($20) ()     0 ] put
+	tileCodes 454 [ 500 0 //tlTransparent //tlPlain ()   (20/50) 0 ] put
+
+% Upgrade Plain 410 => 7/* 8/* 9/*
+% Upgrade Plain 411 => 7/* 8/* 9/*
+% Upgrade Plain 412 => 7/* 8/* 9/*
+% Upgrade Plain 413 => 7/* 8/* 9/*
+% Upgrade Plain 414 => 7/* 8/* 9/*
+% Upgrade Plain 415 => 7/* 8/* 9/*
+% Upgrade Plain 420 => 3/* 4/* 58/*
+% Upgrade Plain 421 => 3/* 4/* 58/*
+% Upgrade Plain 422 => 3/* 4/* 58/*
+% Upgrade Plain 430 => 5/* 6/* 57/*
+% Upgrade Plain 431 => X1/*
+% Upgrade Plain 432 => 5/* 6/* 57/*
+% Upgrade Plain 433 => 5/* 6/* 57/*
+% Upgrade Plain 437 => 5/* 6/* 57/*
+% Upgrade Aug 430 => 5/012 6/12 57/25
+% Upgrade Birmingham 430 => 5/* 6/* 57/*
+% Upgrade Bru 430 => 5/* 6/* 57/*
+% Upgrade Macon 430 => 5/* 6/* 57/*
+% Upgrade Mobile 430 => 5/234 6/34 57/134
+% Upgrade Montgomery 430 => 5/* 6/* 57/*
+% Upgrade PCity 432 => 5/* 6/* 57/*
+% Upgrade PCity 433 => 5/* 6/* 57/*
+
+% Upgrade Plain 3 => 87/012 88/03 143/45 204/05
+% Upgrade Plain 4 => 87/03 88/0134 204/03
+% Upgrade Plain 5 => 14/03 15/012 619/05
+% Upgrade Plain 6 => 14/14 15/01 619/135
+% Upgrade Plain 7 => 26/0 27/2 28/0 29/1
+% Upgrade Plain 8 => 16/01 19/5 23/0 24/4 25/04 28/0 29/0
+% Upgrade Plain 9 => 19/03 20/0134 23/03 24/03 26/03 27/03
+% Upgrade Plain 57 => 14/0134 15/03 619/03
+% Upgrade Plain 58 => 87/01 88/14 143/4 204/135
+% Upgrade Plain X1 => X3/015
+% Upgrade Aug 5 => 393/=5
+% Upgrade Aug 6 => 393/=5
+% Upgrade Aug 57 => 393/=5
+% Upgrade Birmingham 5 => 442/01
+% Upgrade Birmingham 6 => 442/024
+% Upgrade Birmingham 57 => 442/14
+% Upgrade Bru 5 => 14/03 15/012 619/05
+% Upgrade Bru 6 => 14/14 15/01 619/135
+% Upgrade Bru 57 => 14/0134 15/03 619/03
+% Upgrade Macon 5 => 14/03 15/012 619/05
+% Upgrade Macon 6 => 14/14 15/01 619/135
+% Upgrade Macon 57 => 14/0134 15/03 619/03
+% Upgrade Montgomery 5 => 443/0145
+% Upgrade Montgomery 6 => 443/0245
+% Upgrade Montgomery 57 => 443/1245
+% Upgrade Mobile 5 => X2/=4
+% Upgrade Mobile 6 => X2/=4
+% Upgrade Mobile 57 => X2/=4
+% Upgrade PCity 435 => 599/024
+% Upgrade PCity 5 => 14/03 15/012 619/05
+% Upgrade PCity 6 => 14/14 15/01 619/135
+% Upgrade PCity 57 => 14/0134 15/03 619/03
+
+% Upgrade Plain 16 => 43/0
+% Upgrade Plain 20 => 44/03 47/03
+% Upgrade Plain 23 => 41/0 43/0 47/14
+% Upgrade Plain 24 => 42/0 43/3 47/03
+% Upgrade Plain 25 => 40/024
+% Upgrade Plain 26 => 42/3 44/03
+% Upgrade Plain 27 => 41/0 44/14
+% Upgrade Plain 28 => 39/5 43/1
+% Upgrade Plain 29 => 39/5 43/0
+% Upgrade Plain 14 => 63/*
+% Upgrade Plain 15 => 63/*
+% Upgrade Plain 619 => 63/*
+% Upgrade Plain X3 => X4/*
+% Upgrade Aug 393 => 396/0
+% Upgrade Birningham 442 => 444/04
+% Upgrade Bru 14 => 457/=1
+% Upgrade Bru 15 => 457/=1
+% Upgrade Bru 619 => 457/=1
+% Upgrade Macon 14 => 1458/14
+% Upgrade Macon 15 => 1458/45
+% Upgrade Macon 619 => 1458/15
+% Upgrade Mobile X2 => X4/=1
+% Upgrade Montgomery 443 => 444/0
+% Upgrade PCity 14 => 170/25
+% Upgrade PCity 15 => 170/23
+% Upgrade PCity 619 => 170/35
+
+% Upgrade Plain X4 => X6/*
+% Upgrade Birningham 444 => 446/*
+% Upgrade PCity 170 => 513/*

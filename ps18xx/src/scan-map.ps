@@ -1,0 +1,115 @@
+%
+% $Header: $
+%
+
+%!
+% ----------------------------------------------------------------------
+% 18scan map
+
+	newpath
+
+	/mapRows 8 def
+	/mapCols 20 def
+	/mapScale 0.6 def
+	/CM { 28.35 1 mapScale div mul mul } def
+	mapScale dup scale
+	21 CM 0 translate
+	90 rotate
+	/mapFrame {
+	1.5 CM 1.2 CM mapCols mapRows 0 //hexHeight 3 mul 0 //hexHeight Map
+	} def
+	mapFrame
+
+	(A4/5)	-430	[(#Newcastle)]	LayTile
+	(A6/0)	-401	[]	LayTile	% Plain
+	(A8/0)	-401	[]	LayTile	% Plain
+	(A10/0)	-401	[]	LayTile	% Plain
+	(A14/0)	-401	[]	LayTile	% Plain
+	(A16/0)	-401	[]	LayTile	% Plain
+	(A18/0)	-412	[(#Narvik)]	LayTile	% City
+	(A20/5)	-435	[(#Kiruna)]	LayTile
+
+	(B5/0)	-410	[(#Bergen)]	LayTile	% City
+	(B7/0)	-401	[]	LayTile	% Plain
+	(B9/0)	-401	[]	LayTile	% Plain
+	(B11/0)	-412	[(#Trondheim)]	LayTile	% City
+	(B11/0)	-441	[]	LayTile
+	(B13/0)	-401	[]	LayTile	% Plain
+	(B15/0)	-401	[]	LayTile	% Plain
+	(B17/0)	-401	[]	LayTile	% Plain
+	(B19/0)	-410	[(SNJ)(#Gallivare)]	LayTile	% City
+
+	(C4/0)	-410	[(#Stavanger)]	LayTile	% City
+	(C6/0)	-401	[]	LayTile	% Plain
+	(C8/0)	-401	[]	LayTile	% Plain
+	(C10/0)	-401	[]	LayTile	% Plain
+	(C12/0)	-420	[(#Ostersund)]	LayTile	% Village
+	(C14/0)	-400	[]	LayTile	% Plain
+	(C16/0)	-400	[]	LayTile	% Plain
+	(C18/0)	-420	[(#Lulea)]	LayTile	% Village
+
+	(D5/0)	-420	[(#Kristiansand)]	LayTile	% Village
+	(D7/0)	-415	[(NSB)(#Oslo)]	LayTile	% Oslo
+	(D7/0)	-442	[]	LayTile
+	(D9/0)	-400	[]	LayTile	% Plain
+	(D11/0)	-400	[]	LayTile	% Plain
+	(D13/0)	-400	[]	LayTile	% Plain
+	(D15/0)	-410	[(#Umea)]	LayTile	% City
+	(D17/0)	-400	[]	LayTile	% Plain
+	(D19/0)	-420	[(#Oulu)]	LayTile	% Village
+
+	(E2/0)	-400	[]	LayTile	% Plain
+	(E4/0)	-410	[(#Arhus)]	LayTile	% City
+	(E6/1)	-410	[(#Goteborg)]	LayTile	% City
+	(E6/0)	-440	[]	LayTile
+	(E8/0)	-400	[]	LayTile	% Plain
+	(E10/0)	-420	[(#Gavle)]	LayTile	% Village
+	(E12/0)	-400	[]	LayTile	% Plain
+	(E14/0)	-400	[]	LayTile	% Plain
+	(E16/0)	-400	[]	LayTile	% Plain
+	(E18/0)	-400	[]	LayTile	% Plain
+
+	(F1/3)	-431	[]	LayTile
+	(F3/0)	-413	[(DSB)(#Copenhagen)(#Odense)]	LayTile	% City
+	(F5/0)	-400	[]	LayTile	% Plain
+	(F7/0)	-420	[(#Norrkoping)]	LayTile	% Village
+	(F9/0)	-400	[]	LayTile	% Plain
+	(F11/0)	-414	[(3)(2)(#Stockholm)]	LayTile	% YCity
+	(F13/1)	-410	[(#Turku)]	LayTile	% City
+	(F15/0)	-410	[(#Tampere)]	LayTile	% City
+	(F17/0)	-400	[]	LayTile	% Plain
+
+	(G2/3)	-432	[(#Stettin)]	LayTile
+	(G4/0)	-411	[(1)(#Malmo)]	LayTile	% City
+	(G6/0)	-400	[]	LayTile	% Plain
+	(G8/0)	-400	[]	LayTile	% Plain
+	(G12/0)	-402	[]	LayTile
+	(G14/0)	-415	[(VR)(#Helsinki)]	LayTile	% YCity
+	(G16/0)	-420	[(#Lahti)]	LayTile	% Village
+
+	(H13/3)	-433	[(#Tallin)]	LayTile
+	(H17/2)	-434	[(#Vyborg)]	LayTile
+
+		/Bookman 120 selectfont
+	(I1/7) LayText moveto (18scan) show 
+
+	% =================================
+	% INSERT YOUR TILES AND TOKENS HERE
+	% =================================
+
+	(C4/NE)	Barrier
+	(D17/E)	Barrier
+	(D17/SE)	Barrier
+	(E4/NE)	Barrier
+	(E4/E)	Barrier
+	(E4/SE)	Barrier
+	(E6/NW)	Barrier
+	(E14/W)	Barrier
+	(E14/NW)	Barrier
+	(E14/NE)	Barrier
+	(E16/NW)	Barrier
+	(E16/NE)	Barrier
+	(F13/NW)	Barrier
+	(F13/W)	Barrier
+
+	mapFrame

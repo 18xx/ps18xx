@@ -1,0 +1,112 @@
+%
+% $Header: $
+%
+
+% ----------------------------------------------------------------------
+% 18fl tile codes
+
+/18xxVariant (18fl) def
+/maxTile 999 def
+
+	/tileCodes //maxTile array def
+
+	tileCodes   3 [   3 5 //tlYellow //tlPlain ()    (10)  6 ] put
+	tileCodes   4 [   4 0 //tlYellow //tlPlain ()    (10)  8 ] put
+	tileCodes   6 [   6 0 //tlYellow //tlPlain ()    (20)  2 ] put
+	tileCodes   8 [   8 4 //tlYellow //tlPlain ()    ()   10 ] put
+	tileCodes   9 [   9 0 //tlYellow //tlPlain ()    ()   14 ] put
+	tileCodes  58 [  58 4 //tlYellow //tlPlain ()    (10)  8 ] put
+
+	tileCodes  15 [  15 3 //tlGreen  //tlPlain ()    (30)  2 ] put
+	tileCodes  80 [ 215 1 //tlGreen  //tlPlain ()    ()    4 ] put
+	tileCodes  81 [ 216 5 //tlGreen  //tlPlain ()    ()    4 ] put
+	tileCodes  82 [ 214 3 //tlGreen  //tlPlain ()    ()    6 ] put
+	tileCodes  83 [ 213 3 //tlGreen  //tlPlain ()    ()    6 ] put
+	tileCodes 141 [ 141 0 //tlGreen  //tlPlain ()    (10)  5 ] put
+	tileCodes 142 [ 142 0 //tlGreen  //tlPlain ()    (10)  5 ] put
+	tileCodes 143 [ 143 0 //tlGreen  //tlPlain ()    (10)  5 ] put
+	tileCodes 405 [ 405 0 //tlGreen  //tlPlain (T)   (40)  2 ] put
+	tileCodes 443 [ 121 0 //tlGreen  //tlPlain ()    (30)  2 ] put
+	tileCodes 487 [  54 0 //tlGreen  //tlPlain (JAX) (40)  1 ] put
+
+	tileCodes  63 [  63 0 //tlBrown  //tlPlain ()    (40)  1 ] put
+	tileCodes 146 [  87 0 //tlBrown  //tlPlain ()    (20)  8 ] put
+	tileCodes 431 [ 405 0 //tlBrown  //tlPlain (T)   (60)  2 ] put
+	tileCodes 488 [  54 0 //tlBrown  //tlPlain (JAX) (50)  1 ] put
+	tileCodes 544 [ 217 0 //tlBrown  //tlPlain ()    ()    2 ] put
+	tileCodes 545 [ 218 3 //tlBrown  //tlPlain ()    ()    2 ] put
+	tileCodes 546 [ 219 3 //tlBrown  //tlPlain ()    ()    2 ] put
+	tileCodes 611 [  51 2 //tlBrown  //tlPlain ()    (40)  1 ] put
+
+	tileCodes 489 [ 168 0 //tlGray   //tlPlain (JAX) (70)  1 ] put
+
+	%tile codes for map definition
+	% Plain track
+	tileCodes 400 [ 500 0 //tlGround //tlPlain    ()    ()   0 ] put
+	tileCodes 401 [ 500 0 //tlGround //tlTree     ($40) ()   0 ] put
+	tileCodes 402 [ 500 0 //tlGround //tlWater2   ($80) ()   0 ] put
+
+	% Large cities
+	tileCodes 410 [ 246 0 //tlGround //tlPlain    ()    ()   0 ] put
+	tileCodes 411 [  57 0 //tlYellow //tlPlain    ()    (20) 0 ] put
+	tileCodes 412 [ 532 0 //tlYellow //tlPlain    ()    (20) 0 ] put
+	tileCodes 413 [  54 0 //tlYellow //tlPlain    (JAX) (30) 0 ] put
+	tileCodes 415 [   6 0 //tlYellow //tlPlain    (T)   (30) 0 ] put
+
+	% Small cities
+	tileCodes 420 [ 501 0 //tlGround //tlPlain    ()    ()   0 ] put
+	tileCodes 421 [ 501 0 //tlGround //tlWater2   ($80) ()   0 ] put
+	tileCodes 422 [ 513 0 //tlGray   //tlPlain    ()    ()   0 ] put
+
+	% Red areas
+	tileCodes 430 [ 505 0 //tlRed    //tlPlain    ()    (40/70) 0 ] put
+	tileCodes 432 [ 505 0 //tlRed    //tlPlain    ()    (60/100) 0 ] put
+	tileCodes 433 [ 505 0 //tlRed    //tlPlain    ()    (30/80) 0 ] put
+
+	% Overlays
+	tileCodes 440 [ 500 0 //tlTransparent //tlPlain ()  ()   0 ] put
+	tileCodes 441 [ 503 0 //tlTransparent //tlPlain ()  ()   0 ] put
+	tileCodes 442 [ 500 0 //tlTransparent //tlPlain (@ACL) () 0 ] put
+	tileCodes 444 [ 500 0 //tlTransparent //tlPlain (@FEC) () 0 ] put
+	tileCodes 445 [ 500 0 //tlTransparent //tlPlain (@L&N) () 0 ] put
+	tileCodes 446 [ 500 0 //tlTransparent //tlPlain (@PLA) () 0 ] put
+	tileCodes 447 [ 500 0 //tlTransparent //tlPlain (@SAL) () 0 ] put
+	tileCodes 448 [ 500 0 //tlTransparent //tlPlain (@SR) () 0 ] put
+
+% Upgrade Plain 400 => 8/* 9/*
+% Upgrade Plain 401 => 8/* 9/*
+% Upgrade Keys 402 => 8/=3
+% Upgrade Plain 420 => 3/* 4/* 58/*
+% Upgrade Keys 421 => 58/=0
+% Upgrade Plain 410 => 6/*
+
+% Upgrade Plain 8 => 80/4 81/024 82/0 83/4
+% Upgrade Plain 9 => 82/03 83/03
+% Upgrade Plain 3 => 141/2 142/3 143/45
+% Upgrade Plain 4 => 141/03 142/03
+% Upgrade Plain 58 => 141/0 142/4 143/4
+% Upgrade Plain 6 => 443/024
+% Upgrade Plain 411 => 15/=4
+% Upgrade Plain 412 => 15/=1
+% Upgrade Plain 413 => 487/=5
+% Upgrade Plain 415 => 405/0
+
+% Upgrade Plain 80 => 545/05 546/4
+% Upgrade Plain 81 => 546/024
+% Upgrade Plain 82 => 544/03 545/3 546/0
+% Upgrade Plain 83 => 544/25 545/0 546/0
+% Upgrade Plain 141 => 146/3
+% Upgrade Plain 142 => 146/0
+% Upgrade Plain 143 => 146/05
+% Upgrade Plain 443 => 63/* 611/024
+% Upgrade Plain 405 => 431/0
+% Upgrade Plain 487 => 488/0
+
+% Upgrade Plain 488 => 489/0
+
+% Token ACL 4
+% Token FEC 4
+% Token L&N 4
+% Token PLA 4
+% Token SAL 4
+% Token SR 4

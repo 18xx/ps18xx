@@ -1,0 +1,274 @@
+%
+% $Header: 41-map.ps[1.0] Mon Feb 24 14:04:54 1997 doko@cs.tu-berlin.de saved $
+%
+% ----------------------------------------------------------------------
+% the 1839i variant was done by Steve Thomas (Steve.Thomas@insignia.co.uk)
+% renamed to 1841
+% ----------------------------------------------------------------------
+% 1841 map
+
+	newpath
+
+	/mapRows 22 def
+	/mapCols 17 def
+	/mapScale 0.5 def
+	/CM { 28.35 1 mapScale div mul mul } def
+	mapScale dup scale
+	0 0 1 cm 0 360 arc
+	21.5 CM 0 translate
+	90 rotate
+	/mapFrame {
+	1.2 CM 1.2 CM mapCols mapRows
+	0 //hexSide -0.5 mul //hexHeight 0.25 mul //hexHeight -0.75 mul Map
+	} def
+	mapFrame
+
+	(@4/5)	-402	[] LayTile
+
+	(A5/0)	-425	[] LayTile	% Hex
+	(A7/0)	-403	[] LayTile
+	(A9/0)	-420	[] LayTile	% Hex
+	(A11/5)	-444	[] LayTile
+
+	(B6/0)	-420	[] LayTile	% Hex
+	(B8/0)	-420	[] LayTile	% Hex
+	(B10/0)	-420	[] LayTile	% Hex
+	(B14/5)	-404	[] LayTile
+	(B16/0)	-422	[] LayTile	% Hex
+
+	(C7/4)	-431	[(#Lugano)] LayTile	% Hex
+	(C9/0)	-420	[] LayTile	% Hex
+	(C11/0)	-420	[] LayTile	% Hex
+	(C13/5)	-410	[] LayTile
+	(C15/0)	-424	[] LayTile	% Hex
+	(C17/1)	-405	[] LayTile
+
+	(D4/0)	-420	[] LayTile	% Hex
+	(D6/0)	-420	[] LayTile	% Hex
+	(D8/4)	-431	[(#Como)] LayTile	% Hex
+	(D10/5) -423	[] LayTile
+	(D12/0)	-424	[] LayTile	% Hex
+	(D14/0)	-424	[] LayTile	% Hex
+	(D16/4)	-431	[(#Treviso)] LayTile	% Hex
+
+	(E1/0)	-401	[] LayTile
+	(E3/4)	-443	[] LayTile
+	(E5/0)	-420	[] LayTile	% Hex
+	(E7/4)	-431	[(#Busto Arsizio)] LayTile	% Hex
+	(E9/4)	-434	[(#Bergamo)] LayTile	% Hex
+	(E11/4)	-434	[(#Brescia)] LayTile	% Hex
+	(E13/0)	-420	[] LayTile	% Hex
+	(E15/0)	-420	[] LayTile	% Hex
+	(E17/1)	-408	[] LayTile
+
+	(F4/0)	-420	[] LayTile	% Hex
+	(F6/3)	-450	[(#Novara)(#Vercelli)] LayTile	% Hex
+	(F8/5)	-439	[(Irsff)(#Milano)] LayTile	% Hex
+	(F10/0)	-420	[] LayTile	% Hex
+	(F12/0)	-420	[] LayTile	% Hex
+	(F14/4)	-431	[(#Vicenza)] LayTile	% Hex
+	(F16/4)	-432	[(Irsff)(#Venezia)] LayTile	% Hex
+
+	(G1/0)	-425	[] LayTile	% Hex
+	(G3/0)	-420	[] LayTile	% Hex
+	(G5/0)	-420	[] LayTile	% Hex
+	(G7/0)	-420	[] LayTile	% Hex
+	(G9/0)	-420	[] LayTile	% Hex
+	(G11/0)	-420	[] LayTile	% Hex
+	(G13/4)	-434	[(#Verona)] LayTile	% Hex
+	(G15/4)	-434	[(#Padova)] LayTile	% Hex
+	(G17/2)	-418	[] LayTile
+
+	(H2/0)	-422	[] LayTile	% Hex
+	(H4/5)	-430	[(Sftn)(Sftg)(#Torino)] LayTile	% Hex
+	(H6/0)	-420	[] LayTile	% Hex
+	(H8/4)	-431	[(#Pavia)] LayTile	% Hex
+	(H10/4)	-431	[(#Cremona)] LayTile	% Hex
+	(H12/4)	-431	[(#Mantova)] LayTile	% Hex
+	(H14/0)	-420	[] LayTile	% Hex
+	(H16/0)	-420	[] LayTile	% Hex
+
+	(I1/0)	-422	[] LayTile	% Hex
+	(I3/0)	-420	[] LayTile	% Hex
+	(I5/4)	-440	[(#Asti)] LayTile	% Hex
+	(I7/0)	-420	[] LayTile	% Hex
+	(I9/4)	-440	[(#Piacenza)] LayTile	% Hex
+	(I11/0)	-420	[] LayTile	% Hex
+	(I13/0)	-420	[] LayTile	% Hex
+	(I15/4)	-440	[(#Rovigo)] LayTile	% Hex
+
+	(J4/0)	-420	[] LayTile	% Hex
+	(J6/4)	-431	[(Sftg)(#Alessandria)] LayTile	% Hex
+	(J8/0)	-422	[] LayTile	% Hex
+	(J10/0)	-420	[] LayTile	% Hex
+	(J12/0)	-420	[] LayTile	% Hex
+	(J14/0)	-420	[] LayTile	% Hex
+	(J16/0)	-421	[] LayTile	% Hex
+
+	(K3/0)	-420	[] LayTile	% Hex
+	(K5/0)	-420	[] LayTile	% Hex
+	(K7/0)	-424	[] LayTile	% Hex
+	(K9/0)	-422	[] LayTile	% Hex
+	(K11/4)	-431	[(#Parma)] LayTile	% Hex
+	(K13/4)	-431	[(#Modena)] LayTile	% Hex
+	(K15/4)	-431	[(#Ferrara)] LayTile	% Hex
+
+	(L2/0)	-422	[] LayTile	% Hex
+	(L4/0)	-420	[] LayTile	% Hex
+	(L6/0)	-424	[] LayTile	% Hex
+	(L8/0)	-424	[] LayTile	% Hex
+	(L10/0)	-420	[] LayTile	% Hex
+	(L12/4)	-431	[(#Reggio Emilia)] LayTile	% Hex
+	(L14/4)	-434	[(#Bologna)] LayTile	% Hex
+	(L16/4)	-441	[(#Ravenna)] LayTile	% Hex
+
+	(M3/4)	-433	[(Sftc)(#Cuneo)] LayTile	% Hex
+	(M5/0)	-424	[] LayTile	% Hex
+	(M7/4)	-435	[(#Genova)] LayTile	% Hex
+	(M9/0)	-424	[] LayTile	% Hex
+	(M11/0)	-424	[] LayTile	% Hex
+	(M13/0)	-422	[] LayTile	% Hex
+	(M15/0)	-420	[] LayTile	% Hex
+	(M17/2)	-417	[] LayTile
+
+	(N4/0)	-422	[] LayTile	% Hex
+	(N6/4)	-442	[(#Savona)] LayTile	% Hex
+	(N8/0)	-422	[] LayTile	% Hex
+	(N10/0)	-424	[] LayTile	% Hex
+	(N12/0)	-424	[] LayTile	% Hex
+	(N14/0)	-420	[] LayTile	% Hex
+	(N16/4)	-450	[(#Forti')(#Cesena)] LayTile	% Hex
+
+	(O3/0)	-424	[] LayTile	% Hex
+	(O5/0)	-420	[] LayTile	% Hex
+	(O7/3)	-419	[] LayTile
+	(O9/0)	-422	[] LayTile	% Hex
+	(O11/0)	-424	[] LayTile	% Hex
+	(O13/0)	-424	[] LayTile	% Hex
+	(O15/0)	-422	[] LayTile	% Hex
+	(O17/1)	-409	[] LayTile
+
+	(P4/0)	-411	[] LayTile
+	(P6/3)	-416	[] LayTile
+	(P10/4)	-440	[(#La Spezia)] LayTile	% Hex
+	(P12/1) -437	[(Sflp)(#Lucca)] LayTile	% Hex
+	(P14/0)	-424	[] LayTile	% Hex
+	(P16/0)	-422	[] LayTile	% Hex
+
+	(Q3/3)	-407	[] LayTile
+	(Q5/3)	-407	[] LayTile
+	(Q9/4)	-416	[] LayTile
+	(Q11/5) -436	[(Ssfl)(#Pisa)] LayTile	% Hex
+	(Q13/1)	-450	[(#Prato)(#Pistoia)] LayTile	% Hex
+	(Q15/0)	-424	[] LayTile	% Hex
+	(Q17/3)	-411	[] LayTile
+
+	(R12/0)	-420	[] LayTile	% Hex
+	(R14/0)	-438	[(Sfma)( )(#Firenze)] LayTile	% Hex
+
+	(S11/4)	-431	[(#Livorno)] LayTile	% Hex
+	(S13/0)	-420	[] LayTile	% Hex
+	(S15/4)	-440	[(#Arezzo)] LayTile	% Hex
+
+	(T10/4)	-417	[] LayTile
+	(T12/0)	-420	[] LayTile	% Hex
+	(T14/4)	-440	[(#Siena)] LayTile	% Hex
+
+	(U13/0)	-411	[] LayTile
+	(U15/3)	-406	[] LayTile
+
+	(V12/3)	-406	[] LayTile
+	(V14/3)	-406	[] LayTile
+
+	% =================================
+	% INSERT YOUR TILES AND TOKENS HERE
+	% =================================
+
+	(C7/S)		Frontier
+	(C7/SE)		Frontier
+	(E7/NW)		Frontier
+	(E7/SW)		Frontier
+	(F12/SW)	Frontier
+	(G7/NW)		Frontier
+	(G7/SW)		Frontier
+	(H12/NW)	Frontier
+	(H12/S)		Frontier
+	(H12/SE)	Frontier
+	(H16/S)		Frontier
+	(I7/NW)		Frontier
+	(I7/S)		Frontier
+	(I7/SW)		Frontier
+	(I9/N)		Frontier
+	(I9/NE)		Frontier
+	(I9/NW)		Frontier
+	(I11/NE)	Frontier
+	(I11/S)		Frontier
+	(I11/SE)	Frontier
+	(I13/N)		Frontier
+	(I13/NE)	Frontier
+	(I15/S)		Frontier
+	(I15/SE)	Frontier
+	(J8/NE)		Frontier
+	(J8/S)		Frontier
+	(J8/SE)		Frontier
+	(J8/SW)		Frontier
+	(J10/N)		Frontier
+	(J10/NE)	Frontier
+	(J14/N)		Frontier
+	(J14/NE)	Frontier
+	(K9/SW)		Frontier
+	(O13/N)		Frontier
+	(O13/NE)	Frontier
+	(O13/NW)	Frontier
+	(O15/N)		Frontier
+	(O15/NE)	Frontier
+	(O15/NW)	Frontier
+	(P10/N)		Frontier
+	(P10/SE)	Frontier
+	(P12/N)		Frontier
+	(P12/NW)	Frontier
+	(P16/N)		Frontier
+
+	(G1/SE)		Barrier
+	(H2/NE)		Barrier
+	(G3/N)		Barrier
+	(G3/S)		Barrier
+	(M3/S)		Barrier
+	(F4/NW)		Barrier
+	(N4/SE)		Barrier
+	(O5/N)		Barrier
+	(N6/N)		Barrier
+	(C7/SW)		Barrier
+	(C7/NW)		Barrier
+	(C7/NE)		Barrier
+	(M7/NE)		Barrier
+	(B8/S)		Barrier
+	(L8/S)		Barrier
+	(L8/SE)		Barrier
+	(C9/N)		Barrier
+	(C9/NE)		Barrier
+	(C9/SE)		Barrier
+	(M9/SE)		Barrier
+	(M9/S)		Barrier
+	(M9/SW)		Barrier
+	(B10/S)		Barrier
+	(B10/SE)	Barrier
+	(L10/NW)	Barrier
+	(L10/N)		Barrier
+	(N10/SW)	Barrier
+	(C11/S)		Barrier
+	(C11/SE)	Barrier
+	(E11/SE)	Barrier
+	(O11/S)		Barrier
+	(O11/SW)	Barrier
+	(D12/S)		Barrier
+	(D12/SE)	Barrier
+	(E13/S)		Barrier
+	(E13/SE)	Barrier
+	(E13/NE)	Barrier
+	(P14/N)		Barrier
+	(P14/NW)	Barrier
+	(S15/N)		Barrier
+	(S15/SW)	Barrier
+
+	mapFrame

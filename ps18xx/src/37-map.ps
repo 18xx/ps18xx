@@ -1,0 +1,246 @@
+%
+% $Header: 37-map.ps[1.2] Tue Dec  5 19:18:56 1995 doko@cs.tu-berlin.de saved $
+%
+% ----------------------------------------------------------------------
+% the 1837 variant was done by Paul. R. Work (pwork@sd2.sews.wpafb.af.mil)
+% ----------------------------------------------------------------------
+
+	newpath
+
+	/mapRows 16 def
+	/mapCols 38 def
+	/mapScale 0.4 def
+	/CM { 28.35 1 mapScale div mul mul } def
+	mapScale dup scale
+	21 CM 0 translate
+	90 rotate
+	/mapFrame {
+	1.7 CM 0.9 CM mapCols mapRows //hexHeight neg //hexHeight -0.5 mul
+		//hexSide -0.5 mul //hexSide -0.75 mul Map
+	} def
+	mapFrame
+
+	(A11/5) -303    []      LayTile
+	(A13/0) -311    []      LayTile
+
+	(B8/4)  -303    []      LayTile
+	(B10/0) -301    []      LayTile	% Plain
+	(B12/0) -301    []      LayTile	% Plain
+	(B14/0) -301    []      LayTile	% Plain
+	(B16/0) -302    []      LayTile	% Plain
+	(B26/4) -309    []      LayTile
+	(B28/0) -301    []      LayTile	% Plain
+	(B30/0) -301    []      LayTile	% Plain
+	(B32/0) -310    []      LayTile
+	(B34/0) -301    []      LayTile	% Plain
+
+	(C9/0)  -301    []      LayTile	% Plain
+	(C11/4) -306    [(BK)(#Prag)]      LayTile	% XCity
+	(C13/0) -301    []      LayTile	% Plain
+	(C15/0) -313    []      LayTile	% Village
+	(C17/0) -302    []      LayTile	% Plain
+	(C19/0) -315    []      LayTile
+	(C21/1) -316    []      LayTile
+	(C23/0) -321    [(#Krakau)]      LayTile	% TCity
+	(C25/0) -302    []      LayTile	% Plain
+	(C27/4) -336    []      LayTile	% Village
+	(C29/0) -301    []      LayTile	% Plain
+	(C31/4) -320    []      LayTile	% DoubleDot
+	(C33/0) -317    [(CL)(#Lemberg)]      LayTile	% YCity
+	(C35/0) -301    []      LayTile	% Plain
+
+	(D10/0) -313    []      LayTile	% Village
+	(D12/0) -301    []      LayTile	% Plain
+	(D14/0) -301    []      LayTile	% Plain
+	(D16/0) -301    []      LayTile	% Plain
+	(D18/0) -313    []      LayTile	% Village
+	(D20/0) -301    []      LayTile	% Plain
+	(D22/5) -313    []      LayTile	% Village
+	(D24/0) -301    []      LayTile	% Plain
+	(D26/0) -301    []      LayTile	% Plain
+	(D28/0) -302    []      LayTile	% Plain
+	(D30/0) -302    []      LayTile	% Plain
+	(D32/0) -301    []      LayTile	% Plain
+	(D34/0) -301    []      LayTile	% Plain
+	(D36/3) -317    [(GT)(#Tarnopol)]      LayTile	% YCity
+	(D38/0) -307    []      LayTile
+
+	(E11/4) -312    []      LayTile
+	(E13/0) -313    []      LayTile	% Village
+	(E15/0) -313    []      LayTile	% Village
+	(E17/4) -324    [(MS)(#Brunn)]      LayTile
+	(E19/0) -301    []      LayTile	% Plain
+	(E21/0) -302    []      LayTile	% Plain
+	(E23/0) -302    []      LayTile	% Plain
+	(E25/0) -323    []      LayTile	% Village
+	(E27/0) -302    []      LayTile	% Plain
+	(E29/0) -301    []      LayTile	% Plain
+	(E31/0) -302    []      LayTile	% Plain
+	(E33/0) -302    []      LayTile	% Plain
+	(E35/3) -313    []      LayTile	% Village
+	(E37/0) -301    []      LayTile	% Plain
+
+	(F12/0) -302    []      LayTile	% Plain
+	(F14/0) -301    []      LayTile	% Plain
+	(F16/0) -313    []      LayTile	% Village
+	(F18/2) -56     []      LayTile
+	(F20/0) -302    []      LayTile	% Plain
+	(F22/4) -313    []      LayTile	% Village
+	(F24/0) -301    []      LayTile	% Plain
+	(F26/1) -329    []      LayTile
+	(F28/0) -318    [(TH)(#Kaschau)]      LayTile	% City
+	(F30/2) -313    []      LayTile	% Village
+	(F32/0) -313    []      LayTile	% Village
+	(F34/0) -302    []      LayTile	% Plain
+	(F36/0) -301    []      LayTile	% Plain
+	(F38/0) -321    [(#Czernowitz)]      LayTile	% TCity
+
+	(G9/4)  -307    []      LayTile
+	(G11/0) -313    []      LayTile	% Village
+	(G13/0) -327    [(#Linz)(#Wels)]      LayTile	% DoubleCity
+	(G15/0) -341    []      LayTile	% Plain
+	(G17/0) -330    [(K1)(K3)(K2)(S1)]      LayTile	% Vienna
+	(G19/0) -343    [(#Pressburg)]      LayTile
+	(G21/0) -341    []      LayTile	% Plain
+	(G23/0) -337    []      LayTile	% Village
+	(G25/0) -301    []      LayTile	% Plain
+	(G27/3) -3      []      LayTile
+	(G29/0) -341    []      LayTile	% Plain
+	(G31/0) -301    []      LayTile	% Plain
+	(G33/0) -302    []      LayTile	% Plain
+	(G35/0) -302    []      LayTile	% Plain
+	(G37/3) -42     []      LayTile
+
+	(H8/5)  -303    []      LayTile
+	(H10/0) -317    [(#Salzburg)]      LayTile	% YCity
+	(H12/0) -301    []      LayTile	% Plain
+	(H14/0) -302    []      LayTile	% Plain
+	(H16/2) -331    [(#Semmering)]      LayTile	% Plain
+	(H18/0) -320    []      LayTile	% DoubleDot
+	(H20/0) -327    [(#Raab)(#Tatabanya)]      LayTile	% DoubleCity
+	(H22/1) -213    [(U1)(U3)(#Budapest)]      LayTile	% Budapest
+	(H24/0) -301    []      LayTile	% Plain
+	(H26/1) -9      []      LayTile	% Plain
+	(H28/0) -301    []      LayTile	% Plain
+	(H30/0) -327    [(#Debrecen)(#Grosswardein)]      LayTile	% DoubleCity
+	(H32/0) -302    []      LayTile	% Plain
+	(H34/0) -318    [(#Klausenburg)]      LayTile	% City
+	(H36/4) -336    []      LayTile	% Village
+
+	(I3/4)  -319    [(#Bregenz)]      LayTile	% Bozen
+	(I5/3)  -334    [(#Arlberg)]      LayTile	% Plain
+	(I7/0)  -317    [(S3)(#Innsbruck)]      LayTile	% YCity
+	(I9/0)  -302    []      LayTile	% Plain
+	(I11/0) -302    []      LayTile	% Plain
+	(I13/0) -302    []      LayTile	% Plain
+	(I15/0) -318    [(#Graz)]      LayTile	% City
+	(I17/0) -301    []      LayTile	% Plain
+	(I19/0) -301    []      LayTile	% Plain
+	(I21/0) -313    []      LayTile	% Village
+	(I23/3) -342    []      LayTile	% DoubleDot
+	(I25/0) -341    []      LayTile	% Plain
+	(I27/0) -313    []      LayTile	% Village
+	(I29/3) -23     []      LayTile
+	(I31/0) -301    []      LayTile	% Plain
+	(I33/4) -313    []      LayTile	% Village
+	(I35/0) -301    []      LayTile	% Plain
+	(I37/0) -301    []      LayTile	% Plain
+
+	(J4/0)  -302    []      LayTile	% Plain
+	(J6/2)  -331    [(#Brenner)]      LayTile	% Plain
+	(J8/1)  -335    []      LayTile	% Village
+	(J10/4) -334    [(#Tauern)]      LayTile	% Plain
+	(J12/3) -333    [(#Karawanken)]      LayTile	% DoubleDot
+	(J14/0) -301    []      LayTile	% Plain
+	(J16/1) -322    [(S2)(#Marburg)]      LayTile	% XCity
+	(J18/0) -313    []      LayTile	% Village
+	(J20/0) -301    []      LayTile	% Plain
+	(J22/0) -341    []      LayTile	% Plain
+	(J24/0) -313    []      LayTile	% Village
+	(J26/0) -324    [(#Szegedin)]      LayTile	% XCity
+	(J28/0) -327    [(#Arad)(#Temesvar)]      LayTile	% DoubleCity
+	(J30/0) -301    []      LayTile	% Plain
+	(J32/0) -302    []      LayTile	% Plain
+	(J34/0) -328    []      LayTile
+	(J36/0) -321    [(SB)(#Kronstadt)]      LayTile	% TCity
+
+	(K1/5)  -308    []      LayTile
+	(K3/0)  -302    []      LayTile	% Plain
+	(K5/0)  -318    [(S4)(#Bozen)]      LayTile	% Bozen
+	(K7/0)  -302    []      LayTile	% Plain
+	(K9/1)  -313    []      LayTile	% Village
+	(K11/2) -331    [(#Wocheiner)]      LayTile	% Plain
+	(K13/2) -332    [(#Karst)]      LayTile	% Village
+	(K15/0) -301    []      LayTile	% Plain
+	(K17/0) -318    [(#Agram)]      LayTile	% City
+	(K19/0) -341    []      LayTile	% Plain
+	(K21/5) -206    [(U2)(#Funfkirchen)]      LayTile
+	(K23/0) -341    []      LayTile	% Plain
+	(K25/0) -341    []      LayTile	% Plain
+	(K27/0) -301    []      LayTile	% Plain
+	(K29/3) -313    []      LayTile	% Village
+	(K31/1) -326    []      LayTile
+
+	(L2/0)  -317    [(S5)(#Mailand)]      LayTile	% YCity
+	(L4/0)  -301    []      LayTile	% Plain
+	(L6/3)  -320    []      LayTile	% DoubleDot
+	(L8/0)  -318    [(S5)(#Venedig)]      LayTile	% City
+	(L12/0) -321    [(#Triest)]      LayTile	% TCity
+	(L14/0) -302    []      LayTile	% Plain
+	(L16/0) -351    []      LayTile	% Plain
+	(L18/0) -353    []      LayTile
+	(L20/0) -351    []      LayTile	% Plain
+	(L22/4) -58     []      LayTile
+	(L24/4) -342    []      LayTile	% DoubleDot
+	(L26/0) -301    []      LayTile	% Plain
+	(L28/0) -301    []      LayTile	% Plain
+	(L30/1) -325    []      LayTile
+
+	(M3/0)  -301    []      LayTile	% Plain
+	(M5/4)  -313    []      LayTile	% Village
+	(M7/0)  -301    []      LayTile	% Plain
+	(M13/3) -303    []      LayTile
+	(M15/0) -301    []      LayTile	% Plain
+	(M17/0) -352    []      LayTile	% Plain
+	(M19/0) -352    []      LayTile	% Plain
+	(M21/0) -352    []      LayTile	% Plain
+
+	(N14/3) -303    []      LayTile
+	(N16/0) -301    []      LayTile	% Plain
+	(N18/0) -352    []      LayTile	% Plain
+	(N20/0) -354    [(BH)(#Sarajevo)]      LayTile
+	(N22/1) -307    []      LayTile
+
+	(O17/2) -358    []      LayTile
+	(O19/0) -301    []      LayTile	% Plain
+
+	(P20/1) -314    []      LayTile
+
+		/Bookman 120 selectfont
+	(O1/7) LayText moveto (1837) show 
+
+	% =================================
+	% INSERT YOUR TILES AND TOKENS HERE
+	% =================================
+
+
+	(K3/3) Frontier
+	(K3/4) Frontier
+	(K5/0) Frontier
+	(K5/5) Frontier
+	(K7/1) Frontier
+	(K7/2) Frontier
+	(K7/3) Frontier
+	(K9/2) Frontier
+	(K9/3) Frontier
+	(K9/4) Frontier
+	mapFrame
+
+% newgame: nameformat: 1837%s
+% newgame: namefont: /Bookman 80
+% newgame: namecoord: O24
+% newgame: roundfont: /Bookman 80
+% newgame: roundcoord: O33
+% newgame: copycoord: C11 C33 D36 E17 F28 G17 
+% newgame: copycoord: H22 I7 J16 J36 K5 K21 L2 L8 N20
+% newgame: overlays: K5/NE => -426

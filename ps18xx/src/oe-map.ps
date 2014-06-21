@@ -1,0 +1,1318 @@
+%
+% $Header: $
+%
+
+%!
+% ----------------------------------------------------------------------
+% 18OE map
+
+	newpath
+
+	/mapRows 34 def
+	/mapCols 88 def
+	/mapScale 0.17 def
+	/CM { 28.35 1 mapScale div mul mul } def
+	mapScale dup scale
+	21 CM 0 translate
+	90 rotate
+	/mapFrame {
+	1.5 CM 1.2 CM mapCols mapRows //hexSide 0 mul //hexSide 0 mul
+		//hexHeight 0 mul //hexHeight 0 mul Map
+	} def
+	mapFrame
+
+	(A42/0)		-402	[]	LayTile	% Plain
+	(A44/0)		-406	[]	LayTile	% Plain
+	(A46/0)		-406	[]	LayTile	% Plain
+	(A48/0)		-405	[]	LayTile	% Plain
+	(A50/0)		-405	[]	LayTile	% Plain
+	(A52/0)		-405	[]	LayTile	% Plain
+	(A54/1)		-463	[]	LayTile
+	(A56/0)		-464	[]	LayTile
+	(A58/1)		-482	[]	LayTile
+	(A60/1)		-482	[]	LayTile
+	(A62/1)		-482	[]	LayTile
+	(A64/0)		-465	[]	LayTile
+	(A66/0)		-400	[]	LayTile	% Plain
+	(A68/0)		-400	[]	LayTile	% Plain
+	(A70/0)		-400	[]	LayTile	% Plain
+	(A72/0)		-402	[]	LayTile	% Plain
+	(A74/0)		-402	[]	LayTile	% Plain
+
+	(B39/0)		-481	[]	LayTile
+	(B39/4)		-500	[]	LayTile
+	(B41/0)		-460	[]	LayTile
+	(B43/5)		-416	[(#Voss)]	LayTile	% Plain
+	(B45/0)		-407	[]	LayTile	% Plain
+	(B47/0)		-400	[]	LayTile	% Plain
+	(B49/0)		-400	[]	LayTile	% Plain
+	(B51/0)		-404	[]	LayTile	% Plain
+	(B53/0)		-404	[]	LayTile	% Plain
+	(B55/0)		-400	[]	LayTile	% Plain
+	(B57/0)		-400	[]	LayTile	% Plain
+	(B59/0)		-484	[]	LayTile
+	(B63/0)		-400	[]	LayTile	% Plain
+	(B65/0)		-400	[]	LayTile	% Plain
+	(B67/0)		-430	[(#Helsinki)]	LayTile	% Plain
+	(B69/0)		-400	[]	LayTile	% Plain
+	(B71/0)		-400	[]	LayTile	% Plain
+	(B73/5)		-411	[(#Vyborg)]	LayTile	% Plain
+	(B75/0)		-400	[]	LayTile	% Plain
+	(B77/0)		-402	[]	LayTile	% Plain
+	(B79/0)		-400	[]	LayTile	% Plain
+	(B81/0)		-403	[]	LayTile	% Plain
+	(B83/0)		-466	[]	LayTile
+
+	(C38/0)		-482	[]	LayTile
+	(C42/0)		-402	[]	LayTile	% Plain
+	(C44/0)		-406	[]	LayTile	% Plain
+	(C46/0)		-400	[]	LayTile	% Plain
+	(C48/0)		-435	[(#Christiana)]	LayTile	% Plain
+	(C50/0)		-401	[]	LayTile	% Plain
+	(C52/0)		-401	[]	LayTile	% Plain
+	(C54/0)		-400	[]	LayTile	% Plain
+	(C56/0)		-400	[]	LayTile	% Plain
+	(C58/0)		-420	[(#Gavle)(#Upsala)]	LayTile	% Plain
+	(C62/0)		-481	[]	LayTile
+	(C62/4)		-500	[]	LayTile
+	(C64/0)		-410	[(#Turam)]	LayTile	% Plain
+	(C66/0)		-400	[]	LayTile	% Plain
+	(C68/0)		-400	[]	LayTile	% Plain
+	(C70/0)		-400	[]	LayTile	% Plain
+	(C72/0)		-401	[]	LayTile	% Plain
+	(C74/0)		-452	[(#Sankt Peterburg)]	LayTile	% Smet
+	(C76/0)		-402	[]	LayTile	% Plain
+	(C78/0)		-400	[]	LayTile	% Plain
+	(C80/0)		-400	[]	LayTile	% Plain
+	(C82/0)		-403	[]	LayTile	% Plain
+
+	(D25/5)		-461	[(#Highlands)]	LayTile
+	(D37/0)		-482	[]	LayTile
+	(D41/5)		-412	[(#Stavanger)]	LayTile	% Plain
+	(D43/0)		-406	[]	LayTile	% Plain
+	(D45/0)		-400	[]	LayTile	% Plain
+	(D47/5)		-410	[(#Larvik)]	LayTile	% Plain
+	(D49/0)		-400	[]	LayTile	% Plain
+	(D51/5)		-411	[(#Karlstad)]	LayTile	% Plain
+	(D53/5)		-411	[(#Orebro)]	LayTile	% Plain
+	(D55/0)		-400	[]	LayTile	% Plain
+	(D57/0)		-436	[(#Stockholm)]	LayTile	% Plain
+	(D59/1)		-482	[]	LayTile
+	(D59/1)		-500	[]	LayTile
+	(D61/3)		-481	[]	LayTile
+	(D67/0)		-400	[]	LayTile	% Plain
+	(D69/0)		-410	[(#Reva)]	LayTile	% Plain
+	(D71/0)		-400	[]	LayTile	% Plain
+	(D73/0)		-400	[]	LayTile	% Plain
+	(D75/0)		-410	[(Luga)]	LayTile	% Plain
+	(D77/0)		-430	[(#Velky Novgorod)]	LayTile	% Plain
+	(D79/0)		-400	[]	LayTile	% Plain
+	(D81/5)		-411	[(#Vishny Volochyak)]	LayTile	% Plain
+	(D83/0)		-410	[(#Tver)]	LayTile	% Plain
+	(D85/0)		-400	[]	LayTile	% Plain
+
+	(E24/0)		-402	[]	LayTile	% Plain
+	(E26/1)		-415	[(#Inverness)]	LayTile	% Plain
+	(E28/1)		-415	[(#Aberdeen)]	LayTile	% Plain
+	(E30/1)		-483	[]	LayTile
+	(E36/0)		-482	[]	LayTile
+	(E40/3)		-484	[]	LayTile
+	(E42/0)		-400	[]	LayTile	% Plain
+	(E44/0)		-410	[(#Kristianssand)]	LayTile	% Plain
+	(E48/0)		-400	[]	LayTile	% Plain
+	(E50/0)		-402	[]	LayTile	% Plain
+	(E52/0)		-402	[]	LayTile	% Plain
+	(E54/0)		-402	[]	LayTile	% Plain
+	(E56/0)		-430	[(#Norrkoping)]	LayTile	% Plain
+	(E58/0)		-400	[]	LayTile	% Plain
+	(E66/0)		-400	[]	LayTile	% Plain
+	(E68/0)		-400	[]	LayTile	% Plain
+	(E70/0)		-410	[(#Derpat)]	LayTile	% Plain
+	(E72/0)		-402	[]	LayTile	% Plain
+	(E74/0)		-400	[]	LayTile	% Plain
+	(E76/0)		-400	[]	LayTile	% Plain
+	(E78/0)		-402	[]	LayTile	% Plain
+	(E80/0)		-400	[]	LayTile	% Plain
+	(E82/0)		-401	[]	LayTile	% Plain
+	(E84/0)		-400	[]	LayTile	% Plain
+	(E86/0)		-400	[]	LayTile	% Plain
+
+	(F23/0)		-403	[]	LayTile	% Plain
+	(F25/0)		-430	[(#Glasgow)]	LayTile	% Plain
+	(F27/0)		-410	[(#Dundee)]	LayTile	% Plain
+	(F29/0)		-400	[]	LayTile	% Plain
+	(F35/0)		-482	[]	LayTile
+	(F43/3)		-483	[]	LayTile
+	(F49/0)		-430	[(#Goteborg)]	LayTile	% Plain
+	(F51/0)		-400	[]	LayTile	% Plain
+	(F53/0)		-410	[(#Jonkoping)]	LayTile	% Plain
+	(F55/0)		-400	[]	LayTile	% Plain
+	(F67/5)		-492	[]	LayTile
+	(F69/0)		-400	[]	LayTile	% Plain
+	(F71/0)		-400	[]	LayTile	% Plain
+	(F73/0)		-410	[(#Pskov)]	LayTile	% Plain
+	(F75/0)		-400	[]	LayTile	% Plain
+	(F77/0)		-401	[]	LayTile	% Plain
+	(F79/0)		-401	[]	LayTile	% Plain
+	(F81/0)		-400	[]	LayTile	% Plain
+	(F83/0)		-400	[]	LayTile	% Plain
+	(F85/0)		-400	[]	LayTile	% Plain
+	(F87/5)		-467	[(#Moskva)]	LayTile
+
+	(G16/0)		-401	[]	LayTile	% Plain
+	(G18/0)		-405	[]	LayTile	% Plain
+	(G20/0)		-401	[]	LayTile	% Plain
+	(G22/0)		-481	[]	LayTile
+	(G24/5)		-414	[(#Stranraer)]	LayTile	% Plain
+	(G26/0)		-442	[(#Edinburgh)]	LayTile	% Plain
+	(G28/0)		-400	[]	LayTile	% Plain
+	(G30/1)		-482	[]	LayTile
+	(G32/1)		-482	[]	LayTile
+	(G34/3)		-481	[]	LayTile
+	(G44/0)		-402	[]	LayTile	% Plain
+	(G46/0)		-410	[(#Aalborg)]	LayTile	% Plain
+	(G48/0)		-492	[]	LayTile
+	(G48/1)		-500	[]	LayTile
+	(G48/3)		-503	[]	LayTile
+	(G50/0)		-400	[]	LayTile	% Plain
+	(G52/0)		-400	[]	LayTile	% Plain
+	(G54/0)		-400	[]	LayTile	% Plain
+	(G56/0)		-400	[]	LayTile	% Plain
+	(G64/0)		-401	[]	LayTile	% Plain
+	(G66/0)		-401	[]	LayTile	% Plain
+	(G68/0)		-430	[(#Riga)]	LayTile	% Plain
+	(G70/0)		-400	[]	LayTile	% Plain
+	(G72/0)		-400	[]	LayTile	% Plain
+	(G74/0)		-401	[]	LayTile	% Plain
+	(G76/0)		-400	[]	LayTile	% Plain
+	(G78/0)		-400	[]	LayTile	% Plain
+	(G80/0)		-400	[]	LayTile	% Plain
+	(G82/0)		-400	[]	LayTile	% Plain
+	(G84/0)		-410	[(#Vyazina)]	LayTile	% Plain
+	(G86/0)		-400	[]	LayTile	% Plain
+	(G88/0)		-468	[]	LayTile
+
+	(H15/0)		-405	[]	LayTile	% Plain
+	(H17/0)		-410	[(#Sligo)]	LayTile	% Plain
+	(H19/0)		-400	[]	LayTile	% Plain
+	(H21/0)		-430	[(#Belfast)]	LayTile	% Plain
+	(H23/1)		-484	[]	LayTile
+	(H25/0)		-402	[]	LayTile	% Plain
+	(H27/0)		-400	[]	LayTile	% Plain
+	(H29/0)		-410	[(#Newcastle)]	LayTile	% Plain
+	(H43/0)		-400	[]	LayTile	% Plain
+	(H45/0)		-400	[]	LayTile	% Plain
+	(H47/0)		-430	[(#Aarhus)]	LayTile	% Plain
+	(H51/0)		-410	[(#Halmstad)]	LayTile	% Plain
+	(H53/0)		-400	[]	LayTile	% Plain
+	(H55/0)		-410	[(#Karlskrona)]	LayTile	% Plain
+	(H57/1)		-481	[]	LayTile
+	(H57/1)		-500	[]	LayTile
+	(H63/0)		-430	[(#Libavo)]	LayTile	% Plain
+	(H65/0)		-400	[]	LayTile	% Plain
+	(H67/0)		-400	[]	LayTile	% Plain
+	(H69/0)		-400	[]	LayTile	% Plain
+	(H71/0)		-410	[(#Dvinsk)]	LayTile	% Plain
+	(H73/0)		-401	[]	LayTile	% Plain
+	(H75/0)		-400	[]	LayTile	% Plain
+	(H77/0)		-400	[]	LayTile	% Plain
+	(H79/0)		-400	[]	LayTile	% Plain
+	(H81/0)		-400	[]	LayTile	% Plain
+	(H83/0)		-404	[]	LayTile	% Plain
+	(H85/0)		-410	[(#Kalya)]	LayTile	% Plain
+	(H87/0)		-430	[(#Tufa)]	LayTile	% Plain
+
+	(I14/0)		-401	[]	LayTile	% Plain
+	(I16/5)		-414	[(#Limerick)]	LayTile	% Plain
+	(I18/0)		-400	[]	LayTile	% Plain
+	(I20/4)		-431	[(#Dublin)]	LayTile	% Plain
+	(I22/1)		-485	[]	LayTile
+	(I22/1)		-503	[]	LayTile
+	(I22/5)		-500	[]	LayTile
+	(I24/1)		-485	[]	LayTile
+	(I24/5)		-503	[]	LayTile
+	(I24/4)		-500	[]	LayTile
+	(I26/5)		-414	[(#Preston)]	LayTile	% Plain
+	(I28/0)		-400	[]	LayTile	% Plain
+	(I30/2)		-483	[]	LayTile
+	(I44/0)		-400	[]	LayTile	% Plain
+	(I46/5)		-412	[(#Odense)]	LayTile	% Plain
+	(I48/2)		-408	[]	LayTile	% Plain
+	(I50/3)		-443	[(#Kobenhavn)]	LayTile	% Plain
+	(I52/0)		-430	[(#Malmo)]	LayTile	% Plain
+	(I58/2)		-482	[]	LayTile
+	(I62/3)		-492	[]	LayTile
+	(I64/0)		-400	[]	LayTile	% Plain
+	(I66/0)		-410	[(#Kavna)]	LayTile	% Plain
+	(I68/0)		-400	[]	LayTile	% Plain
+	(I70/0)		-401	[]	LayTile	% Plain
+	(I72/0)		-401	[]	LayTile	% Plain
+	(I74/0)		-400	[]	LayTile	% Plain
+	(I76/0)		-430	[(#Vitsyebirsk)]	LayTile	% Plain
+	(I78/0)		-400	[]	LayTile	% Plain
+	(I80/0)		-410	[(#Smolensk)]	LayTile	% Plain
+	(I82/0)		-400	[]	LayTile	% Plain
+	(I84/0)		-404	[]	LayTile	% Plain
+	(I86/0)		-404	[]	LayTile	% Plain
+
+	(J13/0)		-402	[]	LayTile	% Plain
+	(J15/0)		-430	[(#Cork)]	LayTile	% Plain
+	(J17/0)		-410	[(#Waterford)]	LayTile	% Plain
+	(J19/0)		-405	[]	LayTile	% Plain
+	(J21/2)		-492	[]	LayTile
+	(J23/5)		-415	[(#Holyhead)]	LayTile	% Plain
+	(J25/4)		-448	[(#Liverpool)]	LayTile	% Plain
+	(J27/1)		-434	[(#Manchester)]	LayTile	% Plain
+	(J29/5)		-420	[(#Leeds)(#Sheffield)]	LayTile	% Plain
+	(J45/0)		-400	[]	LayTile	% Plain
+	(J47/0)		-403	[]	LayTile	% Plain
+	(J49/0)		-403	[]	LayTile	% Plain
+	(J51/2)		-484	[]	LayTile
+	(J51/3)		-500	[]	LayTile
+	(J59/5)		-482	[]	LayTile
+	(J61/0)		-484	[]	LayTile
+	(J61/4)		-500	[]	LayTile
+	(J63/0)		-446	[(#Konigsberg)]	LayTile	% Plain
+	(J65/0)		-401	[]	LayTile	% Plain
+	(J67/0)		-400	[]	LayTile	% Plain
+	(J69/0)		-430	[(#Vilna)]	LayTile	% Plain
+	(J71/0)		-404	[]	LayTile	% Plain
+	(J73/0)		-430	[(#Minsk)]	LayTile	% Plain
+	(J75/0)		-400	[]	LayTile	% Plain
+	(J77/0)		-420	[(#Orsha)(#Mogilyov)]	LayTile	% Plain
+	(J79/0)		-400	[]	LayTile	% Plain
+	(J81/0)		-400	[]	LayTile	% Plain
+	(J83/0)		-400	[]	LayTile	% Plain
+	(J85/0)		-400	[]	LayTile	% Plain
+	(J87/0)		-400	[]	LayTile	% Plain
+
+	(K16/2)		-492	[]	LayTile	% Plain
+	(K22/0)		-404	[]	LayTile	% Plain
+	(K24/0)		-405	[]	LayTile	% Plain
+	(K26/0)		-450	[(#Birmingham)]	LayTile	% Amet
+	(K28/0)		-400	[]	LayTile	% Plain
+	(K30/0)		-400	[]	LayTile	% Plain
+	(K40/0)		-403	[]	LayTile	% Plain
+	(K42/0)		-401	[]	LayTile	% Plain
+	(K44/0)		-402	[]	LayTile	% Plain
+	(K46/0)		-447	[(#Hamburg)]	LayTile	% Plain
+	(K48/0)		-400	[]	LayTile	% Plain
+	(K50/0)		-400	[]	LayTile	% Plain
+	(K52/5)		-484	[]	LayTile
+	(K54/0)		-400	[]	LayTile	% Plain
+	(K56/0)		-400	[]	LayTile	% Plain
+	(K58/0)		-400	[]	LayTile	% Plain
+	(K60/0)		-410	[(#Danzig)]	LayTile	% Plain
+	(K62/0)		-410	[(#Elbing)]	LayTile	% Plain
+	(K64/0)		-401	[]	LayTile	% Plain
+	(K66/0)		-401	[]	LayTile	% Plain
+	(K68/0)		-410	[(#Grodno)]	LayTile	% Plain
+	(K70/0)		-400	[]	LayTile	% Plain
+	(K72/0)		-404	[]	LayTile	% Plain
+	(K74/0)		-400	[]	LayTile	% Plain
+	(K76/0)		-400	[]	LayTile	% Plain
+	(K78/0)		-430	[(#Babruisk)]	LayTile	% Plain
+	(K80/0)		-400	[]	LayTile	% Plain
+	(K82/0)		-400	[]	LayTile	% Plain
+	(K84/0)		-400	[]	LayTile	% Plain
+	(K86/0)		-430	[(#Orel)]	LayTile	% Plain
+
+	(L23/5)		-412	[(#Cardiff)]	LayTile	% Plain
+	(L25/0)		-430	[(#Bristol)]	LayTile	% Plain
+	(L27/0)		-400	[]	LayTile	% Plain
+	(L29/0)		-410	[(#Cambridge)]	LayTile	% Plain
+	(L31/0)		-400	[]	LayTile	% Plain
+	(L35/4)		-484	[]	LayTile
+	(L35/5)		-500	[]	LayTile
+	(L37/0)		-449	[(#Amsterdam)]	LayTile	% Plain
+	(L39/0)		-421	[(#Leeuwarden)(#Groningen)]	LayTile	% Plain
+	(L41/0)		-400	[]	LayTile	% Plain
+	(L43/0)		-410	[(#Bremen)]	LayTile	% Plain
+	(L45/0)		-400	[]	LayTile	% Plain
+	(L47/0)		-400	[]	LayTile	% Plain
+	(L49/0)		-400	[]	LayTile	% Plain
+	(L51/0)		-400	[]	LayTile	% Plain
+	(L53/0)		-430	[(#Stettin)]	LayTile	% Plain
+	(L55/0)		-400	[]	LayTile	% Plain
+	(L57/0)		-400	[]	LayTile	% Plain
+	(L59/0)		-400	[]	LayTile	% Plain
+	(L61/0)		-400	[]	LayTile	% Plain
+	(L63/0)		-400	[]	LayTile	% Plain
+	(L65/0)		-400	[]	LayTile	% Plain
+	(L67/0)		-400	[]	LayTile	% Plain
+	(L69/0)		-401	[]	LayTile	% Plain
+	(L71/0)		-401	[]	LayTile	% Plain
+	(L73/0)		-400	[]	LayTile	% Plain
+	(L75/0)		-401	[]	LayTile	% Plain
+	(L77/0)		-401	[]	LayTile	% Plain
+	(L79/0)		-410	[(#Gomer)]	LayTile	% Plain
+	(L81/0)		-400	[]	LayTile	% Plain
+	(L83/0)		-400	[]	LayTile	% Plain
+	(L85/0)		-400	[]	LayTile	% Plain
+	(L87/0)		-410	[(#Kursk)]	LayTile	% Plain
+
+	(M22/0)		-404	[]	LayTile	% Plain
+	(M24/0)		-400	[]	LayTile	% Plain
+	(M26/5)		-420	[(#Southampton)(#Portsmouth)]	LayTile	% Plain
+	(M28/5)		-451	[(#London)]	LayTile	% Plain
+	(M30/0)		-402	[]	LayTile	% Plain
+	(M34/0)		-403	[]	LayTile	% Plain
+	(M36/0)		-436	[(#Rotterdam)]	LayTile	% Plain
+	(M38/5)		-411	[(#Utrecht)]	LayTile	% Plain
+	(M40/0)		-400	[]	LayTile	% Plain
+	(M42/0)		-400	[]	LayTile	% Plain
+	(M44/0)		-430	[(#Hannover)]	LayTile	% Plain
+	(M46/0)		-400	[]	LayTile	% Plain
+	(M48/0)		-410	[(#Magdeburg)]	LayTile	% Plain
+	(M50/0)		-453	[(#Berlin)]	LayTile	% Bmet
+	(M52/0)		-400	[]	LayTile	% Plain
+	(M54/0)		-400	[]	LayTile	% Plain
+	(M56/0)		-410	[(#Posen)]	LayTile	% Plain
+	(M58/0)		-400	[]	LayTile	% Plain
+	(M60/0)		-400	[]	LayTile	% Plain
+	(M62/0)		-440	[(#Warsaw)]	LayTile	% Plain
+	(M64/0)		-400	[]	LayTile	% Plain
+	(M66/0)		-400	[]	LayTile	% Plain
+	(M68/0)		-430	[(#Brest-Litovsk)]	LayTile	% Plain
+	(M70/0)		-400	[]	LayTile	% Plain
+	(M72/5)		-411	[(#Pinsk)]	LayTile	% Plain
+	(M74/0)		-401	[]	LayTile	% Plain
+	(M76/0)		-401	[]	LayTile	% Plain
+	(M78/0)		-401	[]	LayTile	% Plain
+	(M80/0)		-401	[]	LayTile	% Plain
+	(M82/0)		-400	[]	LayTile	% Plain
+	(M84/0)		-400	[]	LayTile	% Plain
+	(M86/0)		-400	[]	LayTile	% Plain
+
+	(N1/5)		-462	[]	LayTile
+	(N25/0)		-482	[]	LayTile
+	(N29/4)		-481	[]	LayTile
+	(N31/1)		-441	[(#Lille)]	LayTile	% Plain
+	(N33/0)		-410	[(#Gent)]	LayTile	% Plain
+	(N35/0)		-446	[(#Brussel)]	LayTile	% Plain
+	(N37/0)		-400	[]	LayTile	% Plain
+	(N39/0)		-401	[]	LayTile	% Plain
+	(N41/0)		-420	[(#Elberfeld)(#Barmen)]	LayTile	% Plain
+	(N43/0)		-400	[]	LayTile	% Plain
+	(N45/0)		-405	[]	LayTile	% Plain
+	(N47/0)		-400	[]	LayTile	% Plain
+	(N49/0)		-430	[(#Leipzig)]	LayTile	% Plain
+	(N51/0)		-400	[]	LayTile	% Plain
+	(N53/0)		-400	[]	LayTile	% Plain
+	(N55/0)		-400	[]	LayTile	% Plain
+	(N57/0)		-400	[]	LayTile	% Plain
+	(N59/0)		-410	[(#Lodz)]	LayTile	% Plain
+	(N61/0)		-400	[]	LayTile	% Plain
+	(N63/0)		-400	[]	LayTile	% Plain
+	(N65/0)		-410	[(#Lutzin)]	LayTile	% Plain
+	(N67/0)		-400	[]	LayTile	% Plain
+	(N69/0)		-401	[]	LayTile	% Plain
+	(N71/0)		-401	[]	LayTile	% Plain
+	(N73/0)		-401	[]	LayTile	% Plain
+	(N75/0)		-401	[]	LayTile	% Plain
+	(N77/0)		-401	[]	LayTile	% Plain
+	(N79/0)		-401	[]	LayTile	% Plain
+	(N81/0)		-402	[]	LayTile	% Plain
+	(N83/0)		-410	[(#Nezhin)]	LayTile	% Plain
+	(N85/0)		-400	[]	LayTile	% Plain
+	(N87/2)		-469	[(#Kharkov)]	LayTile
+
+	(O2/2)		-484	[]	LayTile
+	(O18/5)		-483	[]	LayTile
+	(O20/0)		-484	[]	LayTile
+	(O24/0)		-410	[(#Cherbourg)]	LayTile	% Plain
+	(O26/1)		-484	[]	LayTile
+	(O26/4)		-500	[]	LayTile
+	(O28/1)		-431	[(#Le Havre)]	LayTile	% Plain
+	(O30/0)		-400	[]	LayTile	% Plain
+	(O32/0)		-400	[]	LayTile	% Plain
+	(O34/0)		-400	[]	LayTile	% Plain
+	(O36/0)		-400	[]	LayTile	% Plain
+	(O38/0)		-400	[]	LayTile	% Plain
+	(O40/0)		-446	[(#Koln)]	LayTile	% Plain
+	(O42/0)		-405	[]	LayTile	% Plain
+	(O44/0)		-405	[]	LayTile	% Plain
+	(O46/0)		-404	[]	LayTile	% Plain
+	(O48/0)		-400	[]	LayTile	% Plain
+	(O50/0)		-404	[]	LayTile	% Plain
+	(O52/0)		-430	[(#Dresden)]	LayTile	% Plain
+	(O54/0)		-406	[]	LayTile	% Plain
+	(O56/0)		-430	[(#Breslau)]	LayTile	% Plain
+	(O58/0)		-400	[]	LayTile	% Plain
+	(O60/0)		-400	[]	LayTile	% Plain
+	(O62/0)		-405	[]	LayTile	% Plain
+	(O64/0)		-400	[]	LayTile	% Plain
+	(O66/0)		-400	[]	LayTile	% Plain
+	(O68/0)		-404	[]	LayTile	% Plain
+	(O70/0)		-400	[]	LayTile	% Plain
+	(O72/0)		-400	[]	LayTile	% Plain
+	(O74/0)		-400	[]	LayTile	% Plain
+	(O76/0)		-400	[]	LayTile	% Plain
+	(O78/0)		-400	[]	LayTile	% Plain
+	(O80/0)		-440	[(#Kiev)]	LayTile	% Plain
+	(O82/0)		-402	[]	LayTile	% Plain
+	(O84/0)		-400	[]	LayTile	% Plain
+	(O86/0)		-400	[]	LayTile	% Plain
+
+	(P17/4)		-484	[]	LayTile
+	(P19/0)		-410	[(#Brest)]	LayTile	% Plain
+	(P21/0)		-400	[]	LayTile	% Plain
+	(P23/0)		-400	[]	LayTile	% Plain
+	(P25/0)		-400	[]	LayTile	% Plain
+	(P27/0)		-400	[]	LayTile	% Plain
+	(P29/0)		-410	[(#Rouen)]	LayTile	% Plain
+	(P31/0)		-400	[]	LayTile	% Plain
+	(P33/0)		-410	[(#Reims)]	LayTile	% Plain
+	(P35/0)		-400	[]	LayTile	% Plain
+	(P37/0)		-410	[(#Luxemburg)]	LayTile	% Plain
+	(P39/0)		-400	[]	LayTile	% Plain
+	(P41/0)		-401	[]	LayTile	% Plain
+	(P43/0)		-410	[(#Frankfurt)]	LayTile	% Plain
+	(P45/0)		-404	[]	LayTile	% Plain
+	(P47/0)		-400	[]	LayTile	% Plain
+	(P49/0)		-400	[]	LayTile	% Plain
+	(P51/0)		-400	[]	LayTile	% Plain
+	(P53/0)		-440	[(#Praha)]	LayTile	% Plain
+	(P55/0)		-405	[]	LayTile	% Plain
+	(P57/0)		-404	[]	LayTile	% Plain
+	(P59/0)		-400	[]	LayTile	% Plain
+	(P61/0)		-410	[(#Krakau)]	LayTile	% Plain
+	(P63/0)		-400	[]	LayTile	% Plain
+	(P65/0)		-400	[]	LayTile	% Plain
+	(P67/0)		-400	[]	LayTile	% Plain
+	(P69/0)		-430	[(#Lemburg)]	LayTile	% Plain
+	(P71/0)		-400	[]	LayTile	% Plain
+	(P73/0)		-400	[]	LayTile	% Plain
+	(P75/0)		-400	[]	LayTile	% Plain
+	(P77/0)		-420	[(#Zytamin)(#Berdchev)]	LayTile	% Plain
+	(P79/0)		-400	[]	LayTile	% Plain
+	(P81/0)		-400	[]	LayTile	% Plain
+	(P83/0)		-401	[]	LayTile	% Plain
+	(P85/5)		-411	[(#Krementchug)]	LayTile	% Plain
+	(P87/0)		-401	[]	LayTile	% Plain
+
+	(Q20/0)		-402	[]	LayTile	% Plain
+	(Q22/0)		-400	[]	LayTile	% Plain
+	(Q24/0)		-400	[]	LayTile	% Plain
+	(Q26/0)		-430	[(#Le Mans)]	LayTile	% Plain
+	(Q28/0)		-400	[]	LayTile	% Plain
+	(Q30/0)		-454	[(#Paris)]	LayTile	% Pmet
+	(Q32/0)		-400	[]	LayTile	% Plain
+	(Q34/0)		-400	[]	LayTile	% Plain
+	(Q36/0)		-400	[]	LayTile	% Plain
+	(Q38/0)		-430	[(#Nancy)]	LayTile	% Plain
+	(Q40/0)		-430	[(#Strasbourg)]	LayTile	% Plain
+	(Q42/0)		-410	[(#Stuttgart)]	LayTile	% Plain
+	(Q44/0)		-400	[]	LayTile	% Plain
+	(Q46/0)		-420	[(#Furth)(#Nurnburg)]	LayTile	% Plain
+	(Q48/0)		-400	[]	LayTile	% Plain
+	(Q50/0)		-405	[]	LayTile	% Plain
+	(Q52/5)		-415	[(#Pizen)]	LayTile	% Plain
+	(Q54/0)		-400	[]	LayTile	% Plain
+	(Q56/0)		-410	[(#Brno)]	LayTile	% Plain
+	(Q58/0)		-400	[]	LayTile	% Plain
+	(Q60/0)		-405	[]	LayTile	% Plain
+	(Q62/0)		-405	[]	LayTile	% Plain
+	(Q64/0)		-405	[]	LayTile	% Plain
+	(Q66/0)		-400	[]	LayTile	% Plain
+	(Q68/0)		-405	[]	LayTile	% Plain
+	(Q70/0)		-404	[]	LayTile	% Plain
+	(Q72/0)		-410	[(#Tarnopol)]	LayTile	% Plain
+	(Q74/0)		-400	[]	LayTile	% Plain
+	(Q76/0)		-400	[]	LayTile	% Plain
+	(Q78/0)		-400	[]	LayTile	% Plain
+	(Q80/0)		-400	[]	LayTile	% Plain
+	(Q82/0)		-400	[]	LayTile	% Plain
+	(Q84/0)		-410	[(#Elsavotgrad)]	LayTile	% Plain
+	(Q86/0)		-400	[]	LayTile	% Plain
+
+	(R21/4)		-484	[]	LayTile
+	(R23/0)		-430	[(#Nantes)]	LayTile	% Plain
+	(R25/0)		-400	[]	LayTile	% Plain
+	(R27/0)		-400	[]	LayTile	% Plain
+	(R29/0)		-410	[(#Orleans)]	LayTile	% Plain
+	(R31/0)		-400	[]	LayTile	% Plain
+	(R33/0)		-400	[]	LayTile	% Plain
+	(R35/0)		-400	[]	LayTile	% Plain
+	(R37/0)		-400	[]	LayTile	% Plain
+	(R39/0)		-404	[]	LayTile	% Plain
+	(R41/0)		-400	[]	LayTile	% Plain
+	(R43/0)		-400	[]	LayTile	% Plain
+	(R45/0)		-400	[]	LayTile	% Plain
+	(R47/0)		-440	[(#Munchen)]	LayTile	% Plain
+	(R49/0)		-400	[]	LayTile	% Plain
+	(R51/5)		-415	[(#Linz)]	LayTile	% Plain
+	(R53/0)		-400	[]	LayTile	% Plain
+	(R55/0)		-450	[(#Wien)]	LayTile	% Amet
+	(R57/0)		-410	[(#Pressburg)]	LayTile	% Plain
+	(R59/0)		-400	[]	LayTile	% Plain
+	(R61/0)		-405	[]	LayTile	% Plain
+	(R63/0)		-400	[]	LayTile	% Plain
+	(R65/0)		-410	[(#Kostco)]	LayTile	% Plain
+	(R67/0)		-400	[]	LayTile	% Plain
+	(R69/0)		-405	[]	LayTile	% Plain
+	(R71/0)		-406	[]	LayTile	% Plain
+	(R73/0)		-400	[]	LayTile	% Plain
+	(R75/0)		-400	[]	LayTile	% Plain
+	(R77/0)		-400	[]	LayTile	% Plain
+	(R79/0)		-400	[]	LayTile	% Plain
+	(R81/0)		-400	[]	LayTile	% Plain
+	(R83/0)		-400	[]	LayTile	% Plain
+	(R85/0)		-400	[]	LayTile	% Plain
+	(R87/0)		-401	[]	LayTile	% Plain
+
+	(S24/0)		-400	[]	LayTile	% Plain
+	(S26/0)		-400	[]	LayTile	% Plain
+	(S28/0)		-400	[]	LayTile	% Plain
+	(S30/0)		-400	[]	LayTile	% Plain
+	(S32/0)		-400	[]	LayTile	% Plain
+	(S34/0)		-410	[(#Dijon)]	LayTile	% Plain
+	(S36/0)		-400	[]	LayTile	% Plain
+	(S38/0)		-405	[]	LayTile	% Plain
+	(S40/0)		-410	[(#Basel)]	LayTile	% Plain
+	(S42/0)		-433	[(#Zurich)]	LayTile	% Plain
+	(S44/0)		-405	[]	LayTile	% Plain
+	(S46/5)		-416	[(#Innsbruck)]	LayTile	% Plain
+	(S48/0)		-405	[]	LayTile	% Plain
+	(S50/0)		-433	[(#Salzburg)]	LayTile	% Plain
+	(S52/0)		-406	[]	LayTile	% Plain
+	(S54/0)		-406	[]	LayTile	% Plain
+	(S56/0)		-400	[]	LayTile	% Plain
+	(S58/0)		-400	[]	LayTile	% Plain
+	(S60/0)		-440	[(#Budapest)]	LayTile	% Plain
+	(S62/0)		-404	[]	LayTile	% Plain
+	(S64/0)		-400	[]	LayTile	% Plain
+	(S66/0)		-410	[(#Debrecen)]	LayTile	% Plain
+	(S68/0)		-400	[]	LayTile	% Plain
+	(S70/0)		-404	[]	LayTile	% Plain
+	(S72/0)		-406	[]	LayTile	% Plain
+	(S74/0)		-400	[]	LayTile	% Plain
+	(S76/0)		-430	[(#Jassy)]	LayTile	% Plain
+	(S78/0)		-430	[(#Kischinev)]	LayTile	% Plain
+	(S80/0)		-400	[]	LayTile	% Plain
+	(S82/0)		-400	[]	LayTile	% Plain
+	(S84/5)		-412	[(#Nikolayev)]	LayTile	% Plain
+	(S86/5)		-411	[(#Kherson)]	LayTile	% Plain
+	(S88/0)		-470	[]	LayTile
+
+	(T23/0)		-403	[]	LayTile	% Plain
+	(T25/0)		-400	[]	LayTile	% Plain
+	(T27/0)		-410	[(#Limoges)]	LayTile	% Plain
+	(T29/0)		-400	[]	LayTile	% Plain
+	(T31/0)		-400	[]	LayTile	% Plain
+	(T33/0)		-404	[]	LayTile	% Plain
+	(T35/0)		-400	[]	LayTile	% Plain
+	(T37/0)		-425	[(#Geneve)(#Lausanne)]	LayTile	% Plain
+	(T39/5)		-417	[(#Bern)]	LayTile	% Plain
+	(T41/0)		-407	[]	LayTile	% Plain
+	(T43/0)		-407	[]	LayTile	% Plain
+	(T45/0)		-407	[]	LayTile	% Plain
+	(T47/0)		-407	[]	LayTile	% Plain
+	(T49/0)		-406	[]	LayTile	% Plain
+	(T51/0)		-406	[]	LayTile	% Plain
+	(T53/0)		-430	[(#Graz)]	LayTile	% Plain
+	(T55/0)		-400	[]	LayTile	% Plain
+	(T57/0)		-400	[]	LayTile	% Plain
+	(T59/0)		-400	[]	LayTile	% Plain
+	(T61/0)		-410	[(#Kecskenset)]	LayTile	% Plain
+	(T63/0)		-400	[]	LayTile	% Plain
+	(T65/0)		-400	[]	LayTile	% Plain
+	(T67/0)		-404	[]	LayTile	% Plain
+	(T69/0)		-433	[(#Klausenburg)]	LayTile	% Plain
+	(T71/0)		-400	[]	LayTile	% Plain
+	(T73/0)		-404	[]	LayTile	% Plain
+	(T75/0)		-402	[]	LayTile	% Plain
+	(T77/0)		-402	[]	LayTile	% Plain
+	(T79/0)		-402	[]	LayTile	% Plain
+	(T81/0)		-430	[(#Odessa)]	LayTile	% Plain
+	(T83/1)		-484	[]	LayTile
+	(T83/3)		-500	[]	LayTile
+	(T85/4)		-484	[]	LayTile
+	(T87/3)		-471	[]	LayTile
+	(T87/2)		-501	[(#Sevastopol)]	LayTile
+
+	(U6/1)		-420	[(#La Coruna)(#Santiago)]	LayTile	% Plain
+	(U8/0)		-400	[]	LayTile	% Plain
+	(U10/0)		-404	[]	LayTile	% Plain
+	(U12/5)		-414	[(#Gijon)]	LayTile	% Plain
+	(U14/1)		-483	[]	LayTile
+	(U16/5)		-484	[]	LayTile
+	(U22/0)		-400	[]	LayTile	% Plain
+	(U24/0)		-435	[(#Bordeaux)]	LayTile	% Plain
+	(U26/0)		-400	[]	LayTile	% Plain
+	(U28/0)		-400	[]	LayTile	% Plain
+	(U30/0)		-404	[]	LayTile	% Plain
+	(U32/0)		-433	[(#St Etienne)]	LayTile	% Plain
+	(U34/0)		-440	[(#Lyon)]	LayTile	% Plain
+	(U36/0)		-406	[]	LayTile	% Plain
+	(U38/0)		-407	[]	LayTile	% Plain
+	(U40/0)		-406	[]	LayTile	% Plain
+	(U42/0)		-406	[]	LayTile	% Plain
+	(U44/0)		-407	[]	LayTile	% Plain
+	(U46/0)		-406	[]	LayTile	% Plain
+	(U48/0)		-400	[]	LayTile	% Plain
+	(U50/0)		-400	[]	LayTile	% Plain
+	(U52/5)		-415	[(#Laibach)]	LayTile	% Plain
+	(U54/0)		-400	[]	LayTile	% Plain
+	(U56/0)		-410	[(#Csaktornya)]	LayTile	% Plain
+	(U58/0)		-400	[]	LayTile	% Plain
+	(U60/0)		-400	[]	LayTile	% Plain
+	(U62/0)		-410	[(#Szeged)]	LayTile	% Plain
+	(U64/0)		-420	[(#Arad)(#Temesvar)]	LayTile	% Plain
+	(U66/0)		-405	[]	LayTile	% Plain
+	(U68/0)		-406	[]	LayTile	% Plain
+	(U70/0)		-406	[]	LayTile	% Plain
+	(U72/5)		-416	[(#Kronstadt)]	LayTile	% Plain
+	(U74/0)		-405	[]	LayTile	% Plain
+	(U76/0)		-402	[]	LayTile	% Plain
+	(U78/5)		-412	[(#Garatz)]	LayTile	% Plain
+	(U80/5)		-412	[(#Akkerman)]	LayTile	% Plain
+
+	(V5/0)		-410	[(#Braga)]	LayTile	% Plain
+	(V7/0)		-400	[]	LayTile	% Plain
+	(V9/0)		-405	[]	LayTile	% Plain
+	(V11/0)		-406	[]	LayTile	% Plain
+	(V13/0)		-405	[]	LayTile	% Plain
+	(V15/5)		-414	[(#Sandander)]	LayTile	% Plain
+	(V17/0)		-430	[(#Bilbao)]	LayTile	% Plain
+	(V19/0)		-404	[]	LayTile	% Plain
+	(V21/0)		-410	[(#Bayonne)]	LayTile	% Plain
+	(V23/0)		-400	[]	LayTile	% Plain
+	(V25/0)		-400	[]	LayTile	% Plain
+	(V27/0)		-430	[(#Toulouse)]	LayTile	% Plain
+	(V29/0)		-405	[]	LayTile	% Plain
+	(V31/0)		-406	[]	LayTile	% Plain
+	(V33/0)		-400	[]	LayTile	% Plain
+	(V35/0)		-405	[]	LayTile	% Plain
+	(V37/0)		-406	[]	LayTile	% Plain
+	(V39/0)		-430	[(#Torino)]	LayTile	% Plain
+	(V41/0)		-447	[(#Milano)]	LayTile	% Plain
+	(V43/0)		-400	[]	LayTile	% Plain
+	(V45/0)		-410	[(#Vicenza)]	LayTile	% Plain
+	(V47/0)		-410	[(#Venezia)]	LayTile	% Plain
+	(V49/1)		-484	[]	LayTile
+	(V49/4)		-500	[]	LayTile
+	(V51/0)		-430	[(#Trieste)]	LayTile	% Plain
+	(V53/0)		-404	[]	LayTile	% Plain
+	(V55/0)		-430	[(#Zagreb)]	LayTile	% Plain
+	(V57/0)		-400	[]	LayTile	% Plain
+	(V59/0)		-400	[]	LayTile	% Plain
+	(V61/0)		-400	[]	LayTile	% Plain
+	(V63/0)		-400	[]	LayTile	% Plain
+	(V65/0)		-405	[]	LayTile	% Plain
+	(V67/0)		-406	[]	LayTile	% Plain
+	(V69/0)		-405	[]	LayTile	% Plain
+	(V71/0)		-400	[]	LayTile	% Plain
+	(V73/0)		-410	[(#Ploesti)]	LayTile	% Plain
+	(V75/0)		-400	[]	LayTile	% Plain
+	(V77/0)		-401	[]	LayTile	% Plain
+	(V79/0)		-402	[]	LayTile	% Plain
+
+	(W4/4)		-484	[]	LayTile
+	(W6/0)		-430	[(#Porto)]	LayTile	% Plain
+	(W8/0)		-406	[]	LayTile	% Plain
+	(W10/0)		-400	[]	LayTile	% Plain
+	(W12/0)		-400	[]	LayTile	% Plain
+	(W14/0)		-400	[]	LayTile	% Plain
+	(W16/0)		-400	[]	LayTile	% Plain
+	(W18/0)		-410	[(#Lagrono)]	LayTile	% Plain
+	(W20/0)		-405	[]	LayTile	% Plain
+	(W22/0)		-407	[]	LayTile	% Plain
+	(W24/0)		-406	[]	LayTile	% Plain
+	(W26/0)		-400	[]	LayTile	% Plain
+	(W28/0)		-400	[]	LayTile	% Plain
+	(W30/0)		-400	[]	LayTile	% Plain
+	(W32/0)		-420	[(#Nimes)(#Montpelier)]	LayTile	% Plain
+	(W34/0)		-400	[]	LayTile	% Plain
+	(W36/0)		-405	[]	LayTile	% Plain
+	(W38/0)		-406	[]	LayTile	% Plain
+	(W40/0)		-430	[(#Genova)]	LayTile	% Plain
+	(W42/0)		-405	[]	LayTile	% Plain
+	(W44/0)		-405	[]	LayTile	% Plain
+	(W46/0)		-420	[(#Ferrara)(#Bologna)]	LayTile	% Plain
+	(W48/0)		-402	[]	LayTile	% Plain
+	(W54/0)		-404	[]	LayTile	% Plain
+	(W56/0)		-400	[]	LayTile	% Plain
+	(W58/0)		-400	[]	LayTile	% Plain
+	(W60/0)		-400	[]	LayTile	% Plain
+	(W62/0)		-400	[]	LayTile	% Plain
+	(W64/0)		-430	[(#Beograd)]	LayTile	% Plain
+	(W66/0)		-406	[]	LayTile	% Plain
+	(W68/0)		-405	[]	LayTile	% Plain
+	(W70/0)		-410	[(#Cralova)]	LayTile	% Plain
+	(W72/0)		-400	[]	LayTile	% Plain
+	(W74/0)		-446	[(#Bucharest)]	LayTile	% Plain
+	(W76/0)		-401	[]	LayTile	% Plain
+	(W78/0)		-400	[]	LayTile	% Plain
+
+	(X5/0)		-400	[]	LayTile	% Plain
+	(X7/0)		-405	[]	LayTile	% Plain
+	(X9/0)		-400	[]	LayTile	% Plain
+	(X11/0)		-410	[(#Salamanca)]	LayTile	% Plain
+	(X13/0)		-430	[(#Valladolid)]	LayTile	% Plain
+	(X15/0)		-405	[]	LayTile	% Plain
+	(X17/0)		-400	[]	LayTile	% Plain
+	(X19/0)		-406	[]	LayTile	% Plain
+	(X21/0)		-400	[]	LayTile	% Plain
+	(X23/0)		-407	[]	LayTile	% Plain
+	(X25/5)		-416	[(#Andorra)]	LayTile	% Plain
+	(X27/0)		-406	[]	LayTile	% Plain
+	(X29/0)		-400	[]	LayTile	% Plain
+	(X33/5)		-444	[(#Marseille)]	LayTile	% Plain
+	(X35/0)		-410	[(#Toulon)]	LayTile	% Plain
+	(X37/0)		-410	[(#Nice)]	LayTile	% Plain
+	(X39/3)		-484	[]	LayTile
+	(X43/0)		-400	[]	LayTile	% Plain
+	(X45/0)		-445	[(#Firenze)]	LayTile	% Plain
+	(X47/0)		-405	[]	LayTile	% Plain
+	(X49/0)		-400	[]	LayTile	% Plain
+	(X55/0)		-410	[(#Spelato)]	LayTile	% Plain
+	(X57/0)		-405	[]	LayTile	% Plain
+	(X59/5)		-414	[(#Sarajevo)]	LayTile	% Plain
+	(X61/0)		-405	[]	LayTile	% Plain
+	(X63/0)		-405	[]	LayTile	% Plain
+	(X65/0)		-404	[]	LayTile	% Plain
+	(X67/0)		-405	[]	LayTile	% Plain
+	(X69/0)		-401	[]	LayTile	% Plain
+	(X71/0)		-401	[]	LayTile	% Plain
+	(X73/0)		-401	[]	LayTile	% Plain
+	(X75/0)		-400	[]	LayTile	% Plain
+	(X77/0)		-400	[]	LayTile	% Plain
+	(X79/5)		-489	[]	LayTile
+	(X79/2)		-501	[(#Varna)]	LayTile
+
+	(Y2/0)		-400	[]	LayTile	% Plain
+	(Y4/0)		-400	[]	LayTile	% Plain
+	(Y6/0)		-405	[]	LayTile	% Plain
+	(Y8/0)		-406	[]	LayTile	% Plain
+	(Y10/0)		-406	[]	LayTile	% Plain
+	(Y12/0)		-406	[]	LayTile	% Plain
+	(Y14/0)		-455	[(#Madrid)]	LayTile	% Amet
+	(Y16/0)		-400	[]	LayTile	% Plain
+	(Y18/0)		-400	[]	LayTile	% Plain
+	(Y20/0)		-430	[(#Zaragosa)]	LayTile	% Plain
+	(Y22/0)		-400	[]	LayTile	% Plain
+	(Y24/0)		-400	[]	LayTile	% Plain
+	(Y26/0)		-400	[]	LayTile	% Plain
+	(Y28/0)		-405	[]	LayTile	% Plain
+	(Y34/2)		-484	[]	LayTile
+	(Y34/3)		-500	[]	LayTile
+	(Y36/3)		-484	[]	LayTile
+	(Y38/4)		-481	[]	LayTile
+	(Y40/1)		-481	[]	LayTile
+	(Y44/0)		-410	[(#Livorno)]	LayTile	% Plain
+	(Y46/0)		-400	[]	LayTile	% Plain
+	(Y48/0)		-405	[]	LayTile	% Plain
+	(Y50/0)		-400	[]	LayTile	% Plain
+	(Y56/0)		-403	[]	LayTile	% Plain
+	(Y58/0)		-402	[]	LayTile	% Plain
+	(Y60/0)		-406	[]	LayTile	% Plain
+	(Y62/0)		-405	[]	LayTile	% Plain
+	(Y64/5)		-415	[(#Novi Bazar)]	LayTile	% Plain
+	(Y66/5)		-415	[(#Niz)]	LayTile	% Plain
+	(Y68/0)		-405	[]	LayTile	% Plain
+	(Y70/0)		-430	[(#Sofia)]	LayTile	% Plain
+	(Y72/0)		-400	[]	LayTile	% Plain
+	(Y74/0)		-400	[]	LayTile	% Plain
+	(Y76/0)		-400	[]	LayTile	% Plain
+	(Y78/0)		-401	[]	LayTile	% Plain
+	(Y80/5)		-482	[]	LayTile
+
+	(Z1/4)		-473	[(#Lisboa)]	LayTile
+	(Z3/0)		-410	[(#Setubal)]	LayTile	% Plain
+	(Z5/0)		-400	[]	LayTile	% Plain
+	(Z7/0)		-400	[]	LayTile	% Plain
+	(Z9/0)		-400	[]	LayTile	% Plain
+	(Z11/0)		-400	[]	LayTile	% Plain
+	(Z13/0)		-410	[(#Toledo)]	LayTile	% Plain
+	(Z15/0)		-400	[]	LayTile	% Plain
+	(Z17/0)		-400	[]	LayTile	% Plain
+	(Z19/0)		-400	[]	LayTile	% Plain
+	(Z21/0)		-405	[]	LayTile	% Plain
+	(Z23/0)		-401	[]	LayTile	% Plain
+	(Z25/0)		-410	[(#Tarragona)]	LayTile	% Plain
+	(Z27/0)		-441	[(#Barcelona)]	LayTile	% Plain
+	(Z29/1)		-484	[]	LayTile
+	(Z39/4)		-483	[]	LayTile
+	(Z41/0)		-410	[(#Ajaccio)]	LayTile	% Plain
+	(Z45/0)		-400	[]	LayTile	% Plain
+	(Z47/0)		-440	[(#Roma)]	LayTile	% Plain
+	(Z49/0)		-404	[]	LayTile	% Plain
+	(Z51/0)		-400	[]	LayTile	% Plain
+	(Z61/0)		-405	[]	LayTile	% Plain
+	(Z63/0)		-404	[]	LayTile	% Plain
+	(Z65/0)		-405	[]	LayTile	% Plain
+	(Z67/0)		-406	[]	LayTile	% Plain
+	(Z69/0)		-404	[]	LayTile	% Plain
+	(Z71/0)		-405	[]	LayTile	% Plain
+	(Z73/5)		-414	[(#Philippopolis)]	LayTile	% Plain
+	(Z75/0)		-404	[]	LayTile	% Plain
+	(Z77/0)		-401	[]	LayTile	% Plain
+	(Z79/0)		-400	[]	LayTile	% Plain
+	(Z81/5)		-482	[]	LayTile
+	(Z83/0)		-484	[]	LayTile
+
+	(AA2/0)		-400	[]	LayTile	% Plain
+	(AA4/0)		-410	[(#Evara)]	LayTile	% Plain
+	(AA6/0)		-400	[]	LayTile	% Plain
+	(AA8/0)		-400	[]	LayTile	% Plain
+	(AA10/0)	-405	[]	LayTile	% Plain
+	(AA12/0)	-405	[]	LayTile	% Plain
+	(AA14/0)	-400	[]	LayTile	% Plain
+	(AA16/0)	-400	[]	LayTile	% Plain
+	(AA18/0)	-406	[]	LayTile	% Plain
+	(AA20/0)	-430	[(#Valencia)]	LayTile	% Plain
+	(AA22/0)	-400	[]	LayTile	% Plain
+	(AA26/5)	-481	[]	LayTile
+	(AA40/0)	-482	[]	LayTile
+	(AA42/0)	-481	[]	LayTile
+	(AA42/2)	-502	[]	LayTile
+	(AA44/1)	-482	[]	LayTile
+	(AA46/3)	-481	[]	LayTile
+	(AA48/0)	-400	[]	LayTile	% Plain
+	(AA50/0)	-404	[]	LayTile	% Plain
+	(AA52/0)	-410	[(#benevento)]	LayTile	% Plain
+	(AA54/0)	-400	[]	LayTile	% Plain
+	(AA60/4)	-483	[]	LayTile
+	(AA62/0)	-430	[(#Shkoder)]	LayTile	% Plain
+	(AA64/0)	-405	[]	LayTile	% Plain
+	(AA66/0)	-406	[]	LayTile	% Plain
+	(AA68/0)	-404	[]	LayTile	% Plain
+	(AA70/0)	-400	[]	LayTile	% Plain
+	(AA72/0)	-405	[]	LayTile	% Plain
+	(AA74/0)	-400	[]	LayTile	% Plain
+	(AA76/0)	-400	[]	LayTile	% Plain
+	(AA78/0)	-400	[]	LayTile	% Plain
+	(AA80/0)	-400	[]	LayTile	% Plain
+	(AA82/0)	-456	[(#Constantinople)]	LayTile	% Cmet
+	(AA84/0)	-410	[(#Scutari)]	LayTile	% Plain
+	(AA86/0)	-406	[]	LayTile	% Plain
+
+	(BB1/0)		-400	[]	LayTile	% Plain
+	(BB3/0)		-410	[(#Loule)]	LayTile	% Plain
+	(BB5/0)		-400	[]	LayTile	% Plain
+	(BB7/0)		-405	[]	LayTile	% Plain
+	(BB9/0)		-405	[]	LayTile	% Plain
+	(BB11/0)	-400	[]	LayTile	% Plain
+	(BB13/0)	-404	[]	LayTile	% Plain
+	(BB15/0)	-406	[]	LayTile	% Plain
+	(BB17/0)	-400	[]	LayTile	% Plain
+	(BB19/0)	-405	[]	LayTile	% Plain
+	(BB21/4)	-481	[]	LayTile
+	(BB23/1)	-482	[]	LayTile
+	(BB25/1)	-482	[]	LayTile
+	(BB27/0)	-430	[(#Palma)]	LayTile	% Plain
+	(BB39/0)	-410	[(#Sassari)]	LayTile	% Plain
+	(BB41/0)	-400	[]	LayTile	% Plain
+	(BB49/4)	-484	[]	LayTile
+	(BB51/1)	-457	[(#Napoli)]	LayTile	% Plain
+	(BB53/0)	-404	[]	LayTile	% Plain
+	(BB55/0)	-410	[(#Bari)]	LayTile	% Plain
+	(BB57/0)	-430	[(#Brindisi)]	LayTile	% Plain
+	(BB59/1)	-482	[]	LayTile
+	(BB61/1)	-481	[]	LayTile
+	(BB63/0)	-400	[]	LayTile	% Plain
+	(BB65/0)	-405	[]	LayTile	% Plain
+	(BB67/0)	-405	[]	LayTile	% Plain
+	(BB69/0)	-430	[(#Salonica)]	LayTile	% Plain
+	(BB71/0)	-402	[]	LayTile	% Plain
+	(BB77/0)	-403	[]	LayTile	% Plain
+	(BB83/5)	-415	[(#Bursa)]	LayTile	% Plain
+	(BB85/0)	-406	[]	LayTile	% Plain
+	(BB87/1)	-472	[(#Levant)]	LayTile
+
+	(CC4/4)		-484	[]	LayTile
+	(CC6/0)		-420	[(#Jerez de la Frontera)(#Cadiz)]	LayTile	% Plain
+	(CC8/0)		-430	[(#Sevilla)]	LayTile	% Plain
+	(CC10/0)	-410	[(#Cordoba)]	LayTile	% Plain
+	(CC12/0)	-410	[(#Granada)]	LayTile	% Plain
+	(CC14/0)	-405	[]	LayTile	% Plain
+	(CC16/0)	-430	[(#Murcia)]	LayTile	% Plain
+	(CC18/0)	-400	[]	LayTile	% Plain
+	(CC20/0)	-410	[(#Alicante)]	LayTile	% Plain
+	(CC26/5)	-481	[]	LayTile
+	(CC28/2)	-484	[]	LayTile
+	(CC38/0)	-400	[]	LayTile	% Plain
+	(CC40/0)	-430	[(#Cagliari)]	LayTile	% Plain
+	(CC54/0)	-405	[]	LayTile	% Plain
+	(CC56/0)	-400	[]	LayTile	% Plain
+	(CC58/0)	-400	[]	LayTile	% Plain
+	(CC62/2)	-482	[]	LayTile
+	(CC64/5)	-414	[(#Icannina)]	LayTile	% Plain
+	(CC66/0)	-404	[]	LayTile	% Plain
+	(CC68/0)	-410	[(#Larissa)]	LayTile	% Plain
+	(CC70/2)	-484	[]	LayTile
+	(CC76/0)	-403	[]	LayTile	% Plain
+	(CC78/0)	-400	[]	LayTile	% Plain
+	(CC80/0)	-400	[]	LayTile	% Plain
+	(CC82/0)	-400	[]	LayTile	% Plain
+	(CC84/0)	-410	[(#Esdschir)]	LayTile	% Plain
+	(CC86/0)	-400	[]	LayTile	% Plain
+	(CC88/0)	-400	[]	LayTile	% Plain
+
+	(DD1/4)		-474	[]	LayTile
+	(DD3/1)		-484	[]	LayTile
+	(DD5/0)		-400	[]	LayTile	% Plain
+	(DD7/5)		-413	[(#Gibraltar)]	LayTile	% Plain
+	(DD9/0)		-433	[(#Malaga)]	LayTile	% Plain
+	(DD11/0)	-400	[]	LayTile	% Plain
+	(DD13/5)	-413	[(#Almeria)]	LayTile	% Plain
+	(DD15/0)	-410	[(#Lorca)]	LayTile	% Plain
+	(DD17/0)	-440	[(#Cordoba)]	LayTile	% Plain
+	(DD19/1)	-484	[]	LayTile
+	(DD27/2)	-481	[]	LayTile
+	(DD39/0)	-403	[]	LayTile	% Plain
+	(DD41/2)	-484	[]	LayTile
+	(DD55/0)	-405	[]	LayTile	% Plain
+	(DD63/2)	-482	[]	LayTile
+	(DD65/0)	-404	[]	LayTile	% Plain
+	(DD67/0)	-400	[]	LayTile	% Plain
+	(DD69/0)	-400	[]	LayTile	% Plain
+	(DD71/0)	-403	[]	LayTile	% Plain
+	(DD75/0)	-481	[]	LayTile
+	(DD77/1)	-482	[]	LayTile
+	(DD79/2)	-431	[(#Smyrna)]	LayTile	% Plain
+	(DD81/0)	-405	[]	LayTile	% Plain
+	(DD83/0)	-405	[]	LayTile	% Plain
+	(DD85/0)	-400	[]	LayTile	% Plain
+	(DD87/0)	-400	[]	LayTile	% Plain
+
+	(EE6/0)		-490	[]	LayTile
+	(EE6/4)		-501	[(#Tangier)]	LayTile
+	(EE8/2)		-484	[]	LayTile
+	(EE8/3)		-500	[]	LayTile
+	(EE12/5)	-481	[]	LayTile
+	(EE24/5)	-484	[]	LayTile
+	(EE26/0)	-482	[]	LayTile
+	(EE50/0)	-484	[]	LayTile
+	(EE52/0)	-403	[]	LayTile	% Plain
+	(EE54/0)	-482	[]	LayTile
+	(EE64/4)	-481	[]	LayTile
+	(EE66/1)	-482	[]	LayTile
+	(EE68/5)	-411	[(#Patra)]	LayTile	% Plain
+	(EE70/0)	-401	[]	LayTile	% Plain
+	(EE72/5)	-432	[]	LayTile	% Plain
+	(EE72/4)	-501	[(#Athinai)]	LayTile
+	(EE74/0)	-490	[]	LayTile
+	(EE74/4)	-501	[(#Erinopoli)]	LayTile
+	(EE80/0)	-405	[]	LayTile	% Plain
+	(EE82/0)	-406	[]	LayTile	% Plain
+	(EE84/0)	-406	[]	LayTile	% Plain
+	(EE86/0)	-400	[]	LayTile	% Plain
+	(EE88/0)	-400	[]	LayTile	% Plain
+
+	(FF5/3)		-475	[]	LayTile
+	(FF11/4)	-476	[]	LayTile
+	(FF13/2)	-480	[]	LayTile
+	(FF25/2)	-477	[(Alger)]	LayTile
+	(FF41/0)	-484	[]	LayTile
+	(FF47/4)	-483	[]	LayTile
+	(FF49/0)	-430	[(#Palermo)]	LayTile	% Plain
+	(FF51/0)	-406	[]	LayTile	% Plain
+	(FF53/0)	-420	[(#Messina)(#Catania)]	LayTile	% Plain
+	(FF67/0)	-400	[]	LayTile	% Plain
+	(FF69/0)	-404	[]	LayTile	% Plain
+	(FF71/3)	-484	[]	LayTile
+	(FF73/3)	-480	[]	LayTile
+	(FF81/0)	-400	[]	LayTile	% Plain
+	(FF83/0)	-405	[]	LayTile	% Plain
+	(FF85/0)	-400	[]	LayTile	% Plain
+	(FF87/0)	-410	[(#Adelto)]	LayTile	% Plain
+
+	(GG40/3)	-478	[]	LayTile
+	(GG42/1)	-482	[]	LayTile
+	(GG44/1)	-482	[]	LayTile
+	(GG46/1)	-482	[]	LayTile
+	(GG48/1)	-491	[]	LayTile
+	(GG50/0)	-404	[]	LayTile	% Plain
+	(GG52/0)	-400	[]	LayTile	% Plain
+	(GG68/0)	-410	[(#Sporti)]	LayTile	% Plain
+	(GG70/0)	-403	[]	LayTile	% Plain
+
+	(HH69/2)	-483	[]	LayTile
+	(HH85/4)	-484	[]	LayTile
+	(HH87/1)	-479	[]	LayTile
+
+		/Bookman 240 selectfont
+	(C1/7) LayText moveto (18OE) show 
+
+
+	% =================================
+	% INSERT YOUR TILES AND TOKENS HERE
+	% =================================
+
+(B75/E)	Barrier
+(C66/SE)	Barrier
+(C72/NW)	Barrier
+(C72/NE)	Barrier
+(D47/E)	Barrier
+(D47/SE)	Barrier
+(E52/NW)	Barrier
+(E52/NE)	Barrier
+(G26/NE)	Barrier
+(G28/NW)	Barrier
+(G28/NE)	Barrier
+(J47/NW)	Barrier
+(J47/NE)	Barrier
+(J47/E)	Barrier
+(J47/SE)	Barrier
+(J49/SW)	Barrier
+(J49/SE)	Barrier
+(K40/E)	Barrier
+(M30/NE)	Barrier
+(M30/SE)	Barrier
+(V19/E)	Barrier
+(CC56/E)	Barrier
+
+% Land borders
+
+% Germany-Denmark
+(J45/NW)	Frontier
+(J45/NE)	Frontier
+
+% France-Germany-Italy-Russia-Balkans
+(I64/SW)	MidFrontier
+(J65/NE)	Frontier
+(J65/E)		Frontier
+(J65/SE)	Frontier
+(K62/SE)	Frontier
+(K64/SE)	MidFrontier
+(L59/SE)	Frontier
+(L61/SE)	MidFrontier
+(M58/SE)	MidFrontier
+(N57/NE)	Frontier
+(N33/NE)	Frontier
+(N35/NW)	Frontier
+(N35/NE)	Frontier
+(N37/NE)	MidFrontier
+(N57/E)		Frontier
+(O38/W)		MidFrontier
+(O38/W)		MidFrontier
+(O54/SE)	AngleFrontier
+(O58/NE)	AngleFrontier
+(P39/W)		Frontier
+(P49/SW)	AngleFrontier
+(P49/NE)	Frontier
+(P49/NW)	Frontier
+(P51/NE)	Frontier
+(P51/NW)	Frontier
+(P53/NW)	Frontier
+(P55/NE)	Frontier
+(P57/SW)	MidFrontier
+(P59/W)		AngleFrontier
+(P59/NE)	Frontier
+(P61/NW)	Frontier
+(P61/NE)	Frontier
+(P63/NW)	Frontier
+(P63/NE)	Frontier
+(P65/NW)	Frontier
+(P65/NE)	Frontier
+(P67/NW)	Frontier
+(P67/NE)	Frontier
+(P69/NW)	Frontier
+(P69/NE)	Frontier
+(P71/NW)	Frontier
+(P71/NE)	Frontier
+(P73/SW)	MidFrontier
+(Q38/W)		MidFrontier
+(Q50/SW)	MidFrontier
+(Q74/W)		MidFrontier
+(R39/SW)	AngleFrontier
+(R51/W)		AngleFrontier
+(R73/E)		Frontier
+(R73/SE)	Frontier
+(R75/SW)	MidFrontier
+(S38/SE)	MidFrontier
+(S44/SE)	AngleFrontier
+(S46/SE)	MidFrontier
+(S48/NW)	AngleFrontier
+(S50/NW)	Frontier
+(S74/SW)	AngleFrontier
+(S76/NE)	AngleFrontier
+(T37/NW)	Frontier
+(T37/W)		Frontier
+(T37/SE)	AngleFrontier
+(T43/NE)	Frontier
+(T43/E)		Frontier
+(T47/SE)	SharpFrontier
+(T75/SW)	AngleFrontier
+(T77/NE)	Frontier
+(T77/E)		Frontier
+(U38/W)		MidFrontier
+(U38/E)		AngleFrontier
+(U40/NW)	AngleFrontier
+(U42/NW)	AngleFrontier
+(U44/NW)	Frontier
+(U44/NE)	AngleFrontier
+(U46/SE)	MidFrontier
+(U48/NE)	Frontier
+(U48/E)		Frontier
+(U70/SE)	Frontier
+(U72/SW)	Frontier
+(U72/SE)	Frontier
+(U74/SE)	MidFrontier
+(U78/NE)	AngleFrontier
+(U80/SE)	AngleFrontier
+(V37/E)		AngleFrontier
+(V69/SE)	MidFrontier
+(W38/SW)	AngleFrontier
+(W62/SW)	Frontier
+(W62/W)		Frontier
+(W62/NW)	Frontier
+(W62/NE)	Frontier
+(W64/NW)	Frontier
+(W64/NE)	Frontier
+(W66/NW)	Frontier
+(W66/NE)	Frontier
+(W68/NW)	AngleFrontier
+(X63/SW)	Frontier
+(X63/W)		Frontier
+(Y60/SE)	SharpFrontier
+(Y62/NE)	Frontier
+(Y62/SE)	Frontier
+(Y64/W)		SharpFrontier
+(Z61/NE)	Frontier
+(Z61/E)		Frontier
+(Z61/SE)	Frontier
+(Z63/NE)	Frontier
+(Z65/NW)	AngleFrontier
+(Z67/SW)	MidFrontier
+(Z69/SW)	Frontier
+(Z69/SE)	Frontier
+(Z71/SW)	Frontier
+(Z71/SE)	Frontier
+(Z73/SE)	AngleFrontier
+(Z75/SE)	MidFrontier
+(Z77/NW)	Frontier
+(Z77/NE)	Frontier
+(Z79/NW)	Frontier
+
+% Balkans-Greece
+(CC68/SE)	MidFrontier
+(DD65/SE)	MidFrontier
+(DD67/NW)	Frontier
+
+% Spain-France
+(V21/SW)	Frontier
+(W22/SW)	MidFrontier
+(W24/SW)	Frontier
+(X25/SW)	MidFrontier
+(X27/SW)	Frontier
+(Y28/NW)	AngleFrontier
+
+% France-Italy
+(AA40/SE)	AngleFrontier
+
+% Sea borders
+
+% North Sea-Celtic Sea
+(F21/NE)	AngleFrontier
+(E20/NE)	AngleFrontier
+(D19/NE)	AngleFrontier
+(C18/NE)	AngleFrontier
+(B19/W)		AngleFrontier
+(A20/W)		Frontier
+(@19/W)		MidFrontier
+
+% North Sea-Skagerrak
+(A36/NE)	AngleFrontier
+(B37/W)		AngleFrontier
+(C36/NE)	AngleFrontier
+(D37/W)		AngleFrontier
+(E36/NE)	AngleFrontier
+(F37/W)		AngleFrontier
+(G36/NE)	AngleFrontier
+
+% German Bight
+(G36/SE)	AngleFrontier
+(G38/SE)	AngleFrontier
+(G40/SE)	AngleFrontier
+(G42/SE)	AngleFrontier
+(H35/W)		AngleFrontier
+(I34/W)		AngleFrontier
+(J33/NE)	AngleFrontier
+(K32/SE)	AngleFrontier
+(K34/W)		AngleFrontier
+(K34/NE)	AngleFrontier
+(L35/NE)	Frontier
+
+% English Channel
+(N19/W)		Frontier
+(N19/NW)	Frontier
+(N19/NE)	Frontier
+(N21/NW)	Frontier
+(O18/NW)	Frontier
+(O18/W)		Frontier
+(O18/SW)	Frontier
+
+% Bay of Biscay
+(P7/NW)		AngleFrontier
+(P9/NW)		AngleFrontier
+(P11/NW)	AngleFrontier
+(P13/NW)	AngleFrontier
+(P15/NW)	AngleFrontier
+(P17/NW)	Frontier
+(Q2/E)		Frontier
+(R3/NE)		Frontier
+(R3/E)		Frontier
+(S4/NE)		Frontier
+(S4/E)		Frontier
+(T5/NE)		Frontier
+(T5/E)		Frontier
+
+% North Atlantic Ocean
+(K0/NE)		Frontier
+(K2/SW)		MidFrontier
+(L3/NE)		Frontier
+(L5/SW)		MidFrontier
+(M6/W)		MidFrontier
+(N5/E)		Frontier
+(O6/W)		MidFrontier
+(P3/SE)		Frontier
+(P5/NW)		MidFrontier
+(Q0/SE)		Frontier
+(Q2/NW)		MidFrontier
+
+% Gibraltar
+(EE10/NE)	AngleFrontier
+
+% Balearic Sea
+(AA28/W)	AngleFrontier
+(CC26/E)	AngleFrontier
+(DD25/E)	AngleFrontier
+(EE24/E)	Frontier
+
+% Sea of Sardinia
+(X41/E)	AngleFrontier
+(Y40/E)	AngleFrontier
+(AA40/E)	Frontier
+(DD37/E)	AngleFrontier
+(EE38/W)	Frontier
+(FF37/NE)	AngleFrontier
+(GG38/NE)	Frontier
+
+% Tyrrhenian Sea
+(DD59/NE)	AngleFrontier
+(EE60/W)	AngleFrontier
+(FF59/NE)	AngleFrontier
+(GG60/W)	AngleFrontier
+(HH59/NE)	AngleFrontier
+(II60/W)	AngleFrontier
+
+% Adriatic Sea
+(DD61/SE)	AngleFrontier
+(DD63/SE)	AngleFrontier
+
+% Aegean Sea
+(FF79/W)	AngleFrontier
+(GG78/W)	AngleFrontier
+(HH77/W)	AngleFrontier
+(II76/W)	AngleFrontier
+
+% Karkinitsky Bay
+(U82/SW)	AngleFrontier
+(U86/E)		AngleFrontier
+(V83/NW)	AngleFrontier
+(V85/NW)	AngleFrontier
+
+	mapFrame

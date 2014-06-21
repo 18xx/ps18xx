@@ -1,0 +1,139 @@
+%
+% $Header: 54-map.ps $
+%
+
+%!
+% ----------------------------------------------------------------------
+% 1854 map
+
+	newpath
+
+	/mapRows 11 def
+	/mapCols 27 def
+	/mapScale 0.50 def
+	/CM { 28.35 1 mapScale div mul mul } def
+	mapScale dup scale
+	21 CM 0 translate
+	90 rotate
+	/mapFrame {
+	1.5 CM 1.2 CM mapCols mapRows 0 1 cm
+		0 0 Map
+	} def
+	mapFrame
+
+	(A2/5)	-310	[]	LayTile
+	(A4/5)	-330	[]	LayTile
+	(A10/5)	-330	[]	LayTile
+
+	(B1/5)	-311	[(5)(#Kirchdorf)]	LayTile
+	(B3/0)	-363	[(#Steyr)]	LayTile	% DoubleDot
+	(B5/0)	-370	[(4)(#Steyr)]	LayTile	% City
+	(B7/0)	-370	[(#Amstetten)]	LayTile	% City
+	(B9/0)	-364	[]	LayTile	% DoubleDot
+	(B11/1)	-371	[(1)(2)(#Sankt Poelten)]	LayTile	% City
+
+	(C2/5)	-331	[]	LayTile	% Plain
+	(C4/0)	-331	[]	LayTile	% Plain
+	(C6/0)	-354	[]	LayTile	% Village
+	(C8/0)	-328	[]	LayTile	% Plain
+	(C10/0)	-364	[]	LayTile	% DoubleDot
+	(C12/0)	-352	[]	LayTile	% Village
+
+	(D1/4)	-373	[(6)(#Bad Ischl)]	LayTile
+	(D3/0)	-352	[]	LayTile	% Village
+	(D5/0)	-365	[]	LayTile	% DoubleDot
+	(D7/0)	-328	[]	LayTile	% Plain
+	(D9/0)	-352	[]	LayTile	% Village
+	(D11/0)	-332	[]	LayTile	% Plain
+
+	(E4/2)	-351	[]	LayTile
+	(E8/3)	-311	[(3)(#Hielfau)]	LayTile
+	(E10/2)	-351	[]	LayTile
+	(E12/2)	-310	[]	LayTile
+
+	(D19/5)	-304	[]	LayTile		% Prague
+	(D21/5)	-330	[]	LayTile
+	(D25/5)	-306	[]	LayTile		% Brno
+
+	(E16/0)	-324	[]	LayTile	% Plain
+	(E18/2)	-343	[(#Freistadt)]	LayTile	% Village
+	(E20/0)	-323	[]	LayTile	% Plain
+	(E22/3)	-344	[(#Stockerau)]	LayTile	% MedCity
+	(E24/0)	-328	[]	LayTile	% Plain
+	(E26/0)	-328	[]	LayTile	% Plain
+
+	(F13/4)	-345	[(#Braunau)]	LayTile
+	(F15/0)	-346	[(#Kled)]	LayTile	% Village
+	(F17/0)	-370	[(KR)(#Linz)]	LayTile	% City
+	(F19/0)	-347	[]	LayTile	% Village
+	(F21/0)	-360	[(#Tulln)(#Krems)]	LayTile	% DoubleDot
+	(F23/0)	-372	[(SD)(FJ)(KE)(#Vienna)]	LayTile	% City
+	(F25/0)	-329	[]	LayTile	% Plain
+	(F27/1)	-307	[(#Bratislava)]	LayTile
+
+	(G2/0)	-300	[(#Paris)]	LayTile
+	(G12/5)	-303	[(~)(#Munich)]	LayTile
+	(G14/0)	-325	[]	LayTile	% Plain
+	(G16/0)	-348	[(#Wels)]	LayTile	% MedCity
+	(G18/0)	-348	[(#Steyr)]	LayTile	% MedCity
+	(G20/0)	-348	[(#Sankt Poelten)]	LayTile	% MedCity
+	(G22/1)	-361	[(#Baden)(#Moedling)]	LayTile	% DoubleDot
+	(G24/0)	-348	[(#Wiener Neustadt)]	LayTile	% MedCity
+	(G26/0)	-346	[(#Eisenstadt)]	LayTile	% Village
+	(G28/1)	-308	[(#Budapest)]	LayTile
+
+	(H1/3)	-301	[(#Zurich)]	LayTile
+	(H3/0)	-370	[(VB)(#Bregenz)]	LayTile	% City
+	(H5/2)	-321	[(#Ausserfernbahn)]	LayTile	% Plain
+	(H7/0)	-312	[(~)]	LayTile
+	(H9/0)	-326	[]	LayTile	% Plain
+	(H11/0)	-342	[(#Kufstein)]	LayTile	% Village
+	(H13/0)	-370	[(SB)(#Salzburg)]	LayTile	% City
+	(H15/0)	-327	[]	LayTile	% Plain
+	(H17/0)	-321	[]	LayTile	% Plain
+	(H19/0)	-327	[]	LayTile	% Plain
+	(H21/0)	-362	[(#Kapfenberg)(#Leoben)]	LayTile	% DoubleDot
+	(H23/1)	-325	[(#Semmeringbahn)]	LayTile	% Plain
+	(H25/0)	-328	[]	LayTile	% Plain
+	(H27/0)	-309	[(#Budapest)]	LayTile
+
+	(I2/5)	-363	[(#Dornbirn)(#Feldkirch)]	LayTile	% DoubleDot
+	(I4/1)	-320	[(#Arlbergbahn)]	LayTile	% Plain
+	(I6/0)	-341	[(#Landeck)]	LayTile	% Village
+	(I8/0)	-370	[(NT)(#Innsbruck)]	LayTile	% City
+	(I10/0)	-340	[(#Woergl)]	LayTile	% MedCity
+	(I12/0)	-322	[]	LayTile
+	(I14/4)	-350	[(#Mauterndauf)]	LayTile
+	(I16/1)	-321	[(#Murtalbahn)]	LayTile	% Plain
+	(I18/0)	-322	[]	LayTile
+	(I20/1)	-327	[(#Graz-Koeflacher Bahn)]	LayTile	% Plain
+	(I22/0)	-370	[(#Graz)]	LayTile	% City
+	(I24/0)	-346	[(#Oberwart)]	LayTile	% Village
+	(I26/3)	-313	[(#Constantinople)]	LayTile
+
+	(J3/0)	-340	[(#Bludenz)]	LayTile	% MedCity
+	(J5/0)	-322	[]	LayTile
+	(J7/0)	-322	[]	LayTile
+	(J9/2)	-302	[(#Bolzano)]	LayTile
+	(J11/0)	-322	[]	LayTile
+	(J13/0)	-322	[]	LayTile
+	(J15/0)	-340	[(#Spltal)]	LayTile	% MedCity
+	(J17/0)	-322	[]	LayTile
+	(J19/0)	-328	[]	LayTile	% Plain
+	(J21/0)	-328	[]	LayTile	% Plain
+	(J23/0)	-328	[]	LayTile	% Plain
+
+	(K12/2)	-349	[(#Lienz)]	LayTile
+	(K14/0)	-326	[]	LayTile	% Plain
+	(K16/0)	-353	[(#Villach)]	LayTile	% MedCity
+	(K18/0)	-370	[(KT)(#Klagenfurt)]	LayTile	% City
+	(K20/1)	-305	[(#Ljubljana)]	LayTile
+
+		/Bookman 120 selectfont
+	(G4/7) LayText moveto (1854) show 
+
+	% =================================
+	% INSERT YOUR TILES AND TOKENS HERE
+	% =================================
+
+	mapFrame

@@ -1,0 +1,113 @@
+%
+% $Header: $
+%
+
+% ----------------------------------------------------------------------
+% 18scan tile codes
+
+/18xxVariant (18scan) def
+/maxTile 650 def
+
+	/tileCodes //maxTile array def
+
+	tileCodes   5 [   5 0 //tlYellow //tlPlain ()    (20) 12 ] put
+	tileCodes   8 [   8 4 //tlYellow //tlPlain ()    ()   10 ] put
+	tileCodes   9 [   9 0 //tlYellow //tlPlain ()    ()   10 ] put
+	tileCodes  58 [  58 4 //tlYellow //tlPlain ()    (10)  7 ] put
+	tileCodes 363 [ 300 0 //tlYellow //tlWater (COP) (30)  1 ] put
+
+	tileCodes  15 [  15 3 //tlGreen  //tlPlain ()    (30)  8 ] put
+	tileCodes  80 [ 215 1 //tlGreen  //tlPlain ()    ()    3 ] put
+	tileCodes  81 [ 216 5 //tlGreen  //tlPlain ()    ()    3 ] put
+	tileCodes  82 [ 214 3 //tlGreen  //tlPlain ()    ()    3 ] put
+	tileCodes  83 [ 213 3 //tlGreen  //tlPlain ()    ()    3 ] put
+	tileCodes 121 [ 121 0 //tlGreen  //tlPlain (COP) (50)  1 ] put
+	tileCodes 141 [ 141 0 //tlGreen  //tlPlain ()    (10)  3 ] put
+	tileCodes 142 [ 142 0 //tlGreen  //tlPlain ()    (10)  3 ] put
+	tileCodes 143 [ 143 0 //tlGreen  //tlPlain ()    (10)  3 ] put
+	tileCodes 144 [ 203 1 //tlGreen  //tlPlain ()    (10)  3 ] put
+	tileCodes 622 [  38 3 //tlGreen  //tlPlain (Y)   (40)  3 ] put
+
+	tileCodes 145 [  88 1 //tlBrown  //tlPlain ()    (20)  3 ] put
+	tileCodes 146 [  87 0 //tlBrown  //tlPlain ()    (20)  3 ] put
+	tileCodes 147 [ 204 1 //tlBrown  //tlPlain ()    (20)  4 ] put
+	tileCodes 544 [ 217 0 //tlBrown  //tlPlain ()    ()	   3 ] put
+	tileCodes 545 [ 218 3 //tlBrown  //tlPlain ()    ()    3 ] put
+	tileCodes 546 [ 219 3 //tlBrown  //tlPlain ()    ()    4 ] put
+	tileCodes 582 [  38 0 //tlBrown  //tlPlain (Y)   (50)  2 ] put
+	tileCodes 584 [ 522 5 //tlBrown  //tlPlain (COP) (60)  1 ] put
+	tileCodes 623 [  63 5 //tlBrown  //tlPlain (Y)   (50)  1 ] put
+
+	%tile codes for map definition
+	% Plain track
+	tileCodes 400 [ 500 0 //tlGround //tlPlain    ()    () 0 ] put
+	tileCodes 401 [ 500 0 //tlGround //tlMountain (K60) () 0 ] put
+	tileCodes 402 [  77 3 //tlNoHex  //tlPlain    ()    () 0 ] put
+
+	% Large cities
+	tileCodes 410 [ 246 0 //tlGround //tlPlain    ()    () 0 ] put
+	tileCodes 411 [ 246 0 //tlGround //tlWater    (K40) () 0 ] put
+	tileCodes 412 [ 246 0 //tlGround //tlMountain (K60) () 0 ] put
+	tileCodes 413 [ 299 0 //tlGround //tlWater    (K40) () 0 ] put
+	tileCodes 414 [ 160 3 //tlYellow //tlPlain    (Y)   (30) 0 ] put
+	tileCodes 415 [ 246 0 //tlGround //tlPlain    (Y)   () 0 ] put
+
+	% Small cities
+	tileCodes 420 [ 501 0 //tlGround //tlPlain    ()    () 0 ] put
+
+	% Red areas
+	tileCodes 430 [ 516 0 //tlRed    //tlPlain ()    (20/50/80) 0 ] put
+	tileCodes 431 [ 585 0 //tlRed    //tlPlain ()    (20/30/50) 0 ] put
+	tileCodes 432 [ 585 0 //tlRed    //tlPlain ()    (10/30/60) 0 ] put
+	tileCodes 433 [ 516 0 //tlRed    //tlPlain ()    (0/30/60) 0 ] put
+	tileCodes 434 [ 516 0 //tlRed    //tlPlain ()    (30/50/80) 0 ] put
+	tileCodes 435 [ 144 0 //tlRed    //tlPlain ()    (10/50/10) 0 ] put
+
+	% Destinations
+	tileCodes 440 [ 500 3 //tlTransparent //tlPlain    (@1)    () 0 ] put
+	tileCodes 441 [ 500 3 //tlTransparent //tlPlain    (@2)    () 0 ] put
+	tileCodes 442 [ 500 0 //tlTransparent //tlPlain    (@3)    () 0 ] put
+
+	% Overlays
+	tileCodes 450 [ 500 0 //tlTransparent //tlPlain    (Y)     () 0 ] put
+
+% Upgrade Plain 400 => 8/* 9/*
+% Upgrade Plain 401 => 8/* 9/*
+% Upgrade Village 420 => 58/*
+% Upgrade City 410 => 5/*
+% Upgrade City 411 => 5/*
+% Upgrade City 412 => 5/*
+% Upgrade City 413 => 363/*
+% Upgrade YCity 415 => 5/*
+% Upgrade Oslo 415 => 5/*
+
+% Upgrade Plain 8 => 80/4 81/024 82/0 83/4
+% Upgrade Plain 9 => 82/03 83/03
+% Upgrade Village 58 => 141/0 142/4 143/4 144/024
+% Upgrade City 5 => 15/012
+% Upgrade City 363 => 121/024
+% Upgrade YCity 5 => 622/05
+% Upgrade Oslo 5 => 622/05
+% Upgrade YCity 414 => 622/2
+
+% Upgrade Plain 80 => 545/05 546/4
+% Upgrade Plain 81 => 546/024
+% Upgrade Plain 82 => 544/03 545/3 546/0
+% Upgrade Plain 83 => 544/25 545/0 546/0
+% Upgrade Village 141 => 145/03 146/3 147/0
+% Upgrade Village 142 => 145/25 146/0 147/0
+% Upgrade Village 143 => 146/05 147/4
+% Upgrade Village 144 => 147/024
+% Upgrade City 121 => 584/*
+% Upgrade YCity 622 => 582/3
+% Upgrade Oslo 622 => 623/*
+
+% Token SNJ 3
+% Token NSB 4
+% Token DSB 3
+% Token VR 4
+% Token SJ 6
+% Token 1 2
+% Token 2 2
+% Token 3 2
+

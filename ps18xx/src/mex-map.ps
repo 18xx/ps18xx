@@ -1,0 +1,133 @@
+%
+% $Header: mx-map.ps $
+%
+
+% ----------------------------------------------------------------------
+% the 18mex variant was done by Steve Thomas
+% ----------------------------------------------------------------------
+% 18mex map
+
+	newpath
+
+	/mapRows 21 def
+	/mapCols 14 def
+	/mapScale 0.45 def
+	/CM { 28.35 1 mapScale div mul mul } def
+	mapScale dup scale
+	21 CM 0 translate
+	90 rotate
+	/mapFrame {
+		1.5 CM 1.2 CM mapCols mapRows
+		0 0 0 0 Map
+	} def
+	mapFrame
+
+	(B1/5)	-401	[(#Baja California)]	LayTile
+
+	(C2/0)	-413	[]	LayTile	% Plain
+	(E2/0)	-414	[]	LayTile	% Plain
+
+	(B3/1)	-424	[(FCP)]	LayTile
+	(B3/5)	-440	[(#Nogales/Tucson)]	LayTile
+	(D3/0)	-423	[(#Hermosillo)]	LayTile	% Plain
+	(F3/0)	-414	[]	LayTile	% Plain
+
+	(C4/0)	-412	[]	LayTile	% Plain
+	(E4/0)	-412	[]	LayTile	% Plain
+	(G4/0)	-410	[]	LayTile	% Plain
+	(I4/0)	-421	[(#Los Mochis)]	LayTile	% Mochis
+
+	(B5/0)	-412	[]	LayTile	% Plain
+	(D5/0)	-414	[]	LayTile	% Plain
+	(F5/0)	-412	[]	LayTile	% Plain
+	(F5/5)	-440	[(#Copper Canyon)]	LayTile
+	(H5/0)	-412	[]	LayTile	% Plain
+	(J5/0)	-430	[(#Culiacan)]	LayTile	% Plain
+
+	(A6/0)	-402	[(#El Paso)]	LayTile
+	(C6/0)	-414	[]	LayTile	% Plain
+	(E6/0)	-425	[(CP)]	LayTile	% Plain
+	(E6/4)	-441	[(#Chihuahua)]	LayTile
+	(G6/0)	-414	[]	LayTile	% Plain
+	(I6/0)	-412	[]	LayTile	% Plain
+	(K6/2)	-422	[(B)(#Mazatlan)]	LayTile	% Plain
+
+	(D7/0)	-412	[]	LayTile	% Plain
+	(F7/0)	-412	[]	LayTile	% Plain
+	(H7/0)	-410	[]	LayTile	% Plain
+	(J7/0)	-434	[(#Durango)]	LayTile	% Plain
+	(L7/0)	-410	[]	LayTile	% Plain
+	(N7/0)	-411	[]	LayTile	% Plain
+	(P7/0)	-430	[(#Puerta Vallarta)]	LayTile	% Plain
+
+	(E8/0)	-414	[]	LayTile	% Plain
+	(G8/0)	-412	[]	LayTile	% Plain
+	(I8/0)	-420	[(MC)(#Torreon)]	LayTile	% Plain
+	(K8/0)	-433	[(#Zacatecas)]	LayTile	% Plain
+	(M8/0)	-410	[]	LayTile	% Plain
+	(O8/0)	-421	[(SPM)(#Guadalajara)]	LayTile	% Guadalajara
+	(Q8/0)	-413	[]	LayTile	% Plain
+
+	(D9/0)	-411	[]	LayTile	% Plain
+	(F9/0)	-412	[]	LayTile	% Plain
+	(H9/0)	-414	[]	LayTile	% Plain
+	(J9/0)	-414	[]	LayTile	% Plain
+	(L9/0)	-430	[(#San Luis Potosi)]	LayTile	% Plain
+	(N9/0)	-412	[]	LayTile	% Plain
+	(P9/0)	-412	[]	LayTile	% Plain
+	(R9/0)	-410	[]	LayTile	% Plain
+
+	(E10/0)	-414	[]	LayTile	% Plain
+	(G10/0)	-421	[(#Nuevo Laredo)]	LayTile	% Plain
+	(I10/0)	-420	[(#Monterrey)]	LayTile	% Plain
+	(K10/0)	-410	[]	LayTile	% Plain
+	(M10/0)	-423	[(#Queretaro)]	LayTile	% Plain
+	(O10/0)	-429	[(NdM)(#Mexico City)]	LayTile	% Plain
+	(Q10/0)	-412	[]	LayTile	% Plain
+	(S10/0)	-432	[(#Acapulco)]	LayTile	% Plain
+
+	(D11/1)	-426	[]	LayTile
+	(D11/5)	-440	[(#San Antonio)]	LayTile
+	(F11/0)	-410	[]	LayTile	% Plain
+	(H11/0)	-411	[]	LayTile	% Plain
+	(J11/0)	-414	[]	LayTile	% Plain
+	(L11/0)	-413	[]	LayTile	% Plain
+	(N11/0)	-413	[]	LayTile	% Plain
+	(P11/0)	-431	[]	LayTile	% Plain
+	(P11/2)	-440	[(#Puebla)]	LayTile
+	(R11/0)	-412	[]	LayTile	% Plain
+	(T11/0)	-411	[]	LayTile	% Plain
+
+	(G12/0)	-415	[]	LayTile	% Plain
+	(I12/0)	-427	[(TM)(#Matamoros)]	LayTile
+	(K12/0)	-415	[]	LayTile	% Plain
+	(M12/0)	-428	[(A)(#Tampico)]	LayTile	% Plain
+	(O12/0)	-413	[]	LayTile	% Plain
+	(Q12/0)	-413	[]	LayTile	% Plain
+	(S12/0)	-419	[(C)(#oaxaca)]	LayTile	% Plain
+	(U12/0)	-416	[]	LayTile
+
+	(P13/0)	-418	[(Mex)(#Veracruz)]	LayTile	% Plain
+	(P13/1)	-442	[]	LayTile
+	(R13/1)	-417	[]	LayTile	% Plain
+	(R13/0)	-443	[]	LayTile
+	(T13/0)	-411	[]	LayTile	% Plain
+
+	(Q14/1)	-403	[(UdY)(#Merida)]	LayTile
+	(U14/2)	-404	[(#Guatemala)]	LayTile
+
+		/Bookman 120 selectfont
+	(O1/7) LayText moveto (18Mex) show 
+
+	% =================================
+	% INSERT YOUR TILES AND TOKENS HERE
+	% =================================
+
+
+	(N11/SW)	Barrier
+	(N11/S)	Barrier
+	(P11/SW)	Barrier
+	(P11/S)	Barrier
+	(O12/SE)	Barrier
+
+	mapFrame

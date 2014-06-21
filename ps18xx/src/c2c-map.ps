@@ -1,0 +1,1145 @@
+%
+% $Header: C2C-map.ps $
+%
+
+%!
+% ----------------------------------------------------------------------
+% 18C2C map
+
+	newpath
+
+	/mapRows 26 def
+	/mapCols 88 def
+	/mapScale 0.3 def
+	/CM { 28.35 1 mapScale div mul mul } def
+	mapScale dup scale
+	/mapFrame {
+%SPLIT CHARLIE -1 -2 -3
+CHARLIE -1	1.5 CM 1.2 CM mapCols mapRows //hexHeight //hexHeight
+CHARLIE -1		//hexHeight //hexHeight 2 mul Map
+CHARLIE -2	1.5 CM 1.2 CM mapCols mapRows //hexHeight 29 mul neg //hexHeight
+CHARLIE -2		//hexHeight //hexHeight 2 mul Map
+CHARLIE -3	1.5 CM 1.2 CM mapCols mapRows //hexHeight 58 mul neg //hexHeight
+CHARLIE -3		//hexHeight //hexHeight 2 mul Map
+	} def
+	mapFrame
+
+	(@15/4)	-422	[]	LayTile
+	(@43/4)	-413	[]	LayTile
+	(@53/4)	-413	[]	LayTile
+
+	(A4/5)	-410	[]	LayTile
+	(A4/1)	-461	[]	LayTile
+	(A6/4)	-411	[(#Vancouver)]	LayTile
+	(A8/0)	-402	[]	LayTile	% Plain
+	(A10/0)	-404	[]	LayTile	% Plain
+	(A12/0)	-400	[]	LayTile	% Plain
+	(A14/0)	-402	[]	LayTile	% Plain
+	(A16/4)	-412	[]	LayTile
+	(A18/0)	-400	[]	LayTile	% Plain
+	(A20/0)	-402	[]	LayTile	% Plain
+	(A22/0)	-400	[]	LayTile	% Plain
+	(A24/0)	-400	[]	LayTile	% Plain
+	(A26/0)	-400	[]	LayTile	% Plain
+	(A28/0)	-400	[]	LayTile	% Plain
+	(A30/0)	-400	[]	LayTile	% Plain
+	(A32/0)	-400	[]	LayTile	% Plain
+	(A34/0)	-400	[]	LayTile	% Plain
+	(A36/0)	-400	[]	LayTile	% Plain
+	(A38/0)	-400	[]	LayTile	% Plain
+	(A40/0)	-400	[]	LayTile	% Plain
+	(A42/0)	-400	[]	LayTile	% Plain
+	(A44/4)	-412	[(#Winnipeg)]	LayTile
+	(A46/0)	-406	[]	LayTile	% Plain
+	(A48/0)	-400	[]	LayTile	% Plain
+	(A50/0)	-400	[]	LayTile	% Plain
+	(A52/0)	-402	[]	LayTile	% Plain
+	(A54/4)	-414	[(5)(#Thunder Bay)]	LayTile
+	(A56/0)	-400	[]	LayTile	% Plain
+	(A58/0)	-400	[]	LayTile	% Plain
+	(A60/0)	-400	[]	LayTile	% Plain
+	(A62/0)	-400	[]	LayTile	% Plain
+
+	(B5/0)	-402	[]	LayTile	% Plain
+	(B7/0)	-402	[]	LayTile	% Plain
+	(B9/0)	-405	[]	LayTile	% Plain
+	(B11/0)	-400	[]	LayTile	% Plain
+	(B13/0)	-400	[]	LayTile	% Plain
+	(B15/0)	-400	[]	LayTile	% Plain
+	(B17/0)	-402	[]	LayTile	% Plain
+	(B19/0)	-402	[]	LayTile	% Plain
+	(B21/0)	-403	[]	LayTile	% Plain
+	(B23/0)	-403	[]	LayTile	% Plain
+	(B25/0)	-400	[]	LayTile	% Plain
+	(B27/0)	-403	[]	LayTile	% Plain
+	(B29/0)	-403	[]	LayTile	% Plain
+	(B31/0)	-403	[]	LayTile	% Plain
+	(B33/0)	-403	[]	LayTile	% Plain
+	(B35/0)	-400	[]	LayTile	% Plain
+	(B37/0)	-400	[]	LayTile	% Plain
+	(B39/0)	-400	[]	LayTile	% Plain
+	(B41/0)	-400	[]	LayTile	% Plain
+	(B43/0)	-430	[(#Grand Forks)]	LayTile	% City
+	(B45/0)	-400	[]	LayTile	% Plain
+	(B47/0)	-400	[]	LayTile	% Plain
+	(B49/0)	-400	[]	LayTile	% Plain
+	(B51/0)	-400	[]	LayTile	% Plain
+	(B53/0)	-400	[]	LayTile	% Plain
+	(B55/0)	-407	[]	LayTile
+	(B57/0)	-407	[]	LayTile
+	(B59/0)	-400	[]	LayTile	% Plain
+	(B61/0)	-400	[]	LayTile	% Plain
+	(B63/0)	-400	[]	LayTile	% Plain
+	(B65/0)	-400	[]	LayTile	% Plain
+
+	(C2/0)	-400	[]	LayTile	% Plain
+	(C4/5)	-438	[(GN)(#Seattle)]	LayTile	% BCity
+	(C4/1)	-461	[]	LayTile
+	(C4/2)	-462	[]	LayTile
+	(C6/0)	-401	[]	LayTile	% Plain
+	(C8/0)	-405	[]	LayTile	% Plain
+	(C10/0)	-400	[]	LayTile	% Plain
+	(C12/0)	-430	[(#Spokane)]	LayTile	% City
+	(C14/0)	-400	[]	LayTile	% Plain
+	(C16/0)	-400	[]	LayTile	% Plain
+	(C18/0)	-402	[]	LayTile	% Plain
+	(C20/0)	-402	[]	LayTile	% Plain
+	(C22/0)	-430	[(#Great Falls)]	LayTile	% City
+	(C22/2)	-461	[]	LayTile
+	(C24/0)	-403	[]	LayTile	% Plain
+	(C26/0)	-403	[]	LayTile	% Plain
+	(C28/0)	-400	[]	LayTile	% Plain
+	(C30/0)	-400	[]	LayTile	% Plain
+	(C32/0)	-400	[]	LayTile	% Plain
+	(C34/0)	-403	[]	LayTile	% Plain
+	(C36/0)	-403	[]	LayTile	% Plain
+	(C38/0)	-400	[]	LayTile	% Plain
+	(C40/0)	-400	[]	LayTile	% Plain
+	(C42/0)	-400	[]	LayTile	% Plain
+	(C44/0)	-400	[]	LayTile	% Plain
+	(C46/0)	-403	[]	LayTile	% Plain
+	(C48/0)	-403	[]	LayTile	% Plain
+	(C50/0)	-400	[]	LayTile	% Plain
+	(C52/0)	-407	[]	LayTile
+	(C54/0)	-407	[]	LayTile
+	(C56/0)	-407	[]	LayTile
+	(C58/0)	-407	[]	LayTile
+	(C60/0)	-407	[]	LayTile
+	(C62/0)	-400	[]	LayTile	% Plain
+	(C64/0)	-400	[]	LayTile	% Plain
+	(C66/0)	-400	[]	LayTile	% Plain
+	(C68/0)	-400	[]	LayTile	% Plain
+	(C80/1)	-418	[(#Quebec)]	LayTile
+
+	(D1/0)	-400	[]	LayTile	% Plain
+	(D3/0)	-400	[]	LayTile	% Plain
+	(D5/0)	-402	[]	LayTile	% Plain
+	(D7/0)	-401	[]	LayTile	% Plain
+	(D9/0)	-405	[]	LayTile	% Plain
+	(D11/0)	-405	[]	LayTile	% Plain
+	(D13/0)	-400	[]	LayTile	% Plain
+	(D15/0)	-400	[]	LayTile	% Plain
+	(D17/0)	-400	[]	LayTile	% Plain
+	(D19/0)	-402	[]	LayTile	% Plain
+	(D21/0)	-401	[]	LayTile	% Plain
+	(D23/0)	-400	[]	LayTile	% Plain
+	(D25/0)	-400	[]	LayTile	% Plain
+	(D27/0)	-400	[]	LayTile	% Plain
+	(D29/0)	-400	[]	LayTile	% Plain
+	(D31/0)	-400	[]	LayTile	% Plain
+	(D33/0)	-400	[]	LayTile	% Plain
+	(D35/0)	-400	[]	LayTile	% Plain
+	(D37/0)	-432	[(#Bismarck)]	LayTile	% City
+	(D39/0)	-400	[]	LayTile	% Plain
+	(D41/0)	-400	[]	LayTile	% Plain
+	(D43/0)	-430	[(#Fargo)]	LayTile	% City
+	(D45/0)	-400	[]	LayTile	% Plain
+	(D47/0)	-403	[]	LayTile	% Plain
+	(D49/0)	-430	[(#Duluth)]	LayTile	% City
+	(D49/2)	-461	[]	LayTile
+	(D51/0)	-400	[]	LayTile	% Plain
+	(D53/0)	-400	[]	LayTile	% Plain
+	(D55/0)	-400	[]	LayTile	% Plain
+	(D57/0)	-400	[]	LayTile	% Plain
+	(D59/0)	-400	[]	LayTile	% Plain
+	(D61/0)	-406	[]	LayTile	% Plain
+	(D63/4)	-452	[(#Sault Ste Marie)]	LayTile	% KCity
+	(D65/0)	-400	[]	LayTile	% Plain
+	(D67/0)	-400	[]	LayTile	% Plain
+	(D69/0)	-449	[(#North Bay)]	LayTile	% LCity
+	(D71/0)	-400	[]	LayTile	% Plain
+	(D73/0)	-400	[]	LayTile	% Plain
+	(D77/1)	-417	[(#Montreal)]	LayTile
+	(D79/0)	-406	[]	LayTile	% Plain
+	(D81/4)	-412	[(#Quebec)]	LayTile
+	(D83/0)	-400	[]	LayTile	% Plain
+	(D85/0)	-400	[]	LayTile	% Plain
+	(D87/0)	-400	[]	LayTile	% Plain
+
+	(E2/0)	-406	[]	LayTile	% Plain
+	(E4/0)	-443	[(NP)(#Portland)]	LayTile	% PCity
+	(E4/0)	-460	[]	LayTile
+	(E4/2)	-461	[]	LayTile
+	(E6/0)	-401	[]	LayTile	% Plain
+	(E8/0)	-402	[]	LayTile	% Plain
+	(E10/0)	-400	[]	LayTile	% Plain
+	(E12/0)	-405	[]	LayTile	% Plain
+	(E14/0)	-400	[]	LayTile	% Plain
+	(E16/0)	-400	[]	LayTile	% Plain
+	(E18/0)	-431	[(#Butte)]	LayTile	% City
+	(E18/0)	-460	[]	LayTile
+	(E18/2)	-461	[]	LayTile
+	(E20/0)	-402	[]	LayTile	% Plain
+	(E22/0)	-402	[]	LayTile	% Plain
+	(E24/0)	-430	[(#Billings)]	LayTile	% City
+	(E24/2)	-461	[]	LayTile
+	(E26/0)	-400	[]	LayTile	% Plain
+	(E28/0)	-400	[]	LayTile	% Plain
+	(E30/0)	-400	[]	LayTile	% Plain
+	(E32/0)	-400	[]	LayTile	% Plain
+	(E34/0)	-400	[]	LayTile	% Plain
+	(E36/0)	-400	[]	LayTile	% Plain
+	(E38/0)	-403	[]	LayTile	% Plain
+	(E40/0)	-400	[]	LayTile	% Plain
+	(E42/0)	-400	[]	LayTile	% Plain
+	(E44/0)	-400	[]	LayTile	% Plain
+	(E46/0)	-432	[(#Saint Cloud)]	LayTile	% City
+	(E46/2)	-461	[]	LayTile
+	(E48/0)	-400	[]	LayTile	% Plain
+	(E50/0)	-400	[]	LayTile	% Plain
+	(E52/0)	-400	[]	LayTile	% Plain
+	(E54/0)	-400	[]	LayTile	% Plain
+	(E56/0)	-400	[]	LayTile	% Plain
+	(E58/0)	-400	[]	LayTile	% Plain
+	(E60/0)	-407	[]	LayTile
+	(E62/5)	-415	[]	LayTile
+	(E64/1)	-459	[(#Mackinaw City)]	LayTile
+	(E66/0)	-407	[]	LayTile
+	(E68/0)	-400	[]	LayTile	% Plain
+	(E70/0)	-400	[]	LayTile	% Plain
+	(E72/0)	-400	[]	LayTile	% Plain
+	(E74/0)	-400	[]	LayTile	% Plain
+	(E76/0)	-400	[]	LayTile	% Plain
+	(E78/5)	-416	[(CPR)]	LayTile
+	(E80/0)	-400	[]	LayTile	% Plain
+	(E82/0)	-400	[]	LayTile	% Plain
+	(E84/0)	-400	[]	LayTile	% Plain
+	(E86/0)	-400	[]	LayTile	% Plain
+	(E88/0)	-419	[(#Maritime Provinces)]	LayTile
+	(E88/1)	-462	[]	LayTile
+
+	(F1/0)	-400	[]	LayTile	% Plain
+	(F3/0)	-400	[]	LayTile	% Plain
+	(F5/0)	-401	[]	LayTile	% Plain
+	(F7/0)	-402	[]	LayTile	% Plain
+	(F9/0)	-400	[]	LayTile	% Plain
+	(F11/0)	-400	[]	LayTile	% Plain
+	(F13/0)	-404	[]	LayTile	% Plain
+	(F15/0)	-402	[]	LayTile	% Plain
+	(F17/0)	-402	[]	LayTile	% Plain
+	(F19/0)	-402	[]	LayTile	% Plain
+	(F21/0)	-402	[]	LayTile	% Plain
+	(F23/0)	-401	[]	LayTile	% Plain
+	(F25/0)	-400	[]	LayTile	% Plain
+	(F27/0)	-400	[]	LayTile	% Plain
+	(F29/0)	-400	[]	LayTile	% Plain
+	(F31/0)	-400	[]	LayTile	% Plain
+	(F33/0)	-400	[]	LayTile	% Plain
+	(F35/0)	-400	[]	LayTile	% Plain
+	(F37/0)	-403	[]	LayTile	% Plain
+	(F39/0)	-400	[]	LayTile	% Plain
+	(F41/0)	-400	[]	LayTile	% Plain
+	(F43/0)	-400	[]	LayTile	% Plain
+	(F45/0)	-400	[]	LayTile	% Plain
+	(F47/0)	-444	[(#Minneapolis)]	LayTile	% PCity
+	(F49/0)	-433	[(CMStPP)(#St Paul)]	LayTile	% City
+	(F51/0)	-400	[]	LayTile	% Plain
+	(F53/0)	-430	[(#Wausau)]	LayTile	% City
+	(F53/2)	-461	[]	LayTile
+	(F55/0)	-400	[]	LayTile	% Plain
+	(F57/0)	-400	[]	LayTile	% Plain
+	(F59/0)	-407	[]	LayTile
+	(F61/0)	-400	[]	LayTile	% Plain
+	(F63/0)	-400	[]	LayTile	% Plain
+	(F65/0)	-407	[]	LayTile
+	(F67/0)	-407	[]	LayTile
+	(F69/0)	-400	[]	LayTile	% Plain
+	(F71/0)	-400	[]	LayTile	% Plain
+	(F73/0)	-400	[]	LayTile	% Plain
+	(F75/0)	-449	[(#Ottawa)]	LayTile	% LCity
+	(F77/0)	-406	[]	LayTile	% Plain
+	(F79/0)	-400	[]	LayTile	% Plain
+	(F81/0)	-402	[]	LayTile	% Plain
+	(F83/0)	-402	[]	LayTile	% Plain
+	(F85/0)	-449	[(#Bangor)]	LayTile	% LCity
+	(F85/2)	-461	[]	LayTile
+	(F85/3)	-462	[]	LayTile
+	(F87/0)	-400	[]	LayTile	% Plain
+
+	(G2/0)	-449	[(#Eugene)]	LayTile	% LCity
+	(G2/2)	-461	[]	LayTile
+	(G4/0)	-402	[]	LayTile	% Plain
+	(G6/0)	-401	[]	LayTile	% Plain
+	(G8/0)	-402	[]	LayTile	% Plain
+	(G10/0)	-400	[]	LayTile	% Plain
+	(G12/0)	-404	[]	LayTile	% Plain
+	(G14/0)	-400	[]	LayTile	% Plain
+	(G16/0)	-402	[]	LayTile	% Plain
+	(G18/0)	-400	[]	LayTile	% Plain
+	(G20/0)	-400	[]	LayTile	% Plain
+	(G22/0)	-402	[]	LayTile	% Plain
+	(G24/0)	-401	[]	LayTile	% Plain
+	(G26/0)	-402	[]	LayTile	% Plain
+	(G28/0)	-400	[]	LayTile	% Plain
+	(G30/0)	-400	[]	LayTile	% Plain
+	(G32/0)	-402	[]	LayTile	% Plain
+	(G34/0)	-430	[(#Rapid City)]	LayTile	% City
+	(G36/0)	-400	[]	LayTile	% Plain
+	(G38/0)	-403	[]	LayTile	% Plain
+	(G40/0)	-400	[]	LayTile	% Plain
+	(G42/0)	-400	[]	LayTile	% Plain
+	(G44/0)	-400	[]	LayTile	% Plain
+	(G46/0)	-400	[]	LayTile	% Plain
+	(G48/0)	-400	[]	LayTile	% Plain
+	(G50/0)	-404	[]	LayTile	% Plain
+	(G52/0)	-400	[]	LayTile	% Plain
+	(G54/0)	-400	[]	LayTile	% Plain
+	(G56/0)	-400	[]	LayTile	% Plain
+	(G58/0)	-407	[]	LayTile
+	(G60/0)	-400	[]	LayTile	% Plain
+	(G62/0)	-400	[]	LayTile	% Plain
+	(G64/1)	-458	[(#Cleveland)]	LayTile
+	(G66/0)	-400	[]	LayTile	% Plain
+	(G68/0)	-400	[]	LayTile	% Plain
+	(G70/0)	-400	[]	LayTile	% Plain
+	(G72/0)	-400	[]	LayTile	% Plain
+	(G74/0)	-400	[]	LayTile	% Plain
+	(G76/0)	-400	[]	LayTile	% Plain
+	(G78/0)	-402	[]	LayTile	% Plain
+	(G80/0)	-402	[]	LayTile	% Plain
+	(G82/0)	-400	[]	LayTile	% Plain
+	(G84/0)	-400	[]	LayTile	% Plain
+
+	(H1/0)	-400	[]	LayTile	% Plain
+	(H3/0)	-400	[]	LayTile	% Plain
+	(H5/0)	-401	[]	LayTile	% Plain
+	(H7/0)	-402	[]	LayTile	% Plain
+	(H9/0)	-400	[]	LayTile	% Plain
+	(H11/0)	-400	[]	LayTile	% Plain
+	(H13/0)	-433	[(#Boise)]	LayTile	% City
+	(H13/2)	-461	[]	LayTile
+	(H15/0)	-400	[]	LayTile	% Plain
+	(H17/0)	-400	[]	LayTile	% Plain
+	(H19/0)	-432	[(#Idaho Falls)]	LayTile	% City
+	(H19/2)	-461	[]	LayTile
+	(H21/0)	-403	[]	LayTile	% Plain
+	(H23/0)	-402	[]	LayTile	% Plain
+	(H25/0)	-401	[]	LayTile	% Plain
+	(H27/0)	-402	[]	LayTile	% Plain
+	(H29/0)	-400	[]	LayTile	% Plain
+	(H31/0)	-400	[]	LayTile	% Plain
+	(H33/0)	-400	[]	LayTile	% Plain
+	(H35/0)	-400	[]	LayTile	% Plain
+	(H37/0)	-400	[]	LayTile	% Plain
+	(H39/0)	-404	[]	LayTile	% Plain
+	(H41/0)	-400	[]	LayTile	% Plain
+	(H43/0)	-430	[(#Sioux Falls)]	LayTile	% City
+	(H45/0)	-400	[]	LayTile	% Plain
+	(H47/0)	-400	[]	LayTile	% Plain
+	(H49/0)	-400	[]	LayTile	% Plain
+	(H51/0)	-404	[]	LayTile	% Plain
+	(H53/0)	-400	[]	LayTile	% Plain
+	(H55/0)	-449	[(#Milwaukee)]	LayTile	% LCity
+	(H57/0)	-407	[]	LayTile
+	(H59/0)	-400	[]	LayTile	% Plain
+	(H61/0)	-430	[(#Lansing)]	LayTile	% City
+	(H63/0)	-400	[]	LayTile	% Plain
+	(H65/0)	-406	[]	LayTile	% Plain
+	(H67/0)	-400	[]	LayTile	% Plain
+	(H69/0)	-435	[(#Toronto)]	LayTile	% City
+	(H71/0)	-400	[]	LayTile	% Plain
+	(H73/3)	-451	[(#Rochester)]	LayTile	% KCity
+	(H75/0)	-400	[]	LayTile	% Plain
+	(H77/0)	-400	[]	LayTile	% Plain
+	(H77/0)	-472	[]	LayTile
+	(H79/0)	-400	[]	LayTile	% Plain
+	(H81/0)	-402	[]	LayTile	% Plain
+	(H83/0)	-406	[]	LayTile	% Plain
+
+	(I2/0)	-400	[]	LayTile	% Plain
+	(I4/0)	-402	[]	LayTile	% Plain
+	(I6/0)	-401	[]	LayTile	% Plain
+	(I8/0)	-401	[]	LayTile	% Plain
+	(I10/0)	-400	[]	LayTile	% Plain
+	(I12/0)	-400	[]	LayTile	% Plain
+	(I14/0)	-403	[]	LayTile	% Plain
+	(I16/0)	-432	[(#Twin Falls)]	LayTile	% City
+	(I16/2)	-461	[]	LayTile
+	(I18/0)	-403	[]	LayTile	% Plain
+	(I20/0)	-402	[]	LayTile	% Plain
+	(I22/0)	-402	[]	LayTile	% Plain
+	(I24/0)	-401	[]	LayTile	% Plain
+	(I26/0)	-401	[]	LayTile	% Plain
+	(I28/0)	-430	[(#Caspar)]	LayTile	% City
+	(I28/2)	-461	[]	LayTile
+	(I30/0)	-400	[]	LayTile	% Plain
+	(I32/0)	-400	[]	LayTile	% Plain
+	(I34/0)	-400	[]	LayTile	% Plain
+	(I36/0)	-400	[]	LayTile	% Plain
+	(I38/0)	-400	[]	LayTile	% Plain
+	(I40/0)	-404	[]	LayTile	% Plain
+	(I42/0)	-404	[]	LayTile	% Plain
+	(I44/0)	-400	[]	LayTile	% Plain
+	(I46/0)	-400	[]	LayTile	% Plain
+	(I48/0)	-400	[]	LayTile	% Plain
+	(I50/0)	-400	[]	LayTile	% Plain
+	(I52/0)	-404	[]	LayTile	% Plain
+	(I54/0)	-400	[]	LayTile	% Plain
+	(I56/0)	-400	[]	LayTile	% Plain
+	(I58/0)	-407	[]	LayTile
+	(I60/0)	-400	[]	LayTile	% Plain
+	(I62/0)	-400	[]	LayTile	% Plain
+	(I64/0)	-438	[(#Detroit)]	LayTile	% BCity
+	(I66/0)	-400	[]	LayTile	% Plain
+	(I68/0)	-400	[]	LayTile	% Plain
+	(I70/0)	-445	[(Erie)(#Buffalo)]	LayTile	% PCity
+	(I72/0)	-400	[]	LayTile	% Plain
+	(I74/0)	-400	[]	LayTile	% Plain
+	(I76/0)	-402	[]	LayTile	% Plain
+	(I78/0)	-430	[(NYC)(#Albany)]	LayTile	% City
+	(I80/0)	-402	[]	LayTile	% Plain
+	(I82/5)	-437	[(B&M)(#Boston)]	LayTile	% BCity
+	(I82/4)	-462	[]	LayTile
+
+	(J1/0)	-400	[]	LayTile	% Plain
+	(J3/0)	-402	[]	LayTile	% Plain
+	(J5/0)	-402	[]	LayTile	% Plain
+	(J7/0)	-402	[]	LayTile	% Plain
+	(J9/0)	-402	[]	LayTile	% Plain
+	(J11/0)	-400	[]	LayTile	% Plain
+	(J13/0)	-402	[]	LayTile	% Plain
+	(J15/0)	-400	[]	LayTile	% Plain
+	(J17/0)	-400	[]	LayTile	% Plain
+	(J19/0)	-406	[]	LayTile	% Plain
+	(J21/0)	-430	[(#Ogden)]	LayTile	% City
+	(J23/0)	-402	[]	LayTile	% Plain
+	(J25/0)	-402	[]	LayTile	% Plain
+	(J27/0)	-402	[]	LayTile	% Plain
+	(J29/0)	-400	[]	LayTile	% Plain
+	(J31/0)	-400	[]	LayTile	% Plain
+	(J33/0)	-400	[]	LayTile	% Plain
+	(J35/0)	-400	[]	LayTile	% Plain
+	(J37/0)	-400	[]	LayTile	% Plain
+	(J39/0)	-400	[]	LayTile	% Plain
+	(J41/0)	-400	[]	LayTile	% Plain
+	(J43/0)	-404	[]	LayTile	% Plain
+	(J45/0)	-400	[]	LayTile	% Plain
+	(J47/0)	-430	[(CRIP)(#Des Moines)]	LayTile	% City
+	(J49/0)	-400	[]	LayTile	% Plain
+	(J51/0)	-400	[]	LayTile	% Plain
+	(J53/0)	-404	[]	LayTile	% Plain
+	(J55/0)	-400	[]	LayTile	% Plain
+	(J57/4)	-447	[(CNW)(#Chicago)]	LayTile	% Chicago
+	(J59/0)	-400	[]	LayTile	% Plain
+	(J61/0)	-400	[]	LayTile	% Plain
+	(J63/0)	-450	[(#Toledo)]	LayTile	% LCity
+	(J65/0)	-423	[(C&O)(#Cleveland)]	LayTile
+	(J67/0)	-400	[]	LayTile	% Plain
+	(J69/0)	-403	[]	LayTile	% Plain
+	(J71/0)	-400	[]	LayTile	% Plain
+	(J73/0)	-400	[]	LayTile	% Plain
+	(J75/0)	-431	[(#Scranton)]	LayTile	% City
+	(J77/0)	-400	[]	LayTile	% Plain
+	(J79/0)	-400	[]	LayTile	% Plain
+	(J81/0)	-406	[]	LayTile	% Plain
+	(J83/0)	-406	[]	LayTile	% Plain
+
+	(K2/0)	-402	[]	LayTile	% Plain
+	(K4/0)	-400	[]	LayTile	% Plain
+	(K6/0)	-401	[]	LayTile	% Plain
+	(K8/0)	-402	[]	LayTile	% Plain
+	(K10/0)	-400	[]	LayTile	% Plain
+	(K12/0)	-400	[]	LayTile	% Plain
+	(K14/0)	-402	[]	LayTile	% Plain
+	(K16/0)	-400	[]	LayTile	% Plain
+	(K18/0)	-400	[]	LayTile	% Plain
+	(K20/3)	-449	[(#Salt Lake City)]	LayTile	% LCity
+	(K22/0)	-401	[]	LayTile	% Plain
+	(K24/0)	-402	[]	LayTile	% Plain
+	(K26/0)	-401	[]	LayTile	% Plain
+	(K28/0)	-401	[]	LayTile	% Plain
+	(K30/0)	-430	[(#Cheyenne)]	LayTile	% City
+	(K30/0)	-460	[]	LayTile
+	(K32/0)	-400	[]	LayTile	% Plain
+	(K34/0)	-400	[]	LayTile	% Plain
+	(K36/0)	-400	[]	LayTile	% Plain
+	(K38/0)	-400	[]	LayTile	% Plain
+	(K40/0)	-430	[(#Kearney)]	LayTile	% City
+	(K40/2)	-463	[]	LayTile
+	(K42/0)	-400	[]	LayTile	% Plain
+	(K44/0)	-433	[(UP)(#Omaha)]	LayTile	% City
+	(K44/2)	-463	[]	LayTile
+	(K46/0)	-400	[]	LayTile	% Plain
+	(K48/0)	-400	[]	LayTile	% Plain
+	(K50/0)	-400	[]	LayTile	% Plain
+	(K52/0)	-433	[(BR)(#Burlington)]	LayTile	% City
+	(K54/0)	-400	[]	LayTile	% Plain
+	(K56/0)	-400	[]	LayTile	% Plain
+	(K58/0)	-400	[]	LayTile	% Plain
+	(K60/0)	-400	[]	LayTile	% Plain
+	(K62/0)	-400	[]	LayTile	% Plain
+	(K64/0)	-400	[]	LayTile	% Plain
+	(K66/0)	-400	[]	LayTile	% Plain
+	(K68/0)	-403	[]	LayTile	% Plain
+	(K70/0)	-400	[]	LayTile	% Plain
+	(K72/0)	-402	[]	LayTile	% Plain
+	(K74/0)	-402	[]	LayTile	% Plain
+	(K74/0)	-471	[]	LayTile
+	(K76/0)	-400	[]	LayTile	% Plain
+	(K78/0)	-446	[(NYH)(#New York)]	LayTile	% NY
+
+	(L1/0)	-400	[]	LayTile	% Plain
+	(L3/0)	-400	[]	LayTile	% Plain
+	(L5/0)	-402	[]	LayTile	% Plain
+	(L7/0)	-401	[]	LayTile	% Plain
+	(L9/0)	-402	[]	LayTile	% Plain
+	(L11/0)	-400	[]	LayTile	% Plain
+	(L13/0)	-400	[]	LayTile	% Plain
+	(L15/0)	-400	[]	LayTile	% Plain
+	(L17/0)	-400	[]	LayTile	% Plain
+	(L19/0)	-400	[]	LayTile	% Plain
+	(L21/0)	-400	[]	LayTile	% Plain
+	(L23/0)	-400	[]	LayTile	% Plain
+	(L25/0)	-401	[]	LayTile	% Plain
+	(L27/0)	-401	[]	LayTile	% Plain
+	(L27/0)	-466	[]	LayTile
+	(L29/0)	-441	[(DRG)(#Denver)]	LayTile	% PCity
+	(L29/0)	-460	[]	LayTile
+	(L31/0)	-400	[]	LayTile	% Plain
+	(L33/0)	-400	[]	LayTile	% Plain
+	(L35/0)	-400	[]	LayTile	% Plain
+	(L37/0)	-400	[]	LayTile	% Plain
+	(L39/0)	-400	[]	LayTile	% Plain
+	(L41/0)	-400	[]	LayTile	% Plain
+	(L43/0)	-400	[]	LayTile	% Plain
+	(L45/0)	-404	[]	LayTile	% Plain
+	(L47/0)	-400	[]	LayTile	% Plain
+	(L49/0)	-400	[]	LayTile	% Plain
+	(L51/0)	-404	[]	LayTile	% Plain
+	(L53/0)	-430	[(#Springfield)]	LayTile	% City
+	(L55/0)	-400	[]	LayTile	% Plain
+	(L57/0)	-400	[]	LayTile	% Plain
+	(L59/0)	-430	[(WAB)(#Indianapolis)]	LayTile	% City
+	(L61/0)	-400	[]	LayTile	% Plain
+	(L63/0)	-400	[]	LayTile	% Plain
+	(L65/0)	-400	[]	LayTile	% Plain
+	(L67/0)	-404	[]	LayTile	% Plain
+	(L69/0)	-430	[(PRR)(#Pittsburgh)]	LayTile	% City
+	(L69/0)	-464	[]	LayTile
+	(L71/0)	-402	[]	LayTile	% Plain
+	(L73/0)	-400	[]	LayTile	% Plain
+	(L75/0)	-430	[(#Philadelphia)]	LayTile	% City
+	(L77/0)	-400	[]	LayTile	% Plain
+	(L77/0)	-469	[]	LayTile
+
+	(M2/0)	-400	[]	LayTile	% Plain
+	(M4/0)	-430	[(#Sacramento)]	LayTile	% City
+	(M4/0)	-460	[]	LayTile
+	(M6/0)	-402	[]	LayTile	% Plain
+	(M6/0)	-468	[]	LayTile
+	(M8/0)	-436	[(#Carson City)]	LayTile	% City
+	(M8/0)	-460	[]	LayTile
+	(M10/0)	-402	[]	LayTile	% Plain
+	(M12/0)	-402	[]	LayTile	% Plain
+	(M14/0)	-400	[]	LayTile	% Plain
+	(M16/0)	-402	[]	LayTile	% Plain
+	(M18/0)	-400	[]	LayTile	% Plain
+	(M20/0)	-402	[]	LayTile	% Plain
+	(M22/0)	-400	[]	LayTile	% Plain
+	(M24/0)	-405	[]	LayTile	% Plain
+	(M26/0)	-401	[]	LayTile	% Plain
+	(M28/0)	-401	[]	LayTile	% Plain
+	(M30/0)	-402	[]	LayTile	% Plain
+	(M32/0)	-400	[]	LayTile	% Plain
+	(M34/0)	-400	[]	LayTile	% Plain
+	(M36/0)	-400	[]	LayTile	% Plain
+	(M38/0)	-400	[]	LayTile	% Plain
+	(M40/0)	-400	[]	LayTile	% Plain
+	(M42/0)	-400	[]	LayTile	% Plain
+	(M44/0)	-430	[(ATSF)(#Topeka)]	LayTile	% City
+	(M44/0)	-463	[]	LayTile
+	(M46/1)	-439	[(KATY)(#Kansas)]	LayTile	% BCity
+	(M48/0)	-404	[]	LayTile	% Plain
+	(M50/0)	-404	[]	LayTile	% Plain
+	(M52/0)	-442	[(MP)(#St Louis)]	LayTile	% PCity
+	(M54/0)	-400	[]	LayTile	% Plain
+	(M56/0)	-400	[]	LayTile	% Plain
+	(M58/0)	-400	[]	LayTile	% Plain
+	(M60/0)	-404	[]	LayTile	% Plain
+	(M62/0)	-433	[(#Cincinnati)]	LayTile	% City
+	(M64/0)	-404	[]	LayTile	% Plain
+	(M66/0)	-404	[]	LayTile	% Plain
+	(M68/0)	-402	[]	LayTile	% Plain
+	(M70/0)	-401	[]	LayTile	% Plain
+	(M72/0)	-400	[]	LayTile	% Plain
+	(M72/0)	-470	[]	LayTile
+	(M74/0)	-437	[(B&O)(#Baltimore)]	LayTile	% BCity
+	(M74/0)	-470	[]	LayTile
+	(M76/0)	-406	[]	LayTile	% Plain
+
+	(N3/0)	-400	[]	LayTile	% Plain
+	(N5/0)	-406	[]	LayTile	% Plain
+	(N7/0)	-402	[]	LayTile	% Plain
+	(N9/0)	-401	[]	LayTile	% Plain
+	(N11/0)	-402	[]	LayTile	% Plain
+	(N13/0)	-402	[]	LayTile	% Plain
+	(N15/0)	-400	[]	LayTile	% Plain
+	(N17/0)	-400	[]	LayTile	% Plain
+	(N19/0)	-402	[]	LayTile	% Plain
+	(N21/0)	-402	[]	LayTile	% Plain
+	(N23/0)	-406	[]	LayTile	% Plain
+	(N25/0)	-402	[]	LayTile	% Plain
+	(N27/0)	-401	[]	LayTile	% Plain
+	(N29/0)	-436	[(#Pueblo)]	LayTile	% City
+	(N29/0)	-460	[]	LayTile
+	(N31/0)	-404	[]	LayTile	% Plain
+	(N33/0)	-404	[]	LayTile	% Plain
+	(N35/0)	-404	[]	LayTile	% Plain
+	(N37/0)	-404	[]	LayTile	% Plain
+	(N39/0)	-404	[]	LayTile	% Plain
+	(N41/0)	-404	[]	LayTile	% Plain
+	(N43/0)	-400	[]	LayTile	% Plain
+	(N45/0)	-400	[]	LayTile	% Plain
+	(N47/0)	-400	[]	LayTile	% Plain
+	(N49/0)	-402	[]	LayTile	% Plain
+	(N51/0)	-402	[]	LayTile	% Plain
+	(N53/0)	-405	[]	LayTile	% Plain
+	(N55/0)	-400	[]	LayTile	% Plain
+	(N57/0)	-404	[]	LayTile	% Plain
+	(N59/0)	-433	[(L&N)(#Louisville)]	LayTile	% City
+	(N61/0)	-400	[]	LayTile	% Plain
+	(N63/0)	-400	[]	LayTile	% Plain
+	(N65/0)	-433	[(#Charleston)]	LayTile	% City
+	(N65/0)	-464	[]	LayTile
+	(N67/0)	-401	[]	LayTile	% Plain
+	(N69/0)	-402	[]	LayTile	% Plain
+	(N71/0)	-402	[]	LayTile	% Plain
+	(N73/0)	-406	[]	LayTile	% Plain
+
+	(O4/5)	-446	[(WP)(#San Francisco)]	LayTile	% SF
+	(O6/0)	-400	[]	LayTile	% Plain
+	(O8/0)	-402	[]	LayTile	% Plain
+	(O10/0)	-401	[]	LayTile	% Plain
+	(O12/0)	-402	[]	LayTile	% Plain
+	(O14/0)	-400	[]	LayTile	% Plain
+	(O16/0)	-400	[]	LayTile	% Plain
+	(O18/0)	-400	[]	LayTile	% Plain
+	(O20/0)	-401	[]	LayTile	% Plain
+	(O22/0)	-406	[]	LayTile	% Plain
+	(O24/0)	-400	[]	LayTile	% Plain
+	(O26/0)	-401	[]	LayTile	% Plain
+	(O28/0)	-401	[]	LayTile	% Plain
+	(O30/0)	-401	[]	LayTile	% Plain
+	(O32/0)	-400	[]	LayTile	% Plain
+	(O34/0)	-400	[]	LayTile	% Plain
+	(O36/0)	-400	[]	LayTile	% Plain
+	(O38/0)	-400	[]	LayTile	% Plain
+	(O40/0)	-400	[]	LayTile	% Plain
+	(O42/0)	-433	[(#Wichita)]	LayTile	% City
+	(O44/0)	-400	[]	LayTile	% Plain
+	(O46/0)	-400	[]	LayTile	% Plain
+	(O48/0)	-431	[(Fri)(#Springfield)]	LayTile	% City
+	(O50/0)	-402	[]	LayTile	% Plain
+	(O52/0)	-402	[]	LayTile	% Plain
+	(O54/0)	-405	[]	LayTile	% Plain
+	(O56/0)	-404	[]	LayTile	% Plain
+	(O58/0)	-400	[]	LayTile	% Plain
+	(O60/0)	-400	[]	LayTile	% Plain
+	(O62/0)	-400	[]	LayTile	% Plain
+	(O64/0)	-402	[]	LayTile	% Plain
+	(O66/0)	-402	[]	LayTile	% Plain
+	(O68/0)	-431	[(#Blacksburg)]	LayTile	% City
+	(O68/0)	-464	[]	LayTile
+	(O70/0)	-400	[]	LayTile	% Plain
+	(O72/0)	-449	[(#Richmond)]	LayTile	% LCity
+
+	(P5/0)	-451	[(#Monterey)]	LayTile	% KCity
+	(P7/0)	-400	[]	LayTile	% Plain
+
+	(P9/0)	-431	[(#Fresno)]	LayTile	% City
+	(P11/0)	-402	[]	LayTile	% Plain
+	(P13/0)	-401	[]	LayTile	% Plain
+	(P15/0)	-430	[(#Las Vegas)]	LayTile	% City
+	(P15/0)	-460	[]	LayTile
+	(P17/0)	-402	[]	LayTile	% Plain
+	(P19/0)	-407	[]	LayTile
+	(P21/0)	-402	[]	LayTile	% Plain
+	(P23/0)	-400	[]	LayTile	% Plain
+	(P25/0)	-402	[]	LayTile	% Plain
+	(P27/0)	-401	[]	LayTile	% Plain
+	(P29/0)	-401	[]	LayTile	% Plain
+	(P31/0)	-400	[]	LayTile	% Plain
+	(P33/0)	-400	[]	LayTile	% Plain
+	(P35/0)	-400	[]	LayTile	% Plain
+	(P37/0)	-400	[]	LayTile	% Plain
+	(P39/0)	-400	[]	LayTile	% Plain
+	(P41/0)	-400	[]	LayTile	% Plain
+	(P43/0)	-404	[]	LayTile	% Plain
+	(P45/0)	-400	[]	LayTile	% Plain
+	(P47/0)	-402	[]	LayTile	% Plain
+	(P49/0)	-402	[]	LayTile	% Plain
+	(P51/0)	-402	[]	LayTile	% Plain
+	(P53/0)	-405	[]	LayTile	% Plain
+	(P55/0)	-400	[]	LayTile	% Plain
+	(P57/0)	-400	[]	LayTile	% Plain
+	(P59/0)	-400	[]	LayTile	% Plain
+	(P61/0)	-400	[]	LayTile	% Plain
+	(P63/0)	-430	[(#Knoxville)]	LayTile	% City
+	(P63/0)	-464	[]	LayTile
+	(P65/0)	-402	[]	LayTile	% Plain
+	(P67/0)	-401	[]	LayTile	% Plain
+	(P69/0)	-400	[]	LayTile	% Plain
+	(P71/0)	-400	[]	LayTile	% Plain
+	(P73/0)	-451	[(N&W)(#Norfolk)]	LayTile	% KCity
+	(P73/0)	-462	[]	LayTile
+
+	(Q6/0)	-400	[]	LayTile	% Plain
+	(Q8/0)	-400	[]	LayTile	% Plain
+	(Q10/0)	-402	[]	LayTile	% Plain
+	(Q12/0)	-402	[]	LayTile	% Plain
+	(Q14/0)	-401	[]	LayTile	% Plain
+	(Q16/0)	-401	[]	LayTile	% Plain
+	(Q18/0)	-402	[]	LayTile	% Plain
+	(Q20/0)	-400	[]	LayTile	% Plain
+	(Q22/0)	-400	[]	LayTile	% Plain
+	(Q24/0)	-400	[]	LayTile	% Plain
+	(Q26/0)	-402	[]	LayTile	% Plain
+	(Q28/0)	-436	[(#Santa Fe)]	LayTile	% City
+	(Q28/0)	-460	[]	LayTile
+	(Q30/0)	-401	[]	LayTile	% Plain
+	(Q32/0)	-400	[]	LayTile	% Plain
+	(Q34/0)	-400	[]	LayTile	% Plain
+	(Q36/0)	-430	[(#Amarillo)]	LayTile	% City
+	(Q36/2)	-463	[]	LayTile
+	(Q38/0)	-400	[]	LayTile	% Plain
+	(Q40/0)	-400	[]	LayTile	% Plain
+	(Q42/0)	-430	[(#Oklahoma City)]	LayTile	% City
+	(Q42/2)	-463	[]	LayTile
+	(Q44/0)	-404	[]	LayTile	% Plain
+	(Q46/0)	-404	[]	LayTile	% Plain
+	(Q48/0)	-404	[]	LayTile	% Plain
+	(Q50/0)	-400	[]	LayTile	% Plain
+	(Q52/0)	-400	[]	LayTile	% Plain
+	(Q54/0)	-434	[(CB)(#Memphis)]	LayTile	% City
+	(Q54/2)	-465	[]	LayTile
+	(Q56/0)	-400	[]	LayTile	% Plain
+	(Q58/0)	-430	[(#Nashville)]	LayTile	% City
+	(Q60/0)	-400	[]	LayTile	% Plain
+	(Q62/0)	-400	[]	LayTile	% Plain
+	(Q64/0)	-401	[]	LayTile	% Plain
+	(Q66/0)	-402	[]	LayTile	% Plain
+	(Q68/0)	-400	[]	LayTile	% Plain
+	(Q70/0)	-437	[(#Raleigh)]	LayTile	% BCity
+	(Q72/0)	-400	[]	LayTile	% Plain
+	(Q74/0)	-406	[]	LayTile	% Plain
+
+	(R7/0)	-402	[]	LayTile	% Plain
+	(R9/0)	-443	[(SP)(#Los Angeles)]	LayTile	% PCity
+	(R11/0)	-402	[]	LayTile	% Plain
+	(R13/0)	-400	[]	LayTile	% Plain
+	(R15/0)	-402	[]	LayTile	% Plain
+	(R17/0)	-401	[]	LayTile	% Plain
+	(R19/0)	-402	[]	LayTile	% Plain
+	(R21/0)	-430	[(#Flagstaff)]	LayTile	% City
+	(R23/0)	-400	[]	LayTile	% Plain
+	(R25/0)	-402	[]	LayTile	% Plain
+	(R27/0)	-436	[(#Albuquerque)]	LayTile	% City
+	(R27/0)	-460	[]	LayTile
+	(R29/0)	-401	[]	LayTile	% Plain
+	(R31/0)	-400	[]	LayTile	% Plain
+	(R33/0)	-400	[]	LayTile	% Plain
+	(R35/0)	-400	[]	LayTile	% Plain
+	(R37/0)	-400	[]	LayTile	% Plain
+	(R39/0)	-400	[]	LayTile	% Plain
+	(R41/0)	-400	[]	LayTile	% Plain
+	(R43/0)	-400	[]	LayTile	% Plain
+	(R45/0)	-400	[]	LayTile	% Plain
+	(R47/0)	-400	[]	LayTile	% Plain
+	(R49/0)	-433	[(#Little Rock)]	LayTile	% City
+	(R49/2)	-463	[]	LayTile
+	(R51/0)	-404	[]	LayTile	% Plain
+	(R53/0)	-405	[]	LayTile	% Plain
+	(R55/0)	-400	[]	LayTile	% Plain
+	(R57/0)	-400	[]	LayTile	% Plain
+	(R59/0)	-400	[]	LayTile	% Plain
+	(R61/0)	-400	[]	LayTile	% Plain
+	(R63/0)	-402	[]	LayTile	% Plain
+	(R65/0)	-400	[]	LayTile	% Plain
+	(R67/0)	-400	[]	LayTile	% Plain
+	(R69/0)	-400	[]	LayTile	% Plain
+	(R71/0)	-400	[]	LayTile	% Plain
+	(R73/0)	-400	[]	LayTile	% Plain
+
+	(S10/0)	-400	[]	LayTile	% Plain
+	(S12/0)	-400	[]	LayTile	% Plain
+	(S14/0)	-400	[]	LayTile	% Plain
+	(S16/0)	-406	[]	LayTile	% Plain
+	(S16/0)	-467	[]	LayTile
+	(S18/0)	-402	[]	LayTile	% Plain
+	(S20/0)	-400	[]	LayTile	% Plain
+	(S22/0)	-400	[]	LayTile	% Plain
+	(S24/0)	-401	[]	LayTile	% Plain
+	(S26/0)	-401	[]	LayTile	% Plain
+	(S28/0)	-401	[]	LayTile	% Plain
+	(S30/0)	-402	[]	LayTile	% Plain
+	(S32/0)	-400	[]	LayTile	% Plain
+	(S34/0)	-430	[(#Lubbock)]	LayTile	% City
+	(S34/2)	-463	[]	LayTile
+	(S36/0)	-400	[]	LayTile	% Plain
+	(S38/0)	-400	[]	LayTile	% Plain
+	(S40/0)	-400	[]	LayTile	% Plain
+	(S42/0)	-400	[]	LayTile	% Plain
+	(S44/0)	-400	[]	LayTile	% Plain
+	(S46/0)	-400	[]	LayTile	% Plain
+	(S48/0)	-400	[]	LayTile	% Plain
+	(S50/0)	-400	[]	LayTile	% Plain
+	(S52/0)	-405	[]	LayTile	% Plain
+	(S54/0)	-400	[]	LayTile	% Plain
+	(S56/0)	-400	[]	LayTile	% Plain
+	(S58/0)	-430	[(#Birmingham)]	LayTile	% City
+	(S58/0)	-464	[]	LayTile
+	(S60/0)	-400	[]	LayTile	% Plain
+	(S62/4)	-440	[(SR)(#Atlanta)]	LayTile	% BCity
+	(S62/0)	-464	[]	LayTile
+	(S62/0)	-510	[]	LayTile
+	(S64/0)	-400	[]	LayTile	% Plain
+	(S66/0)	-400	[]	LayTile	% Plain
+	(S68/0)	-400	[]	LayTile	% Plain
+	(S70/0)	-400	[]	LayTile	% Plain
+
+	(T11/4)	-420	[(#San Diego)]	LayTile
+	(T13/4)	-426	[(8)]	LayTile
+	(T15/0)	-406	[]	LayTile	% Plain
+	(T15/0)	-467	[]	LayTile
+	(T17/0)	-400	[]	LayTile	% Plain
+	(T19/0)	-400	[]	LayTile	% Plain
+	(T21/0)	-430	[(#Phoenix)]	LayTile	% City
+	(T21/0)	-460	[]	LayTile
+	(T23/0)	-400	[]	LayTile	% Plain
+	(T25/0)	-401	[]	LayTile	% Plain
+	(T27/0)	-401	[]	LayTile	% Plain
+	(T29/0)	-402	[]	LayTile	% Plain
+	(T31/0)	-400	[]	LayTile	% Plain
+	(T33/0)	-400	[]	LayTile	% Plain
+	(T35/0)	-400	[]	LayTile	% Plain
+	(T37/0)	-400	[]	LayTile	% Plain
+	(T39/0)	-400	[]	LayTile	% Plain
+	(T41/0)	-445	[(#Fort Worth)]	LayTile	% PCity
+	(T41/2)	-463	[]	LayTile
+	(T43/0)	-445	[(TP)(#Dallas)]	LayTile	% PCity
+	(T43/2)	-463	[]	LayTile
+	(T45/0)	-400	[]	LayTile	% Plain
+	(T47/0)	-400	[]	LayTile	% Plain
+	(T49/0)	-400	[]	LayTile	% Plain
+	(T51/0)	-405	[]	LayTile	% Plain
+	(T53/0)	-430	[(IC)(#Jackson)]	LayTile	% City
+	(T55/0)	-400	[]	LayTile	% Plain
+	(T57/0)	-400	[]	LayTile	% Plain
+	(T59/0)	-400	[]	LayTile	% Plain
+	(T61/0)	-400	[]	LayTile	% Plain
+	(T63/0)	-400	[]	LayTile	% Plain
+	(T65/0)	-400	[]	LayTile	% Plain
+	(T67/0)	-400	[]	LayTile	% Plain
+	(T69/3)	-426	[(5)]	LayTile
+	(T71/1)	-421	[(#Charleston)]	LayTile
+	(T71/2)	-462	[]	LayTile
+
+	(U20/0)	-400	[]	LayTile	% Plain
+	(U22/0)	-451	[(#Tucson)]	LayTile	% KCity
+	(U22/2)	-463	[]	LayTile
+	(U24/0)	-400	[]	LayTile	% Plain
+	(U26/0)	-400	[]	LayTile	% Plain
+	(U28/0)	-453	[(#El Paso)]	LayTile	% KCity
+	(U28/2)	-463	[]	LayTile
+	(U30/0)	-400	[]	LayTile	% Plain
+	(U32/0)	-400	[]	LayTile	% Plain
+	(U34/0)	-400	[]	LayTile	% Plain
+	(U36/0)	-400	[]	LayTile	% Plain
+	(U38/0)	-400	[]	LayTile	% Plain
+	(U40/0)	-400	[]	LayTile	% Plain
+	(U42/0)	-400	[]	LayTile	% Plain
+	(U44/0)	-400	[]	LayTile	% Plain
+	(U46/0)	-400	[]	LayTile	% Plain
+	(U48/0)	-430	[(#Shreveport)]	LayTile	% City
+	(U48/2)	-463	[]	LayTile
+	(U50/0)	-400	[]	LayTile	% Plain
+	(U52/0)	-405	[]	LayTile	% Plain
+	(U54/0)	-400	[]	LayTile	% Plain
+	(U56/0)	-400	[]	LayTile	% Plain
+	(U58/0)	-400	[]	LayTile	% Plain
+	(U60/0)	-400	[]	LayTile	% Plain
+	(U62/0)	-400	[]	LayTile	% Plain
+	(U64/0)	-400	[]	LayTile	% Plain
+	(U66/0)	-451	[(#Savannah)]	LayTile	% KCity
+	(U66/2)	-462	[]	LayTile
+
+	(V31/0)	-400	[]	LayTile	% Plain
+	(V33/0)	-400	[]	LayTile	% Plain
+	(V35/0)	-400	[]	LayTile	% Plain
+	(V37/0)	-400	[]	LayTile	% Plain
+	(V39/0)	-400	[]	LayTile	% Plain
+	(V41/0)	-430	[(#Austin)]	LayTile	% City
+	(V41/0)	-463	[]	LayTile
+	(V43/0)	-400	[]	LayTile	% Plain
+	(V45/0)	-430	[(#Houston)]	LayTile	% City
+	(V45/2)	-463	[]	LayTile
+	(V47/0)	-400	[]	LayTile	% Plain
+	(V49/0)	-400	[]	LayTile	% Plain
+	(V51/0)	-434	[(#Baton Rouge)]	LayTile	% City
+	(V51/2)	-465	[]	LayTile
+	(V53/0)	-405	[]	LayTile	% Plain
+	(V55/0)	-405	[]	LayTile	% Plain
+	(V57/0)	-451	[(GMO)(#Mobile)]	LayTile	% KCity
+	(V57/2)	-465	[]	LayTile
+	(V59/0)	-400	[]	LayTile	% Plain
+	(V61/0)	-400	[]	LayTile	% Plain
+	(V63/0)	-400	[]	LayTile	% Plain
+	(V65/0)	-400	[]	LayTile	% Plain
+
+	(W32/0)	-400	[]	LayTile	% Plain
+	(W34/0)	-400	[]	LayTile	% Plain
+	(W36/0)	-400	[]	LayTile	% Plain
+	(W38/0)	-400	[]	LayTile	% Plain
+	(W40/0)	-430	[(#San Antonio)]	LayTile	% City
+	(W40/2)	-463	[]	LayTile
+	(W42/0)	-400	[]	LayTile	% Plain
+	(W44/0)	-400	[]	LayTile	% Plain
+	(W46/0)	-448	[(#Galveston)]	LayTile	% LCity
+	(W46/3)	-463	[]	LayTile
+	(W46/2)	-465	[]	LayTile
+	(W48/0)	-405	[]	LayTile	% Plain
+	(W50/0)	-405	[]	LayTile	% Plain
+	(W52/0)	-405	[]	LayTile	% Plain
+	(W54/1)	-424	[(5)(8)(#New Orleans)]	LayTile
+	(W56/1)	-425	[(#New Orleans)]	LayTile
+	(W56/5)	-465	[]	LayTile
+	(W62/0)	-400	[]	LayTile	% Plain
+	(W64/0)	-400	[]	LayTile	% Plain
+	(W66/0)	-451	[(SAL)(#Jacksonville)]	LayTile	% KCity
+	(W66/2)	-462	[]	LayTile
+
+	(X37/0)	-400	[]	LayTile	% Plain
+	(X39/0)	-400	[]	LayTile	% Plain
+	(X41/0)	-400	[]	LayTile	% Plain
+	(X43/0)	-400	[]	LayTile	% Plain
+	(X45/0)	-400	[]	LayTile	% Plain
+	(X63/1)	-427	[(#Tampa)]	LayTile
+	(X63/0)	-465	[]	LayTile
+	(X65/0)	-400	[]	LayTile	% Plain
+	(X67/0)	-400	[]	LayTile	% Plain
+
+	(Y38/0)	-400	[]	LayTile	% Plain
+	(Y40/0)	-400	[]	LayTile	% Plain
+	(Y42/0)	-453	[(#Corpus Christi)]	LayTile	% KCity
+	(Y42/2)	-465	[]	LayTile
+	(Y64/5)	-426	[(ACL)]	LayTile
+	(Y66/0)	-400	[]	LayTile	% Plain
+	(Y68/0)	-400	[]	LayTile	% Plain
+
+	(Z39/2)	-429	[]	LayTile
+	(Z41/2)	-429	[]	LayTile
+	(Z65/0)	-400	[]	LayTile	% Plain
+	(Z67/0)	-400	[]	LayTile	% Plain
+
+	([66/0)	-406	[]	LayTile	% Plain
+	([68/1)	-428	[(#Miami)]	LayTile
+
+		/Bookman 120 selectfont
+	(B72/7) LayText moveto (18C2C) show 
+
+	% =================================
+	% INSERT YOUR TILES AND TOKENS HERE
+	% =================================
+
+	(A8/SW)	Frontier
+	(A8/SE)	Frontier
+	(A10/SW)	Frontier
+	(A10/SE)	Frontier
+	(A12/SW)	Frontier
+	(A12/SE)	Frontier
+	(A14/SW)	Frontier
+	(A14/SE)	Frontier
+	(A16/SW)	Frontier
+	(A16/SE)	Frontier
+	(A18/SW)	Frontier
+	(A18/SE)	Frontier
+	(A20/SW)	Frontier
+	(A20/SE)	Frontier
+	(A22/SW)	Frontier
+	(A22/SE)	Frontier
+	(A24/SW)	Frontier
+	(A24/SE)	Frontier
+	(A26/SW)	Frontier
+	(A26/SE)	Frontier
+	(A28/SW)	Frontier
+	(A28/SE)	Frontier
+	(A30/SW)	Frontier
+	(A30/SE)	Frontier
+	(A32/SW)	Frontier
+	(A32/SE)	Frontier
+	(A34/SW)	Frontier
+	(A34/SE)	Frontier
+	(A36/SW)	Frontier
+	(A36/SE)	Frontier
+	(A38/SW)	Frontier
+	(A38/SE)	Frontier
+	(A40/SW)	Frontier
+	(A40/SE)	Frontier
+	(A42/SW)	Frontier
+	(A42/SE)	Frontier
+	(A44/SW)	Frontier
+	(A44/SE)	Frontier
+	(A46/SW)	Frontier
+	(A46/SE)	Frontier
+	(A48/SW)	Frontier
+	(A48/SE)	Frontier
+	(A50/SW)	Frontier
+	(B51/W)		Frontier
+	(B51/SW)	Frontier
+	(H69/SE)	Frontier
+	(H69/E)		Frontier
+	(D63/W)		Frontier
+	(F63/E)		Frontier
+	(H63/E)		Frontier
+	(I64/E)		Frontier
+	(I64/NE)	Frontier
+	(J65/NE)	Frontier
+	(F77/SW)	Frontier
+	(F77/SE)	Frontier
+	(F79/SW)	Frontier
+	(F79/SE)	Frontier
+	(F81/SW)	Frontier
+	(F81/SE)	Frontier
+	(F81/E)		Frontier
+	(E82/SE)	Frontier
+	(E82/E)		Frontier
+	(D83/SE)	Frontier
+	(D83/E)		Frontier
+
+	(B21/W)		Frontier
+	(B21/SW)	Frontier
+	(C22/W)		Frontier
+	(C22/SW)	Frontier
+	(D23/W)		Frontier
+	(D23/SW)	Frontier
+	(E24/W)		Frontier
+	(E24/SW)	Frontier
+	(F25/W)		Frontier
+	(F25/SW)	Frontier
+	(F25/SE)	Frontier
+	(G26/NE)	Frontier
+	(G28/W)		Frontier
+	(G28/SW)	Frontier
+	(H29/W)		Frontier
+	(H29/SW)	Frontier
+	(I30/W)		Frontier
+	(I30/SW)	Frontier
+	(J31/W)		Frontier
+	(J31/SW)	Frontier
+	(K30/E)		Frontier
+	(K30/NE)	Frontier
+	(K30/SE)	Frontier
+	(L29/E)		Frontier
+	(M30/E)		Frontier
+	(M30/NE)	Frontier
+	(M30/SE)	Frontier
+	(N29/E)		Frontier
+	(O30/E)		Frontier
+	(O30/NE)	Frontier
+	(O30/SE)	Frontier
+	(P29/E)		Frontier
+	(Q30/NE)	Frontier
+	(Q30/E)		Frontier
+	(Q30/SE)	Frontier
+	(R29/E)		Frontier
+	(S30/NE)	Frontier
+	(S30/E)		Frontier
+	(S30/SE)	Frontier
+	(T29/E)		Frontier
+	(U30/NW)	Frontier
+	(U30/W)		Frontier
+
+	(B47/W)		Frontier
+	(B47/SW)	Frontier
+	(C48/W)		Frontier
+	(C48/SW)	Frontier
+	(D49/W)		Frontier
+	(E48/NW)	Frontier
+	(E48/W)		Frontier
+	(E48/SW)	Frontier
+	(F49/W)		Frontier
+	(F49/SW)	Frontier
+	(F49/SE)	Frontier
+	(G50/NE)	Frontier
+	(G50/E)		Frontier
+	(H51/NE)	Frontier
+	(H51/E)		Frontier
+	(I52/NE)	Frontier
+	(I52/E)		Frontier
+	(I52/SE)	Frontier
+	(J53/W)		Frontier
+	(K52/NE)	Frontier
+	(K52/E)		Frontier
+	(K52/SE)	Frontier
+	(L53/W)		Frontier
+	(M52/NE)	Frontier
+	(M52/E)		Frontier
+	(N53/NE)	Frontier
+	(N53/E)		Frontier
+	(O54/NE)	Frontier
+	(O54/E)		Frontier
+	(O54/SE)	Frontier
+	(P53/E)		Frontier
+	(P53/SE)	Frontier
+	(Q52/E)		Frontier
+	(Q52/SE)	Frontier
+	(R51/E)		Frontier
+	(R51/SE)	Frontier
+	(S52/W)		Frontier
+	(S52/SW)	Frontier
+	(T51/E)		Frontier
+	(T51/SE)	Frontier
+	(U50/E)		Frontier
+	(U50/SE)	Frontier
+	(V51/W)		Frontier
+	(V51/SW)	Frontier
+	(V51/SE)	Frontier
+	(W52/NE)	Frontier
+	(W52/E)		Frontier
+
+	(F21/E)		Barrier
+	(F21/SE)	Barrier
+	(F23/SW)	Barrier
+	(J19/SW)	Barrier
+	(J19/SE)	Barrier
+	(O20/E)		Barrier
+	(O20/SE)	Barrier
+	(P17/SW)	Barrier
+	(P17/SE)	Barrier
+	(C50/SE)	Barrier
+	(C62/SW)	Barrier
+	(I66/SE)	Barrier
+	(I68/SW)	Barrier
+	(I68/SE)	Barrier
+	(I68/E)		Barrier
+	(G70/SE)	Barrier
+	(G72/SW)	Barrier
+	(G72/SE)	Barrier
+	(G74/SW)	Barrier
+	(G74/SE)	Barrier
+	(G74/E)		Barrier
+	(F75/SE)	Barrier
+	(G84/SW)	Barrier
+	(Q74/SW)	Barrier
+
+	mapFrame

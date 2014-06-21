@@ -1,0 +1,149 @@
+%
+% $Header: 30-map.ps[1.6] Wed Nov 15 17:26:41 1995 doko@cs.tu-berlin.de saved $
+%
+
+%!
+% ----------------------------------------------------------------------
+% 1830 map
+
+	newpath
+
+	/mapRows 11 def
+	/mapCols 24 def
+	/mapScale 0.6 def
+	/CM { 28.35 1 mapScale div mul mul } def
+	mapScale dup scale
+	21 CM 0 translate
+	90 rotate
+	/mapFrame {
+	1.5 CM 1.2 CM mapCols mapRows //hexHeight neg -1 cm
+		//hexHeight neg //hexHeight neg Map
+	} def
+	mapFrame
+
+	(A9/5)	-401	[]	LayTile
+	(A11/5)	-402	[]	LayTile
+	(A17/5)	-403	[]	LayTile
+	(A19/1)	-404	[(CPR)]	LayTile
+
+	(B10/0)	-405	[]	LayTile	% City
+	(B12/0)	-406	[]	LayTile	% Plain
+	(B14/0)	-406	[]	LayTile	% Plain
+	(B16/0)	-405	[]	LayTile	% City
+	(B18/0)	-407	[]	LayTile	% Plain
+	(B20/0)	-408	[]	LayTile	% Village
+	(B20/1)	-433	[]	LayTile
+	(B22/0)	-406	[]	LayTile	% Plain
+	(B24/0)	-409	[]	LayTile
+
+	(C7/0)	-406	[]	LayTile	% Plain
+	(C9/0)	-406	[]	LayTile	% Plain
+	(C11/0)	-406	[]	LayTile	% Plain
+	(C13/0)	-406	[]	LayTile	% Plain
+	(C15/1)	-410	[]	LayTile
+	(C17/0)	-411	[]	LayTile	% Plain
+	(C19/0)	-407	[]	LayTile	% Plain
+	(C21/0)	-411	[]	LayTile	% Plain
+	(C23/1)	-406	[]	LayTile	% Plain
+
+	(D2/5)	-412	[]	LayTile
+	(D4/3)	-413	[]	LayTile	% Village
+	(D6/0)	-407	[]	LayTile	% Plain
+	(D8/0)	-406	[]	LayTile	% Plain
+	(D10/0)	-414	[]	LayTile	% OOCity
+	(D12/0)	-406	[]	LayTile	% Plain
+	(D14/0)	-415	[]	LayTile
+	(D16/0)	-406	[]	LayTile	% Plain
+	(D18/3)	-416	[]	LayTile	% Plain
+	(D18/0)	-433	[]	LayTile
+	(D20/0)	-406	[]	LayTile	% Plain
+	(D22/0)	-411	[]	LayTile	% Plain
+	(D24/0)	-403	[]	LayTile
+
+	(E3/0)	-406	[]	LayTile	% Plain
+	(E5/0)	-414	[]	LayTile	% OOCity
+	(E7/5)	-413	[]	LayTile	% Village
+	(E9/2)	-403	[]	LayTile
+	(E11/0)	-417	[(Erie)]	LayTile % OOCity
+	(E13/0)	-406	[]	LayTile	% Plain
+	(E15/0)	-406	[]	LayTile	% Plain
+	(E17/0)	-411	[]	LayTile	% Plain
+	(E19/0)	-405	[(NYC)]	LayTile	% City
+	(E21/0)	-411	[]	LayTile	% Plain
+	(E23/5)	-418	[(B&M)]	LayTile	% Boston
+
+	(F2/3)	-419	[]	LayTile
+	(F4/0)	-420	[]	LayTile	% City
+	(F6/1)	-421	[(C&O)]	LayTile
+	(F8/0)	-406	[]	LayTile	% Plain
+	(F10/5)	-413	[]	LayTile	% Village
+	(F12/0)	-406	[]	LayTile	% Plain
+	(F14/0)	-406	[]	LayTile	% Plain
+	(F16/0)	-422	[]	LayTile	% City
+	(F16/0)	-433	[]	LayTile
+	(F18/0)	-406	[]	LayTile	% Plain
+	(F20/2)	-423	[]	LayTile	% DoubleDot
+	(F22/0)	-420	[]	LayTile	% City
+	(F24/1)	-424	[]	LayTile
+
+	(G3/0)	-406	[]	LayTile	% Plain
+	(G5/0)	-406	[]	LayTile	% Plain
+	(G7/1)	-423	[]	LayTile	% DoubleDot
+	(G9/0)	-406	[]	LayTile	% Plain
+	(G11/0)	-406	[]	LayTile	% Plain
+	(G13/0)	-411	[]	LayTile	% Plain
+	(G15/0)	-425	[]	LayTile	% Plain
+	(G15/0)	-434	[]	LayTile
+	(G17/3)	-423	[]	LayTile	% DoubleDot
+	(G19/0)	-426	[( ) (NYH)]	LayTile	% NY
+
+	(H2/0)	-406	[]	LayTile	% Plain
+	(H4/0)	-405	[]	LayTile	% City
+	(H6/0)	-406	[]	LayTile	% Plain
+	(H8/0)	-406	[]	LayTile	% Plain
+	(H10/0)	-405	[]	LayTile	% City
+	(H12/0)	-427	[(PRR)]	LayTile
+	(H14/0)	-406	[]	LayTile	% Plain
+	(H16/0)	-405	[]	LayTile	% City
+	(H18/0)	-417	[]	LayTile % OOCity
+	(H18/1)	-433	[]	LayTile
+	(H18/3)	-435	[]	LayTile
+
+	(I1/4)	-429	[]	LayTile
+	(I3/0)	-406	[]	LayTile	% Plain
+	(I5/0)	-406	[]	LayTile	% Plain
+	(I7/0)	-406	[]	LayTile	% Plain
+	(I9/0)	-406	[]	LayTile	% Plain
+	(I11/0)	-411	[]	LayTile	% Plain
+	(I13/0)	-406	[]	LayTile	% Plain
+	(I13/1)	-436	[]	LayTile
+	(I15/0)	-418	[(B&O)]	LayTile	% Baltimore
+	(I17/0)	-407	[]	LayTile	% Plain
+	(I19/1)	-424	[]	LayTile
+
+	(J2/3)	-430	[]	LayTile
+	(J4/0)	-406	[]	LayTile	% Plain
+	(J6/0)	-406	[]	LayTile	% Plain
+	(J8/0)	-406	[]	LayTile	% Plain
+	(J10/0)	-411	[]	LayTile	% Plain
+	(J12/0)	-411	[]	LayTile	% Plain
+	(J14/0)	-420	[]	LayTile	% City
+
+	(K13/2)	-431	[]	LayTile
+	(K15/2)	-432	[]	LayTile
+
+		/Bookman 120 selectfont
+	(B1/7) LayText moveto (1830) show 
+
+	(I13/4) 1 cm (I15/2) 1 cm //tlNoHex LayPrivate
+
+	% =================================
+	% INSERT YOUR TILES AND TOKENS HERE
+	% =================================
+
+	(C17/NW)	Barrier
+	(D12/NE)	Barrier
+	(D12/NW)	Barrier
+	(F8/NW)		Barrier
+
+	mapFrame

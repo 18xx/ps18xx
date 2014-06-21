@@ -1,0 +1,101 @@
+%
+% $Header: va-map.ps $
+%
+
+% ----------------------------------------------------------------------
+% the 18va variant was done by Steve Thomas (maisnestce@aol.com)
+% ----------------------------------------------------------------------
+% 18va map
+
+	newpath
+
+	/mapRows 17 def
+	/mapCols 9 def
+	/mapScale 0.675 def
+	/CM { 28.35 1 mapScale div mul mul } def
+	mapScale dup scale
+	/mapFrame {
+		1.5 CM 1.2 CM mapCols mapRows
+		//hexSide -0.25 mul //hexSide -0.5 mul
+		//hexHeight 2.75 mul //hexHeight 0 mul Map
+	} def
+	mapFrame
+
+	(F1/4)		-401	[(#Grafton)]	LayTile
+	(L1/4)		-401	[(#Roanoke)]	LayTile
+
+	(E2/0)		-411	[]	LayTile
+	(G2/0)		-411	[]	LayTile
+	(I2/0)		-411	[]	LayTile
+	(K2/0)		-411	[]	LayTile
+	(M2/0)		-411	[]	LayTile
+	(O2/4)		-403	[(#Greensboro)]	LayTile
+
+	(D3/0)		-420	[(WM)(#Cumberland)]	LayTile
+	(F3/0)		-410	[]	LayTile
+	(H3/0)		-420	[(#Staunton)]	LayTile
+	(J3/0)		-410	[]	LayTile
+	(L3/0)		-420	[(VGN)(#Lynchburg)]	LayTile
+	(N3/0)		-410	[]	LayTile
+
+	(C4/0)		-410	[]	LayTile
+	(E4/0)		-410	[]	LayTile
+	(G4/0)		-410	[]	LayTile
+	(I4/0)		-420	[(C&O)(#Charlottesville)]	LayTile
+	(K4/0)		-410	[]	LayTile
+	(M4/0)		-410	[]	LayTile
+	(O4/0)		-410	[]	LayTile
+
+	(B5/0)		-420	[(#Hagerstown)]	LayTile
+	(D5/0)		-410	[]	LayTile
+	(F5/0)		-410	[]	LayTile
+	(H5/0)		-420	[(#Gordonsville)]	LayTile
+	(J5/0)		-410	[]	LayTile
+	(L5/0)		-410	[]	LayTile
+	(N5/0)		-410	[]	LayTile
+
+	(A6/0)		-410	[]	LayTile
+	(C6/0)		-420	[(#Harper's Ferry)]	LayTile
+	(E6/0)		-421	[(#Alexandria)]	LayTile
+	(G6/0)		-420	[(RF&P)(#Fredericksburg)]	LayTile
+	(I6/0)		-410	[]	LayTile
+	(K6/1)		-423	[(SR)(#Richmond)]	LayTile
+	(M6/0)		-421	[(N&W)(#Petersburg)]	LayTile
+	(O6/0)		-410	[]	LayTile
+	(Q6/3)		-404	[(#Rocky Mount)]	LayTile
+
+	(B7/0)		-410	[]	LayTile
+	(D7/1)		-422	[(#Washington)]	LayTile
+	(F7/0)		-410	[]	LayTile
+	(J7/0)		-410	[]	LayTile
+	(L7/0)		-410	[]	LayTile
+	(N7/0)		-410	[]	LayTile
+
+	(A8/0)		-405	[(#Philadelphia)]	LayTile
+	(C8/0)		-421	[(B&O)(#Baltimore)]	LayTile
+	(E8/5)		-57		[(#Annapolis)]	LayTile
+	(M8/5)		-57		[(#Newport News)]	LayTile
+	(O8/5)		-57		[(#Norfolk)]	LayTile
+
+	(D9/2)		-406	[]	LayTile
+	(F9/2)		-407	[]	LayTile
+	(N9/2)		-408	[]	LayTile
+	(P9/2)		-409	[]	LayTile
+
+		/Bookman 120 selectfont
+	(?1/7) LayText moveto (18va) show 
+			
+	% =================================
+	% INSERT YOUR TILES AND TOKENS HERE
+	% =================================
+
+	(C6/SW)	Barrier
+	(C6/S)	Barrier
+	(F7/SW)	Barrier
+	(F7/NE)	Barrier
+	(L7/SW)	Barrier
+	(L7/S)	Barrier
+	(M8/SW)	Barrier
+	(M8/S)	Barrier
+
+	mapFrame

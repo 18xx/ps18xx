@@ -1,0 +1,46 @@
+% ----------------------------------------------------------------------
+%				COPYRIGHT
+%		Matthias Klose (doko@cs.tu-berlin.de)
+%
+% ps18xx is "postcard" ware. If you use this code or part of this,
+% you are invited to send me a nice railway postcard to the address below.
+% In September 1995 I got the first and only card :-(
+%
+% You are allowed to use this code and to modify the source, provided
+% you leave this copyright notice and the acknowledgements in it.
+%
+% You are allowed to include the code in your own programs, provided
+% - you distribute your programs for free or for a fee, which is not
+%   more than DM 20,-- or $15.
+% - you show the copyright notice in the same places as your own
+%   copyright notice,
+% - you ask the users of your program to send a postcard, if they use
+%   this or modified code.
+%
+% You are not allowed to include this or derived code in any
+% 18xx related program that is distributed as commercial software.
+%
+%						Matthias Klose
+%						Dillgesstr. 30
+%						D-12249 Berlin
+%						doko@cs.tu-berlin.de
+%
+
+% ----------------------------------------------------------------------
+%				ACKNOWLEDGMENTS
+% ----------------------------------------------------------------------
+
+% Several people helped in debugging existing maps and tiles. Following
+% people made contributions:
+
+% - Paul R. Work (pwork@ss2.sews.wpafb.af.mil) created the 1835 and 1837
+%   map, 1835 and 1837 specific tiles and the tile list, added bridges.
+
+% - Nick Roworth (nroworth@uk.oracle.com) created the 1829-south map
+%   and debugged the 1853 and other map and tiles.
+
+% - Steve Thomas (Steve.Thomas@insignia.co.uk) created the 1856 map and
+%   1856 specific tiles and added code to print the map labels in reverse
+%   order.
+%   He reworked the code to allow sitting tiles, added port symbols and
+%   made the 1839 Italy, 1850 Sicily, 1870, 1825 U1 and 1899 (China) games

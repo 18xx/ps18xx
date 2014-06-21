@@ -1,0 +1,156 @@
+%
+% $Header: $
+%
+
+%!
+% ----------------------------------------------------------------------
+% Steam Over Holland map
+
+	newpath
+
+	/mapRows 15 def
+	/mapCols 20 def
+	/mapScale 0.5 def
+	/CM { 28.35 1 mapScale div mul mul } def
+	mapScale dup scale
+	/mapFrame {
+	1.5 CM 1.2 CM mapCols mapRows 0 0 0.5 CM 0.5 CM neg Map
+	} def
+	mapFrame
+
+	(A14/0)	-400	[]	LayTile
+	(A16/0)	-400	[]	LayTile
+	(A18/0)	-400	[]	LayTile
+
+	(B13/1)	-404	[(#Leeuwarden)]	LayTile
+	(B15/0)	-400	[]	LayTile
+	(B17/1)	-404	[(#Groningen)]	LayTile
+	(B19/0)	-400	[]	LayTile
+
+	(C8/0)	-408	[(#Den Helder)]	LayTile
+	(C12/0)	-400	[]	LayTile
+	(C14/0)	-400	[]	LayTile
+	(C16/0)	-402	[(#Assen)]	LayTile
+	(C18/0)	-400	[]	LayTile
+	(C20/2)	-407	[]	LayTile
+	(C20/0)	-410	[(#Papenburg)]	LayTile
+
+	(D7/0)	-400	[]	LayTile
+	(D9/4)	-403	[(#Enkhuizen)]	LayTile
+	(D11/3)	-401	[]	LayTile
+	(D11/0)	-409	[(#Stavoren)]	LayTile
+	(D13/0)	-400	[]	LayTile
+	(D15/0)	-400	[]	LayTile
+	(D17/0)	-400	[]	LayTile
+	(D19/0)	-400	[]	LayTile
+
+	(E8/0)	-400	[]	LayTile
+	(E14/1)	-404	[(OSM)(#Zwolle)]	LayTile
+	(E16/0)	-400	[]	LayTile
+	(E18/0)	-400	[]	LayTile
+
+	(F7/0)	-402	[(#Haarlem)]	LayTile
+	(F9/2)	-405	[(Hysm)(NRS)]	LayTile
+	(F9/0)	-409	[(#Amsterdam)]	LayTile
+	(F13/0)	-400	[]	LayTile
+	(F15/0)	-400	[]	LayTile
+	(F17/0)	-402	[(#Aimelo)]	LayTile
+	(F19/0)	-400	[]	LayTile
+
+	(G6/0)	-402	[(#Leiden)]	LayTile
+	(G8/0)	-400	[]	LayTile
+	(G10/0)	-400	[]	LayTile
+	(G12/0)	-402	[(#Amerstoort)]	LayTile
+	(G14/0)	-402	[(#Apeldoorn)]	LayTile
+	(G16/0)	-400	[]	LayTile
+	(G18/0)	-402	[(#Enschedt)]	LayTile
+	(G20/1)	-407	[(#Salzbergen)]	LayTile
+
+	(H5/1)	-404	[(#Den Haag)]	LayTile
+	(H7/0)	-402	[(#Gouda)]	LayTile
+	(H9/1)	-404	[(NCS)(#Utrecht)]	LayTile
+	(H11/0)	-400	[]	LayTile
+	(H13/1)	-404	[(#Arnhem)]	LayTile
+	(H15/0)	-400	[]	LayTile
+	(H17/0)	-400	[]	LayTile
+
+	(I4/0)	-400	[]	LayTile
+	(I6/1)	-404	[(#Rotterdam)]	LayTile
+	(I8/0)	-400	[]	LayTile
+	(I10/0)	-402	[(#Den Bosch)]	LayTile
+	(I12/4)	-404	[(NSM)(#Nijmegen)]	LayTile
+	(I14/0)	-400	[]	LayTile
+	(I16/1)	-406	[(#Emmerich am)]	LayTile
+	(I16/1)	-410	[(#Rhein)]	LayTile
+
+	(J1/5)	-407	[]	LayTile
+	(J1/3)	-410	[(#Vlissingen)]	LayTile
+	(J3/0)	-400	[]	LayTile
+	(J5/0)	-400	[]	LayTile
+	(J7/4)	-404	[(AR)(#Breda)]	LayTile
+	(J9/0)	-402	[(#Tilburg)]	LayTile
+	(J11/0)	-400	[]	LayTile
+	(J13/0)	-400	[]	LayTile
+	(J15/0)	-406	[(#Kleve)]	LayTile
+
+	(K2/0)	-402	[(#Middelburg)]	LayTile
+	(K4/0)	-400	[]	LayTile
+	(K6/0)	-400	[]	LayTile
+	(K8/0)	-400	[]	LayTile
+	(K10/0)	-400	[]	LayTile
+	(K12/1)	-404	[(NBD)(#Eindhoven)]	LayTile
+	(K14/0)	-402	[(#Vento)]	LayTile
+
+	(L5/3)	-407	[(#Antwerpen)]	LayTile
+	(L11/0)	-400	[]	LayTile
+	(L13/0)	-400	[]	LayTile
+
+	(M12/0)	-400	[]	LayTile
+	(M14/0)	-400	[]	LayTile
+
+	(N13/0)	-402	[(#Maastricht)]	LayTile
+
+	(O12/3)	-407	[(#Liege)]	LayTile
+
+		/Bookman 60 selectfont
+	(A0/7) LayText moveto (Steam Over Holland) show 
+
+	% =================================
+	% INSERT YOUR TILES AND TOKENS HERE
+	% =================================
+
+	(E14/SW)		(50)	CostBarrier
+
+	(F15/W)			(50)	CostBarrier
+	(F15/SW)		(50)	CostBarrier
+
+	(G14/E)			(50)	CostBarrier
+	(G14/SE)		(50)	CostBarrier
+
+	(H9/SE)			(50)	CostBarrier
+	(H11/SW)		(50)	CostBarrier
+	(H11/SE)		(50)	CostBarrier
+	(H13/SW)		(50)	CostBarrier
+	(H13/SE)		(50)	CostBarrier
+	(H13/E)			(50)	CostBarrier
+	(H15/SW)		(50)	CostBarrier
+
+	(I4/SW)			(50)	CostBarrier
+	(I4/SE)			(50)	CostBarrier
+	(I6/SW)			(50)	CostBarrier
+	(I6/SE)			(50)	CostBarrier
+	(I8/SW)			(50)	CostBarrier
+	(I8/SE)			(50)	CostBarrier
+	(I8/E)			(50)	CostBarrier
+	(I12/E)			(50)	CostBarrier
+	(I14/SW)		(50)	CostBarrier
+
+	(J3/SW)			(50)	CostBarrier
+	(J3/SE)			(50)	CostBarrier
+	(J3/E)			(50)	CostBarrier
+	(J15/W)			(50)	CostBarrier
+	(J15/SW)		(50)	CostBarrier
+
+	(K2/E)			(50)	CostBarrier
+
+	mapFrame

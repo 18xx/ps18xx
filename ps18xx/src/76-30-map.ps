@@ -1,0 +1,53 @@
+%
+% $Header: 76-30-map.ps[1.1] Tue Apr  8 14:59:38 1997 doko@cs.tu-berlin.de saved $
+%
+
+%!
+% ----------------------------------------------------------------------
+% 1876-30 map
+
+	newpath
+
+	/mapRows 6 def
+	/mapCols 9 def
+	/mapScale 1.0 def
+	/CM { 28.35 1 mapScale div mul mul } def
+	mapScale dup scale
+	1 CM 2 CM translate
+	% 21 CM 0 translate
+	% 90 rotate
+	/mapFrame {
+	1.5 CM 1.2 CM mapCols mapRows //hexHeight neg -1 cm
+		//hexHeight neg //hexHeight neg Map
+	} def
+	mapFrame
+
+	(A5/5)	-401	[]	LayTile
+
+	(B4/4)	-404	[(#Santa Cruz)(#St Joseph)]	LayTile
+	(B6/0)	-405	[(FTR)(#Port of Spain)]	LayTile
+	(B8/0)	-401	[]	LayTile
+
+	(C1/4)	-401	[]	LayTile
+	(C3/0)	-402	[]	LayTile
+	(C5/0)	-405	[(#Tunapuna)]	LayTile
+	(C7/0)	-402	[]	LayTile
+
+	(D2/0)	-405	[(SFR)(#San Fernando)]	LayTile
+	(D4/3)	-406	[(#Arima)]	LayTile
+	(D6/0)	-407	[(#Sangre)]	LayTile
+	(D8/3)	-403	[(#Pierreville)]	LayTile
+
+	(E1/3)	-401	[]	LayTile
+	(E3/3)	-403	[(#Debe)]	LayTile
+	(E5/0)	-402	[]	LayTile
+	(E7/5)	-405	[(MBR)(#Rio Claro)]	LayTile
+	(E9/1)	-401	[]	LayTile
+
+	(F6/2)	-401	[]	LayTile
+
+	% =================================
+	% INSERT YOUR TILES AND TOKENS HERE
+	% =================================
+
+	mapFrame

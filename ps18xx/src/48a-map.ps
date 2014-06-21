@@ -1,0 +1,142 @@
+%
+% $Header: $
+%
+
+%!
+% ----------------------------------------------------------------------
+% 1848 Australia map
+
+	newpath
+
+	/mapRows 9 def
+	/mapCols 20 def
+	/mapScale 0.55 def
+	/CM { 28.35 1 mapScale div mul mul } def
+	mapScale dup scale
+	21 CM 0 translate
+	90 rotate
+	/mapFrame {
+		1.5 CM 1.2 CM mapCols mapRows 0 //hexHeight 0 //hexHeight 3 mul Map
+	} def
+	mapFrame
+
+	(A4/5)	-430	[]	LayTile
+	(A4/5)	-440	[(#Alice)]	LayTile
+	(A6/5)	-430	[]	LayTile
+	(A6/4)	-440	[(#Springs)]	LayTile
+	(A18/5)	-431	[]	LayTile
+	(A18/5)	-440	[(#Cairns)]	LayTile
+
+	(B3/0)	-401	[]	LayTile	% Plain
+	(B5/0)	-400	[]	LayTile	% Plain
+	(B7/0)	-401	[]	LayTile	% Plain
+	(B9/0)	-401	[]	LayTile	% Plain
+	(B11/0)	-400	[]	LayTile	% Plain
+	(B13/0)	-400	[]	LayTile	% Plain
+	(B15/0)	-400	[]	LayTile	% Plain
+	(B17/0)	-423	[(#Toowoomba)(#Ipswich)]	LayTile	% OOCity
+	(B19/1)	-421	[(QR)(#Brisbane)]	LayTile	% KCity
+	(B21/0)	-433	[]	LayTile
+
+	(C2/0)	-401	[]	LayTile	% Plain
+	(C4/0)	-401	[]	LayTile	% Plain
+	(C6/0)	-400	[]	LayTile	% Plain
+	(C8/0)	-401	[]	LayTile	% Plain
+	(C10/0)	-400	[]	LayTile	% Plain
+	(C12/0)	-400	[]	LayTile	% Plain
+	(C14/0)	-400	[]	LayTile	% Plain
+	(C16/0)	-400	[]	LayTile	% Plain
+	(C18/0)	-411	[]	LayTile	% DoubleDot
+	(C20/1)	-420	[(#Southport)]	LayTile	% City
+
+	(D1/3)	-432	[(WA)]	LayTile
+	(D1/2)	-440	[(#Perth)]	LayTile
+	(D3/0)	-410	[]	LayTile	% DoubleDot
+	(D5/0)	-400	[]	LayTile	% Plain
+	(D7/0)	-400	[]	LayTile	% Plain
+	(D9/1)	-420	[(#Broken Hill)]	LayTile	% City
+	(D11/0)	-400	[]	LayTile	% Plain
+	(D13/0)	-400	[]	LayTile	% Plain
+	(D15/0)	-400	[]	LayTile	% Plain
+	(D17/0)	-402	[]	LayTile	% Plain
+	(D19/0)	-400	[]	LayTile	% Plain
+
+	(E2/1)	-420	[(#Whyalla)]	LayTile	% City
+	(E4/1)	-420	[(CAR)(#Port Augusta)]	LayTile	% City
+	(E6/0)	-401	[]	LayTile	% Plain
+	(E8/0)	-401	[]	LayTile	% Plain
+	(E10/0)	-400	[]	LayTile	% Plain
+	(E12/0)	-400	[]	LayTile	% Plain
+	(E14/1)	-420	[(#Dubbo)]	LayTile	% City
+	(E16/0)	-402	[]	LayTile	% Plain
+	(E18/1)	-420	[(#Newcastle)]	LayTile	% City
+
+	(F3/2)	-433	[]	LayTile
+	(F5/1)	-420	[(#Port Pirie)]	LayTile	% City
+	(F7/0)	-400	[]	LayTile	% Plain
+	(F9/0)	-400	[]	LayTile	% Plain
+	(F11/0)	-400	[]	LayTile	% Plain
+	(F13/1)	-420	[(#Wagga Wagga)]	LayTile	% City
+	(F15/0)	-424	[(#Orange)(#Bathurst)]	LayTile	% OOCity
+	(F17/1)	-421	[(NSW)(#Sydney)]	LayTile	% KCity
+
+	(G6/1)	-421	[(SA)(#Adelaide)]	LayTile	% KCity
+	(G8/0)	-400	[]	LayTile	% Plain
+	(G10/0)	-423	[(#Bendigo)(#Ballarat)]	LayTile	% OOCity
+	(G12/0)	-410	[]	LayTile	% DoubleDot
+	(G14/1)	-420	[(FT)(#Canberra)]	LayTile	% City
+	(G16/0)	-422	[(#Wollongong)]	LayTile	% City
+
+	(H7/1)	-420	[(#Mt Gambier)]	LayTile	% City
+	(H9/1)	-420	[(#Geelong)]	LayTile	% City
+	(H11/1)	-421	[(VR)(#Melbourne)]	LayTile	% KCity
+	(H13/0)	-402	[]	LayTile	% Plain
+	(H15/0)	-402	[]	LayTile	% Plain
+
+	(I8/0)	-403	[]	LayTile	% Tasman
+	(I10/0)	-403	[]	LayTile	% Tasman
+
+		/Bookman 120 selectfont
+	(K0/7) LayText moveto (1848 Oz) show 
+
+	% =================================
+	% INSERT YOUR TILES AND TOKENS HERE
+	% =================================
+
+	(B7/E)	Frontier
+	(B7/SE)	Frontier
+	(C6/E)	Frontier
+	(C8/SW)	Frontier
+	(C8/SE)	Frontier
+	(C10/SW)	Frontier
+	(C10/SE)	Frontier
+	(C12/SW)	Frontier
+	(C12/SE)	Frontier
+	(C14/SW)	Frontier
+	(C14/SE)	Frontier
+	(C16/SW)	Frontier
+	(C16/SE)	Frontier
+	(C18/SW)	Frontier
+	(C18/SE)	Frontier
+	(C20/SW)	Frontier
+	(D7/E)	Frontier
+	(D7/SE)	Frontier
+	(E6/E)	Frontier
+	(E8/SE)	Frontier
+	(E10/SW)	Frontier
+	(F7/NE)	Frontier
+	(F7/E)	Frontier
+	(F7/SE)	Frontier
+	(F11/W)	Frontier
+	(F11/SW)	Frontier
+	(F11/SE)	Frontier
+	(F13/SW)	Frontier
+	(G6/E)	Frontier
+	(G14/W)	Frontier
+	(G14/SW)	Frontier
+	(G14/SE)	Frontier
+	(G16/SW)	Frontier
+	(H7/NE)	Frontier
+	(H7/E)	Frontier
+
+	mapFrame

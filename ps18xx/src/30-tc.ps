@@ -1,0 +1,151 @@
+%
+% $Header: 30-tc.ps[1.6] Wed Nov 15 17:26:39 1995 doko@cs.tu-berlin.de saved $
+%
+
+% ----------------------------------------------------------------------
+% 1830 tile codes
+
+/18xxVariant (1830) def
+/maxTile 440 def
+
+	/tileCodes //maxTile array def
+
+	tileCodes   1 [  1 0 //tlYellow //tlPlain ()   (10)  1 ] put
+	tileCodes   2 [  2 0 //tlYellow //tlPlain ()   (10)  1 ] put
+	tileCodes   3 [  3 0 //tlYellow //tlPlain ()   (10)  2 ] put
+	tileCodes   4 [  4 0 //tlYellow //tlPlain ()   (10)  2 ] put
+	tileCodes   7 [  7 0 //tlYellow //tlPlain ()   ()    4 ] put
+	tileCodes   8 [  8 0 //tlYellow //tlPlain ()   ()    8 ] put
+	tileCodes   9 [  9 0 //tlYellow //tlPlain ()   ()    7 ] put
+	tileCodes  55 [ 55 0 //tlYellow //tlPlain ()   (10)  1 ] put
+	tileCodes  56 [ 56 0 //tlYellow //tlPlain ()   (10)  1 ] put
+	tileCodes  57 [ 57 0 //tlYellow //tlPlain ()   (20)  4 ] put
+	tileCodes  58 [ 58 0 //tlYellow //tlPlain ()   (10)  2 ] put
+	tileCodes  69 [ 69 0 //tlYellow //tlPlain ()   (10)  2 ] put
+
+	tileCodes  14 [  14 1 //tlGreen  //tlPlain ()    (30)  3 ] put
+	tileCodes  15 [  15 0 //tlGreen  //tlPlain ()    (30)  2 ] put
+	tileCodes  16 [  16 2 //tlGreen  //tlPlain ()    ()    1 ] put
+	tileCodes  18 [  18 0 //tlGreen  //tlPlain ()    ()    1 ] put
+	tileCodes  19 [  19 3 //tlGreen  //tlPlain ()    ()    1 ] put
+	tileCodes  20 [  20 0 //tlGreen  //tlPlain ()    ()    1 ] put
+
+	tileCodes  23 [  23 3 //tlGreen  //tlPlain ()    ()    3 ] put
+	tileCodes  24 [  24 0 //tlGreen  //tlPlain ()    ()    3 ] put
+	tileCodes  25 [  25 0 //tlGreen  //tlPlain ()    ()    1 ] put
+	tileCodes  26 [  26 3 //tlGreen  //tlPlain ()    ()    1 ] put
+	tileCodes  27 [  27 0 //tlGreen  //tlPlain ()    ()    1 ] put
+	tileCodes  28 [  28 2 //tlGreen  //tlPlain ()    ()    1 ] put
+	tileCodes  29 [  29 0 //tlGreen  //tlPlain ()    ()    1 ] put
+
+	tileCodes  53 [  53 0 //tlGreen  //tlPlain (B)   (50)  2 ] put
+	tileCodes  54 [  54 0 //tlGreen  //tlPlain (NY)  (60)  1 ] put
+	tileCodes  59 [  59 0 //tlGreen  //tlPlain (OO)  (40)  2 ] put
+
+	tileCodes  39 [  39 1 //tlBrown //tlPlain ()    ()    1 ] put
+	tileCodes  40 [  40 0 //tlBrown //tlPlain ()    ()    1 ] put
+	tileCodes  41 [  41 3 //tlBrown //tlPlain ()    ()    2 ] put
+	tileCodes  42 [  42 0 //tlBrown //tlPlain ()    ()    2 ] put
+	tileCodes  43 [  43 0 //tlBrown //tlPlain ()    ()    2 ] put
+	tileCodes  44 [  44 0 //tlBrown //tlPlain ()    ()    1 ] put
+	tileCodes  45 [  45 0 //tlBrown //tlPlain ()    ()    2 ] put
+	tileCodes  46 [  46 0 //tlBrown //tlPlain ()    ()    2 ] put
+	tileCodes  47 [  47 1 //tlBrown //tlPlain ()    ()    1 ] put
+	tileCodes  70 [  70 0 //tlBrown //tlPlain ()    ()    1 ] put
+
+	tileCodes  61 [  61 0 //tlBrown //tlPlain (B)   (60)  2 ] put
+	tileCodes  62 [  62 0 //tlBrown //tlPlain (NY)  (80)  1 ] put
+	tileCodes  63 [  63 0 //tlBrown //tlPlain ()    (40)  3 ] put
+	tileCodes  64 [  64 0 //tlBrown //tlPlain (OO)  (50)  1 ] put
+	tileCodes  65 [  65 0 //tlBrown //tlPlain (OO)  (50)  1 ] put
+	tileCodes  66 [  66 0 //tlBrown //tlPlain (OO)  (50)  1 ] put
+	tileCodes  67 [  67 0 //tlBrown //tlPlain (OO)  (50)  1 ] put
+	tileCodes  68 [  68 0 //tlBrown //tlPlain (OO)  (50)  1 ] put
+
+
+	%tile codes for map definition
+	tileCodes 401 [ 505 0 //tlRed    //tlPlain    ()   (30/50) 0 ] put
+	tileCodes 402 [ 506 0 //tlRed    //tlPlain    ()   (30/50) 0 ] put
+	tileCodes 403 [   7 0 //tlGray   //tlPlain    ()   ()   0 ] put
+	tileCodes 404 [ 531 0 //tlGray   //tlPlain    ()   (40) 0 ] put
+	tileCodes 405 [ 503 0 //tlGround //tlPlain    ()   ()   0 ] put
+	tileCodes 406 [ 500 0 //tlGround //tlPlain    ()   ()   0 ] put
+	tileCodes 407 [ 500 0 //tlGround //tlWater    ()   ()   0 ] put
+
+	tileCodes 408 [ 501 0 //tlGround //tlPlain    (C&StL) ()   0 ] put
+	tileCodes 409 [ 506 0 //tlRed    //tlPlain    ()   (20/30) 0 ] put
+	tileCodes 410 [  58 0 //tlGray   //tlPlain    ()   (10) 0 ] put
+	tileCodes 411 [ 500 0 //tlGround //tlMountain ()   ()   0 ] put
+	tileCodes 412 [   5 0 //tlGray   //tlPlain    ()   (20) 0 ] put
+	tileCodes 413 [ 501 0 //tlGround //tlPlain    ()   ()   0 ] put
+	tileCodes 414 [ 504 0 //tlYellow //tlWater    (OO) ()   0 ] put
+	tileCodes 415 [ 532 0 //tlGray   //tlPlain    ()   (20) 0 ] put
+	tileCodes 416 [ 500 0 //tlGround //tlPlain    (M&H) ()   0 ] put
+	tileCodes 417 [ 504 0 //tlYellow //tlPlain    (OO) ()   0 ] put
+	tileCodes 418 [   6 0 //tlYellow //tlPlain    (B)  (30) 0 ] put
+	tileCodes 419 [ 507 0 //tlRed    //tlPlain    ()   (40/70) 0 ] put
+	tileCodes 420 [ 503 0 //tlGround //tlWater    ()   ()   0 ] put
+	tileCodes 421 [ 531 0 //tlGray   //tlPlain    ()   (30) 0 ] put
+	tileCodes 422 [ 503 0 //tlGround //tlMountain (D&H) ()   0 ] put
+	tileCodes 423 [ 502 0 //tlGround //tlPlain    ()   ()   0 ] put
+	tileCodes 424 [   3 0 //tlGray   //tlPlain    ()   (10) 0 ] put
+	tileCodes 425 [ 500 0 //tlGround //tlPrivate  (SVR) ()  0 ] put
+	tileCodes 426 [ 533 0 //tlYellow //tlWater    (NY) (40) 0 ] put
+	tileCodes 427 [ 534 0 //tlGray   //tlPlain    ()   (10) 0 ] put
+	tileCodes 429 [ 505 0 //tlRed    //tlPlain    ()   (30/60) 0 ] put
+	tileCodes 430 [ 506 0 //tlRed    //tlPlain    ()   (30/60) 0 ] put
+	tileCodes 431 [ 506 0 //tlRed    //tlPlain    ()   (30/40) 0 ] put
+	tileCodes 432 [ 511 0 //tlGray   //tlPlain    ()   (20) 0 ] put
+	tileCodes 433 [ 529 0 //tlTransparent //tlPrivate () () 0 ] put
+	tileCodes 434 [ 529 0 //tlTransparent //tlMountain () () 0 ] put
+	tileCodes 435 [ 529 0 //tlTransparent //tlPlain (C&A) () 0 ] put
+	tileCodes 436 [ 529 0 //tlTransparent //tlPlain (B&O) () 0 ] put
+
+% Upgrade Plain 406 => 7/* 8/* 9/*
+% Upgrade Plain 407 => 7/* 8/* 9/*
+% Upgrade Plain 411 => 7/* 8/* 9/*
+% Upgrade Plain 416 => 7/* 8/* 9/*
+% Upgrade Plain 425 => 7/* 8/* 9/*
+% Upgrade Village 408 => 3/* 4/* 58/*
+% Upgrade Village 413 => 3/* 4/* 58/*
+% Upgrade DoubleDot 423 => 1/* 2/* 55/* 56/* 69/*
+% Upgrade City 405 => 57/*
+% Upgrade City 420 => 57/*
+% Upgrade City 422 => 57/*
+
+% Upgrade Plain 7 => 18/5 26/4 27/0 28/5 29/0
+% Upgrade Plain 8 => 16/05 19/4 23/5 24/0 25/02 28/0 29/0
+% Upgrade Plain 9 => 18/03 19/03 20/0235 23/03 24/03 26/03 27/03
+% Upgrade City 57 => 14/0235 15/03
+% Upgrade Baltimore 418 => 53/=024
+% Upgrade Boston 418 => 53/=135
+% Upgrade OOCity 414 => 59/*
+% Upgrade OOCity 417 => 59/*
+% Upgrade NY 426 => 54/=0
+
+% Upgrade Plain 16 => 43/0 70/0
+% Upgrade Plain 18 => 43/0
+% Upgrade Plain 19 => 45/0 46/0
+% Upgrade Plain 20 => 44/03 47/03
+% Upgrade Plain 23 => 41/0 43/0 45/3 47/03
+% Upgrade Plain 24 => 42/0 43/0 46/0 47/25
+% Upgrade Plain 25 => 40/024 45/2 46/4
+% Upgrade Plain 26 => 42/0 44/25 45/0
+% Upgrade Plain 27 => 41/0 44/03 46/3
+% Upgrade Plain 28 => 39/0 43/0 46/4 70/5
+% Upgrade Plain 29 => 39/0 43/5 45/4 70/0
+% Upgrade City 14 => 63/*
+% Upgrade City 15 => 63/*
+% Upgrade Baltimore 53 => 61/024
+% Upgrade Boston 53 => 61/024
+% Upgrade OOCity 59 => 64/02 65/02 66/34 67/24 68/14
+% Upgrade NY 54 => 62/=0
+
+% Token B&M 2
+% Token B&O 3
+% Token C&O 3
+% Token CPR 4
+% Token Erie 3
+% Token NYC 4
+% Token NYH 2
+% Token PRR 4

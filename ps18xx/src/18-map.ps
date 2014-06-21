@@ -1,0 +1,384 @@
+%
+% $Header: 18-map.ps[1.4] Tue Dec  5 19:18:43 1995 doko@cs.tu-berlin.de saved $
+%
+
+% LayTile: (pos) vnum [stations] =>
+%   position tile on map. vnum is the variant tile number
+/LayTile {
+	gsave
+%		exch dup /vnum exch def exch
+		3 1 roll exch
+		HexPos
+		3 1 roll
+		HexCoords
+		5 2 roll
+		VariantToGeneric
+		9 -1 roll
+		XYTile
+	grestore
+} def
+% LayText: (pos) =>
+%   position tile on map. 
+/LayText {
+	gsave
+		HexPos
+		HexCoords
+	grestore
+} def
+
+% LayPrivate: (pos1/dir1) dist1 (pos2/dir2) dist2 color =>
+%   Place a private company spanning multiple hexes
+/LayPrivate {
+	gsave
+		/blobColor exch def
+		/dist2 exch def
+		/pos2 exch def
+		/dist1 exch def
+		/pos1 exch def
+		pos1 HexPos
+		3 1 roll
+		HexCoords
+		/y1 exch def
+		/x1 exch def
+		60 mul
+		dup
+		cos dist1 mul x1 add /x1 exch def
+		sin dist1 mul y1 add /y1 exch def
+		pos2 HexPos
+		3 1 roll
+		HexCoords
+		/y2 exch def
+		/x2 exch def
+		60 mul
+		dup
+		cos dist2 mul x2 add /x2 exch def
+		sin dist2 mul y2 add /y2 exch def
+		1 setlinewidth
+		0 setgray
+		x1 y1 moveto
+		x2 y2 lineto stroke
+		newpath
+		x1 y1 //trackWidth 1 sub 0 360 arc
+		gsave
+			blobColor haveColor {
+				XcolorTable exch get
+				aload pop
+				setrgbcolor
+			} {
+				grayTable exch get
+				setgray
+			} ifelse
+			fill
+		grestore
+		stroke
+		x2 y2 //trackWidth 1 sub 0 360 arc
+		gsave
+			blobColor haveColor {
+				XcolorTable exch get
+				aload pop
+				setrgbcolor
+			} {
+				grayTable exch get
+				setgray
+			} ifelse
+			fill
+		grestore
+		stroke
+	grestore
+} def
+
+% ------------------------------------------------------------
+% procedures for drawing a map
+
+% HexCoords: row col => x y
+%   convert hex coords to user space
+%   depends on hex offset
+/HexCoords {
+	% col -> x
+	1 sub deltaCol mul hexOff_x add
+	exch
+	% row -> y
+	1 sub deltaRow mul hexOff_y exch sub
+} def
+
+/deltaCol {
+	tileSitting
+	{ //hexSide 1.5 mul }
+	{ //hexHeight } ifelse
+} def
+/deltaRow {
+	tileSitting
+	{ //hexHeight }
+	{ //hexSide 1.5 mul } ifelse
+} def
+
+/currentRotation 0 def
+/colStart 0 def
+/rowStart 0 def
+
+% Map: x y cols rows dleft dright dtop dbottom =>
+%   draw line around map area, clip to area
+%   add offset to position of hex A1 (upper left)
+%   define hexOff_x and hexOff_y
+/Map {
+	/mapDict 30 dict def
+	mapDict begin
+		/dbottom exch def
+		/dtop exch def
+		/dright exch def
+		/dleft exch def
+		/rows exch def
+		/cols exch def
+		/y exch def
+		/x exch def
+		/w deltaCol cols 1 add mul
+			dleft add dright add def
+		/h deltaRow rows mul //hexSide 0.5 mul add
+			dtop add dbottom add def
+		tileSitting {
+			/h deltaRow rows 1 add mul
+				dtop add dbottom add def
+			/w deltaCol cols mul //hexSide 0.5 mul add
+				dleft add dright add def
+			/org_x x dleft add //hexSide add def
+			/org_y y h add dtop sub //hexHeight sub def
+		} {
+			/w deltaCol cols 1 add mul
+				dleft add dright add def
+			/h deltaRow rows mul //hexSide 0.5 mul add
+				dtop add dbottom add def
+			/org_x x dleft add //hexHeight add def
+			/org_y y h add dtop sub //hexSide sub def
+		} ifelse
+		x y w h rectstroke
+		% labels
+		newpath
+			/Helvetica-Bold 14 selectfont
+			/labn 5 string def
+			/labl (-) def
+			/labll (--) def
+			/l1 y h add 0.1 cm add def
+			/l2 y 0.4 cm sub def
+			colStart 1 cols 1 sub {
+				/i exch def
+				axesSwapped {
+					axisDirection //axisLetBack eq
+					axisDirection //axisBothBack eq or {
+						/val cols i sub def
+					} {
+						/val i 1 add def
+					} ifelse
+					val 26 gt {
+						useSexavigenary {
+							labll 0 val 1 sub 26 div cvi 64 add put
+							labll 1 val 1 sub 26 mod 65 add put
+						} {
+							labll 0 val 64 add 26 sub put 
+							labll 1 val 64 add 26 sub put 
+						} ifelse
+						/val labll def
+					} {
+						labl 0 val 64 add put 
+						/val labl def
+					} ifelse
+				} {
+					axisDirection //axisNumBack eq
+					axisDirection //axisBothBack eq or {
+						/val cols i sub def
+					} {
+						/val i 1 add def
+					} ifelse
+					/val val labn cvs def
+				} ifelse
+				org_x deltaCol i mul add dup
+				l1 val centershow
+				l2 val centershow
+			} for
+			/l1 x 0.3 cm sub def
+			/l2 x w add 0.3 cm add def
+			rowStart 1 rows 1 sub {
+				/i exch def
+				axesSwapped {
+					axisDirection //axisNumBack eq
+					axisDirection //axisBothBack eq or {
+						/val rows i sub def 
+					} {
+						/val i 1 add def
+					} ifelse
+					/val val labn cvs def
+				} {
+					axisDirection //axisLetBack eq
+					axisDirection //axisBothBack eq or {
+						/val rows i sub def
+					} {
+						/val i 1 add def
+					} ifelse
+					val 26 gt {
+						useSexavigenary {
+							labll 0 val 1 sub 26 div cvi 64 add put
+							labll 1 val 1 sub 26 mod 65 add put
+						} {
+							labll 0 val 64 add 26 sub put 
+							labll 1 val 64 add 26 sub put 
+						} ifelse
+						/val labll def
+					} {
+						labl 0 val 64 add put 
+						/val labl def
+					} ifelse
+				} ifelse
+				l1 org_y deltaRow i mul sub dup 3 1 roll
+				val xycentershow
+				l2 exch val xycentershow
+			} for
+		closepath
+		x y w h rectclip
+		org_x org_y
+	end
+	/hexOff_y exch def
+	/hexOff_x exch def
+} def
+
+% Edge: (pos) (val) width colorcode type => -
+/Edge {
+	/edgeType exch def
+	/edgeColor exch def
+	/edgeWidth exch def
+	/edgeValue exch def
+	gsave
+		HexPos
+		3 1 roll
+		HexCoords
+		translate
+		-60 mul
+		tileSitting {
+			30 add
+		} if
+		dup /newRot exch def
+		rotate
+		edgeColor haveColor {
+			XcolorTable exch get
+			aload pop
+			setrgbcolor
+		} {
+			grayTable exch get
+			setgray
+		} ifelse
+		edgeWidth setlinewidth
+		newpath
+		edgeType 0 eq {
+			//hex_x0 //hex_y0 moveto
+			//hex_x1 //hex_y1 lineto
+		} if
+		edgeType 1 eq {
+			//hex_x5 //hex_y5 moveto
+			//hex_x2 //hex_y2 lineto
+		} if
+		edgeType 2 eq {
+			//hex_x0 //hex_y0 moveto
+			0 0 lineto
+			//hex_x2 //hex_y2 lineto
+		} if
+		edgeType 3 eq {
+			//hex_x0 //hex_y0 moveto
+			0 0 lineto
+			//hex_x1 //hex_y1 lineto
+		} if
+		stroke
+		edgeValue () eq not
+		{
+			//hex_x0 //hex_x1 add 2 div //hex_y0 //hex_y1 add 2 div translate
+			currentRotation newRot add neg rotate
+			edgeValue (o) anchorsearch {
+				pop
+				/edgeValue exch def
+				0 0 //valRadius 0 360 arc
+			} {
+				pop
+				MountainPath
+			} ifelse
+			0.5 setlinewidth
+			0 setgray
+			gsave
+				1 setgray fill
+			grestore
+			stroke
+			/Helvetica 10 selectfont
+			0 0 edgeValue xycentershow
+		} if
+	grestore
+} def
+
+% Barrier: (pos) => -
+%   position barrier on map.
+/Barrier {
+	() 12 //tlBarr 0 Edge
+} def
+
+% Frontier: (pos) => -
+%   position frontier on map.
+/Frontier {
+	() 6 //tlBarr 0 Edge
+} def
+
+% MidFrontier: (pos) => -
+%   position frontier on map.
+/MidFrontier {
+	() 6 //tlBarr 1 Edge
+} def
+
+% AngleFrontier: (pos) => -
+%   position frontier on map.
+/AngleFrontier {
+	() 6 //tlBarr 2 Edge
+} def
+
+% SharpFrontier: (pos) => -
+%   position frontier on map.
+/SharpFrontier {
+	() 6 //tlBarr 3 Edge
+} def
+
+% CostBarrier (pos) (value) => -
+%   position cost barrier on map.
+/CostBarrier {
+	6 //tlBarr 0 Edge
+} def
+
+% LayFlash (pos) colorcode => -
+/LayFlash {
+	/flashColor exch def
+	gsave
+		HexPos
+		3 1 roll
+		HexCoords
+		translate
+		-60 mul
+		tileSitting {
+			30 add
+		} if
+		dup /newRot exch def
+		rotate
+		1 setlinewidth
+		newpath
+		//hex_x0 //hex_x1 add 2 div //hex_y0 //hex_y1 add 2 div translate
+		60 rotate
+		0 //trackWidth neg moveto
+		0 //trackWidth lineto
+		//trackWidth 2 mul 0 lineto
+		closepath
+		gsave
+			flashColor haveColor {
+				XcolorTable exch get
+				aload pop
+				setrgbcolor
+			} {
+				grayTable exch get
+				setgray
+			} ifelse
+			fill
+		grestore
+		stroke
+	grestore
+} def
+

@@ -1,0 +1,108 @@
+%
+% $Header: 18-pcode.ps[1.2] Thu Sep  7 10:35:17 1995 doko@cs.tu-berlin.de saved $
+%
+
+%!
+% ------------------------------------------------------------
+% some procedures from various sources ...
+
+/cm { 28.35 mul } def
+/glob-known { where dup  { exch pop } if } def
+/selectfont glob-known not {
+	/selectfont {
+		exch findfont exch scalefont setfont
+	} def
+} if
+/rectpath {
+	dup type /arraytype eq {
+		aload pop
+	} if
+	4 2 roll moveto 1 index 0 rlineto 0 exch rlineto neg 0 rlineto closepath
+} def
+/rectclip glob-known not {
+	/rectclip {
+			newpath rectpath clip newpath
+	} def
+} if
+/rectfill glob-known not {
+	/rectfill {
+		gsave
+			newpath rectpath fill
+		grestore
+	} def
+} if
+/rectstroke glob-known not {
+	/rectstroke {
+		gsave
+			newpath rectpath stroke
+		grestore
+	} def
+} if
+
+% rightshow: x y (string)  =>  -
+/rightshow {
+	dup stringwidth pop
+	4 -1 roll exch sub
+	3 -1 roll moveto
+	show
+} def
+
+% centershow: x y (string) => -
+/centershow {
+	dup stringwidth pop 2 div
+	4 -1 roll exch sub
+	3 -1 roll moveto
+	show
+} def
+
+% xycentershow: x y (string) => -
+/xycentershow {
+	dup stringwidth pop 2 div
+	4 -1 roll exch sub
+	3 1 roll
+	dup stringheight add 2 div neg 3 -1 roll add
+	exch 3 1 roll moveto
+	show
+} def
+
+% charheight: (char) => lly ury
+/charheight {
+	gsave
+		newpath
+		0 0 moveto
+		false charpath
+		flattenpath
+		pathbbox
+		exch pop
+		3 -1 roll pop
+	grestore
+} def
+
+% stringheight: (str) => lly ury
+/stringheight {
+	/lly 0.0 def
+	/ury 0.0 def
+	{
+		( ) dup 0 4 -1 roll put
+		charheight
+		dup ury gt { /ury exch def } { pop } ifelse
+		dup lly lt { /lly exch def } { pop } ifelse
+	} forall
+	lly ury
+} def
+
+% toupper: (str) => (str)
+/toupper {
+	/s exch def
+	0 1 s length 1 sub
+	{
+		dup
+		/c s 3 -1 roll get def
+		c 97 ge c 122 le and
+		{ /c c 32 sub def }
+		if
+		s exch c put
+	} for
+	s
+} def
+

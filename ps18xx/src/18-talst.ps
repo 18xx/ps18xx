@@ -1,0 +1,323 @@
+%
+% $Header: 18-talst.ps[1.6] Wed Nov 15 17:26:32 1995 doko@cs.tu-berlin.de saved $
+%
+
+/TileAvailability {
+	/numPages exch def
+	/page exch def
+	/gStart page tileSitting {10}{9} ifelse mul def
+	/listScale 0.6 def
+	gsave
+	listScale dup scale
+	/CM { 28.35 1 listScale div mul mul } def
+	/Helvetica-Bold 24 selectfont
+	2 CM //hexHeight sub 27 CM moveto
+	/quantity 4 string def
+	(Tile Availability: ) show 18xxVariant show
+	numPages 1 gt {
+		( Page ) show
+		page 1 add quantity cvs show
+		( of ) show
+		numPages quantity cvs show
+	} if
+
+	/x 2 CM def
+	/y 27 CM tileSitting {//hexHeight}{//hexSide} ifelse 0.8 CM add sub def
+	/row 0 def
+	/col 0 def
+	/xdist tileSitting {//hexSide}{//hexHeight} ifelse 2 mul 0.15 cm add def
+	/ydist tileSitting {//hexHeight}{//hexSide} ifelse 2 mul 0.5 cm add def
+	/Helvetica 15 selectfont
+	0 1 nColours {
+		/color exch def
+
+		/legendx x xdist col mul add
+			tileSitting {//hexSide}{//hexHeight} ifelse sub def
+		/legendy y ydist row gStart sub mul sub
+			tileSitting {//hexHeight}{//hexSide} ifelse 1.25 mul add def
+		/count 0 def
+
+		0 1 maxTile 1 sub {
+			/vnum exch def
+			tileCodes vnum get /tile exch def
+			tile null ne {
+				% quantity > 0 and same color
+				tile 6 get 0 gt
+				tile 2 get color eq and {
+					row gStart ge
+					row tileSitting {9}{8} ifelse gStart add le and {
+						/count count 1 add def
+						% print it
+						x xdist col mul add
+						y ydist row gStart sub mul sub
+						2 copy
+						2 copy
+						vnum 0 VariantToGeneric
+						[] XYTile
+						% quantity
+						exch tileSitting {//hexSide}{//hexHeight} ifelse add
+						exch tileSitting {//hexHeight}{//hexSide} ifelse sub
+						/Helvetica 15 selectfont
+						tile 6 get quantity cvs rightshow
+						exch tileSitting {//hexSide}{//hexHeight} ifelse sub
+						exch tileSitting {//hexHeight}{//hexSide} ifelse sub
+						moveto tile 7 get quantity cvs show
+					} if
+					col tileSitting {7}{8} ifelse eq {
+						/col 0 def /row row 1 add def
+					} {
+						/col col 1 add def
+					} ifelse
+				} if
+			} if
+		} for
+		col 0 ne { /col 0 def /row row 1 add def} if
+		count 0 ne {
+			legendx legendy moveto
+			/Helvetica-Bold 18 selectfont
+			ColorNameTable color get show
+			/y y 0.3 CM sub def
+		} if
+	} for
+
+	grestore
+} def
+
+/VariantTileAvailability {
+	/nRows exch def
+	/numPages exch def
+	/page exch def
+	/gStart page nRows mul def
+	/listScale 0.8 nRows div def
+	gsave
+	/CM { 28.35 1 listScale div mul mul } def
+	/Helvetica-Bold 16 selectfont
+	2 CM //hexHeight sub 27 cm moveto
+	/quantity 4 string def
+	(Tile Availability: ) show 18xxVariant show
+	numPages 1 gt {
+		( Page ) show
+		page 1 add quantity cvs show
+		( of ) show
+		numPages quantity cvs show
+	} if
+	listScale dup scale
+
+	% xsize and ysize are the horizontal and vertical dimensions of a
+	% tile, from center to edge.
+	/xsize tileSitting {//hexSide}{//hexHeight} ifelse def
+	/ysize tileSitting {//hexHeight}{//hexSide} ifelse def
+
+	% x and y are the coordinates where we begin printing
+	/x 2 CM def
+	/y 27 CM ysize 0.8 CM add sub def
+	/row 0 def
+	/col 0 def
+	% xdist and ydist are the horizontal and vertical components of the
+	% distance between centres of displayed tiles.
+	/xdist xsize 2 mul 0.15 cm add def
+	/ydist ysize 2 mul 0.5 cm add def
+
+	0 1 nColours {
+		/color exch def
+		/count 0 def
+
+		0 1 maxTile 1 sub {
+			/vnum exch def
+			tileCodes vnum get /tile exch def
+			tile null ne {
+				% quantity > 0 and same color
+				tile 6 get 0 gt
+				tile 2 get color eq and {
+					row gStart ge
+					row nRows gStart add lt and {
+						% If this is the first column, print a vertical
+						% column of hexagons showing orientations.
+						col 0 eq {
+							0 1 5 {
+								/myorient exch 1 add def
+								x
+								y ydist 7 mul 1 cm add row gStart sub mul sub
+								ydist myorient mul sub
+								2 copy
+								translate
+								tileSitting {
+									30 rotate
+								} if
+								TilePath stroke
+								tileSitting {
+									-30 rotate
+								} if
+								1 setlinewidth
+								xsize neg 2 div 0 moveto
+								xsize 2 div 0 lineto stroke
+								/Helvetica 30 selectfont
+								% print a numeric orientation above the
+								% line, or a ? if we're being realistic
+								0 0 moveto
+								0 0.3 cm
+									orientNumbers
+										{ myorient quantity cvs } { (?) }
+										ifelse
+										centershow
+								% print a compass point orientation
+								% below the line
+								0 -1 cm
+								tileSitting {
+									[(NW) (N) (NE) (SE) (S) (SW)]
+								}{
+									[(NW) (NE) (E) (SE) (SW) (W)]
+								} ifelse 
+								myorient 1 sub get centershow
+								neg exch neg exch translate
+							} for
+						} if
+						% print it
+						x xdist col 1 add mul add
+						y ydist 7 mul 1 cm add row gStart sub mul sub
+						% Print the colour if this is the first "real"
+						% column or if this is first tile of a new
+						% colour.
+						count 0 eq col 0 eq or {
+							2 copy
+							exch tileSitting {//hexSide}{//hexHeight} ifelse
+								sub
+							exch tileSitting {//hexHeight}{//hexSide} ifelse
+								1.25 mul add
+							moveto
+							/Helvetica-Bold 12 nRows mul selectfont
+							ColorNameTable color get show
+						} if
+						/count count 1 add def
+						% print a hex at the head of the column for tile
+						% number, tile count, and possibly city value
+						% too.
+						2 copy
+						2 copy
+						translate
+						tileSitting {
+							30 rotate
+						} if
+						TilePath stroke
+						tileSitting {
+							-30 rotate
+						} if
+						1 setlinewidth
+						xsize neg 2 div 0 moveto
+						xsize 2 div 0 lineto stroke
+						/Helvetica 30 selectfont
+						% print the tile number above the line
+						0 0 moveto
+						0 0.3 cm tile 7 get quantity cvs centershow
+						xsize ysize 0.6 cm add neg
+						% print the tile count at the bottom right
+						tile 6 get quantity cvs rightshow
+						% if the city value is non-blank, print the city
+						% value below the line
+						tile 5 get () ne {
+							0 -1 cm tile 5 get centershow
+						} if
+						neg exch neg exch translate
+						% Now print the tiles.  Make more copies of the
+						% coordinates.
+						2 copy
+						2 copy
+						2 copy
+						2 copy
+						2 copy
+						0 1 5 {
+							/myorient exch def
+							ydist myorient 1 add mul sub
+							vnum myorient 2 add 6 mod VariantToGeneric
+							[] XYTile
+						} for
+					} if
+					x xdist col 2 add mul add 19.5 CM gt {
+						/col 0 def /row row 1 add def
+					} {
+						/col col 1 add def
+					} ifelse
+				} if
+			} if
+		} for
+	} for
+	grestore
+} def
+
+/cuttingTileAvailability {
+	/numPages exch def
+	/page exch def
+	/tStart page 28 mul def
+	/listScale 1.1 def
+	gsave
+	listScale dup scale
+	/CM { 28.35 1 listScale div mul mul } def
+	/Helvetica-Bold 24 selectfont
+	2 CM //hexHeight 2 div sub 27 CM moveto
+	/quantity 4 string def
+	(Tile Sheet: ) show 18xxVariant show
+	numPages 1 gt {
+		( Page ) show
+		page 1 add quantity cvs show
+		( of ) show
+		numPages quantity cvs show
+	} if
+
+	/x 2 CM //hexHeight 2 div add def
+	/y 27.5 CM //hexSide 0.8 CM add sub def
+	/row 0 def
+	/col 0 def
+	/xdist //hexHeight 2 mul def
+	/ydist //hexSide 2 mul def
+	/Helvetica 15 selectfont
+	/count 0 def
+	0 1 nColours {
+		/color exch def
+
+		0 1 maxTile 1 sub {
+			/vnum exch def
+			tileCodes vnum get /tile exch def
+			tile null ne {
+				% quantity > 0 and same color
+				tile 6 get 0 gt
+				tile 2 get color eq and {
+					1 1 tile 6 get {
+						count tStart ge count tStart 28 add lt and {
+							% print it
+							x xdist col mul add
+							y ydist row mul sub
+							col 2 mod 0 ne {
+								ydist 2 div sub
+							} if
+							2 copy
+							translate
+							0 0
+							tileSitting {
+								-30 rotate
+							} if
+							vnum 0 VariantToGeneric
+							[] XYTile
+							tileSitting {
+								30 rotate
+							} if
+							neg exch neg exch
+							translate
+							col 4 eq {
+								/col 0 def /row row 1 add def
+							} {
+								/col col 1 add def
+								row 5 eq col 2 mod 0 ne and {
+									/col col 1 add def
+								} if
+							} ifelse
+						} if
+						/count count 1 add def
+					} for
+				} if
+			} if
+		} for
+	} for
+
+	grestore
+} def
+

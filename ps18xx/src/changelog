@@ -1,0 +1,757 @@
+21-4-08:
+	18-defs.ps:
+		Recognise 1837sx instead of 1837SX to make stations smaller
+
+23-6-08:
+	37-tc.ps:
+		Change Bregenz (on the map) to green from brown, to match real
+		sets.
+
+27-6-08:
+	18-talst.ps:
+		Suppress numeric orientations on variant tile lists
+
+7-8-08:
+	scan-map.ps:
+		Change mapscale (from .6666 to .6) so that the pdf fits.
+	44-map.ps:
+		Change mapscale (from .44 to .4) so that the pdf fits.
+
+10-10-08:
+	18-talst.ps:
+		make outer loop control variable to print all colours
+
+21-10-08:
+	48-map.ps 48A-map.ps:
+		Reduce scale so that map fits on US letter paper
+
+5-12-08:
+	C2C-map.ps:
+		Reduce scale so that map fits on US letter paper
+
+10-01-09:
+	12-tc.ps, 12-map.ps, 18-defs.ps, 18-gentl.ps
+		Create map & tile sheet for 1812
+
+14-01-09:
+	48A-tc.ps:
+		Add transparent tile #441 which has a "K" on it.
+
+26-01-09:
+	18-defs.ps:
+		Fix two long-standing bugs in positioning of city names
+
+28-01-09:
+	65Sar+-tc.ps, 65Sar+-map.ps, 18-defs.ps, 18-gentl.ps, 18-map.ps:
+		Create map & tile sheets for 1865Sar+
+
+2-02-09:
+	54-tc.ps, 54-map.ps
+		Correct value of Zurich in brown.  Fix spelling of Ausserfernbahn.
+
+3-02-09:
+	18-defs.ps
+		Fix recent fix for name positioning, for the case where the name
+		overlaps at both ends.
+
+4-02-09:
+	18-defs.ps
+		Add QuincunctialStation (but don't use it yet)
+		Make 1865Sar+ station size small
+
+4-3-09:
+	26-tc.ps 44-map.ps 44-tc.ps 49v4-tc.ps 62h-map.ps 62h-tc.ps al-map.ps
+	al-tc.ps eu-tc.ps
+		Add explicit terrain costs to map.
+
+6-3-09:
+	48-map.ps 48-tc.ps 61-tc.ps
+		Add explicit terrain costs to map.
+		Remove (MKT) label from Dallas on 1848 map.
+
+9-3-09:
+	12-tc.ps:
+		Remove excess tiles to match current 'real' set.
+
+13-3-09:
+	18-defs.ps 18-talst.ps
+		Support non-numeric tile "numbers"
+	65Sar+-tc.ps
+		Change tile numbers of new tiles to Lnn.
+
+18-3-09:
+	c2c-map.ps c2c-tc.ps:
+		Add SR private label to Atlanta
+
+21-03-09:
+	c2c-map.ps c2c-tc.ps
+		Add costs for difficult terrain
+
+28-03-09:
+	12-map.ps 12-tc.ps 37-map.ps 37-tc.ps
+		Add support for checking tile upgrades & orientations
+
+29-03-09:
+	24-map.ps 24-tc.ps 26-map.ps 26-tc.ps
+		Add support for checking tile upgrades & orientations
+
+30-03-09:
+	30-map.ps 30-tc.ps 44-map.ps 44-tc.ps 46-map.ps 46-tc.ps 48-map.ps
+	48-tc.ps
+		Add support for checking tile upgrades & orientations
+
+31-03-09:
+	48a-map.ps 48a-tc.ps 49v4-map.ps 49v4-tc.ps 61-map.ps 61-tc.ps 62h-map.ps
+	62h-tc.ps
+		Add support for checking tile upgrades & orientations
+
+1-04-09:
+	12-tc.ps:
+		Fix earlier cock-ups with some upgrade orientations.
+	al-tc.ps al-map.ps c2c-tc.ps c2c-map.ps eu-tc.ps eu-map.ps scan-tc.ps
+	scan-msp.ps
+		Add support for checking tile upgrades & orientations
+
+2-04-09:
+	54-map.ps 54-tc.ps 56-map.ps 56-tc.ps 70-map.ps 70-tc.ps
+		Add support for checking tile upgrades & orientations
+
+3-04-09:
+	18-gentl.ps ard-tc.ps ard-map.ps
+		New map & tile sheet for 18Ardennes
+
+4-04-09:
+	18-gentl.ps ard-tc.ps ard-map.ps
+		Fixes for map & tile sheet for 18Ardennes
+
+5-04-09:
+	18-defs.ps 12-tc.ps 12-map.ps 30-map.ps 50-map.ps 61-map.ps
+
+7-04-09:
+	41-map.ps 41-tc.ps 41v2-map.ps 41v2-tc.ps
+		Add support for checking tile upgrades & orientations
+
+15-04-09:
+	44-tc.ps:
+		Fixes for upgrades to STB home in 1844
+
+6-05-09:
+	46-map.ps 46-tc.ps
+		Fix orientation of Wheeling upgrade.  Tidy up Cumberland hex.
+	18-defs.ps
+		Add support for 4-character tile numbers.
+
+10-05-09:
+	18-gentl.ps:
+		Fix Tile_376, for the Newcastle hex in 1812. 
+
+13-05-09:
+	12-map.ps:
+		Fix upgrades for Newcastle
+
+18-05-09:
+	eu-tc.ps:
+		Add overlay for when an Alp gets built in Yellow.
+
+19-05-09:
+	62h-tc.ps:
+		Fix Omaha upgrade
+
+29-05-09:
+	26-map.ps 26-tc.ps:
+		Fix upgrades in Lyon and of 23/24 to 47.
+
+30-05-09:
+	12-map.ps:
+		Fix upgrades to York.
+
+31-05-09:
+	12-tc.ps 24-tc.ps 30=tc.ps 37-tc.ps 44-tc.ps 61-tc.ps:
+		Fix upgrades of 23/24 to 47.
+
+10-06-09:
+	west-map.ps west=tc.ps
+		Add upgrade data.  Reduce map scale so map fits US paper.
+
+14-06-09:
+	24-map.ps 24-tc.ps
+		Reduce map scale so map fits US paper.  Fix upgrade of #497
+	44-tc.ps
+		Fix taying #59 in G10.
+	61-tc.ps
+		Fix upgrading #28 and #29
+	62h-map.ps eu-map.ps
+		Reduce map scale so map fits US paper.
+
+23-06-09:
+	12-tc.ps
+		Fix upgrade of 23/24 to 43
+
+08-07-09:
+	18-defs.ps
+		Add 1865Sar, and remove 1865Sar+, from the list of titles with small
+		city circles.
+
+16-07-09:
+	26-tc.ps:
+		Fix upgrade of 20 to 47.
+
+3-08-09:
+	gl-map.ps:
+		Reduce map scale so map fits US paper.
+
+17-08-09:
+	48-tc.ps:
+		Fix upgrade of -431 to brown.
+
+23-08-09:
+	c2c-tc.ps:
+		Fix CBQ->BR, CM->MR, Katy->MKT destination token names.
+
+25-08-09:
+	12-map.ps 12-tc.ps
+		Convert to new version.
+
+06-09-09:
+	18-defs.ps:
+		Make tunnel entrances narrower so they don't obcure tile numbers
+
+18-09-09:
+	48A-tc.ps:
+		Add another #240, to match real sets.  Add [Com] overlay.
+
+30-09-09:
+	48a-tc.ps:
+		Add another hole in the #915 tile, to match reality.
+
+18-10-09:
+	46-map.ps
+		Change PA to PRR, to accord with modern usage.
+
+17-11-09:
+	41v2-tc.ps:
+		Fix laying #15 in P12
+
+25-11-09:
+	56-tc.ps:
+		Fix Upgrading Barrie to brown, and putting a #68 in Hamilton.
+
+4-12-09:
+	50-map.ps:
+		Move BR home station so it's nearer the west.
+
+15-12-09:
+	48-tc.ps:
+		Allow #535 to be upgraded to #536.
+
+9-01-10:
+	ea-map.ps ea-tc.ps:
+		Initial version of prototype.
+	18-gentl.ps:
+		Add generic #386 for 18ea support
+
+19-01-10:
+	62h-tc.ps:
+		Fix upgrade warnings of #889 and in E2.
+
+04-02-10:
+	fl-map.ps fl-tc.ps:
+		Fix to match published version (was old prototype).  Add upgrades.
+	18-talst.ps:
+		Fix indent of title in variant format.
+
+14-02-10:
+	62-tc.ps:
+		Fix upgrading Portland and Milwaukee
+
+27-02-10:
+	17-map.ps 17-tc.ps:
+		New map & tile sheet to handle 1817
+	us-map.ps us-tc.ps:
+		Upgrade map & tile sheet from prototype to published version.
+	18-gentl.ps:
+		Add new generic tile to cope with New Orleans in 18US.
+		Update comments listing where the generics are used.
+
+1-03-10:
+	12-tc.ps:
+		Berwick grey value has changed, and N-S bonus is now variable.
+	61-tc.ps:
+		Fix tile numbers (635 & 637) for green Kiev & Moscow tiles.
+
+11-03-10:
+	ard-map.ps ard-tc.ps:
+		Add N/S/E/W indicators to the map.
+
+11-03-10:
+	ga-map.ps ga-tc.ps gav2-map.ps gav2-tc.ps:
+		Add orientation data.
+
+18-03-10:
+	44-tc.ps:
+		Fix upgrade of #125 to #915, and #905 to #906.
+
+14-04-10:
+	46-map.ps:
+		Move Louisville name so it doesn't overlap value.
+	62h-tc.ps:
+		Fix upgrades in Seattle.
+
+27-04-10:
+	17-tc.ps:
+		Renumber C1,C2.  Remove K and L labels.
+
+7-05-10:
+	46-map.ps 46-tc.ps:
+		Fix Chicago Connections hex (C5).
+
+13-05-10:
+	12-map.ps 12-tc.ps:
+		Upgrade to latest version.
+
+17-05-10:
+	41v2-tc.ps:
+		Fix upgrade orientations of #20 to #47.
+
+30-05-10:
+	gl-map.ps gl-tc.ps:
+		Add upgrade information, belatedly.
+
+16-06-10:
+	fl-tc.ps:
+		Add overlays for hotels.
+
+22-07-10:
+	37-tc.ps:
+		Fix upgrade orientation for green Budapest tile.
+
+28-07-10:
+	41v2-tc.ps:
+		Add token information.
+
+4-08-10:
+	12-tc.ps 24-tc.ps 26-tc.ps 30-tc.ps 37-tc.ps 41-tc.ps 44-tc.ps 46-tc.ps
+	56-tc.ps 61-tc.ps 70-tc.ps eu-tc.ps fl-tc.ps gl-tc.ps west-tc.ps:
+		Add token information.
+	50-map.ps 50-tc.ps:
+		Add orientation and token information.
+	18-map.ps:
+		Add new private company symbols.
+	18-gentl.ps:
+		Add support for new 1858 tiles.
+	58-map.ps 58-tc.ps:
+		New game initial version.
+
+7-08-10:
+	12-map.ps 12-tc.ps 30-map.ps 30-tc.ps:
+		Use new private company symbols.
+
+8-08-10:
+	61-map.ps 61-tc.ps gl-map.ps gl-tc.ps:
+		Use new private company symbols.
+	48a-map.ps 48a-tc.ps:
+		Add token information.
+
+16-08-10:
+	50-tc.ps:
+		Fix upgrades of #58.
+	west-tc.ps:
+		Fix upgrade of brown to gray SF tile.
+
+21-08-10:
+	ard-map.ps ard-tc.ps:
+		Move fort from Charleville to Metz; add token information
+
+28-08-10:
+	17-tc.ps:
+		Add token information.
+
+16-09-10:
+	gl-tc.ps:
+		Fix grey tile upgrades.
+
+17-09-10:
+	west-tc.ps
+		Add facility for showing bypass tokens.
+
+18-09-10:
+	17-map.ps 17-tc.ps:
+		Reduce size to fit PDF.  Make Cleveland & Toronto grey.
+
+19-09-10:
+	12-tc.ps:
+		All plain green tiles except #23-25 have a count of 1.
+	18-talst.ps:
+		Add support for playable tile sheets
+
+20-09-10:
+	17-tc.ps 48-tc.ps 61-tc.ps west-tc.ps
+		Note that some tiles are unlimited in quantity.
+
+22-09-10:
+	61-tc.ps:
+		Remove #70 tiles from list of legal upgrades.
+
+23-09-10:
+	17-map.ps:
+		Change some mountains to coastal swamps to match real map.
+
+24-09-10:
+	17-map.ps:
+		Change one Albany to Scranton, and one Charleston to Raleigh-Durham.
+	99v2-map.ps 99v2-tc.ps:
+		Add orientation and token info.
+	west-map.ps
+		Change to "retuned" by adding UP doubler in SF.
+
+30-09-10:
+	99v2-map.ps 99v2-tc.ps:
+		Add terrain costs and private companies.
+
+2-10-10:
+	18-gentl.ps us-map.ps us-tc.ps
+		Add places for doubling tokens, fix reserved hexes, add tokens.
+	49v4-tc.ps:
+		Fix upgrade of 644 to 706.
+	70-tc.ps:
+		Fix upgrades in hex E12.
+	ga-tc.ps gav2-tc.ps:
+		Remove unnecessary upgrade possibilities.
+
+4-10-10:
+	dixie-tc.ps neb-map.ps neb-tc.ps:
+		Fix upgrade information.
+
+10-10-10:
+	12-tc.ps 17-tc.ps 30-tc.ps 37-tc.ps 41-tc.ps 41v2-tc.ps 44-tc.ps
+	46-tc.ps 48-tc.ps 48a-tc.ps 50-tc.ps 54-tc.ps 56-tc.ps 58-tc.ps
+	61-c.ps 62h-tc.ps 70-tc.ps 99v2-tc.ps al-tc.ps ard-tc.ps c2c-tc.ps
+	dixie-tc.ps ea-tc.ps ga-tc.ps gav2-tc.ps gl-tc.ps neb-tc.ps
+	us-tc.ps west-tc.ps:
+		Fix upgrade information.
+
+14-10-10:
+	24-tc.ps 48-tc.ps:
+		Fix upgrade information
+
+18-10-10:
+	41v2-tc.ps:
+		Add RSFS tokens.
+
+9-11-10:
+	18-defs.ps 18-gentl.ps 80-map.ps 80-tc.ps:
+		New 1880 game.
+
+10-11-11:
+	ard-tc.ps:
+		Use official numbers for special tiles.
+
+10-11-11:
+	17-tc.ps:
+		Change SRR to SR.  Add bridge and mine overlays.
+
+13-11-10:
+	12-map.ps 12-tc.ps:
+		Fix dubious orientation checking near C16/D17.  7,8,0 are unlimited.
+	us-tc.ps:
+		Add +10 and +20 overlays.   7,8,9 are unlimited.
+
+28-11-10:
+	ea-map.ps ea-tc.ps:
+		Add token-checking data.  Fix R&H->E&H, WSI->WstI.
+
+1-12-10:
+	18-gentl.ps 00bc-map.ps 00bc-tc.ps:
+		Support Poseidon (as 1800BC).
+
+18-01-11:
+	ard-tc.ps:
+		Fix value of #X10 (green Amstetdam) to 40.
+
+19-01-11:
+	58-map.ps 58-tc.ps:
+		Fix city names.  Add mixed-gauge dot towns.
+
+21-01-11:
+	18-gentl.ps 58-map.ps 58-tc.ps:
+		Upgrade to new Lisbon arrangements.  Add some support for 18FR-RCE.
+
+27-01-11:
+	FR-RCE-map.ps FR-RCE-tc.ps:
+		Support 18FR-RCE.
+
+31-01-11:
+	17-tc.ps:
+		Reduce count of #116 to 1 and #53 to 4; we don't need more.
+
+3-02-11:
+	12-tc.ps 24-tc.ps 26-tc.ps 30-tc.ps 37-tc.ps 46-tc.ps 54-tc.ps
+	61-tc.ps al-tc.ps c2c-tc.ps dixie-tc.ps fr-rce-tc.ps ga-tc.ps
+	gav2-tc.ps gl-tc.ps:
+		Fix upgrade orientation data.
+
+4-02-11:
+	80-map.ps:
+		Reduce scale slightly.  Make borders bigger.  Fix BZU token.
+
+5-02-11:
+	18-talst.ps:
+		Make cutting-out tile sheets 28 per page.
+
+8-02-11:
+	58-map.ps 58-tc.ps:
+		Update to latest map.  Make most off-boards dual gauge.
+
+14-03-11:
+	58-tc.ps:
+		Fix yellow tile lay orientations in Barcelona, cities with rivers
+
+17-03-11:
+	99v2-tc.ps:
+		Fix upgrade orientation of YSC special track.
+	44-tc.ps:
+		Fix upgrade orientation of 59->67.
+
+21-03-11:
+	58-map.ps:
+		Make it a bit smaller so it will fit on US Letter (for PDF).
+	32-map.ps 32-tc.ps:
+		Add river hex costs.  Add orientation & token checking data.
+
+26-03-11:
+	54-tc.ps dixie-tc.ps:
+		Fix	dud orientation data.
+
+17-04-11:
+	89-tc.ps:
+		Fix values of #465 and #466.
+	48-map.ps 48-tc.ps:
+		Fix tile counts to latest marque.  Fix map ditto.
+
+19-04-11:
+	48-map.ps 48-tc.ps:
+		Grand renumbering; use Ann for bespoke tiles.
+
+11-5-11:
+	58-tc.ps:
+		Make yellow tiles unlimited.
+
+24-5-11:
+	scan-map.ps scan-tc.ps:
+		Fix S&NJ token name; add token count checking.
+
+1-6-11:
+	32-tc.ps:
+		Change #191's value from $70 to the correct $60.
+
+6-6-11:
+	west-tc.ps:
+		Fix tiles #260 and #261 so that they have three holes
+	48-tc.ps:
+		Revert to (mostly) old numbering scheme.
+
+17-6-11:
+	99v2-tc.ps:
+		Fix (A) city upgrades.  Fix upgrade to #995.
+
+16-8-11:
+	scan-tc.ps:
+		Fix token-checking data.
+
+15-9-11:
+	32-map.ps 32-tc.ps:
+		Add W overlay for warehouse token.  Fix medium city upgrades
+
+16-11-11:
+	32-tc.ps:
+		Add P overlay for port token.
+
+10-1-12:
+	C61-map.ps C61-tc.ps nyc-map.ps nyc-tc.ps pa-map.ps pa-tc.ps 18-gentl.ps:
+		Add support for 1761 (as 18C61), 18NYC, and 18PA.
+
+16-1-12:
+	17-tc.ps
+		Fix upgrades to plain brown track.
+
+18-1-12:
+	scan-tc.ps
+		Add Y overlay to mark #5-tiles in Y cities.
+
+12-2-12:
+	61-tc,ps:
+		Add upgrades of #7 to #624, #625, and #626.
+
+15-2-12:
+	32-tc.ps:
+		Add bullseye overlays for medium cities
+
+5-4-12:
+	26-map.ps 26-tl.ps:
+		Add PLM destination in Lyon
+
+7-5-12:
+	22-map.ps 22-tc.ps 43-map.ps 43-tc.ps 18-gentl.ps
+		Support 1822 and 1843.
+
+13-5-12:
+	18-gentl.ps 18-talst.ps:
+		Adjust generic #209 to make value fit better
+		Do Pnn.ps properly when tileSitting is true
+
+19-5-12:
+	32-tc.ps:
+		Add tokens to cater for systems
+
+8-6-12:
+	22-map.ps 22-tc.ps:
+		Update to Simon's latest.  (He says last.  We'll see!)
+
+14/9/12:
+	west-tc.ps:
+		Add overlays for GN and DRG bypass tokens.
+
+28-10-12:
+	37-map.ps:
+		Add XCity tag to J26.
+
+21-11-12:
+	18-gentl.ps ea-map.ps ea-tc.ps
+		Upgrade to latest version.
+
+6-1-13:
+	22-map.ps 22-tc.ps:
+		Remove otiose off-map connections.
+
+16-1-13:
+	ea-map.ps
+		Trim size slightly to fit on US-letter paper
+
+29-1-13:
+	18-gentl.ps gb-map.ps gb-tc.ps:
+		Support 18GB.
+
+15-2-13:
+	44-tc.ps:
+		Fix upgrading STB home to #15.
+
+16-4-13:
+	ea-tc.ps:
+		Add overlays for plain track.  Fix a couple of misaligned upgrades.
+
+20-5-13:
+	18-gentl.ps ea-tc.ps:
+		Fix overlay for curved track.  Fix Ipswich upgrade.
+
+17-6-13:
+	48-map.ps:
+		Fix map.  (Q: what caused the file rot?)
+
+2-7-13
+	18-gentl.ps 58-map.ps 58-tc.ps:
+		Upgrade to latest version.
+
+--------------------------------------------------
+
+17-7-13
+	18-gentl.ps 58-tc.ps:
+		Fix generic tile numbering cock-up (there should be only one of
+		each tile).  Add some preliminary 18OE support.
+
+2-8-13:
+	18-defs.ps 18-gentl.ps C61-map.ps C61-tc.ps:
+		More Preliminary 18OE support.  Make 1761 ready for prime-time.
+
+4-8-13:
+	56-tc.ps:
+		Allow upgrading Hamilton from #65, #66, #67, or #68.
+
+16-8-13:
+	80-map.ps 80-tc.ps:
+		Fix spelling of QSR token
+
+17-8-13:
+	ea-tc.ps:
+		Fix upgrades to #16 and #20, and #795.
+
+22-8-13:
+	49v4-map.ps 49v4-tc.ps:
+		Add SCR private company symbol in Acireale.
+
+25-11-13:
+	18-gentl.ps africa-map.ps africa-tc.ps:
+		Add support for 18Africa
+
+14-12-13:
+	80-tc.ps:
+		Fix upgrades to grey OO tile.
+
+15-12-13:
+	65Sar-map.ps 65Sar-tc.ps:
+		Fix upgrade restrictions, previously half-done.
+
+21-12-13:
+	18-defs.ps 18-gentl.ps:
+		Add mountain3 graphic.  Add 18OE specials.
+
+4-1-14:
+	18-defs.ps:
+		Suppress bounding hex on transparent tiles.
+
+9-1-14:
+	18-gentl.ps 18-map.ps:
+		Remove otiose 18OE special.  Add new types of mid-hex frontier.
+
+11-1-14:
+	65Sar-map.ps:
+		Correct back-door uses of Edge primitive.
+
+17-1-14:
+	89-map.ps 89-tc.ps:
+		Implement tile upgrade rules.
+
+29-1-14:
+	18-defs.ps 18-gentl.ps 73-map.ps 73-tc.ps oe-map.ps oe-tc.ps:
+		Initial implementations (v. dodgy for oe).
+
+5-2-14:
+	89-map.ps 89-tc.ps:
+		Fix cost of upgrading F9, I4.  Add private graphics.
+
+25-2-14:
+	58-tc.ps:
+		Fix upgrade paths 73->700, 714->107, 715->107, A7->A15
+	49v4-tc.ps:
+		Fix upgrade paths 645->705, 659->706, 624->647
+
+26-2-14:
+	43-tc.ps:
+		Fix some upgrade paths: more needs doing
+	africa-tc.ps:
+		Fix upgrade paths from 3, 4, 58, and 36.
+	18-defs.ps 18-gentl.ps 00-map.ps 00-tc.ps 81-map.ps 81-tc.ps:
+		Initial implementations.
+
+27-2-14:
+	africa-map.ps:
+		Add data so new-style newgame.pl will work properly.
+	c61-tc.ps:
+		Fix upgrade warning for Leeds in canal age.
+
+1-3-14:
+	81-map.ps 81-tc.ps:
+		Finish implementation (well, subject to the usual caveats).
+
+5-3-14:
+	gl-tc.ps:
+		Fix upgrade warnings.
+
+6-3-14:
+	54-tc.ps:
+		Fix upgrade warnings.
+	37-map.ps 37-tc.ps:
+		Move newgame data here, and fix.  Fix upgrade warning.
+
+8-3-14:
+	mex-map.ps mex-tc.ps:
+		Add upgrade warnings.

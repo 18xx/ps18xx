@@ -1,0 +1,174 @@
+%
+% $Header: 26-tc.ps $
+%
+
+% ----------------------------------------------------------------------
+% 1826 tile codes
+
+/18xxVariant (1826) def
+/maxTile 620 def
+
+	/tileCodes //maxTile array def
+
+	tileCodes   3 [   3 0 //tlYellow //tlPlain ()    (10)  2 ] put
+	tileCodes   4 [   4 0 //tlYellow //tlPlain ()    (10)  6 ] put
+	tileCodes   5 [   5 0 //tlYellow //tlPlain ()    (20)  2 ] put
+	tileCodes   6 [   6 0 //tlYellow //tlPlain ()    (20)  2 ] put
+	tileCodes   7 [   7 5 //tlYellow //tlPlain ()    ()    4 ] put
+	tileCodes   8 [   8 4 //tlYellow //tlPlain ()    ()   16 ] put
+	tileCodes   9 [   9 0 //tlYellow //tlPlain ()    ()   21 ] put
+	tileCodes  57 [  57 0 //tlYellow //tlPlain ()    (20)  4 ] put
+	tileCodes  58 [  58 0 //tlYellow //tlPlain ()    (10)  6 ] put
+
+	tileCodes  14 [  14 1 //tlGreen  //tlPlain ()    (30)  3 ] put
+	tileCodes  15 [  15 0 //tlGreen  //tlPlain ()    (30)  3 ] put
+	tileCodes  16 [  16 0 //tlGreen  //tlPlain ()    ()    1 ] put
+	tileCodes  19 [  19 0 //tlGreen  //tlPlain ()    ()    1 ] put
+	tileCodes  20 [  20 0 //tlGreen  //tlPlain ()    ()    1 ] put
+
+	tileCodes  23 [  23 0 //tlGreen  //tlPlain ()    ()    5 ] put
+	tileCodes  24 [  24 0 //tlGreen  //tlPlain ()    ()    5 ] put
+	tileCodes  25 [  25 0 //tlGreen  //tlPlain ()    ()    3 ] put
+	tileCodes  26 [  26 0 //tlGreen  //tlPlain ()    ()    1 ] put
+	tileCodes  27 [  27 0 //tlGreen  //tlPlain ()    ()    1 ] put
+	tileCodes  28 [  28 0 //tlGreen  //tlPlain ()    ()    1 ] put
+	tileCodes  29 [  29 0 //tlGreen  //tlPlain ()    ()    1 ] put
+
+	tileCodes  87 [  87 0 //tlGreen  //tlPlain ()    (10)  2 ] put
+	tileCodes  88 [  88 0 //tlGreen  //tlPlain ()    (10)  2 ] put
+	tileCodes 141 [ 141 0 //tlGreen  //tlPlain ()    (10)  1 ] put
+	tileCodes 142 [ 142 0 //tlGreen  //tlPlain ()    (10)  1 ] put
+	tileCodes 143 [ 143 4 //tlGreen  //tlPlain ()    (10)  1 ] put
+	tileCodes 203 [ 203 1 //tlGreen  //tlPlain ()    (10)  1 ] put
+	tileCodes 204 [ 204 1 //tlGreen  //tlPlain ()    (10)  2 ] put
+
+	tileCodes 514 [  32 0 //tlGreen  //tlPlain ()    (70)  1 ] put
+	tileCodes 619 [  38 0 //tlGreen  //tlPlain ()    (30)  3 ] put
+
+	tileCodes  39 [  39 1 //tlBrown  //tlPlain ()    ()    1 ] put
+	tileCodes  40 [  40 0 //tlBrown  //tlPlain ()    ()    1 ] put
+	tileCodes  41 [  41 0 //tlBrown  //tlPlain ()    ()    2 ] put
+	tileCodes  42 [  42 0 //tlBrown  //tlPlain ()    ()    2 ] put
+	tileCodes  43 [  43 0 //tlBrown  //tlPlain ()    ()    3 ] put
+	tileCodes  44 [  44 0 //tlBrown  //tlPlain ()    ()    1 ] put
+	tileCodes  45 [  45 0 //tlBrown  //tlPlain ()    ()    2 ] put
+	tileCodes  46 [  46 0 //tlBrown  //tlPlain ()    ()    2 ] put
+	tileCodes  47 [  47 0 //tlBrown  //tlPlain ()    ()    3 ] put
+	tileCodes  70 [  70 0 //tlBrown  //tlPlain ()    ()    1 ] put
+
+	tileCodes  63 [  63 0 //tlBrown  //tlPlain ()    (40)  5 ] put
+	tileCodes 515 [  32 0 //tlBrown  //tlPlain ()    (90)  1 ] put
+	tileCodes 611 [  51 2 //tlBrown  //tlPlain ()    (40)  2 ] put
+
+	tileCodes 513 [ 522 0 //tlGray   //tlPlain ()    (60)  3 ] put
+	tileCodes 516 [  32 0 //tlGray   //tlPlain ()    (120) 1 ] put
+
+% tile codes for map definition
+
+% Plain
+	tileCodes 401 [ 500 0 //tlGround //tlPlain    ()    ()    0 ] put
+	tileCodes 402 [ 500 0 //tlGround //tlWater    (F40) ()    0 ] put
+	tileCodes 403 [ 500 0 //tlGround //tlMountain (F60) ()    0 ] put
+
+% Small city
+	tileCodes 404 [ 501 0 //tlGround //tlPlain    ()    ()    0 ] put
+	tileCodes 405 [ 501 0 //tlGround //tlWater    (F40) ()    0 ] put
+	tileCodes 406 [ 501 0 //tlGround //tlMountain (F60) ()    0 ] put
+	tileCodes 420 [ 501 0 //tlGround //tlPlain    (@PO) ()    0 ] put
+	tileCodes 421 [ 501 0 //tlGround //tlPlain    (@O)  ()    0 ] put
+	tileCodes 422 [ 501 0 //tlGround //tlPlain    (@E)  ()    0 ] put
+
+% Large city
+	tileCodes 407 [ 503 0 //tlGround //tlPlain    ()    ()    0 ] put
+	tileCodes 408 [ 503 0 //tlGround //tlWater    (F40) ()    0 ] put
+	tileCodes 409 [  32 0 //tlYellow //tlPlain    ()    (50)  0 ] put
+	tileCodes 410 [   5 0 //tlGray   //tlPlain    (@P)  (40)  0 ] put
+	tileCodes 411 [  12 0 //tlGray   //tlPlain    ()    (40)  0 ] put
+	tileCodes 412 [   5 0 //tlGray   //tlPlain    ()    (30)  0 ] put
+	tileCodes 413 [ 205 0 //tlGray   //tlPlain    (@GC) (40)  0 ] put
+	tileCodes 423 [   5 0 //tlYellow //tlPlain    (@N)  (20)  0 ] put
+	tileCodes 424 [  14 1 //tlGreen  //tlPlain    (@A)  (30)  0 ] put
+
+% Off-board area
+	tileCodes 414 [ 505 0 //tlRed    //tlPlain    ()    (20/50/70/100)  0 ] put
+	tileCodes 415 [ 505 0 //tlRed    //tlPlain    ()    (30/50/90/120)  0 ] put
+	tileCodes 416 [ 505 0 //tlRed    //tlPlain    (@M)  (40/60/80)      0 ] put
+	tileCodes 417 [ 506 0 //tlRed    //tlPlain    ()    (40/60/80/120)  0 ] put
+	tileCodes 418 [ 506 0 //tlRed    //tlPlain    ()    (20/50/70)      0 ] put
+	tileCodes 419 [ 506 0 //tlRed    //tlPlain    ()    (20/40/60/100)  0 ] put
+
+% Overlay
+	tileCodes 440 [ 529 0 //tlTransparent //tlPlain (@PLM) () 0 ] put
+
+% Upgrade Plain 401 => 7/* 8/* 9/*
+% Upgrade Plain 402 => 7/* 8/* 9/*
+% Upgrade Plain 403 => 7/* 8/* 9/*
+% Upgrade Village 404 => 3/* 4/* 58/*
+% Upgrade Village 405 => 3/* 4/* 58/*
+% Upgrade Village 406 => 3/* 4/* 58/*
+% Upgrade Village 420 => 3/* 4/* 58/*
+% Upgrade Village 421 => 3/* 4/* 58/*
+% Upgrade Village 422 => 3/* 4/* 58/*
+% Upgrade City 407 => 5/* 6/* 57/*
+% Upgrade City 408 => 5/* 6/* 57/*
+% Upgrade Antwerp 408 => 5/* 6/* 57/*
+% Upgrade Liege 408 => 5/* 6/* 57/*
+
+% Upgrade Village 3 => 87/045 88/14 141/3 142/4 143/12 204/34
+% Upgrade Village 4 => 87/03 88/0134 141/03 142/03 204/03
+% Upgrade Village 58 => 87/05 88/03 141/2 142/0 143/2 203/024 204/024
+% Upgrade Plain 7 => 26/0 27/5 28/0 29/5
+% Upgrade Plain 8 => 16/05 19/5 23/0 24/4 25/04 28/0 29/4
+% Upgrade Plain 9 => 19/03 20/0235 23/03 24/03 26/03 27/03
+% Upgrade City 5 => 14/25 15/345 619/23
+% Upgrade City 6 => 14/03 15/34 619/024
+% Upgrade City 57 => 14/0235 15/03 619/03
+% Upgrade GCity 423 => 14/=03 15/=045 619/=34
+% Upgrade Antwerp 5 => 14/25 15/345 619/23
+% Upgrade Antwerp 6 => 14/03 15/34 619/024
+% Upgrade Antwerp 57 => 14/0235 15/03 619/03
+% Upgrade Liege 5 => 14/25 15/345 619/23
+% Upgrade Liege 6 => 14/03 15/34 619/024
+% Upgrade Liege 57 => 14/0235 15/03 619/03
+% Upgrade Paris 409 => 514/*
+
+% Upgrade Plain 16 => 43/4 70/4
+% Upgrade Plain 19 => 45/3 46/3
+% Upgrade Plain 20 => 44/03 47/14
+% Upgrade Plain 23 => 41/0 43/3 45/0 47/14
+% Upgrade Plain 24 => 42/0 43/0 46/0 47/03
+% Upgrade Plain 25 => 40/024 45/2 46/4
+% Upgrade Plain 26 => 42/3 44/25 45/3
+% Upgrade Plain 27 => 41/3 44/03 46/3
+% Upgrade Plain 28 => 39/4 43/4 46/2 70/3
+% Upgrade Plain 29 => 39/0 43/5 45/4 70/0
+% Upgrade City 14 => 63/*
+% Upgrade City 15 => 63/*
+% Upgrade City 619 => 63/*
+% Upgrade Antwerp 14 => 611/=3
+% Upgrade Antwerp 15 => 611/=3
+% Upgrade Antwerp 619 => 611/=3
+% Upgrade Liege 14 => 611/=4
+% Upgrade Liege 15 => 611/=4
+% Upgrade Liege 619 => 611/=4
+% Upgrade GCity 14 => 63/*
+% Upgrade GCity 15 => 63/*
+% Upgrade GCity 619 => 63/*
+% Upgrade GCity 424 => 63/*
+% Upgrade Paris 514 => 515/*
+
+% Upgrade GCity 63 => 513/*
+% Upgrade Paris 515 => 516/*
+
+% Token A 5
+% Token B 5
+% Token E 5
+% Token GC 5
+% Token M 5
+% Token N 5
+% Token O 5
+% Token P 5
+% Token PLM 5
+% Token PO 5
+% Token SNCF 99
+% Token ETAT 99

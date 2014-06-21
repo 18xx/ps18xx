@@ -1,0 +1,164 @@
+%
+% $Header: eu-map.ps $
+%
+% ----------------------------------------------------------------------
+% the 18eu variant was done by Steve Thomas (maisnestce@aol.com)
+% ----------------------------------------------------------------------
+% 18eu map
+
+	newpath
+
+	/mapRows 22 def
+	/mapCols 14 def
+	/mapScale 0.5 def
+	/CM { 28.35 1 mapScale div mul mul } def
+	mapScale dup scale
+	0 0 1 cm 0 360 arc
+	21.5 CM 0 translate
+	90 rotate
+	/mapFrame {
+	1.2 CM 1.2 CM mapCols mapRows
+	0 //hexSide 5 mul //hexHeight -1.25 mul //hexHeight -0.5 mul Map
+	} def
+	mapFrame
+
+	(F1/5)		-401	[(#London)]	LayTile
+	(H1/0)		-420	[]	LayTile	% Plain
+	(J1/3)		-432	[(3)(1)(#Paris)]	LayTile	% Paris
+	(L1/0)		-420	[]	LayTile	% Plain
+	(N1/0)		-421	[]	LayTile	% Plain
+	(P1/0)		-421	[]	LayTile	% Plain
+	(R1/0)		-420	[]	LayTile	% Plain
+	(T1/0)		-420	[]	LayTile	% Plain
+
+	(G2/0)		-440	[(#Lille)]	LayTile	% Village
+	(I2/0)		-420	[]	LayTile	% Plain
+	(K2/0)		-426	[]	LayTile	% Plain
+	(M2/0)		-440	[(#Dijon)]	LayTile	% Village
+	(O2/0)		-420	[]	LayTile	% Plain
+	(Q2/0)		-431	[(15)(#Lyon)]	LayTile	% YCity
+	(S2/0)		-430	[(#Marseille)]	LayTile	% City
+	(U2/3)		-410	[]	LayTile
+
+	(D3/0)		-440	[(#Rotterdam)]	LayTile	% Village
+	(F3/0)		-440	[(#Antwerp)]	LayTile	% Village
+	(H3/0)		-435	[(2)(#Brussels)]	LayTile	% YCity
+	(J3/0)		-421	[]	LayTile	% Plain
+	(L3/0)		-420	[]	LayTile	% Plain
+	(N3/0)		-420	[]	LayTile	% Plain
+	(P3/0)		-440	[(#Geneva)]	LayTile	% Village
+	(R3/0)		-422	[]	LayTile	% Plain
+	(T3/0)		-441	[(#Nice)]	LayTile	% Village
+
+	(A4/0)		-410	[]	LayTile
+	(C4/0)		-431	[(12)(#Amsterdam)]	LayTile	% YCity
+	(E4/0)		-440	[(#Utrecht)]	LayTile	% Village
+	(G4/0)		-430	[(#Cologne)]	LayTile	% City
+	(I4/0)		-421	[]	LayTile	% Plain
+	(K4/0)		-421	[]	LayTile	% Plain
+	(M4/0)		-431	[(14)(#Strasbourg)]	LayTile	% YCity
+	(O4/0)		-440	[(#Basel)]	LayTile	% Village
+	(Q4/0)		-422	[]	LayTile	% Plain
+	(S4/0)		-430	[(#Turin)]	LayTile	% City
+	(U4/0)		-420	[]	LayTile	% Plain
+
+	(D5/0)		-420	[]	LayTile	% Plain
+	(F5/0)		-430	[(#Dortmund)]	LayTile	% City
+	(H5/0)		-420	[]	LayTile	% Plain
+	(J5/0)		-420	[]	LayTile	% Plain
+	(L5/0)		-440	[(#Stuttgart)]	LayTile	% Village
+	(N5/0)		-441	[(#Zurich)]	LayTile	% Village
+	(P5/0)		-422	[]	LayTile	% Plain
+	(R5/0)		-431	[(10)(#Milan)]	LayTile	% YCity
+	(T5/0)		-430	[(#Genoa)]	LayTile	% City
+	(V5/3)		-410	[]	LayTile
+
+	(C6/0)		-440	[(#Bremen)]	LayTile	% Village
+	(E6/0)		-420	[]	LayTile	% Plain
+	(G6/0)		-420	[]	LayTile	% Plain
+	(I6/0)		-430	[(#Frankfurt)]	LayTile	% City
+	(K6/0)		-440	[(#Augsburg)]	LayTile	% Village
+	(M6/0)		-420	[]	LayTile	% Plain
+	(O6/0)		-421	[]	LayTile	% Plain
+	(Q6/0)		-422	[]	LayTile	% Plain
+	(S6/0)		-424	[]	LayTile	% Plain
+	(U6/0)		-442	[(#Florence)]	LayTile	% Village
+
+	(B7/0)		-402	[(#Hamburg)]	LayTile
+	(D7/0)		-420	[]	LayTile	% Plain
+	(F7/0)		-440	[(#Hannover)]	LayTile	% Village
+	(H7/0)		-420	[]	LayTile	% Plain
+	(J7/0)		-440	[(#Nuremburg)]	LayTile	% Village
+	(L7/0)		-431	[(13)(#Munich)]	LayTile	% YCity
+	(N7/0)		-420	[]	LayTile	% Plain
+	(P7/0)		-421	[]	LayTile	% Plain
+	(R7/0)		-422	[]	LayTile	% Plain
+	(T7/0)		-440	[(#Bologna)]	LayTile	% Village
+	(V7/2)		-404	[(#Rome)]	LayTile
+
+	(C8/0)		-420	[]	LayTile	% Plain
+	(E8/0)		-420	[]	LayTile	% Plain
+	(G8/0)		-440	[(#Magdeburg)]	LayTile	% Village
+	(I8/0)		-420	[]	LayTile	% Plain
+	(K8/0)		-420	[]	LayTile	% Plain
+	(M8/0)		-420	[]	LayTile	% Plain
+	(O8/0)		-441	[(#Innsbruck)]	LayTile	% Village
+	(Q8/0)		-422	[]	LayTile	% Plain
+	(S8/0)		-431	[(5)(#Venice)]	LayTile	% YCity
+	(U8/0)		-420	[]	LayTile	% Plain
+
+	(D9/0)		-420	[]	LayTile	% Plain
+	(F9/0)		-425	[]	LayTile	% Plain
+	(H9/0)		-440	[(#Leipzig)]	LayTile	% Village
+	(J9/0)		-421	[]	LayTile	% Plain
+	(L9/0)		-421	[]	LayTile	% Plain
+	(N9/0)		-441	[(#Salzburg)]	LayTile	% Village
+	(P9/0)		-422	[]	LayTile	% Plain
+	(R9/0)		-430	[(#Trieste)]	LayTile	% City
+	(T9/3)		-410	[]	LayTile
+
+	(C10/0)		-420	[]	LayTile	% Plain
+	(E10/1)		-433	[(7)(9)(#Berlin)]	LayTile	% BV
+	(G10/0)		-431	[(4)(#Dresden)]	LayTile	% YCity
+	(I10/0)		-421	[]	LayTile	% Plain
+	(K10/0)		-430	[(#Prague)]	LayTile	% City
+	(M10/0)		-421	[]	LayTile	% Plain
+	(O10/0)		-422	[]	LayTile	% Plain
+	(Q10/0)		-420	[]	LayTile	% Plain
+	(S10/0)		-420	[]	LayTile	% Plain
+
+	(D11/0)		-443	[(#Stettin)]	LayTile	% Village
+	(F11/0)		-420	[]	LayTile	% Plain
+	(H11/0)		-421	[]	LayTile	% Plain
+	(J11/0)		-420	[]	LayTile	% Plain
+	(L11/0)		-440	[(#Brunn)]	LayTile	% Village
+	(N11/3)		-434	[(6)(11)(#Vienna)]	LayTile	% BV
+	(P11/1)		-423	[]	LayTile	% Plain
+	(R11/0)		-420	[]	LayTile	% Plain
+
+	(E12/0)		-440	[(#Thorn)]	LayTile	% Village
+	(G12/0)		-420	[]	LayTile	% Plain
+	(I12/0)		-421	[]	LayTile	% Plain
+	(K12/0)		-420	[]	LayTile	% Plain
+	(M12/0)		-420	[]	LayTile	% Plain
+	(O12/0)		-441	[(#Pressburg)]	LayTile	% Village
+	(Q12/0)		-420	[]	LayTile	% Plain
+
+	(F13/0)		-420	[]	LayTile	% Plain
+	(H13/0)		-420	[]	LayTile	% Plain
+	(J13/0)		-441	[(#Krakau)]	LayTile	% Village
+	(L13/0)		-420	[]	LayTile	% Plain
+	(N13/0)		-420	[]	LayTile	% Plain
+	(P13/0)		-431	[(8)(#Budapest)]	LayTile	% YCity
+
+	(E14/1)		-403	[(#Warsaw)]	LayTile
+	(Q14/2)		-405	[(#Bucharest)]	LayTile
+
+		/Bookman 120 selectfont
+	(I14/7) LayText moveto (18eu) show 
+
+	% =================================
+	% INSERT YOUR TILES AND TOKENS HERE
+	% =================================
+
+mapFrame

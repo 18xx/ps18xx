@@ -1,0 +1,150 @@
+%
+% $Header: $
+%
+% ----------------------------------------------------------------------
+% the 1849v4 variant was done by Steve Thomas (Steve.Thomas@insignia.com)
+% ----------------------------------------------------------------------
+% 1849v4 map
+
+	newpath
+
+	/mapRows 15 def
+	/mapCols 15 def
+	/mapScale 0.6 def
+	/CM { 28.35 1 mapScale div mul mul } def
+	mapScale dup scale
+	21 CM 0 translate
+	90 rotate
+	/mapFrame {
+		1.3 CM 1.2 CM mapCols mapRows
+		0 //hexSide -0.5 mul //hexHeight //hexHeight -0.75 mul Map
+	} def
+	mapFrame
+
+	(@12/5)	-417	[]	LayTile
+
+	(A5/0)	-416	[]	LayTile
+	(A13/2)	-444	[(#Milazzo)]	LayTile
+	(A15/0)	-428	[]	LayTile
+
+	(B2/0)	-421	[]	LayTile	% Plain
+	(B4/0)	-420	[]	LayTile	% Plain
+	(B12/0)	-420	[]	LayTile	% Plain
+	(B14/0)	-435	[(#Messina)]	LayTile	% Messina
+
+	(C1/0)	-438	[(#Trapani)]	LayTile
+	(C3/4)	-440	[(#Alcama)]	LayTile	% Village
+	(C5/2)	-433	[(RCS)(#Palermo)]	LayTile	% Palermo
+	(C7/0)	-420	[]	LayTile	% Plain
+	(C9/5)	-445	[(#S. Stefano)]	LayTile
+	(C11/0)	-420	[]	LayTile	% Plain
+	(C13/1)	-425	[]	LayTile
+	(C15/3)	-401	[]	LayTile
+
+	(D2/0)	-423	[]	LayTile	% Plain
+	(D4/4)	-441	[(#Partinico)]	LayTile	% Village
+	(D6/0)	-420	[]	LayTile	% Plain
+	(D8/0)	-420	[]	LayTile	% Plain
+	(D10/0)	-420	[]	LayTile	% Plain
+	(D12/0)	-423	[]	LayTile	% Plain
+	(D14/0)	-420	[]	LayTile	% Plain
+
+	(E1/0)	-437	[(CTL)(#Marsala)]	LayTile
+	(E3/0)	-422	[]	LayTile	% Plain
+	(E5/4)	-443	[(#Corleone)]	LayTile	% Village
+	(E7/4)	-440	[(#Termini Imerese)]	LayTile	% Village
+	(E9/0)	-423	[]	LayTile	% Plain
+	(E11/4)	-443	[(#Bronte)]	LayTile	% Village
+	(E13/4)	-446	[(#Taormina)]	LayTile
+
+	(F2/0)	-423	[]	LayTile	% Plain
+	(F4/0)	-423	[]	LayTile	% Plain
+	(F6/0)	-422	[]	LayTile	% Plain
+	(F8/0)	-423	[]	LayTile	% Plain
+	(F10/4)	-443	[(#Troina)]	LayTile	% Village
+	(F12/0)	-426	[]	LayTile
+
+	(G1/4)	-440	[(#Mazzara)]	LayTile	% Village
+	(G3/4)	-440	[(#Castelvetrano)]	LayTile	% Village
+	(G5/0)	-423	[]	LayTile	% Plain
+	(G7/0)	-422	[]	LayTile	% Plain
+	(G9/4)	-442	[(#Castrogiovanni)]	LayTile	% Village
+	(G11/0)	-423	[]	LayTile	% Plain
+	(G13/4)	-440	[(#Acireale)]	LayTile	% Village
+	(G13/0)	-460	[]	LayTile
+
+	(H2/0)	-420	[]	LayTile	% Plain
+	(H4/4)	-442	[(#Sciacca)]	LayTile	% Village
+	(H6/0)	-421	[]	LayTile	% Plain
+	(H8/4)	-432	[(#Caltanisetta)]	LayTile	% City
+	(H10/0)	-421	[]	LayTile	% Plain
+	(H12/1)	-434	[(IFT)(#Catania)]	LayTile	% Catania
+
+	(I5/0)	-422	[]	LayTile	% Plain
+	(I7/4)	-441	[(#Canicatti')]	LayTile	% Village
+	(I9/4)	-443	[(#P. Armenira)]	LayTile	% Village
+	(I11/2)	-424	[]	LayTile	% Plain
+
+	(J6/4)	-431	[(SFA)(#Girgenti)]	LayTile	% City
+	(J8/0)	-423	[]	LayTile	% Plain
+	(J10/4)	-441	[(#Caltagirone)]	LayTile	% Village
+	(J12/0)	-420	[]	LayTile	% Plain
+
+	(K7/4)	-440	[(#Licata)]	LayTile	% Village
+	(K9/0)	-427	[]	LayTile	% Plain
+	(K11/0)	-421	[]	LayTile	% Plain
+	(K13/2)	-444	[(#Augusta)]	LayTile
+
+	(L8/0)	-420	[]	LayTile	% Plain
+	(L10/0)	-423	[]	LayTile	% Plain
+	(L12/0)	-423	[]	LayTile	% Plain
+	(L14/2)	-418	[]	LayTile
+
+	(M9/0)	-439	[(#Terra  nova)]	LayTile
+	(M11/4)	-430	[(#Ragusa)]	LayTile	% City
+	(M13/2)	-436	[(ATA)(#Siracusa)]	LayTile	% Siracusa
+
+	(N8/4)	-417	[]	LayTile
+	(N10/4)	-440	[(#Vittoria)]	LayTile	% Village
+	(N12/0)	-420	[]	LayTile	% Plain
+
+	(O11/0)	-420	[]	LayTile	% Plain
+
+		/Bookman 120 selectfont
+	(A5/7) LayText moveto (1849v4) show 
+
+	(G13/4) 1 cm (G13/2) 1 cm //tlNoHex LayPrivate
+
+	% =================================
+	% INSERT YOUR TILES AND TOKENS HERE
+	% =================================
+
+	(A13/SW)	Barrier
+
+	(B4/SW)		Barrier
+
+	(C7/SW)		Barrier
+	(C11/S)		Barrier
+	(C13/S)		Barrier
+	(C13/SE)	Barrier
+
+	(D8/SW)		Barrier
+	(D8/S)		Barrier
+	(D8/SE)		Barrier
+	(D10/SW)	Barrier
+	(D10/S)		Barrier
+	(D10/SE)	Barrier
+
+	(F12/SW)	Barrier
+	(F12/S)		Barrier
+	(F12/SE)	Barrier
+	(F12/NE)	Barrier
+	(F12/N)		Barrier
+	(F12/NW)	Barrier
+
+	(K11/SW)	Barrier
+	(K11/S)		Barrier
+
+	(M11/SE)	Barrier
+
+	mapFrame

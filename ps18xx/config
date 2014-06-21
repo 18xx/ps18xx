@@ -1,0 +1,11 @@
+# Options supported:
+#	mkmk: CustomaryArgs
+#	newgame: CustomaryArgs
+#	newgame: BlankLine
+#	oldgame: CustomaryArgs
+
+mkmk: CustomaryArgs -t -o Makefile
+
+newgame: CustomaryArgs -gm
+
+oldgame: CustomaryArgs -gm

@@ -1,0 +1,69 @@
+%
+% $Header: 00BC-tc.ps[1.0] $
+%
+% ----------------------------------------------------------------------
+% the 1800BC variant was done by Steve Thomas (maisnestce@btinternet.com)
+% ----------------------------------------------------------------------
+% 1800BC tile codes
+
+/18xxVariant (1800BC) def
+
+/maxTile 750 def
+
+	/tileCodes //maxTile array def
+
+	%tile codes for map definition
+
+	tileCodes 300 [ 500 0 //tlGround //tlPlain    ()    ()   0 ] put
+	tileCodes 301 [ 335 0 //tlGround //tlPlain    ()    ()   0 ] put
+	tileCodes 302 [ 245 0 //tlGround //tlPlain    ()    ()   0 ] put
+	tileCodes 303 [ 506 0 //tlGray   //tlPlain    ()    ()   0 ] put
+
+	tileCodes 331 [ 337 0 //tlGround //tlPlain    ()    (3)  0 ] put
+	tileCodes 332 [ 332 0 //tlGround //tlPlain    ()    (3)  0 ] put
+	tileCodes 333 [ 336 0 //tlGround //tlPlain    ()    (3)  0 ] put
+	tileCodes 341 [ 337 0 //tlGround //tlPlain    ()    (4)  0 ] put
+	tileCodes 342 [ 332 0 //tlGround //tlPlain    ()    (4)  0 ] put
+	tileCodes 343 [ 336 0 //tlGround //tlPlain    ()    (4)  0 ] put
+	tileCodes 351 [ 337 0 //tlGround //tlPlain    ()    (5)  0 ] put
+	tileCodes 352 [ 332 0 //tlGround //tlPlain    ()    (5)  0 ] put
+	tileCodes 353 [ 336 0 //tlGround //tlPlain    ()    (5)  0 ] put
+	tileCodes 361 [ 337 0 //tlGround //tlPlain    ()    (6)  0 ] put
+	tileCodes 362 [ 332 0 //tlGround //tlPlain    ()    (6)  0 ] put
+	tileCodes 363 [ 336 0 //tlGround //tlPlain    ()    (6)  0 ] put
+	tileCodes 381 [ 337 0 //tlGround //tlPlain    ()    (8)  0 ] put
+	tileCodes 382 [ 332 0 //tlGround //tlPlain    ()    (8)  0 ] put
+	tileCodes 383 [ 336 0 //tlGround //tlPlain    ()    (8)  0 ] put
+
+	% Overlays
+	tileCodes 400 [ 500 0 //tlTransparent //tlPlain ()  (0)  0 ] put
+	tileCodes 401 [ 500 0 //tlTransparent //tlPlain ()  (10) 0 ] put
+	tileCodes 402 [ 500 0 //tlTransparent //tlPlain ()  (20) 0 ] put
+	tileCodes 403 [ 500 0 //tlTransparent //tlPlain ()  (40) 0 ] put
+	tileCodes 404 [ 500 0 //tlTransparent //tlPlain ()  (3/4/5/0) 0 ] put
+	tileCodes 405 [ 500 0 //tlTransparent //tlPlain ()  (5/6/7/0) 0 ] put
+	tileCodes 406 [ 500 0 //tlTransparent //tlPlain ()  (2/2/2/0) 0 ] put
+	tileCodes 407 [ 500 0 //tlTransparent //tlPlain ()  (8/10/12/0) 0 ] put
+	tileCodes 408 [ 338 0 //tlTransparent //tlPlain ()  ()  0 ] put
+	tileCodes 409 [ 500 0 //tlTransparent //tlPlain ()  (12)  0 ] put
+
+	tileCodes 410 [ 500 0 //tlTransparent //tlPlain (@THS) () 0 ] put
+	tileCodes 411 [ 500 0 //tlTransparent //tlPlain (@ATH) () 0 ] put
+	tileCodes 412 [ 500 0 //tlTransparent //tlPlain (@LAR) () 0 ] put
+	tileCodes 413 [ 500 0 //tlTransparent //tlPlain (@SPA) () 0 ] put
+	tileCodes 414 [ 500 0 //tlTransparent //tlPlain (@THE) () 0 ] put
+	tileCodes 415 [ 500 0 //tlTransparent //tlPlain (@KOR) () 0 ] put
+	tileCodes 416 [ 500 0 //tlTransparent //tlPlain (@AMB) () 0 ] put
+	tileCodes 417 [ 500 0 //tlTransparent //tlPlain (@MEG) () 0 ] put
+
+% Token P1 1
+% Token P2 1
+% Token P3 1
+% Token THS 21
+% Token ATH 21
+% Token LAR 23
+% Token SPA 23
+% Token THE 23
+% Token KOR 23
+% Token AMB 25
+% Token MEG 25

@@ -1,0 +1,205 @@
+%
+% $Header: ard-map.ps $
+%
+% ----------------------------------------------------------------------
+% the 18ard variant was done by Steve Thomas (maisnestce@btinternet.com)
+% ----------------------------------------------------------------------
+% 18ard map
+
+	newpath
+
+	/rowStart 1 def
+	/mapRows 13 def
+	/mapCols 28 def
+	/mapScale 0.45 def
+	/CM { 28.35 1 mapScale div mul mul } def
+	mapScale dup scale
+	0 0 1 cm 0 360 arc
+	21.5 CM 0 translate
+	90 rotate
+	/mapFrame {
+	1.2 CM 1.2 CM mapCols mapRows
+	0 //hexSide 2 mul //hexHeight -1 mul //hexHeight 0 mul Map
+	} def
+	mapFrame
+
+	(B6/4)	-314	[]	LayTile
+	(B6/4)	-340	[(#Haarlem)]	LayTile
+	(B8/1)	-323	[(1)(2)(#Amsterdam)]	LayTile	% City
+	(B8/0)	-343	[]	LayTile
+	(B10/0)	-300	[]	LayTile	% Plain
+	(B12/0)	-320	[(#Nijmegen)]	LayTile	% City
+	(B14/0)	-300	[]	LayTile	% Plain
+	(B16/0)	-324	[(11)(#The Ruhr)]	LayTile	% City
+	(B16/0)	-343	[]	LayTile
+
+	(C7/2)	-325	[(#Rotterdam)]	LayTile	% City
+	(C9/0)	-301	[]	LayTile	% Plain
+	(C11/0)	-301	[]	LayTile	% Plain
+	(C13/0)	-301	[]	LayTile	% Plain
+	(C15/0)	-300	[]	LayTile	% Plain
+	(C17/0)	-300	[]	LayTile	% Plain
+
+	(D6/3)	-304	[]	LayTile
+	(D8/0)	-302	[]	LayTile	% Plain
+	(D10/0)	-300	[]	LayTile	% Plain
+	(D12/1)	-310	[(#Eindhoven)]	LayTile	% Village
+	(D14/1)	-310	[(#MonchenGB)]	LayTile	% Village
+	(D16/0)	-300	[]	LayTile	% Plain
+	(D18/0)	-322	[(10)(#Cologne)]	LayTile	% City
+	(D18/0)	-345	[]	LayTile
+	(D20/0)	-300	[]	LayTile	% Plain
+	(D22/0)	-300	[]	LayTile	% Plain
+
+	(E3/4)	-305	[]	LayTile
+	(E5/1)	-326	[(#Vlissingen)]	LayTile
+	(E7/1)	-306	[]	LayTile	% Plain
+	(E9/0)	-322	[(13)(#Antwerp)]	LayTile	% City
+	(E11/0)	-300	[]	LayTile	% Plain
+	(E13/1)	-310	[(#Maastricht)]	LayTile	% Village
+	(E15/0)	-320	[(3)(#Aachen)]	LayTile	% City
+	(E17/0)	-300	[]	LayTile	% Plain
+	(E19/1)	-310	[(#Bonn)]	LayTile	% Village
+	(E21/1)	-310	[(#Koblenz)]	LayTile	% Village
+	(E23/1)	-310	[(#Mainz)]	LayTile	% Village
+	(E25/5)	-327	[(15)( )]	LayTile	% City
+	(E25/5)	-340	[(#Frankfurt)]	LayTile
+	(E25/5)	-346	[]	LayTile
+
+	(F2/4)	-307	[]	LayTile
+	(F4/1)	-328	[(#Brugge)]	LayTile	% City
+	(F6/1)	-310	[(#Gent)]	LayTile	% Village
+	(F8/0)	-300	[]	LayTile	% Plain
+	(F10/0)	-331	[(14)(#Brussels)]	LayTile	% Brussels
+	(F12/0)	-300	[]	LayTile	% Plain
+	(F14/1)	-310	[(#Liege)]	LayTile	% Village
+	(F16/0)	-303	[]	LayTile	% Plain
+	(F18/0)	-303	[]	LayTile	% Plain
+	(F20/0)	-303	[]	LayTile	% Plain
+	(F22/0)	-300	[]	LayTile	% Plain
+	(F24/0)	-300	[]	LayTile	% Plain
+	(F26/0)	-300	[]	LayTile	% Plain
+
+	(G1/4)	-305	[]	LayTile
+	(G3/1)	-328	[(#Dunkerque)]	LayTile	% City
+	(G5/0)	-300	[]	LayTile	% Plain
+	(G7/0)	-300	[]	LayTile	% Plain
+	(G9/0)	-300	[]	LayTile	% Plain
+	(G11/1)	-310	[(#Namur)]	LayTile	% Village
+	(G13/0)	-303	[]	LayTile	% Plain
+	(G15/0)	-303	[]	LayTile	% Plain
+	(G17/0)	-303	[]	LayTile	% Plain
+	(G19/1)	-313	[(#Trier)]	LayTile	% Village
+	(G21/0)	-303	[]	LayTile	% Plain
+	(G23/0)	-303	[]	LayTile	% Plain
+	(G25/0)	-322	[(4)(#Mannheim)]	LayTile	% City
+	(G25/0)	-345	[]	LayTile
+
+	(H2/1)	-310	[(#Calais)]	LayTile	% Village
+	(H4/0)	-300	[]	LayTile	% Plain
+	(H6/0)	-322	[(6)(#Lille)]	LayTile	% City
+	(H8/1)	-310	[(#Mons)]	LayTile	% Village
+	(H10/0)	-321	[(#Charleroi)]	LayTile	% City
+	(H10/5)	-342	[]	LayTile
+	(H12/0)	-303	[]	LayTile	% Plain
+	(H14/0)	-303	[]	LayTile	% Plain
+	(H16/0)	-303	[]	LayTile	% Plain
+	(H18/1)	-313	[(#Luxembourg)]	LayTile	% Village
+	(H20/0)	-303	[]	LayTile	% Plain
+	(H22/0)	-303	[]	LayTile	% Plain
+	(H24/0)	-303	[]	LayTile	% Plain
+	(H26/0)	-320	[(#Karlsruhe)]	LayTile	% City
+	(H26/0)	-345	[]	LayTile
+
+	(I1/3)	-315	[]	LayTile
+	(I1/4)	-340	[(#Boulogne)]	LayTile
+	(I3/0)	-300	[]	LayTile	% Plain
+	(I5/1)	-310	[(#Arras)]	LayTile	% Village
+	(I7/1)	-310	[(#Douai)]	LayTile	% Village
+	(I9/0)	-300	[]	LayTile	% Plain
+	(I11/0)	-300	[]	LayTile	% Plain
+	(I13/1)	-310	[(#Charleville)]	LayTile	% Village
+	(I15/0)	-300	[]	LayTile	% Plain
+	(I17/0)	-300	[]	LayTile	% Plain
+	(I19/0)	-300	[]	LayTile	% Plain
+	(I21/0)	-320	[(7)(#Saarbrucken)]	LayTile	% City
+	(I21/0)	-342	[]	LayTile
+	(I23/0)	-300	[]	LayTile	% Plain
+	(I25/0)	-300	[]	LayTile	% Plain
+	(I27/0)	-300	[]	LayTile	% Plain
+
+	(J2/0)	-300	[]	LayTile	% Plain
+	(J4/0)	-300	[]	LayTile	% Plain
+	(J6/0)	-300	[]	LayTile	% Plain
+	(J8/1)	-310	[(#St Quentin)]	LayTile	% Village
+	(J10/0)	-300	[]	LayTile	% Plain
+	(J12/0)	-300	[]	LayTile	% Plain
+	(J14/0)	-300	[]	LayTile	% Plain
+	(J16/0)	-300	[]	LayTile	% Plain
+	(J18/0)	-320	[(#Metz)]	LayTile	% City
+	(J18/0)	-341	[]	LayTile
+	(J18/5)	-341	[]	LayTile
+	(J20/0)	-300	[]	LayTile	% Plain
+	(J22/0)	-303	[]	LayTile	% Plain
+	(J24/0)	-322	[(5)(#Strasbourg)]	LayTile	% City
+	(J26/0)	-300	[]	LayTile	% Plain
+	(J28/0)	-306	[]	LayTile
+
+	(K3/0)	-300	[]	LayTile	% Plain
+	(K5/0)	-320	[(#Amiens)]	LayTile	% City
+	(K7/0)	-300	[]	LayTile	% Plain
+	(K9/0)	-300	[]	LayTile	% Plain
+	(K11/0)	-329	[(12)(#Reims)]	LayTile
+	(K13/0)	-300	[]	LayTile	% Plain
+	(K15/0)	-300	[]	LayTile	% Plain
+	(K17/0)	-300	[]	LayTile	% Plain
+	(K19/1)	-310	[(#Nancy)]	LayTile	% Village
+	(K19/0)	-341	[]	LayTile
+	(K21/0)	-300	[]	LayTile	% Plain
+	(K23/0)	-303	[]	LayTile	% Plain
+	(K25/0)	-300	[]	LayTile	% Plain
+	(K27/1)	-310	[(#Freiburg)]	LayTile	% Village
+
+	(L4/0)	-300	[]	LayTile	% Plain
+	(L6/0)	-300	[]	LayTile	% Plain
+	(L8/0)	-300	[]	LayTile	% Plain
+	(L10/0)	-300	[]	LayTile	% Plain
+	(L12/0)	-300	[]	LayTile	% Plain
+	(L14/0)	-300	[]	LayTile	% Plain
+	(L16/0)	-300	[]	LayTile	% Plain
+	(L18/0)	-300	[]	LayTile	% Plain
+	(L20/0)	-300	[]	LayTile	% Plain
+	(L22/1)	-310	[(#Epinal)]	LayTile	% Village
+	(L22/0)	-341	[]	LayTile
+	(L24/0)	-303	[]	LayTile	% Plain
+	(L26/1)	-310	[(#Mulhouse)]	LayTile	% Village
+	(L28/0)	-306	[]	LayTile
+
+	(M3/3)	-314	[]	LayTile
+	(M3/3)	-340	[(#Rouen)]	LayTile
+	(M5/0)	-300	[]	LayTile	% Plain
+	(M7/1)	-330	[(9)(8)]	LayTile	% City
+	(M7/1)	-340	[(#Paris)]	LayTile
+	(M7/0)	-344	[]	LayTile
+	(M9/0)	-300	[]	LayTile	% Plain
+	(M11/0)	-300	[]	LayTile	% Plain
+	(M13/1)	-316	[]	LayTile
+	(M13/2)	-340	[(#Troyes)]	LayTile
+	(M15/0)	-300	[]	LayTile	% Plain
+	(M17/0)	-300	[]	LayTile	% Plain
+	(M19/0)	-300	[]	LayTile	% Plain
+	(M21/0)	-300	[]	LayTile	% Plain
+	(M23/1)	-310	[(#Belfort)]	LayTile	% Village
+	(M23/0)	-341	[]	LayTile
+	(M25/0)	-300	[]	LayTile	% Plain
+	(M27/1)	-327	[(#Basel)]	LayTile	% City
+	(M27/0)	-344	[]	LayTile
+
+		/Bookman 80 selectfont
+	(B19/7) LayText moveto (18Ardennes) show 
+
+	% =================================
+	% INSERT YOUR TILES AND TOKENS HERE
+	% =================================
+
+mapFrame

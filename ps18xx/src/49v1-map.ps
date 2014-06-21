@@ -1,0 +1,144 @@
+%
+% $Header: 49-map.ps[1.0] Mon Feb 24 14:05:03 1997 doko@cs.tu-berlin.de saved $
+%
+% ----------------------------------------------------------------------
+% the 1850s variant was done by Steve Thomas (Steve.Thomas@insignia.co.uk)
+% renamed to 1849 and then 1849v1
+% ----------------------------------------------------------------------
+% 1849v1 map
+
+	newpath
+
+	/mapRows 15 def
+	/mapCols 15 def
+	/mapScale 0.6 def
+	/CM { 28.35 1 mapScale div mul mul } def
+	mapScale dup scale
+	21 CM 0 translate
+	90 rotate
+	/mapFrame {
+		1.3 CM 1.2 CM mapCols mapRows
+		0 //hexSide -0.5 mul //hexHeight //hexHeight -0.75 mul Map
+	} def
+	mapFrame
+
+	(@12/5)	-417	[]	LayTile
+
+	(A5/0)	-416	[]	LayTile
+	(A13/2)	-444	[(#Milazzo)]	LayTile
+
+	(B2/0)	-421	[]	LayTile
+	(B4/0)	-420	[]	LayTile
+	(B12/0)	-420	[]	LayTile
+	(B14/0)	-435	[(#Messina)]	LayTile
+
+	(C1/4)	-430	[(#Trapani)]	LayTile
+	(C3/4)	-440	[(#Alcama)]	LayTile
+	(C5/2)	-433	[(#Palermo)]	LayTile
+	(C7/0)	-420	[]	LayTile
+	(C9/5)	-445	[(#S. Stefano)]	LayTile
+	(C11/0)	-420	[]	LayTile
+	(C13/1)	-425	[]	LayTile
+	(C15/2)	-401	[]	LayTile
+
+	(D2/0)	-423	[]	LayTile
+	(D4/4)	-441	[(#Partinico)]	LayTile
+	(D6/0)	-420	[]	LayTile
+	(D8/0)	-420	[]	LayTile
+	(D10/0)	-420	[]	LayTile
+	(D12/0)	-423	[]	LayTile
+	(D14/0)	-420	[]	LayTile
+
+	(E1/4)	-430	[(#Marsala)]	LayTile
+	(E3/0)	-422	[]	LayTile
+	(E5/4)	-443	[(#Corleone)]	LayTile
+	(E7/4)	-440	[(#Termini Imerese)]	LayTile
+	(E9/0)	-423	[]	LayTile
+	(E11/4)	-443	[(#Bronte)]	LayTile
+	(E13/4)	-446	[(#Taormina)]	LayTile
+
+	(F2/0)	-423	[]	LayTile
+	(F4/0)	-422	[]	LayTile
+	(F6/0)	-422	[]	LayTile
+	(F8/0)	-423	[]	LayTile
+	(F10/4)	-443	[(#Troina)]	LayTile
+	(F12/0)	-426	[]	LayTile
+
+	(G1/4)	-440	[(#Mazzara)]	LayTile
+	(G3/4)	-440	[(#Castelvetrano)]	LayTile
+	(G5/0)	-423	[]	LayTile
+	(G7/0)	-422	[]	LayTile
+	(G9/4)	-442	[(#Castrogiovanni)]	LayTile
+	(G11/0)	-423	[]	LayTile
+	(G13/4)	-440	[(#Acireale)]	LayTile
+
+	(H2/0)	-420	[]	LayTile
+	(H4/4)	-442	[(#Sciacca)]	LayTile
+	(H6/0)	-421	[]	LayTile
+	(H8/4)	-432	[(#Caltanisetta)]	LayTile
+	(H10/0)	-421	[]	LayTile
+	(H12/1)	-434	[(#Catania)]	LayTile
+
+	(I5/0)	-422	[]	LayTile
+	(I7/4)	-441	[(#Canicatti')]	LayTile
+	(I9/4)	-443	[(#P. Armenira)]	LayTile
+	(I11/2)	-424	[]	LayTile
+
+	(J6/4)	-431	[(#Girgenti)]	LayTile
+	(J8/0)	-423	[]	LayTile
+	(J10/4)	-441	[(#Caltagirone)]	LayTile
+	(J12/0)	-420	[]	LayTile
+
+	(K7/4)	-440	[(#Licata)]	LayTile
+	(K9/0)	-423	[]	LayTile
+	(K11/0)	-421	[]	LayTile
+	(K13/2)	-444	[(#Augusta)]	LayTile
+
+	(L8/0)	-420	[]	LayTile
+	(L10/0)	-423	[]	LayTile
+	(L12/0)	-423	[]	LayTile
+	(L14/2)	-418	[]	LayTile
+
+	(M9/4)	-430	[(#Terranova)]	LayTile
+	(M11/4)	-431	[(#Ragusa)]	LayTile
+	(M13/2)	-436	[(#Siracusa)]	LayTile
+
+	(N10/4)	-440	[(#Vittoria)]	LayTile
+	(N12/0)	-420	[]	LayTile
+
+	(O11/0)	-420	[]	LayTile
+
+	% =================================
+	% INSERT YOUR TILES AND TOKENS HERE
+	% =================================
+
+	(A13/SW)	Barrier
+
+	(B2/SW)		Barrier
+	(B4/SW)		Barrier
+
+	(C7/SW)		Barrier
+	(C11/S)		Barrier
+	(C13/S)		Barrier
+	(C13/SE)	Barrier
+
+	(D8/SW)		Barrier
+	(D8/S)		Barrier
+	(D8/SE)		Barrier
+	(D10/SW)	Barrier
+	(D10/S)		Barrier
+	(D10/SE)	Barrier
+
+	(F12/SW)	Barrier
+	(F12/S)		Barrier
+	(F12/SE)	Barrier
+	(F12/NE)	Barrier
+	(F12/N)		Barrier
+	(F12/NW)	Barrier
+
+	(K11/SW)	Barrier
+	(K11/S)		Barrier
+
+	(M11/SE)	Barrier
+
+	mapFrame

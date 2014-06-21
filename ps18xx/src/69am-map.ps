@@ -1,0 +1,248 @@
+%
+% Header: 
+%
+%	 ----------------------------------------------------------------------
+% the 1869 variant was done by Adam Romith   (romoth@sozw.fh-muenchen.de)
+%	 ----------------------------------------------------------------------
+
+	newpath
+
+	/mapRows 15 def
+	/mapCols 28 def
+	/mapScale 0.40 def
+	/CM { 28.35 1 mapScale div mul mul } def
+	mapScale dup scale
+	21 CM 0 translate
+	90 rotate
+	/mapFrame {
+	3.7 CM 1.5 CM mapCols mapRows 
+		hexHeight 0.1 mul hexHeight 0.1 mul
+		hexSide 0.1 mul hexSide 0.1 mul Map
+	} def
+	mapFrame
+
+	(A6/SE)	 -302	[]		LayTile
+	(A10/SE) -303	[]		LayTile
+
+	(B3/5)	 -326	[]		LayTile
+	(B5/5)	 -326	[]		LayTile
+	(B7/5)	 -326	[]		LayTile
+	(B9/0)	 -334	[(#Cal)]	LayTile
+	(B11/0)	 -307	[]		LayTile
+	(B13/0)	 -345	[(#Skt)]	LayTile
+	(B15/0)	 -307	[]		LayTile
+	(B17/0)	 -307	[]		LayTile
+	(B19/0)	 -307	[]		LayTile
+	(B21/0)	 -307	[]		LayTile
+	(B23/0)	 -307	[]		LayTile
+	(B25/W)	 -9	[]		LayTile
+	(B27/W)	 -8	[]		LayTile
+
+	(C2/0)	 -313	[]		LayTile
+	(C4/0)	 -332	[(#Van)]	LayTile
+	(C6/5)	 -326	[]		LayTile
+	(C8/5)	 -326	[]		LayTile
+	(C10/5)	 -326	[]		LayTile
+	(C12/0)	 -346	[(#Mh)]	LayTile
+	(C14/0)	 -307	[]		LayTile
+	(C16/0)	 -345	[(#Re)]	LayTile
+	(C18/0)	 -307	[]		LayTile
+	(C20/0)	 -345	[(CN)(#Win)]	LayTile
+	(C22/0)	 -307	[]		LayTile
+	(C24/0)	 -307	[]		LayTile
+	(C26/0)	 -346	[(#Th)]	LayTile
+	(C28/W)	 -94	[(CP)(#Mtl)]	LayTile
+	
+
+	(D1/5)	 -324	[]		LayTile
+	(D3/0)	 -331	[(#Sea)]	LayTile
+	(D5/5)	 -326	[]		LayTile
+	(D7/0)	 -346	[(#Spk)]	LayTile
+	(D9/5)	 -326	[]		LayTile
+	(D11/5)	 -321	[]		LayTile
+	(D13/0)	 -307	[]		LayTile
+	(D15/0)	 -307	[]		LayTile
+	(D17/0)	 -307	[]		LayTile
+	(D19/0)	 -307	[]		LayTile
+	(D21/0)	 -307	[]		LayTile
+	(D23/0)	 -307	[]		LayTile
+	(D25/0)	 -307	[]		LayTile
+	(D27/0)	 -304	[]		LayTile
+
+
+
+	(E0/0)	 -304	[]		LayTile
+	(E2/0)	 -333	[(ORN)(#Po)]	LayTile
+	(E4/0)	 -307	[]		LayTile
+	(E6/0)	 -307	[]		LayTile
+	(E8/5)	 -326	[]		LayTile
+	(E10/0)	 -329	[(#Bu)]	LayTile
+	(E12/0)	 -345	[(#Bl)]	LayTile
+	(E14/0)	 -307	[]		LayTile
+	(E16/0)	 -307	[]		LayTile
+	(E18/0)	 -346	[(#Bis)]	LayTile
+	(E20/0)	 -307	[]		LayTile
+	(E22/W)	 -8		[]		LayTile
+	(E24/0)	 -346	[(#Du)]	LayTile
+	(E26/0)	 -307	[]		LayTile
+	(E28/0)	 -307	[]		LayTile
+
+	(F1/5)	 -324	[]		LayTile
+	(F3/5)	 -325	[]		LayTile
+	(F5/5)	 -325	[]		LayTile
+	(F7/0)	 -329	[]		LayTile
+	(F9/5)	 -326	[]		LayTile
+	(F11/5)	 -326	[]		LayTile
+	(F13/5)	 -324	[]		LayTile
+	(F15/0)	 -307	[]		LayTile
+	(F17/0)	 -346	[(#Rc)]	LayTile
+	(F19/0)	 -307	[]		LayTile
+	(F21/W)	 -9		[]		LayTile
+	(F23/NW) -95	[(GN) (NP) (#Ms) ]	LayTile
+	(F25/0)	 -309	[]		LayTile
+	(F27/0)	 -345	[(#Mil)]	LayTile
+
+	(G0/0)	 -304	[]		LayTile
+	(G2/5)	 -324	[]		LayTile
+	(G4/0)	 -307	[]		LayTile
+	(G6/0)	 -307	[]		LayTile
+	(G8/5)	 -322	[]		LayTile
+	(G10/5)	 -322	[]		LayTile
+	(G12/5)	 -326	[]		LayTile
+	(G14/0)	 -332	[(#Cpr)]	LayTile
+	(G16/0)	 -307	[]		LayTile
+	(G18/0)	 -307	[]		LayTile
+	(G20/0)	 -307	[]		LayTile
+	(G22/0)	 -307	[]		LayTile
+	(G24/0)	 -307	[]		LayTile
+	(G26/0)	 -309	[]		LayTile
+%	(G28/1)	 -591	[(ATS) (ILL) (#Chi)]	LayTile	% Illinois-Variante
+	(G28/1)	 -591	[ (ATS) ( ) (#Chi)]	LayTile	% Standard-Variante
+	
+	(H1/5)	 -324	[]		LayTile
+	(H3/5)	 -325	[]		LayTile
+	(H5/5)	 -322	[]		LayTile
+	(H7/5)	 -322	[]		LayTile
+	(H9/0)	 -346	[(#Og)]	LayTile
+	(H11/5)	 -326	[]		LayTile
+	(H13/5)	 -326	[]		LayTile
+	(H15/0)	 -307	[]		LayTile
+	(H17/W)	 -9		[]		LayTile
+	(H19/W)	 -9		[]		LayTile
+	(H21/0)	 -348	[(UP) (#Om)]	LayTile
+	(H23/0)	 -346	[(#Dm)]	LayTile
+	(H25/0)	 -309	[]		LayTile
+	(H27/0)	 -307	[]		LayTile
+
+	(I0/0)	 -304	[]		LayTile
+	(I2/3)	 -349	[(CPR) (#Sac)]	LayTile
+	(I4/W)	 -350	[]		LayTile
+	(I6/5)	 -322	[]		LayTile
+	(I8/5)	 -322	[]		LayTile
+	(I10/0)	 -331	[(#Slc)]	LayTile
+	(I12/5)	 -327	[]		LayTile
+	(I14/5)	 -326	[]		LayTile
+	(I16/0)	 -307	[]		LayTile
+	(I18/0)	 -307	[]		LayTile
+	(I20/0)	 -307	[]		LayTile
+	(I22/0)	 -308	[]		LayTile
+	(I24/0)	 -308	[]		LayTile
+	(I26/0)	 -311	[]		LayTile
+	(I28/0)	 -346	[(#Spd)]	LayTile
+
+	(J1/0)	 -345	[(WP) (#Sf)]	LayTile
+	(J3/0)	 -307	[]		LayTile
+	(J5/5)	 -325	[]		LayTile
+	(J7/5)	 -322	[]		LayTile
+	(J9/5)	 -326	[]		LayTile
+	(J11/5)	 -342	[]		LayTile
+	(J13/5)	 -341	[]		LayTile
+	(J15/0)	 -345	[(DRG) (#Den)]	LayTile
+	(J17/0)	 -307	[]		LayTile
+	(J19/0)	 -307	[]		LayTile
+	(J21/0)	 -346	[(#Wi)]	LayTile
+	(J23/0)	 -345	[(KP) (#Kc)]	LayTile
+	(J25/0)	 -308	[]		LayTile
+	(J27/0)	 -314	[(#Stl)]	LayTile
+
+	(K2/5)	 -324	[]		LayTile
+	(K4/0)	 -307	[]		LayTile
+	(K6/0)	 -346	[(#Lv)]	LayTile
+	(K8/0)	 -304	[]		LayTile
+	(K10/5)	 -342	[]		LayTile
+	(K12/5)	 -322	[]		LayTile
+	(K14/0)	 -343	[(Sfe)]	LayTile
+	(K16/0)	 -307	[]		LayTile
+	(K18/0)	 -307	[]		LayTile
+	(K20/0)	 -307	[]		LayTile
+	(K22/0)	 -307	[]		LayTile
+	(K24/0)	 -307	[]		LayTile
+	(K26/0)	 -307	[]		LayTile
+	(K28/0)	 -314	[(#Mem)]	LayTile
+
+	(L3/0)	 -330	[(#La)]	LayTile
+	(L5/5)	 -323	[]		LayTile
+	(L7/0)	 -311	[]		LayTile
+	(L9/5)	 -324	[]		LayTile
+	(L11/5)	 -325	[]		LayTile
+	(L13/0)	 -344	[]		LayTile
+	(L15/0)	 -307	[(#Al)]	LayTile
+	(L17/0)	 -346	[]		LayTile
+	(L19/0)	 -307	[(#Am)]	LayTile
+	(L21/0)	 -307	[]		LayTile
+	(L23/0)	 -307	[]		LayTile
+	(L25/0)	 -346	[(#Lr)]	LayTile
+	(L27/0)	 -310	[]		LayTile
+
+	(M4/0)	 -330	[(#Sd)]	LayTile
+	(M6/5)	 -323	[]		LayTile
+	(M8/0)	 -331	[(#Phx)]	LayTile
+	(M10/0)	 -328	[(#Tu)]	LayTile
+	(M12/5)	 -323	[]		LayTile
+	(M14/5)	 -340	[]		LayTile
+	(M16/0)	 -307	[]		LayTile
+	(M18/0)	 -307	[]		LayTile
+	(M20/0)	 -307	[]		LayTile
+	(M22/0)	 -345	[(TP) (#Dal)]	LayTile
+	(M24/0)	 -307	[]		LayTile
+	(M26/0)	 -310	[]		LayTile
+	(M28/0)	 -346	[(#Ja)]	LayTile
+
+	(N9/0)	 -307	[]		LayTile
+	(N11/0)	 -307	[]		LayTile
+	(N13/0)	 -310	[]		LayTile
+	(N15/0)	 -345	[(#Ep)]	LayTile
+	(N17/0)	 -307	[]		LayTile
+	(N19/0)	 -307	[]		LayTile
+	(N21/0)	 -307	[]		LayTile
+	(N23/0)	 -307	[]		LayTile
+	(N25/0)	 -307	[]		LayTile
+	(N27/0)	 -312	[(#Br)]	LayTile
+
+	(O10/2)	 -306	[]		LayTile
+	(O14/3)	 -305	[]		LayTile
+	(O16/0)	 -307	[]		LayTile
+	(O18/0)	 -307	[]		LayTile
+	(O20/0)	 -345	[(#Sa)]	LayTile
+	(O22/0)	 -307	[]		LayTile
+	(O24/0)	 -345	[(#Hou)]	LayTile
+	(O26/0)	 -307	[]		LayTile
+	(O28/2)	 -96	[ (SP) ( ) (#No)]	LayTile
+
+		/Bookman 120 selectfont
+	(O1/7) LayText moveto (1869) show 
+		/Helvetica 50 selectfont 
+	(A14/7) LayText moveto () show 
+	(A18/7) LayText moveto (Name) show 
+
+	(A1/5)	 -499	[(5) (4) (3) (2) (1) (6)]	LayTile
+	(M1/5)	 -499	[(SE) (SW) (W) (NW) (NE) (E)]	LayTile
+
+	% =================================
+	% INSERT YOUR TILES AND TOKENS HERE
+	% =================================
+
+	(D25/SE) Frontier
+
+
+	mapFrame

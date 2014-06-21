@@ -1,0 +1,233 @@
+%
+% $Header: $
+%
+
+%!
+% ----------------------------------------------------------------------
+% 1830BC map
+
+	newpath
+
+	/mapRows 9 def
+	/mapCols 20 def
+	/mapScale 0.6 def
+	/CM { 28.35 1 mapScale div mul mul } def
+	mapScale dup scale
+	21 CM 0 translate
+	90 rotate
+	/mapFrame {
+	1.5 CM 1.2 CM mapCols mapRows 0 0
+		//hexHeight 2 mul 0 Map
+	} def
+	mapFrame
+
+	(A2/0)	-200	[]	LayTile
+	(A4/0)	-200	[]	LayTile
+	(A6/0)	-400	[]	LayTile
+	(A8/0)	-200	[]	LayTile
+	(A10/2)	-4		[]	LayTile
+	(A12/0)	-200	[]	LayTile
+	(A14/0)	-201	[]	LayTile
+	(A16/0)	-400	[]	LayTile
+	(A18/0)	-400	[]	LayTile
+	(A20/0)	-100	[]	LayTile
+
+	(B1/4)	-4		[]	LayTile
+	(B3/1)	-6		[]	LayTile
+	(B5/0)	-200	[]	LayTile
+	(B7/0)	-401	[]	LayTile
+	(B9/5)	-202	[]	LayTile
+	(B11/2)	-4		[]	LayTile
+	(B13/0)	-200	[]	LayTile
+	(B15/0)	-400	[]	LayTile
+	(B17/0)	-400	[]	LayTile
+	(B19/0)	-200	[]	LayTile
+
+	(C2/0)	-200	[]	LayTile
+	(C4/2)	-4		[]	LayTile
+	(C6/0)	-400	[]	LayTile
+	(C8/0)	-400	[]	LayTile
+	(C10/2)	-202	[]	LayTile
+	(C12/2)	-4		[]	LayTile
+	(C14/0)	-401	[]	LayTile
+	(C16/0)	-200	[]	LayTile
+	(C18/0)	-200	[]	LayTile
+	(C20/0)	-200	[]	LayTile
+
+	(D1/0)	-400	[]	LayTile
+	(D3/5)	-202	[]	LayTile
+	(D5/2)	-4		[]	LayTile
+	(D7/0)	-400	[]	LayTile
+	(D9/0)	-400	[]	LayTile
+	(D11/0)	-400	[]	LayTile
+	(D13/2)	-4		[]	LayTile
+	(D15/0)	-6		[]	LayTile
+	(D17/1)	-4		[]	LayTile
+	(D19/1)	-6		[]	LayTile
+
+	(E2/0)	-400	[]	LayTile
+	(E4/2)	-402	[]	LayTile
+	(E6/2)	-4		[]	LayTile
+	(E8/0)	-300	[]	LayTile
+	(E10/0)	-300	[]	LayTile
+	(E12/0)	-300	[]	LayTile
+	(E14/3)	-10		[]	LayTile
+	(E16/0)	-400	[]	LayTile
+	(E18/0)	-400	[]	LayTile
+	(E20/4)	-6		[]	LayTile
+
+	(F1/0)	-101	[]	LayTile
+	(F3/0)	-100	[]	LayTile
+	(F5/0)	-300	[]	LayTile
+	(F7/2)	-6		[]	LayTile
+	(F9/0)	-300	[]	LayTile
+	(F11/0)	-300	[]	LayTile
+	(F13/5)	-6		[]	LayTile
+	(F15/0)	-400	[]	LayTile
+	(F17/0)	-100	[]	LayTile
+	(F19/0)	-101	[]	LayTile
+
+	(G2/0)	-100	[]	LayTile
+	(G4/0)	-301	[]	LayTile
+	(G6/5)	-6		[]	LayTile
+	(G8/0)	-6		[]	LayTile
+	(G10/1)	-4		[]	LayTile
+	(G12/1)	-4		[]	LayTile
+	(G14/2)	-8		[]	LayTile
+	(G16/0)	-300	[]	LayTile
+	(G18/0)	-100	[]	LayTile
+	(G20/0)	-100	[]	LayTile
+
+	(H1/0)	-100	[]	LayTile
+	(H3/0)	-100	[]	LayTile
+	(H5/0)	-300	[]	LayTile
+	(H7/2)	-12		[]	LayTile
+	(H9/0)	-300	[]	LayTile
+	(H11/0)	-101	[]	LayTile
+	(H13/0)	-300	[]	LayTile
+	(H15/0)	-300	[]	LayTile
+	(H17/0)	-100	[]	LayTile
+	(H19/0)	-101	[]	LayTile
+
+	(I2/0)	-101	[]	LayTile
+	(I4/0)	-100	[]	LayTile
+	(I6/0)	-300	[]	LayTile
+	(I8/2)	-4		[]	LayTile
+	(I10/0)	-300	[]	LayTile
+	(I12/0)	-300	[]	LayTile
+	(I14/4)	-302	[]	LayTile
+	(I16/1)	-304	[]	LayTile
+	(I18/1)	-102	[]	LayTile
+	(I20/0)	-100	[]	LayTile
+
+		/Bookman 80 selectfont
+	(@0/7) LayText moveto (1830BC) show 
+
+	% =================================
+	% INSERT YOUR TILES AND TOKENS HERE
+	% =================================
+
+	(A8/E)		Barrier
+	(A10/SW)	Barrier
+	(A10/SE)	Barrier
+	(A12/SW)	Barrier
+	(A12/SE)	Barrier
+	(A14/SW)	Barrier
+	(A14/SE)	Barrier
+	(A16/SW)	Barrier
+
+	(B7/SE)		Barrier
+	(B9/NW)		Frontier
+	(B9/W)		Frontier
+	(B9/SW)		Barrier
+	(B9/SE)		Barrier
+	(B9/E)		Barrier
+	(B9/NE)		Barrier
+	(B15/E)		Barrier
+	(B15/SE)	Barrier
+
+	(C4/SE)		Barrier
+	(C6/SW)		Barrier
+	(C6/SE)		Barrier
+	(C6/E)		Barrier
+	(C10/NE)	Frontier
+	(C10/E)		Frontier
+	(C10/SE)	Frontier
+	(C10/SW)	Frontier
+	(C10/W)		Frontier
+	(C16/W)		Barrier
+	(C16/SW)	Barrier
+
+	(D1/SE)		Barrier
+	(D3/NE)		Frontier
+	(D3/NW)		Frontier
+	(D3/W)		Frontier
+	(D3/SW)		Barrier
+	(D3/SE)		Barrier
+	(D3/E)		Barrier
+	(D7/NE)		Barrier
+	(D7/E)		Barrier
+	(D7/SE)		Barrier
+	(D15/E)		Barrier
+
+	(E4/E)		Frontier
+	(E4/NE)		Frontier
+	(E4/SE)		Frontier
+	(E4/SW)		Frontier
+	(E4/W)		Frontier
+	(E6/E)		Barrier
+	(E6/SE)		Barrier
+	(E8/NE)		Frontier
+	(E8/SW)		Barrier
+	(E8/SE)		Barrier
+	(E10/NW)	Frontier
+	(E10/NE)	Frontier
+	(E10/SW)	Barrier
+	(E10/SE)	Barrier
+	(E12/NW)	Frontier
+	(E12/NE)	Frontier
+	(E12/E)		Frontier
+	(E12/SW)	Barrier
+	(E12/SE)	Barrier
+	(E14/SW)	Barrier
+	(E14/SE)	Barrier
+	(E16/NW)	Frontier
+	(E16/W)		Frontier
+	(E16/SW)	Barrier
+	(E16/SE)	Barrier
+	(E16/E)		Barrier
+	(E16/NE)	Barrier
+	(E18/SW)	Barrier
+	(E18/SE)	Barrier
+	(E20/SW)	Barrier
+
+	(F5/E)		Barrier
+	(F5/SE)		Barrier
+	(F11/E)		Barrier
+
+	(G4/E)		Barrier
+	(G4/SE)		Barrier
+	(G12/NE)	Barrier
+	(G12/E)		Barrier
+
+	(H3/NW)		Frontier
+	(H3/NE)		Frontier
+	(H3/W)		Frontier
+	(H3/SW)		Frontier
+	(H3/E)		Barrier
+	(H3/SE)		Barrier
+	(H13/NE)	Barrier
+	(H13/E)		Barrier
+
+	(I2/E)		Barrier
+	(I14/W)		Frontier
+	(I14/NW)	Frontier
+	(I14/NE)	Barrier
+	(I14/E)		Barrier
+	(I16/NW)	Frontier
+	(I16/NE)	Frontier
+	(I18/NW)	Frontier
+	(I18/NE)	Frontier
+	(I18/E)		Frontier
+
+	mapFrame

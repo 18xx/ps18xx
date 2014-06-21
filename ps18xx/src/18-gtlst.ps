@@ -1,0 +1,60 @@
+%
+% $Header: 18-gtlst.ps[1.2] Thu Sep  7 10:35:24 1995 doko@cs.tu-berlin.de saved $
+%
+
+% GenericTiles: start pageno npages => end+1
+/GenericTiles {
+	/npages exch def
+	/pageno exch def
+	/gStart exch def
+	/listScale 0.6 def
+	gsave
+	listScale dup scale
+	/CM { 28.35 1 listScale div mul mul } def
+	/Helvetica-Bold 24 selectfont
+	2 CM //hexHeight sub 26.5 CM moveto
+	/quantity 3 string def
+	(Generic Tiles:) show
+	( Page ) show
+	pageno quantity cvs show
+	( of ) show
+	npages quantity cvs show
+
+	/ProcName (Tile_xxx) def
+	/x 2 CM def
+	/y 25 CM def
+	/row 0 def
+	/col 0 def
+	/xdist //hexHeight 2 mul 0.5 cm add def
+	/ydist //hexSide 2 mul 0.5 cm add def
+	/Helvetica 15 selectfont
+	mark
+	gStart 1 //maxGeneric 1 sub {
+		/num exch def
+		ProcName 5 (000) putinterval
+		ProcName num string5 cvs dup length 8 exch sub exch putinterval
+		ProcName cvx glob-known {
+			% print it
+			x xdist col mul add y ydist row mul sub
+			2 copy		% Copy x y coords
+				num 0 num 0 //tlGround //tlMountain (LL) (20)
+				[(A) (B) (C) (D) (E) (F) (#Name)]
+			XYTile
+			exch //hexHeight sub
+			exch //hexSide sub
+			moveto num quantity cvs show
+			col 7 eq {
+				/col 0 def /row row 1 add def
+			} {
+				/col col 1 add def
+			} ifelse
+			row 9 eq {
+				/gStart num 1 add def
+				exit
+			} if
+		} if
+	} for
+	cleartomark
+	grestore
+	gStart
+} def

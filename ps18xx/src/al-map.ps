@@ -1,0 +1,120 @@
+%
+% $Header: $
+%
+
+%!
+% ----------------------------------------------------------------------
+% 18AL map
+
+	newpath
+
+	/mapRows 17 def
+	/mapCols 8 def
+	/mapScale 0.7 def
+	/CM { 28.35 1 mapScale div mul mul } def
+	mapScale dup scale
+	/mapFrame {
+	1.5 CM 1.2 CM mapCols mapRows 0 0
+		 0 //hexHeight 2 mul Map
+	} def
+	mapFrame
+
+	(A2/0)	-410	[]	LayTile	% Plain
+	(A4/0)	-401	[(L&N)(#Nashville)]	LayTile
+
+	(B1/5)	-402	[(#Corinth)]	LayTile
+	(B3/0)	-410	[]	LayTile	% Plain
+	(B5/0)	-410	[]	LayTile	% Plain
+	(B7/1)	-403	[(#Chattanooga)]	LayTile
+
+	(C2/0)	-421	[(#Florence)]	LayTile	% Village
+	(C4/0)	-431	[(#Decatur)]	LayTile	% City
+	(C6/0)	-421	[(#Stevenson)]	LayTile	% Village
+
+	(D1/0)	-410	[]	LayTile	% Plain
+	(D3/0)	-411	[]	LayTile	% Plain
+	(D5/0)	-412	[]	LayTile	% Plain
+	(D7/5)	-422	[(#Rome)]	LayTile
+
+	(E2/0)	-410	[]	LayTile	% Plain
+	(E4/0)	-410	[]	LayTile	% Plain
+	(E6/4)	-5		[(TAG)]	LayTile
+	(E6/2)	-441	[(#Gadsden)]	LayTile
+	(E6/0)	-440	[]	LayTile
+
+	(F1/5)	-433	[(ATN)(#Tupelo)]	LayTile
+	(F3/0)	-410	[]	LayTile	% Plain
+	(F5/0)	-410	[]	LayTile	% Plain
+	(F7/0)	-412	[]	LayTile	% Plain
+
+	(G2/0)	-413	[]	LayTile	% Plain
+	(G4/1)	-432	[(#Birmingham)]	LayTile	% Birmingham
+	(G4/3)	-440	[]	LayTile
+	(G4/3)	-442	[]	LayTile
+	(G6/1)	-430	[(ABC)(#Anniston)]	LayTile	% City
+	(G6/0)	-440	[]	LayTile
+	(G8/0)	-404	[(#Atlanta)]	LayTile
+
+	(H1/0)	-410	[]	LayTile	% Plain
+	(H3/1)	-430	[(#Tuscaloosa)]	LayTile	% City
+	(H3/0)	-440	[]	LayTile
+	(H5/2)	-434	[]	LayTile
+	(H5/0)	-440	[]	LayTile
+	(H5/5)	-441	[(#Oxmoor)]	LayTile
+	(H7/0)	-410	[]	LayTile	% Plain
+
+	(I2/0)	-410	[]	LayTile	% Plain
+	(I4/0)	-410	[]	LayTile	% Plain
+	(I6/0)	-410	[]	LayTile	% Plain
+	(I8/0)	-410	[]	LayTile	% Plain
+
+	(J1/0)	-410	[]	LayTile	% Plain
+	(J3/0)	-410	[]	LayTile	% Plain
+	(J5/0)	-410	[]	LayTile	% Plain
+	(J7/1)	-430	[(#West Point)]	LayTile	% City
+
+	(K2/0)	-430	[(#York)]	LayTile	% City
+	(K4/1)	-6		[(#Selma)]	LayTile
+	(K6/0)	-410	[]	LayTile	% Plain
+	(K8/0)	-410	[]	LayTile	% Plain
+
+	(L1/3)	-435	[]	LayTile
+	(L1/4)	-441	[(#Meridian)]	LayTile
+	(L3/0)	-411	[]	LayTile	% Plain
+	(L5/1)	-436	[(WRA)(#Montgomery)]	LayTile	% Montgomery
+	(L7/0)	-410	[]	LayTile	% Plain
+
+	(M2/0)	-413	[]	LayTile	% Plain
+	(M4/0)	-410	[]	LayTile	% Plain
+	(M6/0)	-410	[]	LayTile	% Plain
+	(M8/0)	-422	[]	LayTile
+	(M8/5)	-441	[(#Phenix)]	LayTile
+
+	(N1/0)	-410	[]	LayTile	% Plain
+	(N3/0)	-411	[]	LayTile	% Plain
+	(N5/0)	-413	[]	LayTile	% Plain
+	(N7/0)	-410	[]	LayTile	% Plain
+
+	(O2/0)	-411	[]	LayTile	% Plain
+	(O4/0)	-413	[]	LayTile	% Plain
+	(O6/0)	-420	[(#Dothan)]	LayTile	% Village
+
+	(P1/0)	-410	[]	LayTile	% Plain
+	(P3/0)	-410	[]	LayTile	% Plain
+	(P5/0)	-413	[]	LayTile	% Plain
+	(P7/2)	-405	[]	LayTile
+	(P7/2)	-441	[(#Gulf of Mexico)]	LayTile
+
+	(Q2/2)	-406	[(M&O)]	LayTile
+	(Q2/2)	-441	[(#Mobile)]	LayTile
+
+		/Bookman 80 selectfont  
+	(T0/7) LayText moveto ( 18AL) show 
+
+	% =================================
+	% INSERT YOUR TILES AND TOKENS HERE
+	% =================================
+
+	(B3/S)	Barrier
+
+	mapFrame

@@ -1,0 +1,141 @@
+%
+% ----------------------------------------------------------------------
+% The 1812 variant was done by Steve Thomas
+% ----------------------------------------------------------------------
+% 1812 map
+
+	newpath
+
+	/mapRows 20 def
+	/mapCols 8 def
+	/mapScale 0.65 def
+	/CM { 28.35 1 mapScale div mul mul } def
+	mapScale dup scale
+	0 0 1 cm 0 360 arc
+	/axesSwapped true def
+	/mapFrame {
+	1.2 CM 1.2 CM mapCols mapRows
+	//hexSide -0.25 mul //hexSide 2.25 mul
+	//hexHeight 0.25 mul //hexHeight 0.25 mul Map
+	} def
+	mapFrame
+
+	(A2/0)	-417	[]	LayTile
+	(A4/4)	-402	[(#Carlisle)]	LayTile
+	(A6/0)	-403	[]	LayTile
+	(A8/5)	-402	[(#Carlisle)]	LayTile
+	(A10/0)	-417	[]	LayTile
+	(A12/5)	-404	[(#Preston)]	LayTile
+	(A14/0)	-417	[]	LayTile
+	(A16/4)	-405	[(#Manchester)]	LayTile
+	(A18/0)	-417	[]	LayTile
+	(A20/0)	-417	[]	LayTile
+
+	(B1/0)	-417	[]	LayTile
+	(B3/0)	-410	[]	LayTile	% Plain
+	(B5/0)	-416	[]	LayTile	% Plain
+	(B7/0)	-416	[]	LayTile	% Plain
+	(B9/0)	-415	[]	LayTile	% Plain
+	(B11/0)	-415	[]	LayTile	% Plain
+	(B13/0)	-410	[]	LayTile	% Plain
+	(B15/0)	-414	[]	LayTile	% Plain
+	(B15/5)	-440	[]	LayTile
+	(B17/0)	-414	[]	LayTile	% Plain
+	(B19/0)	-415	[]	LayTile	% Plain
+
+	(C2/0)	-414	[]	LayTile	% Plain
+	(C4/0)	-410	[]	LayTile	% Plain
+	(C4/4)	-447	[]	LayTile
+	(C6/0)	-414	[]	LayTile	% Plain
+	(C6/0)	-441	[]	LayTile
+	(C8/0)	-414	[]	LayTile	% Plain
+	(C10/0)	-414	[]	LayTile	% Plain
+	(C12/1)	-430	[(#Harrogate)]	LayTile	% Village
+	(C14/3)	-423	[(3)(4)(#Leeds)]	LayTile	% Leeds
+	(C16/1)	-420	[(#Barnsley)]	LayTile	% City
+	(C18/1)	-421	[(8)(#Sheffield)]	LayTile	% YCity
+	(C20/4)	-407	[(7)(#Derby)]	LayTile
+	(C20/4)	-444	[]	LayTile
+
+	(D1/0)	-414	[]	LayTile	% Plain
+	(D3/0)	-411	[]	LayTile	% Plain
+	(D5/0)	-414	[]	LayTile	% Plain
+	(D7/0)	-410	[]	LayTile	% Plain
+	(D7/5)	-440	[]	LayTile
+	(D9/1)	-431	[(#Darlington)]	LayTile	% Village
+	(D9/2)	-442	[]	LayTile
+	(D11/1)	-430	[(#Northallerton)]	LayTile	% Village
+	(D13/0)	-410	[]	LayTile	% Plain
+	(D15/0)	-410	[]	LayTile	% Plain
+	(D15/0)	-450	[]	LayTile
+	(D17/1)	-430	[(#Doncaster)]	LayTile	% Village
+	(D17/5)	-440	[]	LayTile
+	(D19/0)	-410	[]	LayTile	% Plain
+
+	(E2/0)	-410	[]	LayTile	% Plain
+	(E2/5)	-440	[]	LayTile
+	(E4/4)	-422	[(5)(6)(#Newcastle)]	LayTile	% YCity
+	(E4/0)	-445	[]	LayTile
+	(E6/1)	-430	[(#Durham)]	LayTile	% Village
+	(E6/5)	-440	[]	LayTile
+	(E8/1)	-426	[(#Middlesbrough)]	LayTile	% City
+	(E10/0)	-410	[]	LayTile	% Plain
+	(E12/0)	-410	[]	LayTile	% Plain
+	(E14/3)	-424	[(9)(10)(#York)]	LayTile	% City
+	(E16/1)	-431	[(#Selby)]	LayTile	% Village
+	(E18/0)	-411	[]	LayTile	% Plain
+	(E20/3)	-407	[(1)(#Newark)]	LayTile
+	(E20/3)	-451	[]	LayTile
+
+	(F1/1)	-401	[(#Berwick)]	LayTile
+	(F3/1)	-418	[]	LayTile
+	(F5/1)	-420	[(#Sunderland)]	LayTile	% City
+	(F7/1)	-430	[(#Hartlepool)]	LayTile	% Village
+	(F7/0)	-452	[]	LayTile
+	(F9/2)	-418	[]	LayTile
+	(F11/0)	-414	[]	LayTile	% Plain
+	(F13/0)	-410	[]	LayTile	% Plain
+	(F15/0)	-410	[]	LayTile	% Plain
+	(F17/0)	-412	[]	LayTile	% Plain
+	(F19/2)	-406	[(#Lincoln)]	LayTile
+
+	(G4/1)	-418	[]	LayTile
+	(G6/1)	-418	[]	LayTile
+	(G10/1)	-433	[(#Whitby)]	LayTile	% Village
+	(G12/2)	-430	[(#Scarborough)]	LayTile	% Village
+	(G12/1)	-443	[]	LayTile
+	(G14/0)	-410	[]	LayTile	% Plain
+	(G16/1)	-421	[(2)(#Hull)]	LayTile	% Hull
+	(G18/0)	-410	[]	LayTile	% Plain
+	(G20/0)	-417	[]	LayTile
+
+	(H9/1)	-418	[]	LayTile
+	(H11/0)	-410	[]	LayTile	% Plain
+	(H13/0)	-410	[]	LayTile	% Plain
+	(H15/0)	-410	[]	LayTile	% Plain
+	(H17/2)	-418	[]	LayTile
+	(H19/2)	-418	[]	LayTile
+
+	(I16/5)	-448	[]	LayTile
+	(I18/5)	-446	[]	LayTile
+
+		/Bookman 80 selectfont
+	(G2/7) LayText moveto (1812) show 
+
+	(B3/2) 1 cm (C4/0) 1 cm //tlNoHex LayPrivate
+	(C4/0) 1 cm (D3/5) 1 cm //tlNoHex LayPrivate
+	(C6/5) 0.5 cm (D5/5) 1.2 cm //tlNoHex LayPrivate
+	(C8/0) 1 cm (D9/0) 1 cm //tlNoHex LayPrivate
+	(D9/0) 1 cm (E8/4) 1 cm //tlNoHex LayPrivate
+	(F13/1) 1 cm (G12/3) 1 cm //tlNoHex LayPrivate
+	(G12/3) 1 cm (G10/4) 1 cm //tlNoHex LayPrivate
+	(D15/3) 1 cm (E16/2) 1 cm //tlNoHex LayPrivate
+
+	% =================================
+	% INSERT YOUR TILES AND TOKENS HERE
+	% =================================
+
+	(G18/N)	Barrier
+	(H13/N)	Barrier
+
+	mapFrame

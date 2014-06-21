@@ -1,0 +1,107 @@
+%
+% $Header: $
+%
+
+% ----------------------------------------------------------------------
+% 1830-32 tile codes
+
+/18xxVariant (1830-32) def
+/tileSitting true def
+
+/maxTile 500 def
+
+	/tileCodes //maxTile array def
+
+	tileCodes   1 [   1 0 //tlYellow //tlPlain ()    (10)  1 ] put
+	tileCodes   2 [   2 0 //tlYellow //tlPlain ()    (10)  1 ] put
+	tileCodes   3 [   3 0 //tlYellow //tlPlain ()    (10)  2 ] put
+	tileCodes   4 [   4 0 //tlYellow //tlPlain ()    (10)  2 ] put
+	tileCodes   5 [   5 3 //tlYellow //tlPlain (Lille) (30) 3 ] put
+	tileCodes   6 [   6 2 //tlYellow //tlPlain (Lyon) (30) 3 ] put
+	tileCodes   7 [   7 0 //tlYellow //tlPlain ()    ()    4 ] put
+	tileCodes   8 [   8 0 //tlYellow //tlPlain ()    ()    8 ] put
+	tileCodes   9 [   9 0 //tlYellow //tlPlain ()    ()    7 ] put
+	tileCodes  55 [  55 0 //tlYellow //tlPlain ()    (10)  1 ] put
+	tileCodes  56 [  56 0 //tlYellow //tlPlain ()    (10)  1 ] put
+	tileCodes  57 [  57 0 //tlYellow //tlPlain ()    (20)  4 ] put
+	tileCodes  58 [  58 0 //tlYellow //tlPlain ()    (10)  2 ] put
+	tileCodes  69 [  69 0 //tlYellow //tlPlain ()    (10)  2 ] put
+
+	tileCodes  14 [  14 1 //tlGreen  //tlPlain ()    (30)  3 ] put
+	tileCodes  15 [  15 0 //tlGreen  //tlPlain ()    (30)  2 ] put
+	tileCodes  16 [  16 2 //tlGreen  //tlPlain ()    ()    1 ] put
+	tileCodes  18 [  18 0 //tlGreen  //tlPlain ()    ()    1 ] put
+	tileCodes  19 [  19 3 //tlGreen  //tlPlain ()    ()    1 ] put
+	tileCodes  20 [  20 0 //tlGreen  //tlPlain ()    ()    1 ] put
+
+	tileCodes  23 [  23 3 //tlGreen  //tlPlain ()    ()    3 ] put
+	tileCodes  24 [  24 0 //tlGreen  //tlPlain ()    ()    3 ] put
+	tileCodes  25 [  25 0 //tlGreen  //tlPlain ()    ()    1 ] put
+	tileCodes  26 [  26 3 //tlGreen  //tlPlain ()    ()    1 ] put
+	tileCodes  27 [  27 0 //tlGreen  //tlPlain ()    ()    1 ] put
+	tileCodes  28 [  28 2 //tlGreen  //tlPlain ()    ()    1 ] put
+	tileCodes  29 [  29 0 //tlGreen  //tlPlain ()    ()    1 ] put
+
+	tileCodes  59 [  59 0 //tlGreen  //tlPlain (OO)  (40)  2 ] put
+	tileCodes 206 [ 206 3 //tlGreen  //tlPlain (L)   (50)  2 ] put
+	tileCodes 221 [ 441 0 //tlGreen  //tlPlain (P)   (60)  1 ] put
+
+	tileCodes  39 [  39 1 //tlBrown  //tlPlain ()    ()    1 ] put
+	tileCodes  40 [  40 0 //tlBrown  //tlPlain ()    ()    1 ] put
+	tileCodes  41 [  41 3 //tlBrown  //tlPlain ()    ()    2 ] put
+	tileCodes  42 [  42 0 //tlBrown  //tlPlain ()    ()    2 ] put
+	tileCodes  43 [  43 0 //tlBrown  //tlPlain ()    ()    2 ] put
+	tileCodes  44 [  44 0 //tlBrown  //tlPlain ()    ()    1 ] put
+	tileCodes  45 [  45 0 //tlBrown  //tlPlain ()    ()    2 ] put
+	tileCodes  46 [  46 0 //tlBrown  //tlPlain ()    ()    2 ] put
+	tileCodes  47 [  47 1 //tlBrown  //tlPlain ()    ()    1 ] put
+	tileCodes  70 [  70 0 //tlBrown  //tlPlain ()    ()    1 ] put
+
+	tileCodes  63 [  63 0 //tlBrown  //tlPlain ()    (40)  3 ] put
+	tileCodes  64 [  64 0 //tlBrown  //tlPlain (OO)  (50)  1 ] put
+	tileCodes  65 [  65 0 //tlBrown  //tlPlain (OO)  (50)  1 ] put
+	tileCodes  66 [  66 0 //tlBrown  //tlPlain (OO)  (50)  1 ] put
+	tileCodes  67 [  67 0 //tlBrown  //tlPlain (OO)  (50)  1 ] put
+	tileCodes  68 [  68 0 //tlBrown  //tlPlain (OO)  (50)  1 ] put
+	tileCodes 217 [  15 3 //tlBrown  //tlPlain (BLM) (50)  1 ] put
+	tileCodes 218 [ 721 3 //tlBrown  //tlPlain (Lille) (60) 1 ] put
+	tileCodes 220 [ 522 0 //tlBrown  //tlPlain (Lyon) (60) 1 ] put
+	tileCodes 262 [ 442 1 //tlBrown  //tlPlain (P)   (80)  1 ] put
+
+
+	%tile codes for map definition
+	tileCodes 403 [   7 0 //tlGray   //tlPlain    ()    ()      0 ] put
+	tileCodes 405 [ 503 0 //tlGround //tlPlain    ()    ()      0 ] put
+	tileCodes 406 [ 500 0 //tlGround //tlPlain    ()    ()      0 ] put
+	tileCodes 407 [ 500 0 //tlGround //tlWater    ()    ()      0 ] put
+
+	tileCodes 411 [ 500 0 //tlGround //tlMountain ()    ()      0 ] put
+	tileCodes 413 [ 501 0 //tlGround //tlPlain    ()    ()      0 ] put
+	tileCodes 417 [ 504 0 //tlYellow //tlPlain    (OO)  ()      0 ] put
+	tileCodes 420 [ 503 0 //tlGround //tlWater    ()    ()      0 ] put
+	tileCodes 422 [ 503 0 //tlGround //tlMountain ()    ()      0 ] put
+	tileCodes 423 [ 502 0 //tlGround //tlPlain    ()    ()      0 ] put
+	tileCodes 426 [ 533 0 //tlYellow //tlWater    (P 40$..) (40) 0 ] put
+	tileCodes 427 [ 534 0 //tlGray   //tlPlain    ()    (10)    0 ] put
+	tileCodes 429 [ 505 0 //tlRed    //tlPlain    ()    (30/60) 0 ] put
+	tileCodes 430 [ 505 0 //tlRed    //tlPlain    ()    (30/60) 0 ] put
+	tileCodes 433 [ 535 0 //tlGray   //tlPlain    ()    (30)    0 ] put
+	tileCodes 434 [ 505 0 //tlRed    //tlPlain    ()    (20/30) 0 ] put
+	tileCodes 435 [ 511 0 //tlGround //tlPlain    (L)   (20)    0 ] put
+	tileCodes 436 [ 502 0 //tlGround //tlWater    ()    ()      0 ] put
+	tileCodes 437 [ 501 0 //tlGround //tlPlain    ()    ()      0 ] put
+	tileCodes 438 [ 500 0 //tlGround //tlPlain    ()    ()      0 ] put
+	tileCodes 439 [ 505 0 //tlRed    //tlPlain    ()    (40/70) 0 ] put
+	tileCodes 440 [ 501 0 //tlGround //tlWater    ()    ()      0 ] put
+	tileCodes 441 [ 502 0 //tlGround //tlPlain    ()    ()      0 ] put
+	tileCodes 442 [  58 0 //tlGray   //tlPlain    ()    (10)    0 ] put
+	tileCodes 443 [ 413 3 //tlGray   //tlPlain    ()    (10)    0 ] put
+	tileCodes 444 [ 503 0 //tlGround //tlMountain ()    ()      0 ] put
+	tileCodes 445 [ 505 0 //tlRed    //tlPlain    ()    (40/60) 0 ] put
+	tileCodes 446 [ 505 0 //tlRed    //tlPlain    ()    (30/40) 0 ] put
+	tileCodes 447 [   6 2 //tlGray   //tlPlain    ()    (40)    0 ] put
+	tileCodes 448 [ 506 0 //tlRed    //tlPlain    ()    (30/50) 0 ] put
+	tileCodes 449 [ 505 0 //tlRed    //tlPlain    ()    (30/50) 0 ] put
+	tileCodes 450 [ 513 0 //tlGray   //tlPlain    ()    (10)    0 ] put
+
+	tileCodes 499 [  32 0 //tlGround //tlPlain    ()    ()      0 ] put

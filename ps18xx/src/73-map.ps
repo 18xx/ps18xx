@@ -1,0 +1,204 @@
+%
+% $Header: 73-map.ps $
+%
+% ----------------------------------------------------------------------
+% the 1873 variant was done by Steve Thomas (maisnestce@btinternet.com)
+% ----------------------------------------------------------------------
+% 1873 map
+
+	newpath
+
+	/mapRows 10 def
+	/mapCols 21 def
+	/mapScale 0.6 def
+	/CM { 28.35 1 mapScale div mul mul } def
+	mapScale dup scale
+	0 0 1 cm 0 360 arc
+	21.5 CM 0 translate
+	90 rotate
+	/mapFrame {
+	1.2 CM 1.2 CM mapCols mapRows
+	//hexSide -0.75 mul //hexSide 0 mul
+	//hexHeight -1 mul //hexHeight 1 mul Map
+	} def
+	mapFrame
+
+	(A8/4)	-455	[]	LayTile
+	(A10/2)	-456	[(#Wernigerode)]	LayTile
+	(A12/4)	-457	[]	LayTile
+	(A14/2)	-456	[(#Derenburg)]	LayTile
+
+	(B9/4)	-410	[(WBE)(NWE)]	LayTile
+	(B13/5)	-411	[]	LayTile
+	(B13/1)	-484	[]	LayTile
+	(B15/0)	-401	[]	LayTile	% Plain
+	(B17/0)	-400	[]	LayTile	% Plain
+	(B17/4)	-452	[]	LayTile
+	(B17/0)	-490	[]	LayTile
+	(B19/2)	-421	[(HBE)]	LayTile	% Plain
+	(B19/5)	-450	[(#Halberstadt)]	LayTile
+
+	(C4/5)	-413	[(#Brocken)]	LayTile
+	(C4/1)	-458	[]	LayTile
+	(C6/0)	-429	[(#Knaupsholz)]	LayTile
+	(C6/4)	-482	[]	LayTile
+	(C8/0)	-403	[]	LayTile	% Plain
+	(C8/0)	-453	[]	LayTile
+	(C8/1)	-493	[]	LayTile
+	(C10/0)	-404	[]	LayTile	% Plain
+	(C10/2)	-452	[]	LayTile
+	(C10/0)	-495	[]	LayTile
+	(C12/1)	-444	[(#Benzigerode)]	LayTile	% Plain
+	(C12/1)	-453	[]	LayTile
+	(C12/5)	-495	[]	LayTile
+	(C14/1)	-444	[(#Heimburg)]	LayTile	% Plain
+	(C14/5)	-452	[]	LayTile
+	(C14/5)	-495	[]	LayTile
+	(C16/0)	-422	[]	LayTile	% Plain
+	(C16/1)	-450	[(#Langenstein)]	LayTile
+	(C18/0)	-400	[]	LayTile	% Plain
+	(C20/5)	-406	[]	LayTile
+
+	(D5/5)	-443	[(#Schierke)]	LayTile	% Plain
+	(D7/4)	-441	[]	LayTile	% Plain
+	(D7/5)	-450	[(#Drei Annen  Hohne)]	LayTile
+	(D7/0)	-453	[]	LayTile
+	(D7/0)	-493	[]	LayTile
+	(D9/5)	-423	[(#Elbingerode)]	LayTile	% Plain
+	(D9/0)	-469	[]	LayTile
+	(D11/5)	-442	[(#Huttenrode)]	LayTile	% Plain
+	(D11/0)	-463	[]	LayTile
+	(D13/5)	-443	[(#Braunesumpf)]	LayTile	% Plain
+	(D13/0)	-464	[]	LayTile
+	(D15/0)	-408	[]	LayTile
+	(D15/1)	-471	[]	LayTile
+	(D15/5)	-453	[]	LayTile
+	(D15/5)	-454	[(WBE)(HBE)]	LayTile
+	(D17/2)	-440	[(#Westerhausen)]	LayTile	% Plain
+	(D17/3)	-450	[(#Blankenburg)]	LayTile
+	(D19/0)	-400	[]	LayTile	% Plain
+	(D19/2)	-450	[(#Weddersleben)]	LayTile
+	(D21/0)	-405	[]	LayTile
+
+	(E4/0)	-423	[(SHE)]	LayTile	% Plain
+	(E4/5)	-450	[(#Braunlage)]	LayTile
+	(E4/0)	-461	[]	LayTile
+	(E6/4)	-441	[(#Elend)]	LayTile	% Plain
+	(E6/0)	-453	[]	LayTile
+	(E6/0)	-493	[]	LayTile
+	(E8/5)	-442	[(#Konigshutte)]	LayTile	% Plain
+	(E8/0)	-460	[]	LayTile
+	(E10/5)	-442	[(#Rubeland)]	LayTile	% Plain
+	(E10/0)	-465	[]	LayTile
+	(E12/0)	-402	[]	LayTile	% Plain
+	(E14/0)	-403	[]	LayTile	% Plain
+	(E16/5)	-441	[(#Timmenrode)]	LayTile	% Plain
+	(E18/1)	-414	[]	LayTile
+	(E18/4)	-480	[]	LayTile
+	(E20/0)	-424	[(QLB)]	LayTile	% Plain
+
+	(F3/4)	-443	[]	LayTile	% Plain
+	(F3/5)	-450	[(#Brunnenbach smuhle)]	LayTile
+	(F3/0)	-450	[(#Sorge)]	LayTile
+	(F3/0)	-453	[]	LayTile
+	(F3/0)	-494	[]	LayTile
+	(F5/5)	-425	[(#Sorge)]	LayTile	% Plain
+	(F7/3)	-426	[(#Tanne)]	LayTile	% Plain
+	(F7/1)	-470	[]	LayTile
+	(F9/5)	-442	[(#Trautenstein)]	LayTile	% Plain
+	(F11/5)	-423	[(#Hasselfelde            )]	LayTile	% Plain
+	(F11/4)	-483	[]	LayTile
+	(F13/0)	-430	[]	LayTile	% Plain
+	(F15/3)	-416	[]	LayTile
+	(F15/3)	-450	[(#Thale         )]	LayTile
+	(F15/4)	-459	[]	LayTile
+	(F15/1)	-474	[]	LayTile
+	(F17/1)	-406	[]	LayTile
+	(F19/3)	-407	[]	LayTile
+	(F21/4)	-456	[(#Quedlinburg)]	LayTile
+	(F21/2)	-450	[(#Gurnrode)]	LayTile
+
+	(G2/4)	-443	[(#Wieda)]	LayTile	% Plain
+	(G2/0)	-468	[]	LayTile
+	(G2/0)	-453	[]	LayTile
+	(G2/0)	-494	[]	LayTile
+	(G4/0)	-423	[(KEZ)]	LayTile	% Plain
+	(G4/5)	-450	[(#Zorge)]	LayTile
+	(G4/0)	-473	[]	LayTile
+	(G6/5)	-427	[(NWE)]	LayTile	% Plain
+	(G6/2)	-450	[(#Bennecken-    stein)]	LayTile
+	(G8/0)	-402	[]	LayTile	% Plain
+	(G10/0)	-403	[]	LayTile	% Plain
+	(G12/5)	-441	[(#Stiege)]	LayTile	% Plain
+	(G14/5)	-441	[(#Allrode)]	LayTile	% Plain
+	(G16/5)	-442	[(#Friedrichsbrunn)]	LayTile	% Plain
+	(G18/0)	-403	[]	LayTile	% Plain
+	(G20/5)	-424	[(GHE)]	LayTile	% Plain
+
+	(H1/5)	-409	[]	LayTile
+	(H3/0)	-402	[]	LayTile	% Plain
+	(H3/3)	-452	[]	LayTile
+	(H3/3)	-492	[]	LayTile
+	(H5/0)	-403	[]	LayTile	% Plain
+	(H7/0)	-402	[]	LayTile	% Plain
+	(H7/2)	-452	[]	LayTile
+	(H7/2)	-493	[]	LayTile
+	(H9/1)	-417	[]	LayTile
+	(H9/4)	-481	[]	LayTile
+	(H11/0)	-402	[]	LayTile	% Plain
+	(H13/5)	-420	[]	LayTile
+	(H15/0)	-403	[]	LayTile	% Plain
+	(H15/4)	-450	[(#Guntersborge)]	LayTile
+	(H17/5)	-428	[]	LayTile	% Plain
+	(H17/5)	-431	[]	LayTile	% Plain
+	(H17/5)	-450	[(#Alexisbad)]	LayTile
+	(H19/5)	-403	[]	LayTile	% Plain
+	(H19/1)	-452	[]	LayTile
+	(H19/1)	-491	[]	LayTile
+
+	(I2/1)	-418	[]	LayTile
+	(I2/4)	-433	[]	LayTile	% Plain
+	(I2/5)	-450	[(#Walkenried)]	LayTile
+	(I4/5)	-412	[]	LayTile
+	(I4/5)	-450	[(#Ellrich)]	LayTile
+	(I6/4)	-435	[]	LayTile	% Plain
+	(I8/4)	-440	[]	LayTile	% Plain
+	(I8/4)	-432	[]	LayTile	% Plain
+	(I8/4)	-450	[(#Netzkater)]	LayTile
+	(I8/2)	-467	[]	LayTile
+	(I8/0)	-453	[]	LayTile
+	(I8/0)	-493	[]	LayTile
+	(I10/4)	-456	[(#Eisfelder Talmuhle)]	LayTile
+	(I12/0)	-403	[]	LayTile	% Plain
+	(I14/5)	-441	[(#Lindenberg)]	LayTile	% Plain
+	(I14/0)	-466	[]	LayTile
+	(I16/5)	-442	[(#Silberbutte)]	LayTile	% Plain
+	(I16/0)	-462	[]	LayTile
+	(I18/2)	-413	[]	LayTile
+	(I18/5)	-450	[(#          Harzgerode)]	LayTile
+	(I18/4)	-472	[]	LayTile
+
+	(J3/1)	-434	[]	LayTile	% Plain
+	(J5/2)	-405	[]	LayTile
+	(J7/4)	-419	[]	LayTile
+	(J7/4)	-450	[(#Nordhausen            )]	LayTile
+	(J17/1)	-435	[]	LayTile	% Plain
+
+		/Bookman 120 selectfont
+	(B1/7) LayText moveto (1873) show 
+
+	% =================================
+	% INSERT YOUR TILES AND TOKENS HERE
+	% =================================
+
+	(D11/W)	Barrier
+	(D11/NW)	Barrier
+	(D11/NE)	Barrier
+	(D13/NW)	Barrier
+	(D13/NW)	Barrier
+	(E4/NE)	Barrier
+	(E10/W)	Barrier
+	(E10/E)	Barrier
+	(G4/NE)	Barrier
+
+mapFrame

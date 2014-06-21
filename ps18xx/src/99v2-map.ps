@@ -1,0 +1,150 @@
+%
+% $Header: 99-map.ps[1.0] Tue Apr 23 11:25:37 1996 doko@cs.tu-berlin.de saved $
+%
+
+%!
+% ----------------------------------------------------------------------
+% 1899v2 map
+
+	newpath
+
+	/mapRows 10 def
+	/mapCols 23 def
+	/mapScale 0.6 def
+	/CM { 28.35 1 mapScale div mul mul } def
+	mapScale dup scale
+	21 CM 0 translate
+	90 rotate
+        /axesSwapped true def
+	/axisDirection //axisLetBack def
+	/mapFrame {
+	1.5 CM 1.2 CM mapCols mapRows //hexHeight neg 1 cm add 0
+		//hexHeight //hexHeight 2 div neg Map
+	} def
+	mapFrame
+
+	(T0/5)	-430	[]	LayTile	% Plain
+	(L0/0)	-440	[]	LayTile	% Plain
+	(J0/0)	-409	[]	LayTile
+	(H0/1)	-431	[(FsR)]	LayTile	% Plain
+	(F0/5)	-452	[]	LayTile
+	(B0/5)	-453	[]	LayTile
+
+	(W1/4)	-450	[]	LayTile
+	(U1/0)	-405	[]	LayTile	% Plain
+	(S1/0)	-405	[]	LayTile	% Plain
+	(Q1/0)	-433	[]	LayTile	% Plain
+	(O1/0)	-404	[]	LayTile	% Plain
+	(M1/0)	-404	[]	LayTile	% Plain
+	(K1/0)	-441	[]	LayTile	% Plain
+	(K1/5)	-463	[]	LayTile
+	(K1/4)	-462	[]	LayTile
+	(I1/0)	-401	[]	LayTile	% Plain
+	(G1/0)	-421	[]	LayTile	% Plain
+	(G1/1)	-474	[]	LayTile
+	(E1/0)	-406	[]	LayTile	% Plain
+	(C1/0)	-404	[]	LayTile	% Plain
+	(A1/2)	-439	[]	LayTile	% Plain
+
+	(V2/3)	-451	[]	LayTile
+	(T2/0)	-405	[]	LayTile	% Plain
+	(R2/0)	-404	[]	LayTile	% Plain
+	(P2/0)	-402	[]	LayTile	% Plain
+	(N2/0)	-432	[]	LayTile	% Plain
+	(L2/2)	-410	[]	LayTile
+	(J2/0)	-401	[]	LayTile	% Plain
+	(H2/0)	-426	[]	LayTile	% Plain
+	(F2/0)	-401	[]	LayTile	% Plain
+	(D2/0)	-443	[]	LayTile	% Plain
+
+	(U3/0)	-427	[]	LayTile	% Plain
+	(S3/0)	-401	[]	LayTile	% Plain
+	(Q3/0)	-402	[]	LayTile	% Plain
+	(O3/0)	-401	[]	LayTile	% Plain
+	(K3/0)	-401	[]	LayTile	% Plain
+	(I3/2)	-412	[]	LayTile
+	(G3/0)	-401	[]	LayTile	% Plain
+	(E3/0)	-434	[]	LayTile	% ACity
+
+	(V4/0)	-402	[]	LayTile	% Plain
+	(T4/0)	-445	[(CSb)]	LayTile	% Plain
+	(T4/5)	-461	[]	LayTile
+	(T4/2)	-473	[]	LayTile
+	(R4/0)	-425	[]	LayTile	% Plain
+	(P4/1)	-410	[]	LayTile
+	(L4/0)	-435	[]	LayTile	% Plain
+	(F4/0)	-434	[(NRC)]	LayTile	% ACity
+	(D4/0)	-404	[]	LayTile	% Plain
+
+	(W5/5)	-454	[]	LayTile
+	(U5/0)	-401	[]	LayTile	% Plain
+	(S5/0)	-436	[]	LayTile	% Plain
+	(S5/5)	-464	[]	LayTile
+	(M5/5)	-413	[]	LayTile % Plain
+	(G5/0)	-401	[]	LayTile	% Plain
+	(E5/0)	-401	[]	LayTile	% Plain
+	(C5/0)	-402	[]	LayTile	% Plain
+	(A5/0)	-410	[]	LayTile
+
+	(V6/0)	-432	[(SjZ)]	LayTile	% Plain
+	(T6/0)	-420	[]	LayTile	% Plain
+	(R6/0)	-403	[]	LayTile	% Plain
+	(R6/3)	-471	[]	LayTile
+	(N6/4)	-411	[]	LayTile
+	(L6/5)	-422	[]	LayTile	% Plain
+	(L6/3)	-472	[]	LayTile
+	(F6/2)	-411	[]	LayTile
+	(D6/0)	-428	[]	LayTile	% Double
+	(B6/0)	-408	[]	LayTile	% Plain
+	(@6/0)	-410	[]	LayTile
+
+	(U7/0)	-402	[]	LayTile	% Plain
+	(S7/0)	-403	[]	LayTile	% Plain
+	(Q7/0)	-444	[]	LayTile	% Plain
+	(O7/0)	-401	[]	LayTile	% Plain
+	(M7/0)	-432	[(Tt)]	LayTile	% TCity
+	(K7/1)	-410	[]	LayTile
+	(E7/5)	-446	[(1st)]	LayTile	% Plain
+	(E7/1)	-466	[]	LayTile
+	(C7/0)	-401	[]	LayTile	% Plain
+	(C7/3)	-470	[]	LayTile
+	(A7/5)	-437	[(B&M)]	LayTile	% Plain
+
+	(V8/0)	-401	[]	LayTile	% Plain
+	(T8/0)	-402	[]	LayTile	% Plain
+	(R8/0)	-432	[]	LayTile	% Plain
+	(P8/0)	-407	[]	LayTile	% Plain
+	(N8/0)	-401	[]	LayTile	% Plain
+	(F8/3)	-410	[]	LayTile
+	(D8/0)	-401	[]	LayTile	% Plain
+	(B8/0)	-442	[]	LayTile	% Plain
+	(@8/1)	-423	[]	LayTile	% Plain
+
+	(W9/3)	-455	[]	LayTile
+	(U9/0)	-402	[]	LayTile	% Plain
+	(S9/0)	-402	[]	LayTile	% Plain
+	(S9/3)	-475	[]	LayTile
+	(Q9/0)	-402	[]	LayTile	% Plain
+	(O9/0)	-401	[]	LayTile	% Plain
+	(E9/3)	-423	[]	LayTile	% Plain
+	(C9/0)	-401	[]	LayTile	% Plain
+	(A9/0)	-401	[]	LayTile	% Plain
+
+	(V10/3)	-455	[]	LayTile
+	(T10/0)	-401	[]	LayTile	% Plain
+	(R10/4)	-438	[(XzS)]	LayTile	% Plain
+	(P10/0)	-421	[]	LayTile	% Plain
+	(N10/1)	-456	[]	LayTile
+
+	% =================================
+	% INSERT YOUR TILES AND TOKENS HERE
+	% =================================
+
+	(T4/2) 0.9 cm (T4/2) 0 cm //tlNoHex LayPrivate
+	(L4/5) 1 cm (L6/0) 0.5 cm //tlNoHex LayPrivate
+	(G1/2) 0.9 cm (H2/2) 1 cm //tlNoHex LayPrivate
+	(R6/5) 1 cm (R6/1) 1 cm //tlNoHex LayPrivate
+	(S9/5) 1 cm (S9/1) 1 cm //tlNoHex LayPrivate
+	(C7/5) 1 cm (C7/1) 1 cm //tlNoHex LayPrivate
+
+	mapFrame

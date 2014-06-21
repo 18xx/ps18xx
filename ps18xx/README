@@ -1,0 +1,349 @@
+PS18XX
+
+OVERVIEW
+
+PS18XX is a bunch of software designed to make maps for 18xx games.
+Originally written by Matthias Klose, I've modified it rather
+extensively, partly to allow for new features of 18xx maps, partly to
+make them easier to understand, and partly for ease of use.  While some
+of what follows is true for Matthias' distribution, a lot of the details
+will vary.
+
+To run this software, you'll need several bits of other software from
+various places.  The components are Perl, Make, and a PostScript
+renderer.  You'll also need a text editor.  Notepad or wordpad, supplied
+with Windows, work up to a point, but something a bit meatier may make
+some editing jobs a bit simpler.  I use vim.
+
+Perl is a computer programming language.  It's distributed under the GNU
+Public License, so it's essentially free for this kind of purpose.
+It may be installed on your computer already.  If not, download a copy
+from the net (find the URL using a search engine such as Google) and
+install it.
+
+Make is really a programming development tool designed to keep
+complicated programming projects up to date, but it works just fine for
+this stuff.  The GNU project supply a free (for this) version, possibly
+called make.  Again, download a copy and install it.
+
+Finally, get hold of a PostScript renderer.  This is a program which
+takes a file full of PostScript (which is something between a graphical
+description language and a full programming language) and displays it on
+the screen.  A pair of programs called GhostScript and GhostView are
+freely available (well, GNU Public License) and work well.  Adobe make
+one that's free, I think.  Download and install, as usual.
+
+The ps18xx distribution lives in a directory.  At the top level are some
+files and two sub-directories.
+
+SRC
+	SRC is a directory containing source components, all written in
+	PostScript.  You probably won't need to modify anything in here
+	unless you find a bug, but (as directed below) you might need to
+	take a look.
+
+OldMaps
+	OldMaps is a directory containing old maps.  The distribution doesn't
+	include anything in this directory, and it's only used by oldgames.pl.
+
+concat.pl
+	concat.pl is a Perl program which glues together all of the pieces
+	to make maps and tile sheets.  You probably will never need to call
+	it directly; it's invoked through make.
+
+newgame.pl
+	newgame.pl is a Perl program which sets things up for a new game.
+
+oldgame.pl
+	oldgame.pl is a Perl program which tidies things up after a game
+	has finished.  It puts files in a subdirectory, called OldMaps by
+	default, which you'll need to create.
+
+mkmk.pl
+	mkmk.pl is a Perl program which creates a Makefile for use with
+	make.  It's called automatically from newgame.pl and oldgame.pl
+	so it's unlikely you'll need to call it directly except perhaps
+	once on installation.
+
+PsConfig.pm
+	PsConfig.pm is a Perl Module used to handle configuration.
+
+config
+	config is a place to store configuration data.  The one supplied will
+	do, but see below for instructions on how to tailor your setup to
+	taste.
+
+delete.pl
+	delete.pl deletes its file arguments.  You probably won't need to
+	call it directly, though it's used to help tidy up via "make clean"
+	(vide infra).  (It is there because it handles wildcards more sanely
+	than the DOSish del command.)
+
+ckor.pl
+concord.pl
+merge.pl
+tlist.pl
+conndata
+	A set of programs that might help if you're designing a new game or
+	doing a ps18xx map and tile sheet for a game that doesn't yet have
+	one.  If you're not doing those things, you can probably safely
+	ignore them.  conndata is a data file used with ckor.pl.
+
+INSTALLATION
+
+Ps18xx is distributed as two ZIP files.  Create a directory somewhere and
+unpack ps18xx-1.zip into it.  Create a subdirectory called SRC and unpack
+ps18xx-2.zip into it.  Create another subdirectory called OldMaps.  Edit config to taste, as described below.  Thne run mkmk.pl, and all is done.
+
+CONFIGURATION
+
+The file config in the top-level directory contains configuration data
+for the programs mkmk.pl, newgame.pl, and oldgame.pl.  The one supplied
+with the initial distribution is the one I use, so should be adequate
+initially.
+
+Each line shows a program (one of mkmk, newgame, or oldgame), a
+configuration variable, and the value of that variable.  The variable
+CustomaryArgs, available for all three programs, contains the arguments
+to be used by that program if none (mkmk) or one (the others) are
+specified on the command line.  BlankLine, usable only with newgame,
+controls the value of the dummy line inserted into the new game file
+under the appropriate switches.
+
+See the comments at the start of concat.pl, mkmk.pl, newgame.pl, and
+oldgame.pl for details of which switches should be set.
+
+STARTING A GAME
+
+UK-based postal 18xx game serial numbers are obtained from Rob
+Thomasson.  A typical one is 1826F15.  For the purposes of this
+software, we divide this into three parts: "18", "26", and "F15", and
+call the latter two the VAR and the CODE respectively.  (One
+complication is due to the existence of 1761.  The idea that all 18xx
+games start with '18' is rather deeply embedded within this system, so I
+renamed 1761 internally as 18c61.  Newgame.pl and oldgame.pl know to
+translate 1761 into 18c61.  Technically, this suggests that I ought to
+teach them that 1800bs is really Poseidon, but I don't.)
+
+At the top level of the ps18xx tree, you will create some files called
+CODE-.ps (note the hyphen), one for each game played.  For example, for
+1826F15, the file is called F15-.ps.  (On my computer I have created a
+directory called OldMaps where I keep more such files for games which
+have finished, put there out of sight to reduce clutter.)  One of the
+jobs which needs to be done when a new game starts is to create a new
+CODE-.ps file; details come later.  CODE-.ps files are combined with
+other files, obtained from within the SRC directory, to create a
+CODE-MAP.ps file (for example, F15-MAP.ps), which can be displayed
+and/or printed with your renderer.  CODE-MAP.ps files may be deleted
+without any loss of information, and they should be cleared away when
+not required to reduce clutter, but that won't happen automatically.
+
+When a new game starts, obtain a serial number from Rob.  (If you're not
+in the UK, you may as well invent one.  As long as they're of the right
+format and are all locally different, it doesn't matter about the details.)
+Then type
+
+	perl newgame.pl 18VARCODE
+
+For example
+
+	perl newgame.pl 1826F15
+
+It's possible that your system will be set up to recognise Perl scripts
+automatically, and if so you'll be able to simplify this to
+
+	newgame.pl 1826F15
+
+If newgame worked, you can skip the next bit.  Otherwise, you will have
+to do it by hand.  (Best is to find some way of improving newgame so
+that it will work next time.  Consult your local expert.) Extract the
+VAR and CODE from the name of the game.  
+
+Create a new CODE-.ps file.  Much the easiest way is to copy an
+existing file for another game of the same variant, then clear out all
+but the first line which should read something like:
+
+	% Game file for 1826F15
+
+and the last few lines, which should read something like:
+
+		/Bookman 80 selectfont 
+	(C0/7) LayText moveto ('26F15) show 
+	(D0/7) LayText moveto (OR1) show 
+
+Edit the VAR and CODE in the first line to match the game at hand.  (Do
+this carefully; if the first line isn't of exactly the right format
+little of the rest of the system will work.)  The details in the last
+lines will vary from one variant to the next, and if you're doing a new
+variant you'll have to get creative.  The coordinate after the first "("
+and before the "/" indicates where on the map the text between the
+second pair of parentheses will appear.  Conventionally we show the
+game's serial number (or as much as will fit) and the round number, but
+just about anything can appear between the parentheses.  You're not
+limited to two "show" lines; more or fewer will work.  Other fonts and
+point sizes than Bookman 80 are possible, and more than one "selectfont"
+line is possible.
+
+Then run mkmk.pl, with
+
+	perl mkmk.pl
+
+After (or possibly even before) doing all this, contact me and let me
+have the details so I can update newgame.pl.  That way this only has to
+be done once.
+
+Those for whom newgame worked rejoin us here.
+
+When you wish to generate a CODE-MAP.ps file, go to a command prompt at
+the top level and type
+
+	make CODE
+
+(substituting whatever your make was called) and see the file
+CODE-MAP.ps generated or updated.  Unless you've changed the setup (why?)
+you will also generate a file called CODE-MAP.tl, which contains a list
+of tiles available in the game, sorted by colour, together with counts
+of those tiles remaining.  Those counts might be negative if more tiles
+have been used than are supplied with the set.
+
+When you start a new game, you'll probably want to send a map and tile
+sheet to each player.  To generate these, type
+
+	make 18VAR
+
+and four files MVAR.ps, TVAR.ps, wTVAR.ps, w2TVAR.ps will appear.  These
+can be displayed and/or printed with your renderer, and should be
+deleted when no longer required.  These are respectively the map and a tile
+sheet in three different formats.
+
+Most of the lines in CODE-.ps files are LayTile lines.  These look like
+
+	(C13/NW)	63	[(B)(Sncf)]	LayTile
+
+In this line, C13 shows which hex the tile is laid, NW its orientation,
+63 the tile number, (B) and (Sncf) are the tokens placed on the tile.  The
+brackets are necessary even where no tokens are present or legal.
+Tokens are assigned to city circles in a fixed order that's often hard
+to figure out.  The list of tokens can be padded on the *right* with
+"( )" (i.e. a space between parentheses) in order to get the real tokens
+in the correct locations.  (In theory it's predictable what ends up
+where, but trial and error always seems to turn out best.)
+
+If you make some sort of error with the hex coordinate, orientation, or
+tile number, it's likely concat.pl will notice and issue a warning.
+Except in extreme cases concat.pl will go ahead and made the CODE-MAP.ps
+file anyway.  If you try to display an erroneous CODE-MAP.ps file, your
+renderer will likely make some sort of inscrutable complaint.  If you
+use an invalid tile number, the tile will appear with the word
+"undefined" across the middle and otherwise blank.
+
+LayTile lines may appear in any order.  If more than one exists for any
+hex, only the later or last one appears.  (That's unless the later ones
+are transparent, of course; what you actually see is the last opaque
+tile plus any subsequent transparent ones.)  This means that when a
+tile is upgraded, it's not necessary to remove the underlying tile.
+
+The software knows how many of each sort of tile is in the set, and
+counts off tiles as they are laid.  It's clever enough to realise that
+if a tile doesn't appear because a later tile appears on top if it, the
+earlier one should not count.  If more of a tile are used than are in
+the set, concat.pl will issue a warning, but the tile will be displayed
+properly anyway.  The warning is suppressed if the game at hand is not
+constrained by the number of tiles, of the offending type, supplied.
+
+Occasionally you'll need to add, delete, or change a token on a location
+where there is only a pre-printed tile on the map.  Newgame.pl tries to
+include commented-out LayTile lines to cope with this, but if not, you
+will need to grovel in the sources.  Look in SRC\VAR-MAP.ps (for example,
+SRC\26-MAP.ps) for the LayTile line which lays down the pre-printed
+tile; it'll be in the same format as above.  It might show something
+like
+
+	(C13/2)	-619	[(B)(#Brussels)]	LayTile
+
+There are three new features here: orientations can be given
+numerically, but since the mapping between number and direction doesn't
+adhere to any known standard this fact isn't very useful.  The tile
+number is preceded by a minus; this causes the software not to print a
+tile number on the edge of the hex (or to count it as one of the tiles
+in the available set).  And the thing which looks like a token whose
+name starts with "#" is a special flag to show the name of the city.
+
+Copy this line into your CODE-.ps file, change the tokens as required,
+and delete the name part if desirable.
+
+If you find yourself doing this, letting me know the details will ensure
+that I update newgame.pl so it doesn't have to be done again.
+
+You can add comments to the CODE-.ps file.  Comments start with a
+percent character (%) and continue until the end of the line.  I find
+it helpful to separate tile lays for each operating line with comments
+of the form
+
+	% OR 1 lays
+
+but these make no difference to the final map.
+
+Sometimes you'll want a greyscale image.  In this case, look in a
+CODE-MAP.ps file for:
+
+	/haveColor glob-known not {
+	  /haveColor false def
+	  systemdict /statusdict known {
+	    statusdict /processcolors known {
+	      /haveColor processcolors 1 ne def
+	    } if
+	  } if
+	} if
+
+and replace them with:
+
+	/haveColor false def
+
+You can do this in SRC\18-defs.ps if you want, and will never be
+troubled by colours again.
+
+FINISHING A GAME
+
+Once the game has ended, you should say
+
+	oldgame.pl 18VARCODE
+
+for example
+
+	oldgame.pl 1826F15
+
+and the game map file will be tidied away (moved to OldMaps).
+
+OTHER MAKE TARGETS
+
+mkmk.pl maintains several other targets that you can give make to
+perform housekeeping.
+
+	make clean
+
+clears out any generated files.
+
+	make current
+
+makes sure that all game maps are up to date.
+
+	make GTILES.ps
+
+creates a file called GTILES.ps which shows all of the available tiles
+that ps18xx knows how to make.  This is useful only if you are
+umplementing a new design.
+
+	make all
+
+Does what it says on the tin.  Well, more or less.
+
+	make PVAR.ps
+
+for example
+
+	make P26.ps
+
+creates a file called PVAR.ps (for example P26.ps) that, if printed,
+creates a set of sheets that can be cut out and used in a real game.
+

@@ -1,0 +1,150 @@
+%
+% $Header: $
+%
+% ----------------------------------------------------------------------
+% the 18ea variant was done by Steve Thomas
+% ----------------------------------------------------------------------
+% 18ea tile codes
+
+/18xxVariant (18ea) def
+/maxTile 800 def
+/tileSitting true def
+
+	/tileCodes //maxTile array def
+
+	tileCodes    5 [   5 0 //tlYellow //tlPlain ()   (20)   10 ] put
+	tileCodes    6 [   6 0 //tlYellow //tlPlain ()   (20)   10 ] put
+	tileCodes   57 [  57 0 //tlYellow //tlPlain ()   (20)   12 ] put
+	tileCodes  201 [   5 1 //tlYellow //tlPlain (Y)  (30)    2 ] put
+	tileCodes  202 [   6 0 //tlYellow //tlPlain (Y)  (30)    4 ] put
+	tileCodes  621 [  57 0 //tlYellow //tlPlain (Y)  (30)    2 ] put
+	tileCodes  790 [  14 1 //tlYellow //tlPlain (N)  (40)    4 ] put
+	tileCodes 8850 [   3 5 //tlYellow //tlPlain ()   (20)    6 ] put
+	tileCodes 8851 [  58 4 //tlYellow //tlPlain ()   (20)    8 ] put
+	tileCodes 8852 [   4 0 //tlYellow //tlPlain ()   (20)   12 ] put
+
+	tileCodes   14 [  14 0 //tlGreen  //tlPlain ()   (30)   11 ] put
+	tileCodes   15 [  15 0 //tlGreen  //tlPlain ()   (30)   10 ] put
+	tileCodes   16 [  16 0 //tlGreen  //tlPlain ()   ()      2 ] put
+	tileCodes   17 [  17 0 //tlGreen  //tlPlain ()   ()      5 ] put
+	tileCodes   18 [  18 0 //tlGreen  //tlPlain ()   ()      5 ] put
+	tileCodes   19 [  19 0 //tlGreen  //tlPlain ()   ()      4 ] put
+	tileCodes   20 [  20 0 //tlGreen  //tlPlain ()   ()      6 ] put
+	tileCodes   21 [  21 0 //tlGreen  //tlPlain ()   ()      2 ] put
+	tileCodes   22 [  22 0 //tlGreen  //tlPlain ()   ()      2 ] put
+	tileCodes  53Y [ 121 0 //tlGreen  //tlPlain (Y)  (50)    4 ] put
+	tileCodes  619 [  38 0 //tlGreen  //tlPlain ()   (30)   10 ] put
+	tileCodes  791 [ 209 4 //tlGreen  //tlPlain (N)  (60)    4 ] put
+	tileCodes  792 [ 133 0 //tlGreen  //tlPlain (Y)  (50)    2 ] put
+	tileCodes  793 [ 132 3 //tlGreen  //tlPlain (Y)  (50)    3 ] put
+
+	tileCodes  61Y [  38 0 //tlBrown  //tlPlain (Y)  (60)    3 ] put
+	tileCodes  611 [  51 2 //tlBrown  //tlPlain ()   (40)    8 ] put
+	tileCodes  796 [  14 0 //tlBrown  //tlPlain (Y)  (60)    3 ] put
+	tileCodes  797 [ 132 3 //tlBrown  //tlPlain (Har) (60)   1 ] put
+	tileCodes  778 [ 294 2 //tlBrown  //tlPlain ()   ()      4 ] put
+	tileCodes  779 [ 295 0 //tlBrown  //tlPlain ()   ()      3 ] put
+	tileCodes  780 [ 296 0 //tlBrown  //tlPlain ()   ()      3 ] put
+	tileCodes  798 [ 386 0 //tlBrown  //tlPlain ()   ()      3 ] put
+	tileCodes  794 [ 375 0 //tlBrown  //tlPlain (N)  (80)    3 ] put
+	tileCodes  795 [ 473 4 //tlBrown  //tlPlain (Ips) (80)   1 ] put
+	tileCodes 891Y [  15 0 //tlBrown  //tlPlain (Y)  (60)    3 ] put
+
+	%tile codes for map definition
+
+% Large city hexes
+	tileCodes 400 [ 246 0 //tlGround //tlPlain     ()   ()       0 ] put
+	tileCodes 401 [ 246 0 //tlGround //tlPlain     (Y)  ()       0 ] put
+	tileCodes 402 [ 246 0 //tlGround //tlPlain     (N)  ()       0 ] put
+
+% Small city hexes
+	tileCodes 410 [ 501 0 //tlGround //tlPlain     ()   ()       0 ] put
+
+% Offboard hexes
+	tileCodes 420 [ 505 0 //tlRed //tlPlain     ()   (40/90/140)   0 ] put
+	tileCodes 421 [ 506 0 //tlRed //tlPlain     ()   (40/90/140)   0 ] put
+	tileCodes 422 [ 506 0 //tlRed //tlPlain     ()   ()            0 ] put
+	tileCodes 423 [ 506 0 //tlRed //tlPlain     ()   (70/100/120)  0 ] put
+	tileCodes 424 [ 505 0 //tlRed //tlPlain     ()   (100/150/200) 0 ] put
+	tileCodes 425 [ 507 0 //tlRed //tlPlain     ()   (100/150/200) 0 ] put
+	tileCodes 426 [ 455 0 //tlRed //tlPlain     ()   (100/150/200) 0 ] put
+
+% Ports
+	tileCodes 430 [ 505 0 //tlBlue //tlPlain    ()   (80/90/100)   0 ] put
+	tileCodes 431 [ 506 0 //tlBlue //tlPlain    ()   (80/90/100)   0 ] put
+	tileCodes 432 [ 505 0 //tlBlue //tlPlain    ()   (70/100/130)  0 ] put
+	tileCodes 433 [ 505 0 //tlBlue //tlPlain    ()   (60/90/120)   0 ] put
+	tileCodes 434 [ 505 0 //tlBlue //tlPlain    ()   (80/100/120)  0 ] put
+	tileCodes 435 [ 506 0 //tlBlue //tlPlain    ()   ()            0 ] put
+	tileCodes 436 [ 500 0 //tlBlue //tlPlain    ()   ()            0 ] put
+	tileCodes 437 [ 550 0 //tlBlue //tlPlain    ()   (80/90/100)   0 ] put
+	tileCodes 438 [ 505 0 //tlBlue //tlPlain    ()   (70/100/130)    0 ] put
+
+% Overlays
+	tileCodes 440 [ 345 0 //tlTransparent //tlPlain () ()        0 ] put
+	tileCodes 441 [ 505 0 //tlTransparent //tlPlain () ()        0 ] put
+	tileCodes 442 [ 506 0 //tlTransparent //tlPlain () ()        0 ] put
+	tileCodes 443 [   3 0 //tlTransparent //tlPlain () (20)      0 ] put
+	tileCodes 444 [ 514 0 //tlTransparent //tlPlain () (20)      0 ] put
+	tileCodes 445 [ 120 0 //tlTransparent //tlPlain () (20)      0 ] put
+
+
+% Upgrade Plain 400 => 5/* 6/* 57/*
+% Upgrade Plain 401 => 201/* 202/* 621/*
+% Upgrade Harwich 401 => 201/=0 202/=2 621/=25
+% Upgrade Plain 402 => 790/*
+% Upgrade Ipswich 402 => 790/03
+% Upgrade Plain 410 => 8850/* 8851/* 8852/*
+
+% Upgrade Plain 8850 => 18/4 21/2 22/3
+% Upgrade Plain 8851 => 16/05 17/03 19/5 21/4 22/0
+% Upgrade Plain 8852 => 18/03 19/03 20/0235
+% Upgrade Plain 5 => 14/03 15/345 619/23
+% Upgrade Plain 6 => 14/14 15/34 619/024
+% Upgrade Plain 57 => 14/0134 15/03 619/03
+% Upgrade Plain 201 => 792/4 793/3
+% Upgrade Plain 202 => 53Y/024 792/4 793/0
+% Upgrade Plain 621 => 792/03 793/03
+% Upgrade Harwich 201 => 793/=2
+% Upgrade Harwich 202 => 793/=2
+% Upgrade Harwich 621 => 793/=2
+% Upgrade Plain 790 => 791/03
+% Upgrade Ipswich 790 => 791/=1
+
+% Upgrade Plain 16 => 779/0
+% Upgrade Plain 17 => 778/03
+% Upgrade Plain 18 => 780/03
+% Upgrade Plain 19 => 778/14
+% Upgrade Plain 20 => 798/*
+% Upgrade Plain 21 => 779/1
+% Upgrade Plain 22 => 779/0
+% Upgrade Plain 14 => 611/25
+% Upgrade Plain 15 => 611/05
+% Upgrade Plain 619 => 611/02
+% Upgrade Plain 53Y => 61Y/024
+% Upgrade Plain 792 => 61Y/0 796/03 891Y/0
+% Upgrade Plain 793 => 61Y/0 796/14 891Y/3
+% Upgrade Harwich 793 => 797/=2
+% Upgrade Plain 791 => 794/*
+% Upgrade Ipswich 791 => 795/=3
+
+% Token E&H 8
+% Token ECR 8
+% Token ENR 8
+% Token ESR 8
+% Token EUR 8
+% Token FDR 8
+% Token I&B 8
+% Token L&D 8
+% Token L&E 8
+% Token L&H 8
+% Token N&B 8
+% Token N&E 8
+% Token N&S 8
+% Token Y&N 8
+% Token NGC 8
+% Token SVR 8
+% Token WNR 8
+% Token W&F 8
+% Token WVR 8
+% Token WStI 8

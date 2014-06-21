@@ -1,0 +1,323 @@
+%
+% $Header: Africa-map.ps[1.0] saved $
+%
+% --------------------------------------------
+% the 18Africa variant was done by Dave Thorby
+% --------------------------------------------
+% 18Africa map
+
+	newpath
+
+	/mapRows 35 def
+	/mapCols 19 def
+	/mapScale 0.33 def
+	/CM { 28.35 1 mapScale div mul mul } def
+	mapScale dup scale
+	0 0 1 cm 0 360 arc
+%	21 CM 0 translate
+%	90 rotate
+	/axesSwapped true def
+	/mapFrame {
+		1.2 CM 1.2 CM mapCols mapRows //hexSide 0.0 mul //hexSide -0.5 mul
+		//hexHeight 0.25 mul //hexHeight  0.75 mul Map } def
+	mapFrame
+
+	(D0/0)	-480	[(#Tangier)]	LayTile
+	(F0/0)	-480	[(#Algiers)]	LayTile
+	(H0/5)	-426	[]	LayTile
+	(J0/1)	-402	[]	LayTile
+
+	(C1/5)	-401	[]	LayTile
+	(E1/0)	-430	[(TC)]	LayTile
+	(G1/1)	-433	[(AO)]	LayTile
+	(I1/1)	-445	[]	LayTile
+
+	(D2/5)	-438	[(MNR)]	LayTile
+	(F2/0)	-447	[(#Oran)]	LayTile	% Plain
+	(H2/0)	-420	[]	LayTile	% Plain
+	(J2/1)	-407	[]	LayTile
+
+	(C3/0)	-480	[(#Casablanca)]	LayTile
+	(E3/1)	-453	[(#Fez)(#Meknes)]	LayTile	% Plain
+	(E3/1)	-470	[]	LayTile
+	(G3/0)	-420	[]	LayTile	% Plain
+	(I3/0)	-447	[(#Tripoli)]	LayTile	% Plain
+	(M3/0)	-480	[(#Alexandria)]	LayTile
+
+	(D4/1)	-434	[(MF)(#Marrakech)]	LayTile	% Plain
+	(F4/5)	-420	[]	LayTile	% Plain
+	(H4/0)	-420	[]	LayTile	% Plain
+	(J4/0)	-420	[]	LayTile	% Plain
+	(L4/0)	-447	[(#Benghazi)]	LayTile	% Plain
+	(N4/1)	-432	[(AR)]	LayTile
+
+	(C5/0)	-447	[(#Agadir)]	LayTile	% Plain
+	(E5/0)	-420	[]	LayTile	% Plain
+	(G5/4)	-420	[]	LayTile	% Plain
+	(I5/4)	-420	[]	LayTile	% Plain
+	(K5/4)	-420	[]	LayTile	% Plain
+	(M5/4)	-420	[]	LayTile	% Plain
+
+	(D6/3)	-420	[]	LayTile	% Plain
+	(F6/5)	-420	[]	LayTile	% Plain
+	(H6/5)	-422	[]	LayTile	% Plain
+	(J6/0)	-420	[]	LayTile	% Plain
+	(L6/1)	-420	[]	LayTile	% Plain
+	(N6/1)	-437	[(ENR)(#Cairo)]	LayTile	% Plain
+
+	(C7/0)	-420	[]	LayTile	% Plain
+	(E7/0)	-420	[]	LayTile	% Plain
+	(G7/5)	-422	[]	LayTile	% Plain
+	(G7/1)	-471	[]	LayTile
+	(I7/0)	-420	[]	LayTile	% Plain
+	(K7/0)	-420	[]	LayTile	% Plain
+	(M7/4)	-420	[]	LayTile	% Plain
+	(O7/5)	-421	[]	LayTile	% Plain
+
+	(B8/0)	-420	[]	LayTile	% Plain
+	(D8/5)	-420	[]	LayTile	% Plain
+	(F8/5)	-420	[]	LayTile	% Plain
+	(H8/5)	-422	[]	LayTile	% Plain
+	(J8/5)	-422	[]	LayTile	% Plain
+	(L8/0)	-447	[(#Kufra)]	LayTile	% Plain
+	(L8/1)	-472	[]	LayTile
+	(N8/5)	-427	[]	LayTile	% Plain
+
+	(C9/0)	-420	[]	LayTile	% Plain
+	(E9/4)	-420	[]	LayTile	% Plain
+	(G9/0)	-420	[]	LayTile	% Plain
+	(I9/5)	-420	[]	LayTile	% Plain
+	(K9/5)	-422	[]	LayTile	% Plain
+	(M9/5)	-420	[]	LayTile	% Plain
+	(O9/0)	-420	[]	LayTile	% Plain
+
+	(B10/0)	-447	[(#Dakar)]	LayTile	% Plain
+	(D10/0)	-420	[]	LayTile	% Plain
+	(F10/1)	-435	[(TOR)(#Timbuktu)]	LayTile	% Plain
+	(H10/0)	-420	[]	LayTile	% Plain
+	(J10/0)	-420	[]	LayTile	% Plain
+	(L10/1)	-420	[]	LayTile	% Plain
+	(N10/5)	-427	[]	LayTile	% Plain
+	(P10/0)	-446	[]	LayTile
+
+	(C11/0)	-420	[]	LayTile	% Plain
+	(E11/5)	-421	[]	LayTile	% Plain
+	(G11/5)	-427	[]	LayTile	% Plain
+	(I11/0)	-420	[]	LayTile	% Plain
+	(K11/4)	-420	[]	LayTile	% Plain
+	(M11/5)	-420	[]	LayTile	% Plain
+	(O11/1)	-435	[(SR)(#Khartoum)]	LayTile	% Plain
+
+	(B12/3)	-446	[]	LayTile
+	(D12/5)	-420	[]	LayTile	% Plain
+	(F12/5)	-420	[]	LayTile	% Plain
+	(H12/0)	-447	[(#Kano)]	LayTile	% Plain
+	(J12/0)	-423	[]	LayTile
+	(L12/5)	-420	[]	LayTile	% Plain
+	(N12/5)	-420	[]	LayTile	% Plain
+	(P12/0)	-449	[(#Asmara)]	LayTile	% Plain
+	(R12/1)	-403	[]	LayTile
+
+	(C13/4)	-450	[(#Conakry)(#Freetown)]	LayTile	% Plain
+	(E13/0)	-420	[]	LayTile	% Plain
+	(G13/5)	-429	[]	LayTile	% Plain
+	(I13/0)	-420	[]	LayTile	% Plain
+	(K13/0)	-447	[]	LayTile	% Plain
+	(M13/0)	-420	[]	LayTile	% Plain
+	(O13/5)	-427	[]	LayTile	% Plain
+	(Q13/0)	-447	[(#Djibouti)]	LayTile	% Plain
+
+	(D14/0)	-420	[]	LayTile	% Plain
+	(F14/0)	-447	[(#Accra)]	LayTile	% Plain
+	(H14/5)	-429	[]	LayTile	% Plain
+	(J14/0)	-420	[]	LayTile	% Plain
+	(L14/5)	-420	[]	LayTile	% Plain
+	(N14/5)	-427	[]	LayTile	% Plain
+	(P14/5)	-449	[(#Addis Ababa)]	LayTile	% Plain
+	(P14/1)	-473	[]	LayTile
+	(R14/0)	-447	[(#Berbera)]	LayTile	% Plain
+
+	(E15/0)	-447	[(#Abidjan)]	LayTile	% Plain
+	(E15/1)	-474	[]	LayTile
+	(G15/2)	-433	[(NR)]	LayTile
+	(I15/0)	-420	[]	LayTile	% Plain
+	(K15/0)	-447	[(#Bangui)]	LayTile	% Plain
+	(M15/0)	-420	[]	LayTile	% Plain
+	(O15/5)	-422	[]	LayTile	% Plain
+	(Q15/5)	-422	[]	LayTile	% Plain
+
+	(F16/4)	-404	[]	LayTile
+	(H16/2)	-426	[]	LayTile
+	(J16/5)	-420	[]	LayTile	% Plain
+	(L16/1)	-420	[]	LayTile	% Plain
+	(N16/5)	-421	[]	LayTile	% Plain
+	(P16/5)	-422	[]	LayTile	% Plain
+	(R16/5)	-420	[]	LayTile	% Plain
+
+	(G17/4)	-480	[(#Lagos)]	LayTile
+	(I17/0)	-447	[(#Yaounde)]	LayTile	% Plain
+	(K17/5)	-427	[]	LayTile	% Plain
+	(M17/4)	-450	[(#Stanleyville)(#Goma)]	LayTile	% Plain
+	(O17/1)	-420	[]	LayTile	% Plain
+	(Q17/5)	-420	[]	LayTile	% Plain
+
+	(H18/4)	-445	[]	LayTile
+	(J18/5)	-429	[]	LayTile	% Plain
+	(L18/5)	-427	[]	LayTile	% Plain
+	(N18/0)	-423	[]	LayTile
+	(P18/0)	-420	[]	LayTile	% Plain
+	(R18/2)	-445	[]	LayTile
+
+	(I19/4)	-420	[]	LayTile	% Plain
+	(K19/5)	-420	[]	LayTile	% Plain
+	(M19/5)	-421	[]	LayTile	% Plain
+	(O19/1)	-434	[(KR)(#Nairobi)]	LayTile	% Plain
+	(Q19/1)	-426	[]	LayTile
+
+	(H20/5)	-405	[]	LayTile
+	(J20/0)	-466	[(CNR)(COR)(#B'ville)(#L'ville)]	LayTile	% Plain
+	(L20/0)	-420	[]	LayTile	% Plain
+	(N20/2)	-426	[]	LayTile
+	(P20/1)	-434	[(EAR)(#Mombasa)]	LayTile	% Plain
+
+	(I21/5)	-442	[(#Luanda)]	LayTile	% Plain
+	(K21/0)	-420	[]	LayTile	% Plain
+	(M21/0)	-423	[]	LayTile
+	(O21/0)	-420	[]	LayTile	% Plain
+	(Q21/1)	-405	[]	LayTile
+
+	(J22/3)	-420	[]	LayTile	% Plain
+	(L22/3)	-420	[]	LayTile	% Plain
+	(N22/4)	-426	[]	LayTile
+	(P22/3)	-436	[(UR)]	LayTile
+
+	(I23/0)	-447	[(#Lobito)]	LayTile	% Plain
+	(K23/5)	-420	[]	LayTile	% Plain
+	(M23/5)	-420	[]	LayTile	% Plain
+	(M23/1)	-475	[]	LayTile
+	(O23/0)	-423	[]	LayTile
+	(Q23/3)	-480	[(#Dar es Salaam)]	LayTile
+
+	(J24/0)	-420	[]	LayTile	% Plain
+	(L24/5)	-439	[]	LayTile	% Plain
+	(N24/0)	-420	[]	LayTile	% Plain
+	(P24/0)	-420	[]	LayTile	% Plain
+
+	(I25/0)	-447	[(#Benguela)]	LayTile	% Plain
+	(K25/4)	-420	[]	LayTile	% Plain
+	(M25/5)	-440	[(#Lusaka)]	LayTile	% Plain
+	(O25/0)	-420	[]	LayTile	% Plain
+
+	(J26/4)	-420	[]	LayTile	% Plain
+	(L26/5)	-427	[]	LayTile	% Plain
+	(N26/5)	-440	[(#Salisbury)]	LayTile	% Plain
+
+	(K27/0)	-420	[]	LayTile	% Plain
+	(M27/0)	-447	[(#Bulawayo)]	LayTile	% Plain
+	(O27/5)	-444	[(#Belra)]	LayTile	% Plain
+
+	(J28/0)	-447	[(#Walvis Bay)]	LayTile	% Plain
+	(L28/0)	-420	[]	LayTile	% Plain
+	(N28/0)	-420	[]	LayTile	% Plain
+
+	(K29/5)	-420	[]	LayTile	% Plain
+	(M29/5)	-420	[]	LayTile	% Plain
+
+	(J30/0)	-447	[(#Luderitz)]	LayTile	% Plain
+	(L30/0)	-447	[(#Mafeking)]	LayTile	% Plain
+	(N30/0)	-447	[(#Lourenco Marquet)]	LayTile	% Plain
+
+	(K31/5)	-427	[]	LayTile	% Plain
+	(M31/0)	-460	[(CSAR)(NZA)(#Pretoria)(#Jo'burg)]	LayTile	% Plain
+	(M31/4)	-476	[]	LayTile
+
+	(L32/5)	-427	[]	LayTile	% Plain
+	(N32/0)	-447	[(#Durban)]	LayTile	% Plain
+
+	(K33/0)	-420	[]	LayTile	% Plain
+	(M33/5)	-449	[(#Port Elizabeth)]	LayTile	% Plain
+
+	(J34/4)	-424	[]	LayTile
+	(L34/3)	-420	[]	LayTile	% Plain
+
+	(K35/4)	-431	[(CGHW)]	LayTile
+
+	(J36/4)	-406	[]	LayTile
+	(L36/3)	-480	[(#Cape Town)]	LayTile
+
+% Assorted text items
+	/Helvetica-Bold 84 selectfont
+	(O2/7) LayText moveto (18Africa) show
+	/Helvetica-Bold 40 selectfont
+	(O3/7) LayText moveto ( by Jeff Edmunds) show
+
+	/Helvetica 24 selectfont
+	(A19/7) LayText moveto
+   		(      5  Alexandria Railway        AR) show
+	(A20/7) LayText moveto
+   		(      3  Central South African    CSAR) show
+	(A21/7) LayText moveto
+   		(      2  Algiers-Oran                  AO) show
+	(A22/7) LayText moveto
+   		(      3  East Africa Railway       EAR) show
+	(A23/7) LayText moveto
+   		(      4  Congo Ocean Railway  COR) show
+	(A24/7) LayText moveto
+   		(      4  Egyptian National Rly    ENR) show
+	(A25/7) LayText moveto
+   		(      3  Kenyan Railway             KR) show
+	(A26/7) LayText moveto
+   		(      3  Cape of Good Hope & Western    CGHW) show
+	(A27/7) LayText moveto
+   		(      2  Marrakech-Fez                              MF) show
+	(A28/7) LayText moveto
+   		(      2  Morrocan National Railway           MNR) show
+	(A29/7) LayText moveto
+   		(      2  Nigerian Railway                           NR) show
+	(A30/7) LayText moveto
+   		(      3  Nederlands Zuid African Rly Co   NZA) show
+	(A31/7) LayText moveto
+   		(      2  Tangier Casablanca High Speed  TC) show
+	(A32/7) LayText moveto
+   		(      3  Timbuktu-Oran Railway                TOR) show
+	(A33/7) LayText moveto
+   		(      3  Sudan Railway                             SR) show
+	(A34/7) LayText moveto
+   		(      3  Ugandan Railway                         UR) show
+	(A35/7) LayText moveto
+   		(      4  Congolese National Railway        CNR) show
+
+	/Helvetica 24 selectfont
+	(Q25/7) LayText moveto (BONUSES)  show
+	(P26/7) LayText moveto (Cairo - Capetown = +80)  show
+	(P27/7) LayText moveto (Casab. - Jo'burg = +100) show
+	(O29/7) LayText moveto (Players  Money   Certificates) show
+	(O30/7) LayText moveto (      2        £782    16  28/23/19) show
+	(O31/7) LayText moveto (      3        £694    14  24/21/18) show
+	(O32/7) LayText moveto (      4        £606    12  18/16/14) show
+	(O33/7) LayText moveto (      5        £518    10  15/13/11) show
+	(O34/7) LayText moveto (      6        £430     8   12/11/  9) show
+	(O35/7) LayText moveto (      7        £342     6   10/  9/  8) show
+
+	% =================================
+	% INSERT YOUR TILES AND TOKENS HERE
+	% =================================
+
+	mapFrame
+% newgame: nameformat: '%s
+% newgame: namefont: /Bookman 84
+% newgame: namecoord: P5
+% newgame: roundfont: /Bookman 84
+% newgame: roundcoord: P7
+% newgame: copycoord: E1 G1
+% newgame: copycoord: D2
+% newgame: copycoord: D4 N4
+% newgame: copycoord: N6
+% newgame: copycoord: F10
+% newgame: copycoord: O11
+% newgame: copycoord: G15
+% newgame: copycoord: O19
+% newgame: copycoord: J20 P20
+% newgame: copycoord: P22
+% newgame: copycoord: M31
+% newgame: copycoord: K35

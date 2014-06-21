@@ -1,0 +1,1857 @@
+%
+% $Header: 18-defs.ps[1.18] Thu Apr 25 15:29:30 1996 doko@cs.tu-berlin.de saved $
+%
+
+% ------------------------------------------------------------
+% constants and procedures for drawing tiles
+
+/string5 6 string def
+
+/18xx-dict 600 dict def
+18xx-dict begin
+
+/maxGeneric 850 def
+
+/hexSide 2 cm def
+/hexHeight hexSide 30 cos mul def
+
+18xxVariant (1837) eq
+18xxVariant (1854) eq or
+18xxVariant (1838) eq or
+18xxVariant (1837sx) eq or
+18xxVariant (1865sar) eq or
+18xxVariant (1880) eq or
+18xxVariant (1881) eq or
+18xxVariant (18gb) eq or
+{
+	/stationRadius //hexHeight 3.35 div def
+} {
+	/stationRadius //hexHeight 2.65 div def
+} ifelse
+
+/trackWidth 6 def
+
+/hex_x0 270 cos //hexSide mul def   /hex_y0 270 sin //hexSide mul def
+/hex_x1 210 cos //hexSide mul def   /hex_y1 210 sin //hexSide mul def
+/hex_x2 150 cos //hexSide mul def   /hex_y2 150 sin //hexSide mul def
+/hex_x3  90 cos //hexSide mul def   /hex_y3  90 sin //hexSide mul def
+/hex_x4  30 cos //hexSide mul def   /hex_y4  30 sin //hexSide mul def
+/hex_x5 330 cos //hexSide mul def   /hex_y5 330 sin //hexSide mul def
+
+/mtRadius 0.55 cm def
+/mountain_x0 210 cos mtRadius mul def
+/mountain_y0 210 sin mtRadius mul def
+/mountain_x1  90 cos mtRadius mul def
+/mountain_y1  90 sin mtRadius mul def
+/mountain_x2 330 cos mtRadius mul def
+/mountain_y2 330 sin mtRadius mul def
+
+/mineSize //hexHeight 2.9 div def
+/mineBoxX //hexHeight 2.4 div def
+/mineBoxY //hexHeight 4.9 div def
+
+/pickX //hexHeight 5.2 div def
+/pickY //hexHeight 5.3 div def
+/pickTopX //hexHeight 5.0 div def
+/pickTopY //hexHeight 5.0 div def
+/pickTopOrig //hexHeight 22.2 div def
+/pickWidth 2 def
+
+/tlGround 0 def
+/tlYellow 1 def
+/tlGreen  2 def
+/tlBrown  3 def
+/tlRusset 4 def % 1829
+/tlGray   5 def % 1829
+/tlRed    6 def % 1830 1835
+/tlSpecialArea 7 def % 1837 Bosnia, 1853 Ganges
+/tlCopper 8 def % 18Mex
+/tlBlue   9 def % 1848A
+/tlBarr   10 def
+/tlPyjama 11 def % 1829
+/tlNoHex  12 def
+/tlTransparent  13 def
+
+/tlPlain         0 def
+/tlWater         1 def
+/tlWater2        2 def  % i.e. 1829 north
+/tlWater3        3 def  % i.e. 1829 north 
+/tlMountain      4 def  % 
+/tlMountain2     5 def  % 1853
+/tlHill          6 def  % 1853
+/tlHillWater     7 def  % 1853
+/tlMountainWater 8 def  % 1853
+/tlWater4        9 def  % 1870
+/tlAlp          10 def  % 1839
+/tlAppennine    11 def  % 1839
+/tlPort			12 def  % 1839
+/tlGrass		13 def  % 1830BC
+/tlTree 		14 def  % 1830BC
+/tlYucca		15 def	% 18MX
+/tlPort2		16 def  % 1846
+/tlPrivate		17 def  % many
+/tlPickShovel	18 def  % 1812
+/tlMountain3    19 def  % 18oe
+
+/stdGauge     0 def
+/narrowGauge  1 def  % 1853
+/dualGauge    2 def  % 1853
+/tunnelGauge  3 def  % 1853
+/twinGauge    4 def  % 18GL
+/tripleGauge  5 def  % 1831
+/quadGauge    6 def  % 1831
+/thinGauge    7 def  % 1873
+
+/orSouthWest 0 def
+/orWest      1 def
+/orNorthWest 2 def
+/orNorthEast 3 def
+/orEast      4 def
+/orSouthEast 5 def
+
+/noStation 0 def
+
+/valRadius 0.28 cm def
+/valADist //valRadius 0.7 cm add def
+/valBDist //valRadius 0.5 cm add def
+/valCDist //valRadius 0.2 cm add def
+/valDDist //valRadius 1.2 cm add def
+/valEDist //valRadius 0.15 cm add def
+/valFont { /Helvetica 10 } def
+
+/labFDist 1.0 cm def
+/labEDist 0.45 cm def
+/labDDist 1.5 cm def
+/labCDist 0.5 cm def
+/labBDist 1.2 cm def
+/labADist 0.7 cm def
+
+/axisNormal   0 def
+/axisNumBack  1 def
+/axisLetBack  2 def
+/axisBothBack 3 def
+
+/axisDirection //axisNormal def
+
+/tileSitting false def
+/axesSwapped false def
+
+/useSexavigenary false def
+
+% TilePath: - ==> -
+%   draw hexborder with predefined stroke width
+%   middle of hex at origin
+/TilePath {
+	newpath
+	//hex_x0 //hex_y0 moveto
+	//hex_x1 //hex_y1 lineto
+	//hex_x2 //hex_y2 lineto
+	//hex_x3 //hex_y3 lineto
+	//hex_x4 //hex_y4 lineto
+	//hex_x5 //hex_y5 lineto
+	closepath
+} bind def
+
+/MountainPath {
+	newpath
+	//mountain_x0 //mountain_y0 moveto
+	//mountain_x1 //mountain_y1 lineto
+	//mountain_x2 //mountain_y2 lineto
+	closepath
+} bind def
+
+/HillPath {
+	newpath
+	//mountain_x0 //mountain_y0 moveto
+	//mountain_x1 //mountain_y1 0.3 mul lineto
+	//mountain_x2 //mountain_y2 lineto
+	closepath
+} bind def
+
+/waveRadius 0.2 cm def
+/waveHeight //waveRadius 45 cos mul def
+
+/WaterPath {
+	newpath
+	//waveHeight -2 mul //waveHeight neg //waveRadius 135 45 arcn
+	0 //waveHeight //waveRadius 225 315 arc
+	//waveHeight 2 mul //waveHeight neg //waveRadius 135 45 arcn
+} bind def
+
+/Anchor {
+	gsave
+		2 setlinewidth
+		newpath
+		0 0 stationRadius .75 mul 240 300 arc stroke
+		newpath
+		0 stationRadius .75 mul neg moveto
+		0 0.375 stationRadius mul lineto stroke
+		newpath
+		0.3 stationRadius mul neg 0 moveto
+		0.3 stationRadius mul 0 lineto stroke
+		newpath
+		1 setlinewidth
+		0 stationRadius .475 mul stationRadius .1 mul 0 360 arc stroke
+	grestore
+} def
+
+% TileBorder: - => -
+%   draw tile border with predefined stroke width
+%   middle of hex at origin
+/TileBorder {
+	gsave
+		HexPath stroke
+	grestore
+} def
+
+/haveColor glob-known not {
+  /haveColor false def
+  systemdict /statusdict known {
+    statusdict /processcolors known {
+      /haveColor processcolors 1 ne def
+    } if
+  } if
+} if
+% /haveColor false def
+
+/ColorNameTable [
+	(beige)
+	(yellow)
+	(green)
+	(brown)
+	(russet)
+	(gray)
+	(red)
+	(special)
+	(copper)
+	(blue)
+	(barrier)
+	(pyjama)
+	(nohex)
+	(transparent)
+] def
+
+haveColor {
+	/colorTable [
+		[ 1    1    1    ] % ground
+		[ 1    1    0    ] % yellow
+		[ 0    1    0    ] % green
+		[ 0.2  0.3  0.7  ] % brown
+		[ 0.5  0.35 0.25 ] % russet
+		[ 0.5  0.5  0.5  ] % gray
+		[ 1    0    0    ] % red
+		[ 0.5  0.5  0    ] % special area
+		[ 0.28 0.55 0.8  ] % copper
+		[ 0    0    0.6  ] % blue
+		[ 0    0    1    ] % barrier
+		[ 0.3  0.3  0.3  ] % pyjama (not used)
+	] def
+	/c1 { 255 div } def
+	/XcolorTable [
+		[ 245 c1 245 c1 220 c1 ] % ground  % beige
+		[ 255 c1 255 c1   0 c1 ] % yellow
+		[ 100 c1 225 c1 100 c1 ] % green   % my own creation ...
+		[ 205 c1 102 c1   0 c1 ] % brown   % darkorange3
+		[ 238 c1 118 c1  33 c1 ] % russet  % chocolate2 (dark orange?)
+		[ 190 c1 190 c1 190 c1 ] % gray    % gray
+		[ 255 c1 100 c1 100 c1 ] % red     % red
+		[ 255 c1 228 c1 196 c1 ] % special area % bisque
+		[ 238 c1 135 c1  75 c1 ] % copper
+		[ 100 c1 100 c1 225 c1 ] % blue
+		[  30 c1 144 c1 255 c1 ] % barrier  % DodgerBlue
+		[ 176 c1  48 c1  96 c1 ] % pyjama  % maroon
+		[ 255 c1 255 c1 255 c1 ] % noHex  % white
+		[ 255 c1 255 c1 255 c1 ] % Transparent  % white
+	] def
+} {
+	/grayTable [
+		1	% 0 ground
+		0.97	% 1 yellow
+		0.9	% 2 green
+		0.7	% 3 brown
+		0.7	% 4 russet
+		0.5	% 5 gray
+		0.4	% 6 red
+		0.99	% 7 special area
+		0.8 % 8 copper
+		0.5 % 9 blue
+		0.3	% 10 barrier
+		0.3	% 11 pyjama
+		1	% 12 noHex
+		1	% 13 Transparent
+	] def
+} ifelse
+
+% TileColor: color => -
+/TileColor {
+	/tileColor exch def
+	currentgray
+	tileColor //tlBarr le {
+		% uni color
+		tileColor haveColor {
+			XcolorTable exch get
+			aload pop
+			setrgbcolor
+		} {
+			grayTable exch get
+			setgray
+		} ifelse
+		TilePath fill
+	} if
+	tileColor tlPyjama eq {
+		% special color (1829 pyjama)
+		gsave
+			TilePath clip
+			newpath
+			//hexSide dup add setlinewidth
+			240 cos //hexHeight mul  240 sin //hexHeight mul
+				moveto
+			 60 cos //hexHeight mul   60 sin //hexHeight mul
+				lineto
+			[ 0.5 cm 0.5 cm ] 0 setdash
+			//tlRusset haveColor {
+				XcolorTable exch get
+				aload pop
+				setrgbcolor
+			} {
+				grayTable exch get
+				setgray
+			} ifelse
+			stroke
+
+			240 cos //hexHeight mul  240 sin //hexHeight mul
+				moveto
+			 60 cos //hexHeight mul   60 sin //hexHeight mul
+				lineto
+			[ 0.5 cm 0.5 cm ] 0.5 cm setdash
+			//tlGray haveColor {
+				XcolorTable exch get
+				aload pop
+				setrgbcolor
+			} {
+				grayTable exch get
+				setgray
+			} ifelse
+			stroke
+		grestore
+	} if
+	setgray
+} def
+
+% TileNumber: int => -
+%   print label (usually #) on SW edge
+%   middle of hex at origin
+/TileNumber {
+	gsave
+		/tnum exch def
+		/tileCodes glob-known {
+			/tile tileCodes tnum get def
+			tile 7 get
+		} {
+			tnum string5 cvs
+		} ifelse
+		0 hexSide neg translate
+		-30 rotate
+		/Helvetica 8 selectfont
+		-0.1 cm 0.1 cm 3 -1 roll
+		rightshow
+	grestore
+} def
+
+% ------------------------------------------------------------
+% drawing track and stations on tiles
+
+% StrokeTrack: type => -
+/StrokeTrack {
+	/trackType exch def
+	currentlinewidth
+	//stdGauge trackType eq {
+		trackWidth setlinewidth stroke
+	} if
+	//tunnelGauge trackType eq {
+		trackWidth setlinewidth
+		currentdash
+		[ 6 6 ] 0 setdash
+		stroke
+		setdash
+	} if
+	//narrowGauge trackType eq {
+		gsave
+			gsave
+				trackWidth setlinewidth stroke
+			grestore
+			1 setgray
+			trackWidth 0.7 mul setlinewidth stroke
+		grestore
+		trackWidth setlinewidth
+		currentdash
+		[ 6 6 ] 0 setdash
+		stroke
+		setdash
+	} if
+	//dualGauge trackType eq {
+		gsave
+		trackWidth setlinewidth stroke
+		grestore
+		currentgray 1 setgray
+		trackWidth 0.4 mul setlinewidth stroke
+		setgray
+	} if
+	//twinGauge trackType eq {
+		gsave
+		trackWidth 2.5 mul setlinewidth stroke
+		grestore
+		currentgray 1 setgray
+		trackWidth 0.5 mul setlinewidth stroke
+		setgray
+	} if
+	//tripleGauge trackType eq {
+		gsave
+			gsave
+				trackWidth 4 mul setlinewidth stroke
+			grestore
+			currentgray 1 setgray
+			trackWidth 2 mul setlinewidth stroke
+			setgray
+		grestore
+		trackWidth setlinewidth stroke
+	} if
+	//quadGauge trackType eq {
+		gsave
+			gsave
+				gsave
+					trackWidth 5.5 mul setlinewidth stroke
+				grestore
+				currentgray 1 setgray
+				trackWidth 3.5 mul setlinewidth stroke
+				setgray
+			grestore
+			trackWidth 2.5 mul setlinewidth stroke
+		grestore
+		currentgray 1 setgray
+		trackWidth 0.5 mul setlinewidth stroke
+		setgray
+	} if
+	//thinGauge trackType eq {
+		1 setlinewidth stroke
+	} if
+	setlinewidth
+} def
+
+% TunnelEntrance: orientation => -
+%   tunnel entrance in position <pos> 
+/TunnelEntrance {
+	gsave
+		0.5 add -60 mul rotate
+		0 hexHeight neg translate
+		newpath
+		1 setlinewidth
+		0.5 setgray
+		//trackWidth 4 div 0 //trackWidth 2 mul 0 90 arc
+		//trackWidth 4 div neg 0 //trackWidth 2 mul 90 180 arc
+		//trackWidth 4 div //trackWidth 4 mul moveto
+		//trackWidth 4 div neg //trackWidth 4 mul lineto
+		//trackWidth 2.25 mul neg 0 moveto
+		//trackWidth 2.25 mul 0 lineto
+		fill
+	grestore
+} def
+
+% OffBoardTrack: orientation => -
+%   off-board connection in position <pos> 
+/OffBoardTrack {
+	gsave
+		0.5 add -60 mul /trackRotation exch def
+		trackRotation rotate
+		0 hexHeight neg translate
+		newpath
+		//trackWidth 0.8 mul dup neg 0 moveto 0 lineto 0 //trackWidth 3 mul lineto
+		closepath fill
+	grestore
+} def
+
+% DividingLine: orientation => -
+%   Line from centre to <pos>
+/DividingLine {
+	gsave
+		-60 mul rotate
+		newpath
+		0 0 moveto
+		0 hex_y0 rlineto
+		1 setlinewidth
+		stroke
+	grestore
+} def
+
+% AppenninePass: orientation => -
+%   Draw sides of Appennine pass; precedes station
+/AppenninePass {
+	gsave
+		0.5 add -60 mul rotate
+		1 setlinewidth
+		newpath
+		-6 0 moveto
+		0 hexHeight 15 sub neg rlineto
+		-5 -5 rlineto
+		stroke
+		newpath
+		6 0 moveto
+		0 hexHeight 15 sub neg rlineto
+		5 -5 rlineto
+		stroke
+	grestore
+} def
+
+% SBahn: orientation => -
+%   Draw sides of S-Bahn track
+/SBahn {
+	gsave
+		0.5 add -60 mul rotate
+		1 setlinewidth
+		newpath
+		-11 //stationRadius neg moveto
+		5 -5 rlineto
+		0 hexHeight 15 sub neg //stationRadius add rlineto
+		-5 -5 rlineto
+		stroke
+		newpath
+		11 //stationRadius neg moveto
+		-5 -5 rlineto
+		0 hexHeight 15 sub neg //stationRadius add rlineto
+		5 -5 rlineto
+		stroke
+	grestore
+} def
+
+% AlpinePass: orientation => -
+%   Draw end of Alpine pass; follows station
+/AlpinePass {
+	gsave
+		0.5 add -60 mul rotate
+		1 setlinewidth
+		newpath
+		-8 9 hexHeight sub moveto
+		3 3 rlineto
+		10 0 rlineto
+		3 -3 rlineto
+		stroke
+		//trackWidth setlinewidth
+		newpath
+		0 hexHeight neg moveto
+		0 12 rlineto
+		stroke
+	grestore
+} def
+
+% StraightTrack: (station) stpos len type orientation => -
+%   straight track in position <pos> (tile #9)
+%   draw station if stpos ne 0; if stpos eq 0, no string on stack!
+/StraightTrack {
+	gsave
+		0.5 add -60 mul /trackRotation exch def
+		trackRotation rotate
+		newpath
+		% length and start of track
+		exch
+		dup 0 gt {
+			0 hexHeight neg moveto
+			0 exch hexHeight 2 mul mul rlineto
+		} {
+			0 hexHeight moveto
+			0 exch hexHeight 2 mul mul rlineto
+		} ifelse
+		StrokeTrack
+		% station
+		dup 0 eq {
+			pop
+		} {
+			0 exch hexHeight 2 mul mul hexHeight sub translate
+			/currentRotation currentRotation trackRotation add def
+			Station
+			/currentRotation currentRotation trackRotation sub def
+		} ifelse
+	grestore
+} def
+
+
+% WideTrack: (station) stpos len type orientation => -
+%   wide curve in position <pos> (tile #8)
+%   draw station if stpos ne 0; if stpos eq 0, no string on stack!
+/WideTrack {
+	gsave
+		-60 mul /trackRotation exch def
+		trackRotation rotate
+		newpath
+		/gaugeType exch def
+		hexHeight -2 mul 0 hexSide 1.5 mul
+		4 -1 roll dup 0 gt {
+			-30 exch 60 mul -30 add
+		} {
+			60 mul 30 add 30
+		} ifelse
+		arc
+		currentlinewidth
+			trackWidth setlinewidth gaugeType StrokeTrack
+		setlinewidth
+		% station
+		dup 0 eq {
+			pop
+		} {
+			dup 0 lt { 1 add } if
+			hexHeight -2 mul 0 translate
+			60 mul -30 add dup rotate
+			trackRotation add /trackRotation exch def
+			/currentRotation currentRotation trackRotation add def
+			hexSide 1.5 mul 0 translate
+			Station
+			/currentRotation currentRotation trackRotation sub def
+		} ifelse
+	grestore
+} def
+
+
+% SharpTrack: (station) stpos len type orientation => -
+%   sharp curve in position <pos> (tile #7)
+%   draw station if stpos ne 0; if stpos eq 0, no string on stack!
+/SharpTrack {
+	gsave
+		1 add -60 mul /trackRotation exch def
+		trackRotation rotate
+		/gaugeType exch def
+		newpath
+		0 hexSide neg hexSide 0.5 mul
+		4 -1 roll dup 0 gt {
+			30 exch 120 mul 30 add
+		} {
+			120 mul 150 add 150
+		} ifelse
+		arc
+		currentlinewidth
+			trackWidth setlinewidth gaugeType StrokeTrack
+		setlinewidth
+		% station
+		dup 0 eq {
+			pop
+		} {
+			dup 0 lt { 1 add } if
+			0 hexSide neg translate
+			120 mul 30 add dup rotate
+			trackRotation add /trackRotation exch def
+			/currentRotation currentRotation trackRotation add def
+			hexSide 0.5 mul 0 translate
+			Station
+			/currentRotation currentRotation trackRotation sub def
+		} ifelse
+	grestore
+} def
+
+
+% Station: (str) => -
+/Station {
+	dup () eq {
+		% small
+		pop
+		newpath
+		//trackWidth -1.5 mul dup 0 moveto
+		neg 0 lineto
+		currentlinewidth //trackWidth setlinewidth stroke setlinewidth
+	} {
+		dup (£) eq {
+			% small grey
+			pop
+			newpath
+			//trackWidth -1.5 mul dup 0 moveto
+			neg 0 lineto
+			currentgray
+			0.5 setgray
+			currentlinewidth //trackWidth setlinewidth stroke setlinewidth
+			setgray
+		} {
+			% big
+			gsave
+				0 0 //stationRadius 0 360 arc
+				gsave
+					gsave 1 setgray fill grestore stroke
+				grestore
+				clip newpath
+				currentRotation neg rotate
+				dup (~) eq {
+					3 setlinewidth
+					//stationRadius 0.7 mul neg 0 moveto
+					//stationRadius 0.7 mul 0 lineto stroke
+				} {
+					/Helvetica-Bold 13 selectfont
+					0 0 3 -1 roll xycentershow
+				} ifelse
+			grestore
+		} ifelse
+	} ifelse
+} def
+
+% DoubleStation: (left) (right) => -
+/DoubleStation {
+	gsave
+		[ //stationRadius neg dup //stationRadius 2 mul dup ]
+		dup currentgray exch 1 setgray rectfill setgray rectstroke
+		//stationRadius 0 translate stationMarker Station
+		//stationRadius 2 mul neg 0 translate stationMarker Station
+	grestore
+} def
+
+% TripleInLineStation (left) (middle) (right) => -
+/TripleInLineStation {
+	gsave
+		[ //stationRadius 2 mul neg //stationRadius -1 mul
+		  //stationRadius 4 mul //stationRadius 2 mul ]
+		dup currentgray exch 1 setgray rectfill setgray rectstroke
+		//stationRadius 2 mul 0 translate stationMarker Station
+		//stationRadius 2 mul neg 0 translate stationMarker Station
+		//stationRadius 2 mul neg 0 translate stationMarker Station
+	grestore
+} def
+
+% TripleStation: (lower left) (top) (lower right) dist background => -
+/TripleStation {
+	exch /r exch def
+	{
+		gsave
+			30 rotate
+			r 2 div //stationRadius add //hexHeight div dup scale
+			TilePath gsave 1 setgray fill grestore stroke
+		grestore
+	} if
+	gsave
+		gsave -30 rotate r 0 translate 30 rotate stationMarker Station grestore
+		gsave 0 r translate stationMarker Station grestore
+		30 rotate r neg 0 translate -30 rotate stationMarker Station
+	grestore
+} def
+
+% QuadrupleStation: (lower left) (upper left) (upper right) (lower right) => -
+/QuadrupleStation {
+	gsave
+		[ //stationRadius -1.7 mul dup //stationRadius 3.4 mul dup ]
+		%[ //stationRadius neg dup //stationRadius 2 mul dup ]
+		dup currentgray exch 1 setgray rectfill setgray rectstroke
+		//stationRadius dup neg translate stationMarker Station
+		//stationRadius 2 mul neg 0 translate stationMarker Station
+		0 //stationRadius 2 mul translate stationMarker Station
+		//stationRadius 2 mul 0 translate stationMarker Station
+	grestore
+} def
+
+% QuintupleStation: (lower left) (upper left) (upper right) (lower right) => -
+/QuintupleStation {
+	gsave
+		/sRad //stationRadius 36 sin div def
+		/pRad sRad //stationRadius add def
+		newpath
+		pRad   0 cos mul pRad   0 sin mul moveto
+		pRad  72 cos mul pRad  72 sin mul lineto
+		pRad 144 cos mul pRad 144 sin mul lineto
+		pRad 216 cos mul pRad 216 sin mul lineto
+		pRad 288 cos mul pRad 288 sin mul lineto
+		closepath
+		gsave
+			1 setgray fill
+		grestore
+		1 setlinewidth stroke
+		sRad 0 cos mul sRad 0 sin mul translate stationMarker Station
+		sRad 0 cos mul neg sRad 0 sin mul neg translate 
+		sRad 72 cos mul sRad 72 sin mul translate stationMarker Station
+		sRad 72 cos mul neg sRad 72 sin mul neg translate
+		sRad 144 cos mul sRad 144 sin mul translate stationMarker Station
+		sRad 144 cos mul neg sRad 144 sin mul neg translate
+		sRad 216 cos mul sRad 216 sin mul translate stationMarker Station
+		sRad 216 cos mul neg sRad 216 sin mul neg translate
+		sRad 288 cos mul sRad 288 sin mul translate stationMarker Station
+		sRad 288 cos mul neg sRad 288 sin mul neg translate
+	grestore
+} def
+
+% QuincunctialStation: (lower left) (upper left) (middle)
+% (upper right) (lower right) => -
+/QuincunctialStation {
+	gsave
+		[ //stationRadius -3 mul 60 sin mul
+		  //stationRadius -3 mul 60 cos mul
+		  //stationRadius 6 mul 60 sin mul
+  		  //stationRadius 6 mul 60 cos mul ]
+		dup currentgray exch 1 setgray rectfill setgray rectstroke
+		//stationRadius -2 mul 60 sin mul //stationRadius -2 mul 60 cos mul
+		   	translate stationMarker Station
+		//stationRadius 4 mul 60 sin mul 0
+		   	translate stationMarker Station
+		//stationRadius -2 mul 60 sin mul //stationRadius 2 mul 60 cos mul
+		   	translate stationMarker Station
+		//stationRadius -2 mul 60 sin mul //stationRadius 2 mul 60 cos mul
+		   	translate stationMarker Station
+		//stationRadius 4 mul 60 sin mul 0
+		   	translate stationMarker Station
+	grestore
+} def
+
+% SextupleStation: (t) () (t) (t) () () (size) => -
+/SextupleStation {
+	/size exch def
+	gsave
+		/sRad //stationRadius 30 sin div size div def
+		/pRad sRad //stationRadius size div add def
+		newpath
+		pRad  30 cos mul pRad  30 sin mul moveto
+		pRad  90 cos mul pRad  90 sin mul lineto
+		pRad 150 cos mul pRad 150 sin mul lineto
+		pRad 210 cos mul pRad 210 sin mul lineto
+		pRad 270 cos mul pRad 270 sin mul lineto
+		pRad 330 cos mul pRad 330 sin mul lineto
+		closepath
+		gsave
+			1 setgray fill
+		grestore
+		1 setlinewidth stroke
+		sRad 30 cos mul sRad 30 sin mul translate stationMarker Station
+		sRad 30 cos mul neg sRad 30 sin mul neg translate 
+		sRad 90 cos mul sRad 90 sin mul translate stationMarker Station
+		sRad 90 cos mul neg sRad 90 sin mul neg translate
+		sRad 150 cos mul sRad 150 sin mul translate stationMarker Station
+		sRad 150 cos mul neg sRad 150 sin mul neg translate
+		sRad 210 cos mul sRad 210 sin mul translate stationMarker Station
+		sRad 210 cos mul neg sRad 210 sin mul neg translate
+		sRad 270 cos mul sRad 270 sin mul translate stationMarker Station
+		sRad 270 cos mul neg sRad 270 sin mul neg translate
+		sRad 330 cos mul sRad 330 sin mul translate stationMarker Station
+		sRad 330 cos mul neg sRad 330 sin mul neg translate
+	grestore
+} def
+
+
+% BridgedTripleStation: (left) (upper right) (lower right) => -
+/BridgedTripleStation {
+	gsave
+		newpath
+			//stationRadius -1.25 mul //stationRadius moveto
+			//stationRadius  1.25 mul //stationRadius 2 mul lineto
+			//stationRadius  2.25 mul //stationRadius lineto
+			//stationRadius  2.25 mul //stationRadius neg lineto
+			//stationRadius  1.25 mul //stationRadius -2 mul lineto
+			//stationRadius -1.25 mul //stationRadius neg lineto
+		closepath
+		gsave
+			1 setgray fill
+		grestore
+		1 setlinewidth stroke
+		//stationRadius 0.25 mul //stationRadius moveto
+		//stationRadius 0.25 mul //stationRadius neg lineto
+		stroke
+		gsave
+			//stationRadius -0.25 mul 0 moveto
+			//stationRadius 0.25 mul 0 lineto
+			//trackWidth setlinewidth stroke
+		grestore
+		//stationRadius 1.25 mul //stationRadius neg
+			translate stationMarker Station
+		0 //stationRadius 2 mul
+			translate stationMarker Station
+		//stationRadius -2.5 mul //stationRadius neg
+			translate stationMarker Station
+	grestore
+} def
+
+% stationMarker:
+%   if top element mark, add ( ) on stack
+/stationMarker {
+	dup mark eq { ( ) } if
+} def
+
+% SquareStation: (str) => -
+/SquareStation {
+	gsave
+		currentRotation neg rotate
+		0.5 setlinewidth
+		[ //stationRadius neg dup //stationRadius 2 mul dup ]
+		dup dup currentgray exch 1 setgray rectfill setgray rectstroke
+		rectclip
+		/Helvetica-Bold 13 selectfont
+		0 0 3 -1 roll xycentershow
+	grestore
+} def
+
+% DoubleSquareStation: (left) (right) => -
+/DoubleSquareStation {
+	gsave
+		//stationRadius 0 translate stationMarker SquareStation
+		//stationRadius 2 mul neg 0 translate stationMarker SquareStation
+	grestore
+} def
+
+% MixedStation: (left) (right) => -
+/MixedStation {
+	gsave
+		currentRotation neg rotate
+		0.5 setlinewidth
+		[ //stationRadius neg dup //stationRadius 2 mul dup ]
+		dup currentgray exch 1 setgray rectfill setgray rectstroke
+		newpath
+		//stationRadius 0 translate stationMarker SquareStation
+		//stationRadius 2 mul neg 0 translate stationMarker Station
+	grestore
+} def
+
+% DoubleDit => -
+/DoubleDit {
+	/r //trackWidth 0.8 mul def
+	/rx r 1.2 mul def
+	rx neg 0 rx 90 270 arc
+	rx     0 rx 270 90 arc
+	rx neg rx neg moveto
+	rx rx neg lineto
+	rx neg rx moveto
+	rx rx lineto
+	0.5 setlinewidth
+	gsave
+		tileColor 
+		haveColor {
+			XcolorTable exch get
+			aload pop
+			setrgbcolor
+		} {
+			grayTable exch get
+			setgray
+		} ifelse
+		fill
+	grestore
+	stroke
+	gsave
+		0 setgray
+		rx neg 0 r 0 360 arc fill
+		rx 0 r 0 360 arc fill
+	grestore
+} def
+
+% TilePosition pos dist => -
+%   translates origin. if pos
+%     12: do nothing, discard dist
+%     0..5: move origin to side with distance
+%     6..11: move origin to corner with dist distance
+%   
+/TilePosition {
+	exch dup 12 eq {
+		pop pop
+	} {
+		% corner or edge
+		dup 6 lt {
+			/len //hexHeight def
+		} {
+			/len //hexSide def
+		} ifelse
+		% rotation
+		dup 6 mod -60 mul exch 6 lt { -30 add } if
+		/tpRotation exch def
+		tpRotation rotate
+		% translation
+		dup 0 lt {
+			0 exch
+		} {
+			len neg exch add 0 exch
+		} ifelse
+		translate
+		tpRotation neg rotate
+	} ifelse
+} def
+
+% NameTilePosition pos dist (name) => -
+%   translates origin. if pos
+%     12: do nothing, discard dist
+%     0..5: move origin to side with distance
+%     6..11: move origin to corner with dist distance
+%   then fixes position so name will fit
+%   
+/NameTilePosition {
+	/tpWidth exch stringwidth pop 2 div def
+	exch dup 12 eq {
+		pop pop
+	} {
+		% corner or edge
+		dup 6 lt {
+			/len //hexHeight def
+		} {
+			/len //hexSide def
+		} ifelse
+		% rotation
+		dup 6 mod 60 mul exch 6 lt { 30 add } if
+		/tpRotation exch def
+		dup 0 ge {
+			len neg add
+		} if
+		dup
+		tpRotation cos mul /tpY exch def
+		tpRotation sin mul /tpX exch def
+		% tpLeftR is the distance outside the incircle along a radius of
+		% the left end of (name).  tpRightR is the same for the right
+		% end.  Recall that (name) is rotated with respect to the
+		% direction we call up here before printing.
+		/tpLeftR
+			tpX tpWidth currentRotation neg cos mul sub dup mul
+			tpY tpWidth currentRotation neg sin mul sub dup mul add sqrt
+			//hexHeight 0.1 cm sub sub def
+		/tpRightR
+			tpX tpWidth currentRotation neg cos mul add dup mul
+			tpY tpWidth currentRotation neg sin mul add dup mul add sqrt
+			//hexHeight 0.1 cm sub sub def
+		% If tpLeftR is positive, then (name) will get clipped at its
+		% left end.  Therefore, move the centre of (name) to the right.
+		% Similarly, if tpRightR is positive, move the centre to the
+		% left.
+		tpLeftR 0 gt
+		{
+			tpLeftR tpRightR neg gt
+			{
+				% The name overhangs at both ends.  Centre it.
+				/tpX tpX tpLeftR tpRightR sub 2 div
+					currentRotation neg cos mul add def
+				/tpY tpY tpLeftR tpRightR sub 2 div
+					currentRotation neg sin mul add def
+			} {
+				/tpX tpX tpLeftR currentRotation neg cos mul add def
+				/tpY tpY tpLeftR currentRotation neg sin mul add def
+			} ifelse
+		} {
+			tpRightR 0 gt
+			{
+				tpRightR tpLeftR neg gt
+				{
+					% The name overhangs at both ends.  Centre it.
+					/tpX tpX tpLeftR tpRightR sub 2 div
+						currentRotation neg cos mul add def
+					/tpY tpY tpLeftR tpRightR sub 2 div
+						currentRotation neg sin mul add def
+				} {
+					/tpX tpX tpRightR currentRotation neg cos mul sub def
+					/tpY tpY tpRightR currentRotation neg sin mul sub def
+				} ifelse
+			} if
+		} ifelse
+
+		tpX tpY translate
+	} ifelse
+} def
+
+
+/waterWidth 2.0 def
+/Terrains [
+	% tlPlain
+	{ }
+	% tlWater
+	{
+		//waterWidth setlinewidth
+		WaterPath stroke
+	}
+	% tlWater2
+	{
+		0 -0.1 cm translate
+		//waterWidth setlinewidth
+		WaterPath stroke
+		0 0.2 cm translate
+		WaterPath stroke
+	}
+	% tlWater3
+	{
+		//waterWidth setlinewidth
+		WaterPath stroke
+		0 -0.2 cm translate
+		WaterPath stroke
+		0 0.4 cm translate
+		WaterPath stroke
+	}
+	% tlMountain
+	{
+		2.2 setlinewidth
+		MountainPath stroke
+	}
+	% tlMountain2
+	{
+		2.2 setlinewidth
+		MountainPath stroke
+		0.6 dup scale
+		2.2 1 0.6 div mul setlinewidth
+		MountainPath stroke
+	}
+	% tlHill
+	{
+		2.2 setlinewidth
+		HillPath stroke
+	}
+	% tlHillWater
+	{
+		2.2 setlinewidth
+		0 0.4 cm translate
+		HillPath stroke
+		//waterWidth setlinewidth
+		0 -0.6 cm translate
+		WaterPath stroke
+	}
+	% tlMountainWater
+	{
+		2.2 setlinewidth
+		0 0.1 cm translate
+		MountainPath stroke
+		//waterWidth setlinewidth
+		0 -0.6 cm translate
+		WaterPath stroke
+	}
+	% tlWater4
+	{
+		//waterWidth setlinewidth
+		WaterPath stroke
+		0 -0.2 cm translate
+		WaterPath stroke
+		0 0.4 cm translate
+		WaterPath stroke
+		0 0.2 cm translate
+		WaterPath stroke
+	}
+	% tlAlp
+	{
+		1 setlinewidth
+		newpath
+		0 0 stationRadius 0 360 arc stroke
+		newpath
+		-2.165 stationRadius mul -1.25 stationRadius mul moveto
+		2.165 stationRadius mul -1.25 stationRadius mul lineto
+		0 2.5 stationRadius mul lineto
+		closepath stroke
+	}
+	% tlAppennine
+	{
+		1 setlinewidth
+		newpath
+		0 0 stationRadius 0 360 arc stroke
+		newpath
+		-1.73 stationRadius mul -1 stationRadius mul moveto
+		1.73 stationRadius mul -1 stationRadius mul lineto
+		0 2 stationRadius mul lineto
+		closepath stroke
+	}
+	% tlPort
+	{
+		Anchor
+	}
+	% tlGrass
+	{
+		2 setlinewidth
+		newpath
+		stationRadius 2 div neg 0 moveto
+		stationRadius 2 div 0 lineto stroke
+		1 setlinewidth
+		stationRadius 2 mul neg 0 stationRadius 1.5 mul 0 25 arc stroke
+		stationRadius 2.75 mul neg 0 stationRadius 2.5 mul 0 20 arc stroke
+		stationRadius 3.5 mul neg 0 stationRadius 3.5 mul 0 15 arc stroke
+		stationRadius 3.5 mul 0 stationRadius 3.5 mul 165 180 arc stroke
+		stationRadius 2.75 mul 0 stationRadius 2.5 mul 160 180 arc stroke
+		stationRadius 2 mul 0 stationRadius 1.5 mul 155 180 arc stroke
+	}
+	% tlTree
+	{
+		1 setlinewidth
+		newpath
+		stationRadius 10 div neg 0 moveto
+		stationRadius 10 div 0 lineto
+		0 stationRadius lineto
+		closepath stroke
+		0 stationRadius 1.35 mul stationRadius 0.35 mul 0 360 arc stroke
+		stationRadius 0.3 mul neg
+			stationRadius stationRadius 0.35 mul 0 360 arc stroke
+		stationRadius 0.3 mul
+			stationRadius stationRadius 0.35 mul 0 360 arc stroke
+	}
+	% tlYucca
+	{
+		0.5 setlinewidth
+		newpath
+		stationRadius 0.5 mul neg 0 moveto
+		stationRadius 0.5 mul 0 lineto
+		stationRadius 0.1 mul neg 0 moveto
+		stationRadius 0.1 mul neg stationRadius 1.5 mul lineto
+		stationRadius 0.1 mul 0 moveto
+		stationRadius 0.1 mul stationRadius 1.5 mul lineto
+		0 stationRadius 1.5 mul stationRadius 0.1 mul 0 180 arc stroke
+
+		stationRadius 0.2 mul neg stationRadius 0.7 mul moveto
+		stationRadius 0.1 mul neg stationRadius 0.7 mul lineto
+		stationRadius 0.2 mul neg stationRadius 0.8 mul moveto
+		stationRadius 0.1 mul neg stationRadius 0.8 mul lineto
+		stationRadius 0.3 mul neg stationRadius 0.8 mul moveto
+		stationRadius 0.3 mul neg stationRadius 1.1 mul lineto
+		stationRadius 0.2 mul neg stationRadius 0.8 mul moveto
+		stationRadius 0.2 mul neg stationRadius 1.1 mul lineto
+		stationRadius 0.25 mul neg stationRadius 1.1 mul
+			stationRadius 0.05 mul 0 180 arc stroke
+		stationRadius 0.2 mul neg stationRadius 0.8 mul
+			stationRadius 0.1 mul 180 270 arc stroke
+
+		stationRadius 0.2 mul stationRadius 0.75 mul moveto
+		stationRadius 0.1 mul stationRadius 0.75 mul lineto
+		stationRadius 0.2 mul stationRadius 0.85 mul moveto
+		stationRadius 0.1 mul stationRadius 0.85 mul lineto
+		stationRadius 0.3 mul stationRadius 0.85 mul moveto
+		stationRadius 0.3 mul stationRadius 1.15 mul lineto
+		stationRadius 0.2 mul stationRadius 0.85 mul moveto
+		stationRadius 0.2 mul stationRadius 1.15 mul lineto
+		stationRadius 0.25 mul stationRadius 1.15 mul
+			stationRadius 0.05 mul 0 180 arc stroke
+		stationRadius 0.2 mul stationRadius 0.85 mul
+			stationRadius 0.1 mul 270 0 arc stroke
+	}
+	% tlPort2
+	{
+		Anchor
+		gsave
+			stationRadius 0.5 mul dup neg translate
+			Anchor
+		grestore
+	}
+	% tlPrivate
+	{
+		1 setlinewidth
+		currentRotation rotate
+		-0.5 cm 0.5 cm translate
+		newpath
+		0 0 moveto
+		//stationRadius 2 div //stationRadius 1.8 mul lineto
+		stroke
+		0 0 //trackWidth 1 sub 0 360 arc gsave 1 setgray fill grestore stroke
+		//stationRadius 2 div //stationRadius 1.8 mul  
+		//trackWidth 1 sub 0 360 arc gsave 1 setgray fill grestore stroke
+		0.5 cm -0.5 cm translate
+		currentRotation neg rotate
+	}
+	% tlPickShovel
+	{
+		gsave
+		pickWidth setlinewidth
+
+		%draw the pick handles
+
+		//pickY 2 mul dup //pickX neg dup
+		moveto rlineto stroke
+
+		//pickY 2 mul dup neg exch //pickX pickX neg
+		moveto rlineto stroke
+
+		%draw the pick heads
+
+		//pickTopX //pickTopY moveto  %beginning of arc
+		//pickTopOrig neg dup   %origin of the arc
+		//pickTopOrig //pickTopX add dup mul
+		//pickTopOrig //pickTopY add dup mul
+		add sqrt 20 70 arc
+		stroke
+
+		//pickTopX neg //pickTopY moveto %beginning of arc
+		//pickTopOrig dup neg  %origin of the arc
+		//pickTopOrig //pickTopX add dup mul
+		//pickTopOrig //pickTopY add dup mul
+		add sqrt 160 110 arcn
+		stroke
+		grestore
+	}	
+	% tlMountain3
+	{
+		2.2 setlinewidth
+		MountainPath stroke
+		0.6 dup scale
+		2.2 1 0.6 div mul setlinewidth
+		MountainPath stroke
+		0.6 dup scale
+		2.2 1 0.6 div dup mul mul setlinewidth
+		MountainPath stroke
+	}
+] def
+
+% HexTerrain: terrain pos dist scale => -
+%
+/HexTerrain {
+	gsave
+		3 1 roll
+		TilePosition
+		currentRotation neg rotate
+		dup scale
+		Terrains exch get exec
+	grestore
+} def
+
+% NoTerrain: terrain => -
+/NoTerrain {
+	pop
+} def
+
+% HexBox: (string) => -
+/HexBox {
+	/val exch stringwidth pop def
+	0.5 setlinewidth
+	[ val 2 div 0.1 cm add neg
+	  mineBoxY neg 0.1 cm add
+	  val 0.2 cm add
+	  mineBoxY 1.7 mul
+	] dup
+	1 setgray rectfill
+	0 setgray rectstroke
+} def
+
+% Show hex value.  If the value contains a /, print it surrounded by a box.
+% If it starts [, strip off the [ and print it surrounded by a box.
+% If it starts (, print it naked.
+% If it starts {, strip off the { and print it surrounded by a pentagon
+% Otherwise, print it in a circle or ellipse, depending on its size.
+% HexValue: (value) pos dist => -
+/HexValue {
+	3 -1 roll /hexVal exch def
+	hexVal () eq {
+		pop pop
+	} {
+		gsave
+			TilePosition
+			currentRotation neg rotate
+			valFont selectfont
+			hexVal (/) search {
+				pop pop pop
+				hexVal HexBox
+			} {
+				(\() search { % 1853 frontier posts
+					pop pop pop
+				} {
+					([) search {
+						pop pop pop
+						hexVal ([) anchorsearch
+						pop pop
+						/hexVal exch def
+						hexVal HexBox
+					} {
+						({) search {
+							pop pop pop
+							hexVal ({) anchorsearch
+							pop pop
+							/hexVal exch def
+							hexVal HexPentagon
+						} {
+							pop
+							hexVal length 2 gt {
+								//valRadius 2 div neg 0
+									//valRadius 90 270 arc
+								//valRadius 2 div 0
+									//valRadius 270 90 arc
+								//valRadius 2 div neg
+									//valRadius neg moveto
+								//valRadius 2 div
+									//valRadius neg lineto
+								//valRadius 2 div neg
+									//valRadius moveto
+								//valRadius 2 div
+									//valRadius lineto
+							} {
+								0 0 //valRadius 0 360 arc
+							} ifelse
+							0.5 setlinewidth
+							gsave
+								1 setgray fill
+							grestore
+							stroke
+						} ifelse
+					} ifelse
+				} ifelse
+			} ifelse
+			0 -0.1 cm hexVal centershow
+		grestore
+	} ifelse
+} def
+
+% NoValue: value => -
+/NoValue {
+	pop
+} def
+
+% hexDiamond: (string) => -
+% draw diamond (or lozenge) big enough to hold string
+/HexDiamond {
+	0.5 setlinewidth
+	newpath
+	dup length 2 gt {
+		/w exch stringwidth pop 2 div def
+		w neg //valRadius 0.75 mul sub 0 moveto
+		w neg //valRadius 0.25 mul add //valRadius lineto
+		w //valRadius 0.25 mul sub //valRadius lineto
+		w //valRadius 0.75 mul add 0 lineto
+		w //valRadius 0.25 mul sub //valRadius neg lineto
+		w neg //valRadius 0.25 mul add //valRadius neg lineto
+		w neg //valRadius 0.75 mul sub 0 lineto
+	} {
+		pop
+		//valRadius 1.5 mul neg 0 moveto
+		0 //valRadius 1.5 mul lineto
+		//valRadius 1.5 mul 0 lineto
+		0 //valRadius 1.5 mul neg lineto
+		//valRadius 1.5 mul neg 0 lineto
+	} ifelse
+	gsave
+		1 setgray fill
+	grestore
+	stroke
+} def
+
+% hexPentagon (string) => -
+% draw pentagon (or hexagon) big enough to hold string
+/HexPentagon {
+	/w exch stringwidth pop 2 div //valRadius sub def
+	w 0 le {
+		 /w 0 def
+	} if
+	newpath
+	//valRadius 36 cos div  90 cos mul w add
+	//valRadius 36 cos div  90 sin mul moveto
+	//valRadius 36 cos div  90 cos mul w sub
+	//valRadius 36 cos div  90 sin mul lineto
+	//valRadius 36 cos div 162 cos mul w sub
+	//valRadius 36 cos div 162 sin mul lineto
+	//valRadius 36 cos div 234 cos mul w sub
+	//valRadius 36 cos div 234 sin mul lineto
+	//valRadius 36 cos div 306 cos mul w add
+	//valRadius 36 cos div 306 sin mul lineto
+	//valRadius 36 cos div  18 cos mul w add
+	//valRadius 36 cos div  18 sin mul lineto
+	closepath
+	gsave
+		1 setgray fill
+	grestore
+	0.5 setlinewidth stroke
+} def
+
+% HexLabel: (label) pos dist => -
+% If the label contains @, print it in a diamond, without the @
+% If the label contains [, print it in a box, without the [
+/HexLabel {
+	3 -1 roll /hexLabel exch def
+	hexLabel () eq {
+		pop pop
+	} {
+		hexLabel (@) anchorsearch {
+			pop
+			/hexLabel exch def
+			gsave
+				TilePosition
+				currentRotation neg rotate
+				/Helvetica-Bold 12 selectfont
+				hexLabel HexDiamond
+				0 0 hexLabel xycentershow
+			grestore
+		} {
+			pop
+			hexLabel ([) anchorsearch {
+				pop
+				/hexLabel exch def
+				gsave
+					TilePosition
+					currentRotation neg rotate
+					/Helvetica-Bold 12 selectfont
+					hexLabel HexBox
+					0 0 hexLabel xycentershow
+				grestore
+			} {
+				pop
+				gsave
+					TilePosition
+					currentRotation neg rotate
+					/Helvetica-Bold 12 selectfont
+					0 -0.1 cm hexLabel centershow
+				grestore
+			} ifelse
+		} ifelse
+	} ifelse
+} def
+
+% NoLabel: (label) => -
+/NoLabel {
+	pop
+} def
+
+% HexName: (name) pos dist => -
+/HexName {
+	3 -1 roll /hexName exch def
+	hexName mark eq {
+		pop pop mark
+	} {
+		hexName (#) anchorsearch {
+			pop
+			/hexName exch def
+			gsave
+				/Helvetica 10 selectfont
+				hexName NameTilePosition
+				currentRotation neg rotate
+				0 -0.1 cm hexName centershow
+			grestore
+		} {
+			pop pop pop hexName
+		} ifelse
+	} ifelse
+} def
+
+% NoName: (name) => -
+% pops string, if first character is #
+/NoName {
+	dup mark ne {
+		(#) anchorsearch {
+			pop pop
+		} if
+	} if
+} def
+
+% mineRect: pos dist => -
+/mineRect {
+	gsave
+		/mineDist exch def
+		/minePos exch def
+		minePos mineDist TilePosition
+		1 setgray
+		currentRotation neg rotate
+		[ //mineSize neg dup //mineSize 2 mul dup ]
+		dup 1 setgray rectfill 0 setgray rectstroke
+		pickWidth setlinewidth
+
+		%draw the pick handles
+
+		//pickY 2 mul dup //pickX neg dup
+		moveto rlineto stroke
+
+		//pickY 2 mul dup neg exch //pickX pickX neg
+		moveto rlineto stroke
+
+		%draw the pick heads
+
+		//pickTopX //pickTopY moveto  %beginning of arc
+		//pickTopOrig neg dup   %origin of the arc
+		//pickTopOrig //pickTopX add dup mul
+		//pickTopOrig //pickTopY add dup mul
+		add sqrt 20 70 arc
+		stroke
+
+		//pickTopX neg //pickTopY moveto %beginning of arc
+		//pickTopOrig dup neg  %origin of the arc
+		//pickTopOrig //pickTopX add dup mul
+		//pickTopOrig //pickTopY add dup mul
+		add sqrt 160 110 arcn
+		stroke
+	grestore
+} def
+
+% MineValue: (value) pos dist => -
+/MineValue {
+	3 -1 roll /mineVal exch def
+	mineVal () eq {
+		pop pop
+	} {
+		gsave
+			TilePosition
+			currentRotation neg rotate
+			mineVal (/) search {
+				% TODO: draw white rectangle
+				pop pop pop
+				0.5 setlinewidth
+				[ //mineBoxX neg mineBoxY neg 0.1 cm add
+				  //mineBoxX 2 mul mineBoxY 1.7 mul
+				] dup
+				1 setgray rectfill
+				0 setgray rectstroke
+				%1 setgray
+				%[ //mineBoxX neg mineBoxY neg 0.3 add
+				%  //mineBoxX 2 mul mineBoxY 2 mul
+				%] currentgray exch 1 setgray
+				%rectstroke setgray
+			} {
+				(\() search { % 1853 frontier posts
+					pop pop pop
+				} {
+					pop
+					0 0 //valRadius 0 360 arc
+					0.5 setlinewidth
+					gsave
+						1 setgray fill
+					grestore
+					stroke
+				} ifelse
+			} ifelse
+			/Helvetica 14 selectfont
+			0 -0.1 cm mineVal centershow
+		grestore
+	} ifelse
+} def
+
+% MineLabel: (label) pos dist => -
+/MineLabel {
+	3 -1 roll /mineLabel exch def
+	mineLabel () eq {
+		pop pop
+	} {
+	gsave
+		TilePosition
+		% none is defined for generic tile list
+		18xxVariant (none) eq { 0 setgray } { 1 setgray } ifelse
+		currentRotation neg rotate
+		/Helvetica-Bold 14 selectfont
+		0 -0.1 cm mineLabel centershow
+	grestore
+	} ifelse
+} def
+
+% passDraw: pos dist => -
+/passDraw {
+	gsave
+		/passDist exch def
+		/passPos exch def
+		passPos passDist TilePosition
+		0 0 moveto
+		0 setgray
+		1 setlinewidth
+		%draw the top side of the pass
+		%//passEdge1 dup neg lineto //passEdge2 0 rlineto
+		4.5 -4.5 lineto 21 0 rlineto
+		%//passedge1 dup rlineto //passEdge3 dup neg exch rlineto
+		4.5 4.5 rlineto -1.8 1.8 rlineto
+		%//passEdge4 neg dup rlineto //passEdge5 neg 0 rlineto
+		-3.5 -3.5 rlineto -19.2 0 rlineto
+		%//passEdge4 dup neg exch rlineto 
+		-3.5 3.5 rlineto
+		closepath stroke
+		%draw the bottom of the pass
+		0 -15.5 moveto
+		4.5 4.5 rlineto 21 0 rlineto
+		4.5 -4.5 rlineto -1.8 -1.8 rlineto
+		-3.5 3.5 rlineto -19.2 0 rlineto
+		-3.5 -3.5 rlineto
+		closepath stroke
+		%draw the bottom of the broken line
+		-15 0 moveto
+		2 setlinewidth
+		14 -4.5 rlineto stroke
+		1 setlinewidth 1 setgray
+		-11 0 moveto
+		-15 0 4 0 360 arc fill
+		0 setgray
+		-15 0 4 0 360 arc stroke
+		%draw the top of the broken line
+		45 -15.5 moveto
+		2 setlinewidth
+		-14 4.5 rlineto stroke
+		1 setlinewidth 1 setgray
+		41 -15.5 moveto
+		45 -15.5 4 0 360 arc fill
+		0 setgray
+		45 -15.5 4 0 360 arc stroke
+	grestore
+} def
+
+%StraightBridge: offset orient pos dist => -
+/StraightBridge {
+	gsave
+		TilePosition
+		-60 mul rotate
+		/bridgeOffset exch def
+		tileColor 
+		haveColor {
+			XcolorTable exch get
+			aload pop
+			setrgbcolor
+		} {
+			grayTable exch get
+			setgray
+		} ifelse
+		%clear out the path of the bridge
+		[ -7 -4.5 14 9.1 ] rectfill
+		%draw sides to the bridge
+		0 setgray 1 setlinewidth
+		-10 bridgeOffset sub -8.5 moveto
+		3.5 3.5 rlineto 14 0 rlineto 3.5 -3.5 rlineto stroke
+		-10 bridgeOffset add 9.0 moveto
+		3.5 -3.5 rlineto 14 0 rlineto 3.5 3.5 rlineto stroke
+	grestore
+} def
+
+%WideBridge: angle2 angle1 orient => -
+/WideBridge {
+	gsave
+		-60 mul rotate
+		tileColor
+		haveColor {
+			XcolorTable exch get
+			aload pop
+			setrgbcolor
+		} {
+			grayTable exch get
+			setgray
+		} ifelse
+		/startAngle exch def /stopAngle exch def
+		newpath
+		%clear out the path of the bridge
+		hexHeight -2 mul 0 hexSide 1.42 mul
+		startAngle stopAngle arc
+		hexHeight -2 mul 0 hexSide 1.58 mul
+		stopAngle startAngle arcn closepath fill
+		%draw the sides of the bridge
+		0 setgray 1 setlinewidth
+		startAngle 3 sub cos hexSide 1.35 mul mul hexHeight -2 mul add
+		startAngle 3 sub sin hexSide 1.35 mul mul moveto
+		hexHeight -2 mul 0 hexSide 1.41 mul
+		startAngle stopAngle arc
+		stopAngle 3 add cos hexSide 1.35 mul mul hexHeight -2 mul add
+		stopAngle 3 add sin hexSide 1.35 mul mul lineto
+		stroke
+		stopAngle 2 add cos hexSide 1.65 mul mul hexHeight -2 mul add
+		stopAngle 2 add sin hexSide 1.65 mul mul moveto
+		hexHeight -2 mul 0 hexSide 1.59 mul 
+		stopAngle startAngle arcn
+		startAngle 2 sub cos hexSide 1.65 mul mul hexHeight -2 mul add
+		startAngle 2 sub sin hexSide 1.65 mul mul lineto
+		stroke
+	grestore
+} def
+		
+% ------------------------------------------------------------
+% procedures for drawing a map
+
+/currentRotation 0 def
+
+/TileProcName (Tile_xxx) def
+
+% TileProc: num => key
+/TileProc {
+	abs
+	TileProcName 5 (000) putinterval
+	TileProcName exch string5 cvs dup length 8 exch sub exch putinterval
+	TileProcName cvx dup where {
+				pop
+			} {
+				pop (Tile_000) cvx
+			} ifelse
+} def
+
+% HexPos: (RowCol/Pos) => row col pos
+%    convert string into numeric repr
+/HexPos {
+	toupper
+	(/) search pop exch pop
+	% position
+	/s exch def
+	/numStart 1 def
+	s 0 get 64 sub
+	s 1 get 64 sub dup 0 ge exch 26 lt and {
+		/numStart 2 def
+		//useSexavigenary {
+			26 mul s 1 get 64 sub add
+		} {
+			26 add
+		} ifelse
+	} if
+	axesSwapped {
+		axisDirection //axisLetBack eq axisDirection //axisBothBack eq or {
+			mapCols 1 add sub neg
+		} if
+	} {
+		axisDirection //axisNumBack eq axisDirection //axisBothBack eq or {
+			mapRows 1 add sub neg
+		} if
+	} ifelse
+	s numStart s length numStart sub getinterval cvi
+	axesSwapped {
+		axisDirection //axisNumBack eq axisDirection //axisBothBack eq or {
+			mapRows 1 add sub neg
+		} if
+	} {
+		axisDirection //axisLetBack eq axisDirection //axisBothBack eq or {
+			mapCols 1 add sub neg
+		} if
+	} ifelse
+	axesSwapped {
+		exch
+	} if
+	3 -1 roll
+	% orientation
+	/s exch def
+	tileSitting {
+		/oos [(S) (SW) (NW) (N) (NE) (SE) (0) (1) (2) (3) (4) (5)] def
+	} {
+		/oos [(SW) (W) (NW) (NE) (E) (SE) (0) (1) (2) (3) (4) (5)] def
+	} ifelse
+	0 1 11 {
+		dup
+		oos exch get s eq
+		{ 6 mod exit } { pop } ifelse
+	} for
+} def
+
+/XYTileDict 30 dict def
+% XYTile: x y num or vnum vor color terrain (label) (value) [stations] => -
+%   num is the number of the generic, vnum that of the variant tile
+/XYTile {
+	XYTileDict begin
+	gsave
+		11 -2 roll
+		translate
+		tileSitting {
+			30 rotate
+			/currentRotation currentRotation 30 add def
+		} if
+		9 -5 roll
+		/hexColor exch def
+		hexColor tlNoHex ne {
+			hexColor TileColor
+		} if
+		TilePath
+		clip
+		newpath
+		gsave
+			-60 mul /xyTileRotation exch def
+			xyTileRotation rotate
+			dup 0 le {
+				pop
+			} {
+				TileNumber
+			} ifelse
+			% rotate generic tile
+			-60 mul dup
+			rotate
+			/xyTileRotation exch xyTileRotation add def
+			/currentRotation currentRotation xyTileRotation add def
+			% stack sorting ...
+			/num exch def
+			dup length /len exch def mark exch aload pop
+			len 4 add -3 roll exch 3 -1 roll
+			% stack: mark (s1) (s2) ... (name) (val) (label) terrain
+			num TileProc exec
+			cleartomark
+			/currentRotation currentRotation xyTileRotation sub def
+		grestore
+		hexColor tlNoHex ne 
+		hexColor tlTransparent ne and {
+			TilePath stroke
+		} if
+		tileSitting {
+			/currentRotation currentRotation 30 sub def
+		} if
+	grestore
+	end
+} def
+
+% VariantToGeneric: vnum vor
+%   => num or vnum vor color terrain (label) (value)
+%
+/VariantToGeneric {
+	exch dup
+	/tile tileCodes 3 -1 roll abs get def
+	exch
+	tile null eq {
+		0 0 4 2 roll //tlGround //tlPlain () ()
+	} {
+		tile 0 6 getinterval aload pop
+		8 -2 roll
+		6 2 roll
+	} ifelse
+} def
+

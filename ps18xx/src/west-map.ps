@@ -1,0 +1,302 @@
+%
+% $Header: $
+%
+
+%!
+% ----------------------------------------------------------------------
+% 18west map
+
+	newpath
+
+	/mapRows 13 def
+	/mapCols 27 def
+	/mapScale 0.425 def
+	/CM { 28.35 1 mapScale div mul mul } def
+	mapScale dup scale
+	21 CM 0 translate
+	90 rotate
+	/mapFrame {
+	1.5 CM 1.2 CM mapCols mapRows 0 //hexHeight 7 mul 0 0 Map
+	} def
+	mapFrame
+
+	(A4/0)	-330	[(NP)]	LayTile
+	(A4/2)	-364	[]	LayTile
+	(A6/0)	-331	[(#Seattle)]	LayTile
+
+	(B3/5)	-312	[(GN)]	LayTile	% Normal
+	(B3/0)	-352	[]	LayTile
+	(B3/2)	-357	[(#Portland)]	LayTile
+	(B3/2)	-364	[]	LayTile
+	(B5/0)	-301	[]	LayTile	% Normal
+	(B5/0)	-341	[]	LayTile
+	(B7/0)	-300	[]	LayTile	% Normal
+	(B7/0)	-340	[]	LayTile
+	(B9/0)	-301	[]	LayTile	% Normal
+	(B9/0)	-341	[]	LayTile
+	(B11/0)	-301	[]	LayTile	% Normal
+	(B11/0)	-341	[]	LayTile
+	(B13/0)	-300	[]	LayTile	% Normal
+	(B13/0)	-340	[]	LayTile
+	(B15/0)	-300	[]	LayTile	% Normal
+	(B15/0)	-340	[]	LayTile
+	(B17/0)	-300	[]	LayTile	% Normal
+	(B17/0)	-340	[]	LayTile
+	(B19/0)	-300	[]	LayTile	% Normal
+	(B19/0)	-340	[]	LayTile
+	(B21/0)	-300	[]	LayTile	% Normal
+	(B21/0)	-340	[]	LayTile
+	(B23/5)	-322	[]	LayTile
+	(B23/4)	-359	[(#Mesabi)]	LayTile
+	(B23/5)	-359	[(#Range)]	LayTile
+	(B23/0)	-358	[]	LayTile
+
+	(C2/1)	-320	[(#Eugene)]	LayTile	% Normal
+	(C4/0)	-301	[]	LayTile	% Normal
+	(C4/0)	-341	[]	LayTile
+	(C6/0)	-301	[]	LayTile	% Normal
+	(C6/0)	-341	[]	LayTile
+	(C8/0)	-301	[]	LayTile	% Normal
+	(C8/0)	-341	[]	LayTile
+	(C10/1)	-321	[(#Helena)]	LayTile	% Normal
+	(C10/0)	-342	[]	LayTile
+	(C12/0)	-301	[]	LayTile	% Normal
+	(C12/0)	-341	[]	LayTile
+	(C14/0)	-300	[]	LayTile	% Normal
+	(C14/0)	-340	[]	LayTile
+	(C16/0)	-300	[]	LayTile	% Normal
+	(C16/0)	-340	[]	LayTile
+	(C18/0)	-300	[]	LayTile	% Normal
+	(C18/0)	-340	[]	LayTile
+	(C20/0)	-300	[]	LayTile	% Normal
+	(C20/0)	-340	[]	LayTile
+	(C22/0)	-300	[]	LayTile	% Normal
+	(C22/0)	-340	[]	LayTile
+	(C24/1)	-320	[(#Duluth)]	LayTile	% Normal
+
+	(D1/0)	-300	[]	LayTile	% Normal
+	(D3/0)	-301	[]	LayTile	% Normal
+	(D5/0)	-300	[]	LayTile	% Normal
+	(D7/0)	-321	[(#Boise)]	LayTile	% Normal
+	(D9/0)	-301	[]	LayTile	% Normal
+	(D11/0)	-301	[]	LayTile	% Normal
+	(D13/0)	-301	[]	LayTile	% Normal
+	(D15/0)	-301	[]	LayTile	% Normal
+	(D17/0)	-300	[]	LayTile	% Normal
+	(D19/0)	-300	[]	LayTile	% Normal
+	(D21/0)	-300	[]	LayTile	% Normal
+	(D23/3)	-315	[(GN)(NP)(#St Paul)]	LayTile	% Normal
+	(D23/3)	-359	[(#Minn.)]	LayTile
+	(D25/0)	-300	[]	LayTile	% Normal
+
+	(E2/0)	-301	[]	LayTile	% Normal
+	(E4/0)	-301	[]	LayTile	% Normal
+	(E6/0)	-301	[]	LayTile	% Normal
+	(E8/0)	-301	[]	LayTile	% Normal
+	(E10/0)	-301	[]	LayTile	% Normal
+	(E12/0)	-301	[]	LayTile	% Normal
+	(E14/0)	-301	[]	LayTile	% Normal
+	(E16/0)	-300	[]	LayTile	% Normal
+	(E18/0)	-300	[]	LayTile	% Normal
+	(E20/0)	-300	[]	LayTile	% Normal
+	(E22/0)	-300	[]	LayTile	% Normal
+	(E24/0)	-300	[]	LayTile	% Normal
+	(E26/2)	-57		[(MR)]	LayTile	% Normal
+	(E26/5)	-357	[(#Milwaukee)]	LayTile
+
+	(F1/0)	-300	[]	LayTile	% Normal
+	(F3/0)	-6		[(UP)]	LayTile	% Normal
+	(F3/4)	-357	[(#Sacramento)]	LayTile
+	(F5/1)	-9		[]	LayTile	% Normal
+	(F7/1)	-9		[]	LayTile	% Normal
+	(F9/1)	-4		[]	LayTile	% Normal
+	(F9/5)	-357	[(#Salt Lake City)]	LayTile
+	(F11/1)	-9		[]	LayTile	% Normal
+	(F13/1)	-9		[]	LayTile	% Normal
+	(F15/1)	-4		[]	LayTile	% Normal
+	(F15/5)	-357	[(#Cheyenne)]	LayTile
+	(F17/1)	-9		[]	LayTile	% Normal
+	(F19/1)	-9		[]	LayTile	% Normal
+	(F21/1)	-313	[(UP)(#Omaha)]	LayTile	% Normal
+	(F23/1)	-320	[(#Des Moines)]	LayTile	% Normal
+	(F25/1)	-57		[(CRIP)(#Cedar Rapids)]	LayTile	% Normal
+	(F27/3)	-314	[(BR)(CNW)(#Chicago)]	LayTile	% Normal
+	(F29/1)	-332	[]	LayTile
+
+	(G2/5)	-311	[(SP)(UP2)]	LayTile	% Normal
+	(G2/3)	-357	[(#San Francisco)]	LayTile
+	(G2/2)	-364	[]	LayTile
+	(G4/0)	-301	[]	LayTile	% Normal
+	(G6/0)	-301	[]	LayTile	% Normal
+	(G8/0)	-301	[]	LayTile	% Normal
+	(G10/0)	-301	[]	LayTile	% Normal
+	(G12/0)	-301	[]	LayTile	% Normal
+	(G14/3)	-308	[(DRG)]	LayTile	% DCity
+	(G14/4)	-353	[]	LayTile
+	(G14/0)	-360	[]	LayTile
+	(G14/1)	-357	[(#Denver)]	LayTile
+	(G16/0)	-300	[]	LayTile	% Normal
+	(G16/0)	-343	[]	LayTile
+	(G18/0)	-300	[]	LayTile	% Normal
+	(G18/0)	-343	[]	LayTile
+	(G20/0)	-300	[]	LayTile	% Normal
+	(G20/0)	-343	[]	LayTile
+	(G22/2)	-315	[(AT)(KP)(#Topeka)]	LayTile	% Normal
+	(G22/2)	-359	[(#K.C.)]	LayTile
+	(G24/0)	-300	[]	LayTile	% Normal
+	(G26/0)	-310	[(#Springfield)]	LayTile	% Normal
+	(G28/2)	-332	[]	LayTile
+
+	(H3/0)	-300	[]	LayTile	% Normal
+	(H3/0)	-345	[]	LayTile
+	(H5/0)	-301	[]	LayTile	% Normal
+	(H5/0)	-348	[]	LayTile
+	(H7/0)	-301	[]	LayTile	% Normal
+	(H7/0)	-348	[]	LayTile
+	(H9/0)	-301	[]	LayTile	% Normal
+	(H9/0)	-348	[]	LayTile
+	(H11/0)	-301	[]	LayTile	% Normal
+	(H11/0)	-348	[]	LayTile
+	(H13/5)	-326	[]	LayTile
+	(H13/1)	-361	[]	LayTile
+	(H15/0)	-301	[]	LayTile	% Normal
+	(H15/0)	-348	[]	LayTile
+	(H15/2)	-344	[]	LayTile
+	(H17/0)	-300	[]	LayTile	% Normal
+	(H17/0)	-347	[]	LayTile
+	(H17/2)	-343	[]	LayTile
+	(H19/0)	-300	[]	LayTile	% Normal
+	(H19/0)	-347	[]	LayTile
+	(H19/2)	-343	[]	LayTile
+	(H21/0)	-300	[]	LayTile	% Normal
+	(H21/0)	-347	[]	LayTile
+	(H23/0)	-310	[(#Springfield)]	LayTile	% Normal
+	(H25/5)	-316	[(MP)(Fri)]	LayTile	% Normal
+	(H25/5)	-359	[(#St Louis)]	LayTile
+	(H27/0)	-333	[(#New York)]	LayTile
+
+	(I2/0)	-362	[(#Los Angeles)]	LayTile
+	(I4/2)	-317	[]	LayTile	% LA
+	(I4/0)	-355	[]	LayTile
+	(I4/0)	-364	[]	LayTile
+	(I6/0)	-300	[]	LayTile	% Normal
+	(I6/0)	-347	[]	LayTile
+	(I8/0)	-301	[]	LayTile	% Normal
+	(I8/0)	-348	[]	LayTile
+	(I10/0)	-300	[]	LayTile	% Normal
+	(I10/0)	-347	[]	LayTile
+	(I12/0)	-301	[]	LayTile	% Normal
+	(I12/0)	-348	[]	LayTile
+	(I14/1)	-321	[(#Santa Fe)]	LayTile	% Normal
+	(I14/5)	-349	[]	LayTile
+	(I16/0)	-300	[]	LayTile	% Normal
+	(I16/0)	-347	[]	LayTile
+	(I18/0)	-300	[]	LayTile	% Normal
+	(I18/0)	-347	[]	LayTile
+	(I20/0)	-300	[]	LayTile	% Normal
+	(I20/0)	-347	[]	LayTile
+	(I22/0)	-300	[]	LayTile	% Normal
+	(I24/0)	-301	[]	LayTile	% Normal
+	(I26/3)	-15		[(CB)]	LayTile	% Normal
+	(I28/3)	-362	[(#Memphis)]	LayTile
+
+	(J5/4)	-318	[(#San Diego)]	LayTile	% Normal
+	(J5/2)	-356	[]	LayTile
+	(J5/3)	-364	[]	LayTile
+	(J7/0)	-301	[]	LayTile	% Normal
+	(J7/3)	-351	[]	LayTile
+	(J7/0)	-346	[]	LayTile
+	(J9/0)	-301	[]	LayTile	% Normal
+	(J9/3)	-351	[]	LayTile
+	(J9/0)	-346	[]	LayTile
+	(J11/0)	-301	[]	LayTile	% Normal
+	(J11/3)	-351	[]	LayTile
+	(J11/0)	-346	[]	LayTile
+	(J13/0)	-301	[]	LayTile	% Normal
+	(J13/3)	-351	[]	LayTile
+	(J13/0)	-346	[]	LayTile
+	(J15/0)	-300	[]	LayTile	% Normal
+	(J15/3)	-350	[]	LayTile
+	(J15/0)	-345	[]	LayTile
+	(J17/0)	-300	[]	LayTile	% Normal
+	(J17/3)	-350	[]	LayTile
+	(J17/0)	-345	[]	LayTile
+	(J19/0)	-300	[]	LayTile	% Normal
+	(J19/3)	-350	[]	LayTile
+	(J19/0)	-345	[]	LayTile
+	(J21/0)	-300	[]	LayTile	% Normal
+	(J23/0)	-300	[]	LayTile	% Normal
+	(J25/1)	-325	[(#Little Rock)]	LayTile	% Normal
+
+	(K8/1)	-320	[(#Tucson)]	LayTile	% Normal
+	(K8/0)	-346	[]	LayTile
+	(K8/2)	-351	[]	LayTile
+	(K10/0)	-301	[]	LayTile	% Normal
+	(K10/0)	-346	[]	LayTile
+	(K10/3)	-351	[]	LayTile
+	(K12/0)	-301	[]	LayTile	% Normal
+	(K12/0)	-346	[]	LayTile
+	(K12/3)	-351	[]	LayTile
+	(K14/0)	-300	[]	LayTile	% Normal
+	(K14/0)	-345	[]	LayTile
+	(K14/3)	-350	[]	LayTile
+	(K16/0)	-300	[]	LayTile	% Normal
+	(K16/0)	-345	[]	LayTile
+	(K16/3)	-350	[]	LayTile
+	(K18/0)	-300	[]	LayTile	% Normal
+	(K18/0)	-345	[]	LayTile
+	(K18/3)	-350	[]	LayTile
+	(K20/1)	-319	[(TP)(#Dallas)]	LayTile	% DCity
+	(K20/3)	-354	[]	LayTile
+	(K22/0)	-300	[]	LayTile	% Normal
+	(K24/1)	-325	[(#Shreveport)]	LayTile	% Normal
+
+	(L13/0)	-300	[]	LayTile	% Normal
+	(L13/0)	-345	[]	LayTile
+	(L13/3)	-350	[]	LayTile
+	(L15/0)	-300	[]	LayTile	% Normal
+	(L15/0)	-345	[]	LayTile
+	(L15/3)	-350	[]	LayTile
+	(L17/0)	-300	[]	LayTile	% Normal
+	(L17/0)	-345	[]	LayTile
+	(L17/3)	-350	[]	LayTile
+	(L19/0)	-310	[(#Austin)]	LayTile	% Normal
+	(L21/0)	-309	[(Katy)(#Houston)]	LayTile	% Normal
+	(L23/0)	-302	[]	LayTile	% Normal
+	(L25/1)	-334	[(#New Orleans)]	LayTile
+
+	(M20/3)	-323	[]	LayTile
+	(M20/0)	-363	[(#Corpus Christi)]	LayTile
+	(M22/2)	-324	[]	LayTile
+	(M22/0)	-363	[(#Galveston)]	LayTile
+
+		/Bookman 120 selectfont
+	(B25/7) LayText moveto (18west) show 
+
+	% =================================
+	% INSERT YOUR TILES AND TOKENS HERE
+	% =================================
+
+	(C24/W)		Frontier
+	(D23/NW)	Frontier
+	(D23/W)		Frontier
+	(E22/NW)	Frontier
+	(E22/W)		Frontier
+	(F21/NW)	Frontier
+	(F21/W)		Frontier
+	(F21/SW)	Frontier
+	(G22/W)		Frontier
+	(G22/SW)	Frontier
+	(H23/W)		Frontier
+	(I22/NW)	Frontier
+	(I22/W)		Frontier
+	(J21/NW)	Frontier
+	(J21/W)		Frontier
+	(K20/NW)	Frontier
+	(K20/W)		Frontier
+	(L19/NW)	Frontier
+	(L19/W)		Frontier
+
+	mapFrame
+
+	mapFrame

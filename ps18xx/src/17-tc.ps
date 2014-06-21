@@ -1,0 +1,164 @@
+%
+% $Header: 17-tc.ps[1.0] $
+%
+% ----------------------------------------------------------------------
+% the 1817 variant was done by Steve Thomas (maisnestce@btinternet.com)
+% ----------------------------------------------------------------------
+% 1817 tile codes
+
+/18xxVariant (1817) def
+
+/maxTile 750 def
+
+	/tileCodes //maxTile array def
+
+	tileCodes   5 [   5 0 //tlYellow //tlPlain ()    (20)  5 ] put
+	tileCodes   6 [   6 0 //tlYellow //tlPlain ()    (20)  8 ] put
+	tileCodes   7 [   7 5 //tlYellow //tlPlain ()    ()    5 ] put
+	tileCodes   8 [   8 4 //tlYellow //tlPlain ()    ()   20 ] put
+	tileCodes   9 [   9 0 //tlYellow //tlPlain ()    ()   20 ] put
+	tileCodes  57 [  57 0 //tlYellow //tlPlain ()    (20)  7 ] put
+	tileCodes 116 [  53 0 //tlYellow //tlPlain (B)   (30)  1 ] put
+
+	tileCodes  14 [  14 1 //tlGreen  //tlPlain ()    (30)  5 ] put
+	tileCodes  15 [  15 0 //tlGreen  //tlPlain ()    (30)  5 ] put
+	tileCodes  53 [ 121 0 //tlGreen  //tlPlain (B)   (50)  4 ] put
+	tileCodes  54 [  54 0 //tlGreen  //tlPlain (NY)  (60)  1 ] put
+	tileCodes  80 [ 215 1 //tlGreen  //tlPlain ()    ()    5 ] put
+	tileCodes  81 [ 216 5 //tlGreen  //tlPlain ()    ()    5 ] put
+	tileCodes  82 [ 214 3 //tlGreen  //tlPlain ()    ()   10 ] put
+	tileCodes  83 [ 213 3 //tlGreen  //tlPlain ()    ()   10 ] put
+	tileCodes 619 [  38 3 //tlGreen  //tlPlain ()    (30)  5 ] put
+
+	tileCodes  61 [ 234 5 //tlBrown  //tlPlain (B)   (60)  4 ] put
+	tileCodes  62 [  62 0 //tlBrown  //tlPlain (NY)  (80)  1 ] put
+	tileCodes  63 [  63 0 //tlBrown  //tlPlain ()    (40)  7 ] put
+	tileCodes 115 [  15 0 //tlBrown  //tlPlain ()    (40)  4 ] put
+	tileCodes 544 [ 217 0 //tlBrown  //tlPlain ()    ()    5 ] put
+	tileCodes 545 [ 218 3 //tlBrown  //tlPlain ()    ()    5 ] put
+	tileCodes 546 [ 219 3 //tlBrown  //tlPlain ()    ()    5 ] put
+	tileCodes 611 [  51 2 //tlBrown  //tlPlain ()    (40)  2 ] put
+
+	tileCodes 117 [ 209 4 //tlGray   //tlPlain (B)   (80)  4 ] put
+	tileCodes 124 [ 124 0 //tlGray   //tlPlain (NY)  (100) 1 ] put
+
+
+	%tile codes for map definition
+	% Off-board areas
+	tileCodes 400 [ 506 0 //tlRed    //tlPlain  ()    (20/30/50/60) 0 ] put
+	tileCodes 401 [ 505 0 //tlRed    //tlPlain  ()    (20/30/50/60) 0 ] put
+	tileCodes 402 [ 205 0 //tlGray    //tlPlain  ()    ()            0 ] put
+	tileCodes 403 [ 506 0 //tlRed    //tlPlain  ()    (30/50/60/80) 0 ] put
+	tileCodes 404 [ 409 0 //tlGray   //tlPlain  ()    ()            0 ] put
+	tileCodes 405 [ 507 0 //tlRed    //tlPlain  ()    (20/30/50/60) 0 ] put
+
+	% Plain track
+	tileCodes 410 [ 500 0 //tlGround //tlPlain  ()    ()        0 ] put
+	tileCodes 411 [ 500 0 //tlGround //tlWater  ($10) ()        0 ] put
+	tileCodes 412 [ 500 0 //tlGround //tlHill   ($15) ()        0 ] put
+	tileCodes 413 [ 500 0 //tlGround //tlWater2 ($20) ()        0 ] put
+	tileCodes 414 [ 500 0 //tlGray   //tlPlain  ()    ()        0 ] put
+
+	% Large cities
+	tileCodes 420 [ 246 1 //tlGround //tlPlain  ()    ()        0 ] put
+	tileCodes 421 [ 246 1 //tlGround //tlPlain  ()    ()        0 ] put
+	tileCodes 422 [ 246 1 //tlGround //tlPlain  ()    ()        0 ] put
+	tileCodes 423 [   6 0 //tlYellow //tlWater2 (B)   (30)      0 ] put
+	tileCodes 424 [   6 0 //tlYellow //tlPlain  (B)   (30)      0 ] put
+	tileCodes 425 [ 246 1 //tlGround //tlWater2 ()    ()        0 ] put
+	tileCodes 426 [ 246 1 //tlGround //tlHill   ($15) ()        0 ] put
+	tileCodes 427 [  10 0 //tlYellow //tlWater2 (NY)  (40)      0 ] put
+	tileCodes 428 [ 246 1 //tlGround //tlWater  ($10) ()        0 ] put
+	tileCodes 429 [ 246 1 //tlGround //tlHill   ()    ()        0 ] put
+
+	% Overlays
+	tileCodes 430 [ 529 0 //tlTransparent //tlPlain ($20) ()    0 ] put
+	tileCodes 431 [ 529 0 //tlTransparent //tlPort  (   ) ()    0 ] put
+	tileCodes 432 [ 529 0 //tlTransparent //tlPlain ($15) ()    0 ] put
+	tileCodes 433 [ 500 0 //tlTransparent //tlPlain () ()       0 ] put
+	tileCodes 434 [ 500 0 //tlTransparent //tlPlain () (30/40/50/60) 0 ] put
+	tileCodes 435 [ 500 0 //tlTransparent //tlPlain () (20/30/40/40) 0 ] put
+	tileCodes 436 [ 529 0 //tlTransparent //tlPickShovel () ()  0 ] put
+	tileCodes 437 [ 500 0 //tlTransparent //tlPlain (@B) ()       0 ] put
+
+% Upgrade Plain 410 => 7/* 8/* 9/*
+% Upgrade Plain 411 => 7/* 8/* 9/*
+% Upgrade Plain 412 => 7/* 8/* 9/*
+% Upgrade Plain 413 => 7/* 8/* 9/*
+% Upgrade Plain 420 => 5/* 6/* 57/*
+% Upgrade Plain 426 => 5/* 6/* 57/*
+% Upgrade Plain 428 => 5/* 6/* 57/*
+% Upgrade Pittsburgh 420 => 5/* 6/* 57/* 116/*
+% Upgrade KCity 421 => 5/* 6/* 57/*
+% Upgrade KCity 429 => 5/* 6/* 57/*
+% Upgrade LCity 422 => 5/* 6/* 57/*
+% Upgrade LCity 425 => 5/* 6/* 57/*
+
+% Upgrade Plain 7 => 80/45 82/2 83/3
+% Upgrade Plain 8 => 80/4 81/024 82/0 83/4
+% Upgrade Plain 9 => 82/03 83/03
+% Upgrade Plain 423 => 53/024
+% Upgrade Plain 424 => 53/024
+% Upgrade Plain 427 => 54/=0
+% Upgrade Plain 5 => 14/25 15/345 619/05
+% Upgrade Plain 6 => 14/03 15/34 619/135
+% Upgrade Plain 57 => 14/0235 15/03 619/03
+% Upgrade Pittsburgh 5 => 14/25 15/345 619/05
+% Upgrade Pittsburgh 6 => 14/03 15/34 619/135
+% Upgrade Pittsburgh 57 => 14/0235 15/03 619/03
+% Upgrade Pittsburgh 116 => 53/024
+% Upgrade KCity 5 => 15/345
+% Upgrade KCity 6 => 15/34
+% Upgrade KCity 57 => 15/03
+% Upgrade LCity 5 => 14/25 15/345 619/05
+% Upgrade LCity 6 => 14/03 15/34 619/135
+% Upgrade LCity 57 => 14/0235 15/03 619/03
+
+% Upgrade Plain 14 => 63/*
+% Upgrade Plain 15 => 63/*
+% Upgrade Plain 619 => 63/*
+% Upgrade Plain 53 => 61/024
+% Upgrade Pittsburgh 14 => 63/*
+% Upgrade Pittsburgh 15 => 63/*
+% Upgrade Pittsburgh 619 => 63/*
+% Upgrade Pittsburgh 53 => 61/024
+% Upgrade Plain 54 => 62/0
+% Upgrade LCity 14 => 611/03
+% Upgrade LCity 15 => 611/05
+% Upgrade LCity 619 => 611/35
+% Upgrade KCity 15 => 115/0
+% Upgrade Plain 80 => 545/05 546/4
+% Upgrade Plain 81 => 546/024
+% Upgrade Plain 82 => 544/03 545/3 546/0
+% Upgrade Plain 83 => 544/25 545/0 546/0
+
+% Upgrade Plain 61 => 117/02
+% Upgrade Pittsburgh 61 => 117/02
+% Upgrade Plain 62 => 124/0
+
+% Token O 1
+
+% Token A&S 8
+% Token A&A 8
+% Token BRC 8
+% Token B&A 8
+% Token BLE 8
+% Token DLW 8
+% Token EJE 8
+% Token GTW 8
+% Token HR 8
+% Token M&E 8
+% Token NOW 8
+% Token NSW 8
+% Token PSN 8
+% Token PLE 8
+% Token P&W 8
+% Token RR 8
+% Token SR 8
+% Token WCR 8
+% Token W&T 8
+% Token UR 8
+
+% Unlimited 5 6 7 8 9 57
+% Unlimited 14 15 619 80 81 82 83
+% Unlimited 544 545 546

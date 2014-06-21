@@ -1,0 +1,96 @@
+%
+% $Header: $
+%
+
+%!
+% ----------------------------------------------------------------------
+% 18GA map
+
+	newpath
+
+	/mapRows 11 def
+	/mapCols 16 def
+	/mapScale 0.6 def
+	/CM { 28.35 1 mapScale div mul mul } def
+	mapScale dup scale
+	/mapFrame {
+	1.5 CM 1.2 CM mapCols mapRows //hexHeight neg 2 cm
+		0 //hexHeight neg Map
+	} def
+	mapFrame
+
+	(A5/5)	-401	[]	LayTile
+	(A5/4)	-440	[(#Chattanooga)]	LayTile
+
+	(B4/0)	-413	[]	LayTile	% Plain
+	(B6/0)	-410	[]	LayTile	% Plain
+	(B8/0)	-413	[]	LayTile	% Plain
+	(B10/0)	-413	[]	LayTile	% Plain
+	(B12/0)	-402	[(#Greenville)]	LayTile
+
+	(C3/0)	-413	[]	LayTile	% Plain
+	(C5/0)	-430	[(#Rome)]	LayTile	% Plain
+	(C7/0)	-411	[]	LayTile	% Plain
+	(C9/0)	-414	[]	LayTile	% Plain
+	(C11/0)	-410	[]	LayTile	% Plain
+
+	(D4/0)	-410	[]	LayTile	% Plain
+	(D6/0)	-434	[(W&A)]	LayTile	% Plain
+	(D8/0)	-410	[]	LayTile	% Plain
+	(D10/0)	-410	[]	LayTile	% Plain
+	(D12/0)	-436	[(GA)(#Augusta)]	LayTile	% Aug
+
+	(E3/3)	-404	[]	LayTile
+	(E3/4)	-440	[(#Montgomery)]	LayTile
+	(E5/0)	-412	[]	LayTile	% Plain
+	(E7/0)	-410	[]	LayTile	% Plain
+	(E9/1)	-421	[(#Milledgeville)]	LayTile	% Plain
+	(E11/0)	-410	[]	LayTile	% Plain
+	(E13/0)	-410	[]	LayTile	% Plain
+
+	(F4/0)	-412	[]	LayTile	% Plain
+	(F6/0)	-415	[]	LayTile	% Plain
+	(F8/0)	-431	[(CoG)(#Macon)]	LayTile	% PCity
+	(F10/0)	-411	[]	LayTile	% Plain
+	(F12/0)	-410	[]	LayTile	% Plain
+	(F14/0)	-416	[]	LayTile	% Plain
+
+	(G3/0)	-410	[]	LayTile	% Plain
+	(G5/0)	-432	[(#Columbus)]	LayTile	% Plain
+	(G7/1)	-410	[]	LayTile	% Plain
+	(G9/0)	-417	[]	LayTile	% Plain
+	(G11/0)	-411	[]	LayTile	% Plain
+	(G13/0)	-420	[(#Statesboro)]	LayTile	% Plain
+	(G15/0)	-435	[(SAL)(#Savannah)]	LayTile	% Sav
+
+	(H4/0)	-412	[]	LayTile	% Plain
+	(H6/0)	-430	[(G&F)(#Albany)]	LayTile	% Plain
+	(H8/0)	-410	[]	LayTile	% Plain
+	(H10/0)	-410	[]	LayTile	% Plain
+	(H12/0)	-411	[]	LayTile	% Plain
+	(H14/0)	-411	[]	LayTile	% Plain
+
+	(I5/0)	-412	[]	LayTile	% Plain
+	(I7/0)	-410	[]	LayTile	% Plain
+	(I9/0)	-420	[(#Valdosta)]	LayTile	% Plain
+	(I11/0)	-433	[(#Waycross)]	LayTile	% Plain
+	(I13/0)	-437	[(#Brunswick)]	LayTile	% Plain
+
+	(J6/2)	-405	[]	LayTile
+	(J6/1)	-440	[(#Tallahassee)]	LayTile
+	(J6/0)	-441	[]	LayTile
+	(J8/0)	-410	[]	LayTile	% Plain
+	(J10/0)	-410	[]	LayTile	% Plain
+	(J12/0)	-412	[]	LayTile	% Plain
+	(J14/1)	-403	[(ACL)]	LayTile
+	(J14/1)	-440	[(#Jacksonville)]	LayTile
+	(J14/2)	-442	[]	LayTile
+
+		/Bookman 80 selectfont  
+	(C13/7) LayText moveto (18GA) show 
+
+	% =================================
+	% INSERT YOUR TILES AND TOKENS HERE
+	% =================================
+
+	mapFrame

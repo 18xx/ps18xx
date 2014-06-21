@@ -1,0 +1,140 @@
+%
+% $Header: $
+%
+
+%!
+% ----------------------------------------------------------------------
+% 1890 map
+
+	newpath
+
+	/mapRows 14 def
+	/mapCols 22 def
+	/mapScale 0.45 def
+	/CM { 28.35 1 mapScale div mul mul } def
+	mapScale dup scale
+	21 CM 0 translate
+	90 rotate
+	/mapFrame {
+	1.5 CM 1.2 CM mapCols mapRows 0 -1 cm
+		//hexHeight neg //hexHeight neg Map
+	} def
+	mapFrame
+
+	(A14/4)	-405	[]	LayTile
+	(A16/0)	-411	[]	LayTile
+	(A20/0)	-401	[]	LayTile
+
+	(B7/4)	-408	[]	LayTile
+	(B9/0)	-412	[]	LayTile
+	(B11/0)	-412	[]	LayTile
+	(B13/0)	-412	[]	LayTile
+	(B15/0)	-411	[]	LayTile
+	(B17/4)	-420	[(4)(JR)( )]	LayTile
+	(B19/1)	-7		[]	LayTile
+	(B21/1)	-401	[]	LayTile
+
+	(C4/0)	-412	[]	LayTile
+	(C6/0)	-412	[]	LayTile
+	(C8/0)	-411	[]	LayTile
+	(C10/0)	-412	[]	LayTile
+	(C12/0)	-412	[]	LayTile
+	(C14/0)	-412	[]	LayTile
+	(C16/0)	-411	[]	LayTile
+	(C18/0)	-422	[]	LayTile
+
+	(D3/0)	-440	[]	LayTile
+	(D5/1)	-423	[(5)]	LayTile
+	(D7/0)	-440	[]	LayTile
+	(D9/0)	-422	[]	LayTile
+	(D11/0)	-410	[]	LayTile
+	(D13/0)	-410	[]	LayTile
+	(D15/0)	-421	[]	LayTile
+	(D17/0)	-410	[]	LayTile
+	(D19/1)	-425	[]	LayTile
+
+	(E2/0)	-410	[]	LayTile
+	(E4/0)	-412	[]	LayTile
+	(E6/0)	-412	[]	LayTile
+	(E8/0)	-412	[]	LayTile
+	(E10/0)	-421	[]	LayTile
+	(E12/0)	-421	[(Hnk)]	LayTile
+	(E14/0)	-426	[]	LayTile
+	(E16/0)	-57		[(Kei)]	LayTile
+	(E18/0)	-410	[]	LayTile
+
+	(F1/3)	-404	[]	LayTile
+	(F3/0)	-421	[(San)]	LayTile
+	(F5/1)	-424	[(JR)]	LayTile
+	(F7/0)	-421	[]	LayTile
+	(F9/0)	-422	[(Hns)]	LayTile
+	(F11/0)	-427	[]	LayTile
+	(F13/0)	-421	[]	LayTile
+	(F15/0)	-421	[]	LayTile
+	(F17/3)	-412	[]	LayTile
+	(F19/0)	-411	[]	LayTile
+
+	(G12/3)	-428	[(JR)]	LayTile
+	(G14/0)	-426	[]	LayTile
+	(G16/0)	-441	[]	LayTile
+	(G18/0)	-412	[]	LayTile
+	(G20/0)	-413	[]	LayTile
+
+	(H11/4)	-429	[(Osa)]	LayTile
+	(H13/2)	-431	[(2/3)( )]	LayTile
+	(H15/0)	-421	[]	LayTile
+	(H17/0)	-412	[]	LayTile
+	(H19/1)	-432	[(JR)(4)]	LayTile
+
+	(I12/0)	-430	[(Nan)]	LayTile
+	(I14/0)	-410	[]	LayTile
+	(I16/0)	-412	[]	LayTile
+	(I18/0)	-440	[]	LayTile
+
+	(J11/0)	-426	[]	LayTile
+	(J13/0)	-410	[]	LayTile
+	(J15/1)	-57		[(1)]	LayTile
+	(J17/0)	-412	[]	LayTile
+	(J19/0)	-440	[]	LayTile
+
+	(K10/0)	-440	[]	LayTile
+	(K12/0)	-410	[]	LayTile
+	(K14/0)	-410	[]	LayTile
+	(K16/0)	-412	[]	LayTile
+	(K18/0)	-421	[]	LayTile
+	(K20/1)	-406	[]	LayTile
+
+	(L9/0)	-421	[]	LayTile
+	(L11/0)	-410	[]	LayTile
+	(L13/0)	-410	[]	LayTile
+	(L15/0)	-412	[]	LayTile
+	(L17/0)	-410	[]	LayTile
+
+	(M6/4)	-402	[]	LayTile
+	(M8/0)	-421	[]	LayTile
+	(M10/0)	-412	[]	LayTile
+	(M12/0)	-412	[]	LayTile
+	(M14/1)	-407	[]	LayTile
+
+	(N7/3)	-403	[]	LayTile
+
+		/Bookman 120 selectfont
+	(H1/7) LayText moveto (1890) show 
+
+	% =================================
+	% INSERT YOUR TILES AND TOKENS HERE
+	% =================================
+
+	(C16/E)		Barrier
+	(C16/SE)	Barrier
+	(D15/E)		Barrier
+	(D15/SE)	Barrier
+	(E8/E)		Barrier
+	(E14/E)		Barrier
+	(E14/SE)	Barrier
+	(E16/E)		Barrier
+	(E18/SW)	Barrier
+	(F13/E)		Barrier
+	(F13/SE)	Barrier
+
+	mapFrame

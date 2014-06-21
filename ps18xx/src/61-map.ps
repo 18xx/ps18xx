@@ -1,0 +1,201 @@
+%
+% ----------------------------------------------------------------------
+% The 1861 variant was done by Steve Thomas
+% ----------------------------------------------------------------------
+% 1861 map
+
+	newpath
+
+	/mapRows 20 def
+	/mapCols 17 def
+	/mapScale 0.5 def
+	/CM { 28.35 1 mapScale div mul mul } def
+	mapScale dup scale
+	0 0 1 cm 0 360 arc
+	21.5 CM 0 translate
+	90 rotate
+	/axesSwapped true def
+	/mapFrame {
+	1.2 CM 1.2 CM mapCols mapRows
+	//hexSide 1.5 mul //hexSide neg
+	//hexHeight 0.25 mul //hexHeight 0.25 mul Map
+	} def
+	mapFrame
+
+	(@5/4)	-414	[]	LayTile
+	(@9/4)	-401	[(#Poland)]	LayTile
+	(@11/4)	-401	[(#Poland)]	LayTile
+	(@13/4)	-401	[(#Poland)]	LayTile
+	(@15/4)	-401	[(#Poland)]	LayTile
+
+	(A4/1)	-423	[(R-O)(#Riga)]	LayTile	% YCity
+	(A6/0)	-410	[]	LayTile	% Plain
+	(A8/0)	-430	[]	LayTile	% Village
+	(A10/0)	-410	[]	LayTile	% Plain
+	(A12/0)	-410	[]	LayTile	% Plain
+	(A14/0)	-410	[]	LayTile	% Plain
+	(A16/0)	-410	[]	LayTile	% Plain
+	(A18/3)	-402	[(#Romania)]	LayTile
+	(A20/4)	-403	[(#Romania)]	LayTile
+
+	(B3/0)	-410	[]	LayTile	% Plain
+	(B5/5)	-434	[]	LayTile
+	(B7/3)	-8		[]	LayTile
+	(B9/0)	-430	[]	LayTile	% Village
+	(B11/0)	-413	[]	LayTile	% Plain
+	(B13/0)	-410	[]	LayTile	% Plain
+	(B15/0)	-410	[]	LayTile	% Plain
+	(B17/0)	-411	[]	LayTile	% Plain
+	(B19/0)	-411	[]	LayTile	% Plain
+	(B21/3)	-414	[]	LayTile
+
+	(C2/0)	-8		[]	LayTile
+	(C4/3)	-8		[]	LayTile
+	(C6/0)	-410	[]	LayTile	% Plain
+	(C8/0)	-410	[]	LayTile	% Plain
+	(C10/0)	-411	[]	LayTile	% Plain
+	(C12/0)	-413	[]	LayTile	% Plain
+	(C14/0)	-427	[(K-B)(K-K)(#Kiev)]	LayTile	% Kiev
+	(C16/0)	-410	[]	LayTile	% Plain
+	(C18/0)	-410	[]	LayTile	% Plain
+	(C20/1)	-423	[(O-K)(#Odessa)]	LayTile	% YCity
+
+	(D1/1)	-426	[(SPW)( )(#St Petersburg)]	LayTile	% StP
+	(D1/1)	-441	[]	LayTile
+	(D3/0)	-410	[]	LayTile	% Plain
+	(D3/4)	-440	[]	LayTile
+	(D5/0)	-410	[]	LayTile	% Plain
+	(D7/0)	-410	[]	LayTile	% Plain
+	(D9/1)	-420	[(M-B)(#Smolensk)]	LayTile	% City
+	(D11/0)	-430	[]	LayTile	% Village
+	(D13/0)	-430	[]	LayTile	% Village
+	(D15/0)	-412	[]	LayTile	% Plain
+	(D17/0)	-410	[]	LayTile	% Plain
+	(D19/0)	-412	[]	LayTile	% Plain
+
+	(E2/2)	-8		[]	LayTile
+	(E4/5)	-8		[]	LayTile
+	(E6/0)	-410	[]	LayTile	% Plain
+	(E8/0)	-410	[]	LayTile	% Plain
+	(E10/0)	-410	[]	LayTile	% Plain
+	(E12/0)	-410	[]	LayTile	% Plain
+	(E14/0)	-410	[]	LayTile	% Plain
+	(E16/0)	-412	[]	LayTile	% Plain
+	(E18/1)	-422	[(#Ekaterinoslav)]	LayTile	% City
+	(E20/0)	-410	[]	LayTile	% Plain
+
+	(F3/0)	-410	[]	LayTile	% Plain
+	(F5/0)	-58		[]	LayTile
+	(F7/5)	-8		[]	LayTile
+	(F9/0)	-410	[]	LayTile	% Plain
+	(F11/0)	-410	[]	LayTile	% Plain
+	(F13/0)	-430	[]	LayTile	% Village
+	(F15/1)	-423	[(K-R)(#Kharkov)]	LayTile	% Kharkov
+	(F17/0)	-410	[]	LayTile	% Plain
+	(F19/0)	-430	[]	LayTile	% Village
+
+	(G2/0)	-410	[]	LayTile	% Plain
+	(G4/0)	-410	[]	LayTile	% Plain
+	(G6/0)	-410	[]	LayTile	% Plain
+	(G6/0)	-442	[]	LayTile
+	(G8/0)	-425	[(M-K)(N)(M-NN)(#Moscow)]	LayTile	% Moscow
+	(G10/0)	-430	[]	LayTile	% Village
+	(G12/0)	-410	[]	LayTile	% Plain
+	(G14/0)	-410	[]	LayTile	% Plain
+	(G16/0)	-410	[]	LayTile	% Plain
+	(G18/1)	-420	[(D)(#Donetsk)]	LayTile	% City
+	(G20/0)	-410	[]	LayTile	% Plain
+
+	(H3/0)	-410	[]	LayTile	% Plain
+	(H5/1)	-435	[]	LayTile	% Village
+	(H7/0)	-410	[]	LayTile	% Plain
+	(H9/0)	-410	[]	LayTile	% Plain
+	(H9/0)	-443	[]	LayTile
+	(H11/0)	-410	[]	LayTile	% Plain
+	(H13/1)	-420	[(M-V)(#Voronezh)]	LayTile	% City
+	(H15/0)	-412	[]	LayTile	% Plain
+	(H17/0)	-430	[]	LayTile	% Village
+	(H19/1)	-420	[(V)(#Rostov)]	LayTile	% City
+	(H21/3)	-404	[(#Caucasus)]	LayTile
+
+	(I2/0)	-410	[]	LayTile	% Plain
+	(I4/0)	-410	[]	LayTile	% Plain
+	(I6/0)	-411	[]	LayTile	% Plain
+	(I8/0)	-410	[]	LayTile	% Plain
+	(I10/0)	-410	[]	LayTile	% Plain
+	(I12/0)	-410	[]	LayTile	% Plain
+	(I14/0)	-410	[]	LayTile	% Plain
+	(I16/0)	-412	[]	LayTile	% Plain
+	(I18/0)	-412	[]	LayTile	% Plain
+	(I20/2)	-405	[(#Caucasus)]	LayTile
+
+	(J3/0)	-410	[]	LayTile	% Plain
+	(J5/0)	-410	[]	LayTile	% Plain
+	(J7/1)	-424	[(#Nizhnii Novgorod)]	LayTile	% YCity
+	(J9/0)	-410	[]	LayTile	% Plain
+	(J11/0)	-430	[]	LayTile	% Village
+	(J13/0)	-410	[]	LayTile	% Plain
+	(J15/0)	-410	[]	LayTile	% Plain
+	(J17/1)	-420	[(T-R)(#Tsaritsyn)]	LayTile	% City
+	(J19/0)	-410	[]	LayTile	% Plain
+	(J21/3)	-406	[(#Caucasus)]	LayTile
+
+	(K2/0)	-410	[]	LayTile	% Plain
+	(K4/0)	-410	[]	LayTile	% Plain
+	(K6/0)	-411	[]	LayTile	% Plain
+	(K8/0)	-410	[]	LayTile	% Plain
+	(K10/0)	-410	[]	LayTile	% Plain
+	(K12/1)	-420	[(#Saratov)]	LayTile	% City
+	(K14/0)	-410	[]	LayTile	% Plain
+	(K18/0)	-410	[]	LayTile	% Plain
+	(K20/0)	-410	[]	LayTile	% Plain
+
+	(L3/0)	-410	[]	LayTile	% Plain
+	(L5/0)	-410	[]	LayTile	% Plain
+	(L7/1)	-422	[(#Kazan)]	LayTile	% City
+	(L9/0)	-433	[]	LayTile	% Village
+	(L11/0)	-413	[]	LayTile	% Plain
+	(L19/1)	-423	[(#Astrakhan)]	LayTile	% YCity
+	(L21/2)	-414	[]	LayTile
+
+	(M2/0)	-410	[]	LayTile	% Plain
+	(M4/0)	-410	[]	LayTile	% Plain
+	(M6/0)	-411	[]	LayTile	% Plain
+	(M8/0)	-410	[]	LayTile	% Plain
+	(M10/1)	-423	[(S-V)(#Samara)]	LayTile	% YCity
+	(M12/0)	-410	[]	LayTile	% Plain
+	(M20/0)	-410	[]	LayTile	% Plain
+
+	(N1/0)	-410	[]	LayTile	% Plain
+	(N3/0)	-410	[]	LayTile	% Plain
+	(N5/0)	-411	[]	LayTile	% Plain
+	(N7/0)	-410	[]	LayTile	% Plain
+	(N9/0)	-410	[]	LayTile	% Plain
+	(N11/0)	-410	[]	LayTile	% Plain
+
+	(O0/0)	-414	[]	LayTile
+	(O2/1)	-421	[(#Perm)]	LayTile	% City
+	(O4/0)	-411	[]	LayTile	% Plain
+	(O6/0)	-410	[]	LayTile	% Plain
+	(O8/1)	-420	[(#Ufa)]	LayTile	% City
+	(O10/0)	-410	[]	LayTile	% Plain
+	(O12/0)	-410	[]	LayTile	% Plain
+
+	(P3/1)	-428	[(E)(#Ekaterinburg)]	LayTile
+	(P5/3)	-415	[]	LayTile
+	(P7/1)	-414	[]	LayTile
+	(P11/1)	-407	[(#Central Asia)]	LayTile
+	(P13/2)	-408	[(#Central Asia)]	LayTile
+
+		/Bookman 120 selectfont
+	(M16/7) LayText moveto (1861) show 
+
+	(D1/5) 1 cm (D3/2) 0.5 cm //tlNoHex LayPrivate
+	(G6/0) 1 cm (H5/0) 1 cm //tlNoHex LayPrivate
+	(H9/0) 1 cm (I10/0) 1 cm //tlNoHex LayPrivate
+
+	% =================================
+	% INSERT YOUR TILES AND TOKENS HERE
+	% =================================
+
+	mapFrame

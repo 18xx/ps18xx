@@ -1,0 +1,135 @@
+%
+% $Header: $
+%
+
+%!
+% ----------------------------------------------------------------------
+% 1846 map
+
+	newpath
+
+	/mapRows 11 def
+	/mapCols 22 def
+	/mapScale 0.6 def
+	/CM { 28.35 1 mapScale div mul mul } def
+	mapScale dup scale
+	21 CM 0 translate
+	90 rotate
+	/mapFrame {
+	1.5 CM 1.2 CM mapCols mapRows 0 1 cm
+		//hexHeight neg //hexHeight neg Map
+	} def
+	mapFrame
+
+	(A15/5)	-424	[]	LayTile
+
+	(B8/4)	-402	[(#Holland)]	LayTile
+	(B10/0)	-427	[]	LayTile	% Plain
+	(B12/0)	-427	[]	LayTile	% Plain
+	(B14/0)	-421	[]	LayTile	% Plain
+	(B16/0)	-431	[(GT)(#Port Huron)]	LayTile	% City
+	(B18/1)	-403	[(#Sarnia)]	LayTile
+
+	(C5/5)	-401	[]	LayTile
+	(C5/4)	-450	[(#Chi.Conn)]	LayTile
+	(C5/4)	-451	[]	LayTile
+	(C7/5)	-424	[]	LayTile
+	(C9/0)	-431	[(#South Bend)]	LayTile	% City
+	(C11/0)	-421	[]	LayTile	% Plain
+	(C13/0)	-421	[]	LayTile	% Plain
+	(C15/3)	-434	[(MS)(#Detroit)]	LayTile	% ZCity
+	(C17/1)	-404	[(#Windsor)]	LayTile
+	(C21/0)	-405	[]	LayTile
+
+	(D6/3)	-436	[(CWI)( )( )(#Chicago)]	LayTile	% Chicago
+	(D8/0)	-421	[]	LayTile	% Plain
+	(D10/0)	-421	[]	LayTile	% Plain
+	(D12/0)	-421	[]	LayTile	% Plain
+	(D14/0)	-442	[(#Toledo)]	LayTile	% City
+	(D18/0)	-421	[]	LayTile	% Plain
+	(D20/0)	-435	[(NYC)(\(Erie\))(#Erie)]	LayTile	% City
+	(D22/1)	-405	[(#Buffalo)]	LayTile
+
+	(E5/0)	-425	[]	LayTile	% Plain
+	(E7/0)	-421	[]	LayTile	% Plain
+	(E9/0)	-421	[]	LayTile	% Plain
+	(E11/0)	-431	[(\(PRR\))(#Fort Wayne)]	LayTile	% City
+	(E13/0)	-421	[]	LayTile	% Plain
+	(E15/0)	-421	[]	LayTile	% Plain
+	(E17/0)	-432	[(#Cleveland)]	LayTile	% ZCity
+	(E19/0)	-421	[]	LayTile	% Plain
+	(E21/1)	-437	[(Erie)(#Salamanca)]	LayTile
+	(E23/1)	-406	[(#Binghampton)]	LayTile
+
+	(F4/0)	-421	[]	LayTile	% Plain
+	(F6/0)	-425	[]	LayTile	% Plain
+	(F8/0)	-421	[]	LayTile	% Plain
+	(F10/0)	-421	[]	LayTile	% Plain
+	(F12/0)	-421	[]	LayTile	% Plain
+	(F14/0)	-428	[]	LayTile	% Plain
+	(F16/0)	-428	[]	LayTile	% Plain
+	(F18/0)	-422	[]	LayTile	% Plain
+	(F20/5)	-438	[(PRR)(#Homewood)]	LayTile
+	(F22/1)	-407	[]	LayTile
+
+	(G3/0)	-431	[(#Springfield)]	LayTile	% City
+	(G5/0)	-425	[]	LayTile	% Plain
+	(G7/0)	-431	[(#Terre Haute)]	LayTile	% City
+	(G9/0)	-431	[(Big4)(#Indianapolis)]	LayTile	% City
+	(G11/0)	-421	[]	LayTile	% Plain
+	(G13/0)	-431	[(#Dayton)]	LayTile	% City
+	(G15/0)	-431	[(#Columbus)]	LayTile	% City
+	(G17/0)	-422	[]	LayTile	% Plain
+	(G19/5)	-439	[(B&O)(#Wheeling)]	LayTile	% City
+	(G21/1)	-412	[(#Pittsburgh)]	LayTile
+
+	(H2/0)	-421	[]	LayTile	% Plain
+	(H4/0)	-421	[]	LayTile	% Plain
+	(H6/0)	-425	[]	LayTile	% Plain
+	(H8/0)	-421	[]	LayTile	% Plain
+	(H10/0)	-421	[]	LayTile	% Plain
+	(H12/0)	-432	[(\(B&O\))(#Cincinnati)]	LayTile	% ZCity
+	(H14/0)	-423	[]	LayTile	% Plain
+	(H16/0)	-422	[]	LayTile	% Plain
+	(H20/2)	-408	[]	LayTile
+	(H20/2)	-450	[(#Cumberland)]	LayTile
+
+	(I1/3)	-411	[(#St Louis)]	LayTile
+	(I3/0)	-421	[]	LayTile	% Plain
+	(I5/1)	-433	[(\(IC\))(#Centralia)]	LayTile
+	(I7/0)	-421	[]	LayTile	% Plain
+	(I9/0)	-421	[]	LayTile	% Plain
+	(I11/0)	-421	[]	LayTile	% Plain
+	(I15/3)	-440	[(C&O)(#Huntingdon)]	LayTile
+
+	(J4/5)	-425	[]	LayTile	% Plain
+	(J6/0)	-421	[]	LayTile	% Plain
+	(J8/0)	-421	[]	LayTile	% Plain
+	(J10/2)	-410	[]	LayTile
+	(J10/2)	-450	[(#Louisville)]	LayTile
+	(J14/3)	-409	[(#Charleston)]	LayTile
+
+	(K3/3)	-441	[(IC)(#Cairo)]	LayTile
+
+		/Bookman 80 selectfont
+	(B1/7) LayText moveto (1846) show 
+
+	% =================================
+	% INSERT YOUR TILES AND TOKENS HERE
+	% =================================
+
+	(D16/NW)	Barrier
+	(D16/W)		Barrier
+	(D16/SW)	Barrier
+	(D16/SE)	Barrier
+	(D16/E)		Barrier
+
+	(B16/E)		(40)	CostBarrier
+	(C15/E)		(60)	CostBarrier
+	(F20/NW)	(40)	CostBarrier
+	(G19/E)		(20)	CostBarrier
+	(G19/NW)	(40)	CostBarrier
+	(G19/W)		(20)	CostBarrier
+	(H12/SW)	(40)	CostBarrier
+	(J4/E)		(40)	CostBarrier
+	mapFrame

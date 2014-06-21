@@ -1,0 +1,54 @@
+%
+% $Header: 00-map.ps $
+%
+
+% ----------------------------------------------------------------------
+% the 1800 variant was done by Steve Thomas
+% ----------------------------------------------------------------------
+% 1800 map
+
+	newpath
+
+	/mapRows 9 def
+	/mapCols 5 def
+	/mapScale 1 def
+	/CM { 28.35 1 mapScale div mul mul } def
+	mapScale dup scale
+	21 CM 0 translate
+	90 rotate
+	/axesSwapped true def
+	/mapFrame {
+		1.5 CM 1.2 CM mapCols mapRows
+		//hexSide 0 mul
+		//hexSide 2 mul
+		//hexHeight 0 mul //hexHeight 0 mul Map
+	} def
+	mapFrame
+
+	(A5/0)	-430	[(DRG)]	LayTile	% Plain
+	(A7/3)	-401	[]	LayTile
+
+	(B4/5)	-421	[]	LayTile	% Plain
+	(B6/0)	-411	[]	LayTile	% Plain
+
+	(C1/0)	-403	[]	LayTile
+	(C1/2)	-404	[]	LayTile
+	(C3/0)	-412	[]	LayTile	% Plain
+	(C5/0)	-432	[]	LayTile	% Plain
+	(C7/0)	-431	[(#Denver)]	LayTile	% Denver
+	(C9/3)	-402	[]	LayTile
+
+	(D4/5)	-420	[]	LayTile	% Plain
+	(D6/0)	-411	[]	LayTile	% Plain
+
+	(E5/0)	-430	[(C&S)]	LayTile	% Plain
+	(E7/3)	-401	[]	LayTile
+
+		/Bookman 80 selectfont
+	(D2/7) LayText moveto (1800) show 
+
+	% =================================
+	% INSERT YOUR TILES AND TOKENS HERE
+	% =================================
+
+	mapFrame

@@ -1,0 +1,215 @@
+%
+% $Header: 73-tc.ps[1.0] $
+%
+% ----------------------------------------------------------------------
+% the 1873 variant was done by Steve Thomas (maisnestce@btinternet.com)
+% ----------------------------------------------------------------------
+% 1873 tile codes
+
+/18xxVariant (1873) def
+
+/maxTile 999 def
+
+	/tileCodes //maxTile array def
+
+	tileCodes  75 [  75 0 //tlYellow //tlPlain ()   (20)  4 ] put
+	tileCodes  76 [  76 0 //tlYellow //tlPlain ()   (20)  7 ] put
+	tileCodes  77 [  77 0 //tlYellow //tlPlain ()   ()    2 ] put
+	tileCodes  78 [  78 0 //tlYellow //tlPlain ()   ()   10 ] put
+	tileCodes  79 [  79 0 //tlYellow //tlPlain ()   ()    4 ] put
+	tileCodes 956 [ 155 0 //tlYellow //tlPlain ()   (20) 10 ] put
+
+	tileCodes 100 [ 100 0 //tlGreen  //tlPlain ()   (30)  4 ] put
+	tileCodes 101 [ 101 0 //tlGreen  //tlPlain ()   (30)  1 ] put
+	tileCodes 957 [ 156 0 //tlGreen  //tlPlain ()   ()    2 ] put
+	tileCodes 958 [ 157 0 //tlGreen  //tlPlain ()   ()    2 ] put
+	tileCodes 959 [ 158 0 //tlGreen  //tlPlain ()   ()    1 ] put
+	tileCodes 960 [ 161 0 //tlGreen  //tlPlain ()   ()    2 ] put
+	tileCodes 961 [ 162 0 //tlGreen  //tlPlain ()   ()    2 ] put
+	tileCodes 962 [ 151 3 //tlGreen  //tlPlain ()   (30)  6 ] put
+	tileCodes 963 [ 163 0 //tlGreen  //tlPlain ()   (30)  6 ] put
+	tileCodes 964 [ 164 5 //tlGreen  //tlPlain ()   (20)  1 ] put
+	tileCodes 965 [ 165 5 //tlGreen  //tlPlain ()   (20)  1 ] put
+	tileCodes 966 [ 172 2 //tlGreen  //tlPlain ()   (20)  1 ] put
+	tileCodes 967 [ 173 0 //tlGreen  //tlPlain ()   (20)  1 ] put
+	tileCodes 968 [ 166 0 //tlGreen  //tlPlain ()   (20)  2 ] put
+	tileCodes 969 [ 169 1 //tlGreen  //tlPlain ()   (20)  2 ] put
+	tileCodes 970 [ 170 0 //tlGreen  //tlPlain ()   (20)  1 ] put
+	tileCodes 971 [  75 0 //tlGreen  //tlPlain ()   (40)  2 ] put
+	tileCodes 972 [  76 0 //tlGreen  //tlPlain ()   (40)  3 ] put
+	tileCodes 973 [ 155 0 //tlGreen  //tlPlain ()   (40)  1 ] put
+	tileCodes 974 [ 171 0 //tlGreen  //tlPlain (B)  (60)  1 ] put
+
+	tileCodes 975 [ 174 0 //tlBrown  //tlPlain ()   (40)  4 ] put
+	tileCodes 976 [ 175 0 //tlBrown  //tlPlain ()   (40)  6 ] put
+	tileCodes 977 [ 171 0 //tlBrown  //tlPlain ()   (40)  5 ] put
+	tileCodes 978 [ 182 0 //tlBrown  //tlPlain ()   (60)  2 ] put
+	tileCodes 979 [ 152 0 //tlBrown  //tlPlain ()   (60)  2 ] put
+	tileCodes 980 [ 180 0 //tlBrown  //tlPlain ()   (60)  2 ] put
+	tileCodes 985 [ 153 0 //tlBrown  //tlPlain ()   (60)  2 ] put
+	tileCodes 986 [ 176 0 //tlBrown  //tlPlain (B)  (80)  1 ] put
+	tileCodes 987 [ 664 0 //tlBrown  //tlPlain (HQG) (90) 2 ] put
+
+	tileCodes 988 [ 177 0 //tlGray   //tlPlain ()   (50)  3 ] put
+	tileCodes 989 [ 177 0 //tlGray   //tlPlain ()   (70)  2 ] put
+	tileCodes 990 [ 178 0 //tlGray   //tlPlain (B)  (100) 1 ] put
+
+
+	%tile codes for map definition
+
+	% Plain track
+	tileCodes 400 [ 500 0 //tlGround //tlPlain     ()     ()   0 ] put
+	tileCodes 401 [ 500 0 //tlGround //tlHill      (50)   ()   0 ] put
+	tileCodes 402 [ 500 0 //tlGround //tlMountain  (100)  ()   0 ] put
+	tileCodes 403 [ 500 0 //tlGround //tlMountain2 (150)  ()   0 ] put
+	tileCodes 404 [ 500 0 //tlSpecialArea //tlPlain ()    ()   0 ] put
+	tileCodes 405 [   8 0 //tlGray   //tlPlain     ()     ()   0 ] put
+	tileCodes 406 [   9 0 //tlGray   //tlPlain     ()     ()   0 ] put
+	tileCodes 407 [  25 0 //tlGray   //tlPlain     ()     ()   0 ] put
+	tileCodes 408 [ 500 0 //tlYellow //tlPlain     ()     ()   0 ] put
+	tileCodes 409 [  78 0 //tlGray   //tlPlain     ()     ()   0 ] put
+
+	% Off-board areas
+	tileCodes 410 [ 664 0 //tlGray   //tlPlain     ()     ()   0 ] put
+	tileCodes 411 [ 150 0 //tlGray   //tlPlain     ()     ()   0 ] put
+	tileCodes 412 [ 181 0 //tlGray   //tlPlain     ()     ()   0 ] put
+	tileCodes 413 [ 113 0 //tlGray   //tlPlain     ()     ()   0 ] put
+	tileCodes 414 [ 153 0 //tlGray   //tlPlain     ()     (30) 0 ] put
+	tileCodes 415 [ 113 0 //tlGray   //tlPlain ()  (30/40/60/70)   0 ] put
+	tileCodes 416 [ 644 0 //tlGray   //tlPlain     ()     ()   0 ] put
+	tileCodes 417 [ 180 0 //tlGray   //tlPlain     ()     (30) 0 ] put
+	tileCodes 418 [ 154 0 //tlGray   //tlPlain     ()     ()   0 ] put
+	tileCodes 419 [ 305 0 //tlGray   //tlPlain     ()     ()   0 ] put
+
+	% Large cities
+	tileCodes 420 [ 155 0 //tlGreen  //tlHill     (50)  (40)  0 ] put
+	tileCodes 421 [ 305 0 //tlGreen  //tlPlain    (HQG) (60)  0 ] put
+	tileCodes 422 [ 151 0 //tlGreen  //tlPlain    ()    (30)  0 ] put
+	tileCodes 423 [ 113 0 //tlYellow //tlHill     (50)  (30)  0 ] put
+	tileCodes 424 [ 154 0 //tlGreen  //tlPlain    (HQG) (60)  0 ] put
+	tileCodes 425 [ 169 0 //tlGreen  //tlHill     (50)  (20)  0 ] put
+	tileCodes 426 [ 179 0 //tlGreen  //tlHill     (50)  (20)  0 ] put
+	tileCodes 427 [ 155 0 //tlGreen  //tlPlain    ()    (40)  0 ] put
+	tileCodes 428 [ 100 0 //tlGreen  //tlMountain (100) ()    0 ] put
+	tileCodes 429 [ 301 0 //tlGray   //tlPlain    ()    (0)   0 ] put
+
+	% More miscellaneous stuff
+	tileCodes 430 [ 500 0 //tlGray   //tlPlain     ()     ()   0 ] put
+	tileCodes 431 [ 500 0 //tlTransparent //tlPlain () (30) 0 ] put
+	tileCodes 432 [ 500 0 //tlTransparent //tlMountain2 (150) () 0 ] put
+	tileCodes 433 [ 500 0 //tlTransparent //tlPlain ()  (40/50/80/120)  0 ] put
+	tileCodes 434 [ 500 0 //tlNoHex   //tlPlain ()  (40/50/80/120)  0 ] put
+	tileCodes 435 [ 500 0 //tlNoHex   //tlPlain ()  (30/40/60/70)   0 ] put
+	tileCodes 436 [ 500 0 //tlNoHex   //tlPlain ()  (60/80/120/180) 0 ] put
+
+	% Small cities
+	tileCodes 440 [ 242 5 //tlGround //tlPlain     ()     ()   0 ] put
+	tileCodes 441 [ 242 5 //tlGround //tlHill      (50)   ()   0 ] put
+	tileCodes 442 [ 242 5 //tlGround //tlMountain  (100)  ()   0 ] put
+	tileCodes 443 [ 242 5 //tlGround //tlMountain2 (150)  ()   0 ] put
+	tileCodes 444 [ 242 0 //tlSpecialArea //tlPlain ()    ()   0 ] put
+
+	% Overlays
+	tileCodes 450 [ 500 0 //tlTransparent //tlPlain () () 0 ] put
+	tileCodes 451 [ 147 0 //tlTransparent //tlPlain () () 0 ] put
+	tileCodes 452 [ 148 0 //tlTransparent //tlPlain () () 0 ] put
+	tileCodes 453 [ 149 0 //tlTransparent //tlPlain () () 0 ] put
+	tileCodes 454 [ 152 0 //tlTransparent //tlPlain (B) (40) 0 ] put
+	tileCodes 455 [ 500 0 //tlNoHex //tlPlain () (60/80/120/150) 0 ] put
+	tileCodes 456 [ 500 0 //tlNoHex //tlPlain () () 0 ] put
+	tileCodes 457 [ 500 0 //tlNoHex //tlPlain () (30/70/60/60)   0 ] put
+	tileCodes 458 [ 500 0 //tlTransparent //tlPlain () (50/80/120/150) 0 ] put
+	tileCodes 459 [ 500 0 //tlTransparent //tlPlain () (30/40/60/70)   0 ] put
+
+	% Mines
+	tileCodes 460 [ 500 0 //tlTransparent //tlPlain () (1|10) 0 ] put
+	tileCodes 461 [ 500 0 //tlTransparent //tlPlain () (2|20) 0 ] put
+	tileCodes 462 [ 500 0 //tlTransparent //tlPlain () (3|20) 0 ] put
+	tileCodes 463 [ 500 0 //tlTransparent //tlPlain () (4|20) 0 ] put
+	tileCodes 464 [ 500 0 //tlTransparent //tlPlain () (5|10) 0 ] put
+	tileCodes 465 [ 500 0 //tlTransparent //tlPlain () (6|20) 0 ] put
+	tileCodes 466 [ 500 0 //tlTransparent //tlPlain () (7|30) 0 ] put
+	tileCodes 467 [ 500 0 //tlTransparent //tlPlain () (8|20) 0 ] put
+	tileCodes 468 [ 500 0 //tlTransparent //tlPlain () (9|30) 0 ] put
+	tileCodes 469 [ 500 0 //tlTransparent //tlPlain () (10|20) 0 ] put
+	tileCodes 470 [ 500 0 //tlTransparent //tlPlain () (11|20) 0 ] put
+	tileCodes 471 [ 500 0 //tlTransparent //tlPlain () (12|20) 0 ] put
+	tileCodes 472 [ 500 0 //tlTransparent //tlPlain () (13|30) 0 ] put
+	tileCodes 473 [ 500 0 //tlTransparent //tlPlain () (14|20) 0 ] put
+	tileCodes 474 [ 500 0 //tlTransparent //tlPlain () (15|20) 0 ] put
+
+	% Plants
+	tileCodes 480 [ 529 0 //tlTransparent //tlPlain () ([PM+40) 0 ] put
+	tileCodes 481 [ 529 0 //tlTransparent //tlPlain () ([SB+50) 0 ] put
+	tileCodes 482 [ 529 0 //tlTransparent //tlPlain () ([SB+60) 0 ] put
+	tileCodes 483 [ 529 0 //tlTransparent //tlPlain () ([SM+50) 0 ] put
+	tileCodes 484 [ 529 0 //tlTransparent //tlPlain () ([ZW+70) 0 ] put
+
+	% Track rights
+	tileCodes 490 [ 500 0 //tlTransparent //tlPlain (HBE) () 0 ] put
+	tileCodes 491 [ 500 0 //tlTransparent //tlPlain (GHE) () 0 ] put
+	tileCodes 492 [ 500 0 //tlTransparent //tlPlain (KEZ) () 0 ] put
+	tileCodes 493 [ 500 0 //tlTransparent //tlPlain ( NWE) () 0 ] put
+	tileCodes 494 [ 500 0 //tlTransparent //tlPlain (SHE) () 0 ] put
+	tileCodes 495 [ 500 0 //tlTransparent //tlPlain ( WBE) () 0 ] put
+
+% Upgrade Plain 400 => 77/* 78/* 79/*
+% Upgrade Plain 401 => 77/* 78/* 79/*
+% Upgrade Plain 402 => 77/* 78/* 79/*
+% Upgrade Plain 403 => 77/* 78/* 79/*
+% Upgrade Plain 404 => 77/* 78/* 79/*
+% Upgrade Plain 440 => 75/* 76/* 956/*
+% Upgrade Plain 441 => 75/* 76/* 956/*
+% Upgrade Plain 442 => 75/* 76/* 956/*
+% Upgrade Plain 443 => 75/* 76/* 956/*
+% Upgrade Plain 444 => 75/* 76/* 956/*
+
+% Upgrade Plain 408 => 974/5
+% Upgrade Plain 423 => 971/01 972/02 973/03
+% Upgrade Plain 75 => 100/05 962/0 963/5 964/25 967/2 968/4
+% Upgrade Plain 76 => 100/5 101/024 962/1 963/3 965/14 966/34 967/4 969/5
+% Upgrade Plain 77 => 959/4
+% Upgrade Plain 78 => 957/5 958/3 960/5
+% Upgrade Plain 79 => 959/03 960/03 961/0235
+% Upgrade Plain 956 => 962/03 963/03 968/03 969/03 970/0134
+
+% Upgrade Plain 420 => 980/03 985/03
+% Upgrade Plain 421 => 987/3
+% Upgrade Plain 422 => 975/03 976/0 977/0
+% Upgrade Plain 424 => 987/0
+% Upgrade Plain 425 => 977/2
+% Upgrade Plain 426 => 975/14 976/34 977/024
+% Upgrade Plain 427 => 980/03 985/03
+% Upgrade Plain 428 => 976/45 977/3
+% Upgrade Plain 100 => 976/45 977/3
+% Upgrade Plain 101 => 977/024
+% Upgrade Plain 962 => 975/03 976/3 977/3
+% Upgrade Plain 963 => 975/14 976/0 977/3
+% Upgrade Plain 964 => 975/14
+% Upgrade Plain 965 => 975/03
+% Upgrade Plain 966 => 976/0
+% Upgrade Plain 967 => 977/0
+% Upgrade Plain 968 => 976/0
+% Upgrade Plain 969 => 977/3
+% Upgrade Plain 970 => 975/03
+% Upgrade Plain 971 => 978/05 980/0 985/5
+% Upgrade Plain 972 => 978/5 979/024 980/1 985/3
+% Upgrade Plain 973 => 980/03 985/03
+% Upgrade Plain 974 => 986/24
+
+% Upgrade Plain 975 => 988/03
+% Upgrade Plain 976 => 988/34
+% Upgrade Plain 977 => 988/04
+% Upgrade Plain 978 => 989/123
+% Upgrade Plain 979 => 989/024
+% Upgrade Plain 980 => 989/013
+% Upgrade Plain 985 => 989/134
+% Upgrade Plain 986 => 990/*
+
+% Token GHE 9
+% Token HBE 12
+% Token KEZ 6
+% Token NWE 9
+% Token QLB 6
+% Token SHE 6
+% Token WBE 6

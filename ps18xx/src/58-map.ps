@@ -1,0 +1,358 @@
+%
+% ----------------------------------------------------------------------
+% The 1858 variant was done by Steve Thomas
+% ----------------------------------------------------------------------
+% 1858 map
+
+	newpath
+
+	/mapRows 21 def
+	/mapCols 16 def
+	/mapScale 0.475 def
+	/CM { 28.35 1 mapScale div mul mul } def
+	mapScale dup scale
+	0 0 1 cm 0 360 arc
+	21.5 CM 0 translate
+	90 rotate
+	/axesSwapped true def
+	/mapFrame {
+	1.2 CM 1.2 CM mapCols mapRows
+	//hexSide 0 mul //hexSide 2.5 mul
+	//hexHeight 0 mul //hexHeight 0 mul Map
+	} def
+	mapFrame
+
+	(A12/0)	-410	[]	LayTile	% Plain
+	(A14/3)	-427	[]	LayTile	% Plain
+	(A14/4)	-472	[(#Lisboa)]	LayTile
+	(A16/3)	-404	[]	LayTile
+
+	(B3/0)	-410	[]	LayTile	% Plain
+	(B5/1)	-420	[(#Vigo)]	LayTile	% Plain
+	(B5/4)	-451	[]	LayTile
+	(B7/1)	-440	[(#Braga)]	LayTile	% Plain
+	(B9/1)	-425	[(#Porto)]	LayTile	% Porto
+	(B9/0)	-473	[]	LayTile
+	(B11/2)	-440	[(#Coimbra)]	LayTile	% Plain
+	(B11/2)	-452	[]	LayTile
+	(B13/1)	-441	[(#Santarem)]	LayTile	% Plain
+	(B13/0)	-453	[]	LayTile
+	(B15/1)	-440	[(#Setubal)]	LayTile	% Plain
+	(B17/0)	-410	[]	LayTile	% Plain
+	(B19/0)	-410	[]	LayTile	% Plain
+
+	(C2/1)	-420	[(#La Coruna)]	LayTile	% Plain
+	(C2/0)	-454	[]	LayTile
+	(C4/4)	-443	[(#Santiago)(#Orense)]	LayTile	% Plain
+	(C6/0)	-410	[]	LayTile	% Plain
+	(C8/0)	-411	[]	LayTile	% Plain
+	(C10/0)	-410	[]	LayTile	% Plain
+	(C12/0)	-411	[]	LayTile	% Plain
+	(C14/0)	-410	[]	LayTile	% Plain
+	(C16/0)	-411	[]	LayTile	% Plain
+	(C18/0)	-411	[]	LayTile	% Plain
+	(C20/1)	-441	[(#Faro)]	LayTile	% Plain
+
+	(D1/0)	-416	[]	LayTile	% Plain
+	(D3/1)	-440	[(#Lugo)]	LayTile	% Plain
+	(D5/0)	-412	[]	LayTile	% Plain
+	(D7/0)	-412	[]	LayTile	% Plain
+	(D9/0)	-411	[]	LayTile	% Plain
+	(D11/0)	-410	[]	LayTile	% Plain
+	(D13/1)	-441	[(#Caceres)]	LayTile	% Plain
+	(D15/1)	-441	[(#Badajoz)]	LayTile	% Plain
+	(D17/0)	-410	[]	LayTile	% Plain
+	(D19/1)	-440	[(#Huelva)]	LayTile	% Plain
+
+	(E2/0)	-412	[]	LayTile	% Plain
+	(E4/0)	-412	[]	LayTile	% Plain
+	(E6/0)	-412	[]	LayTile	% Plain
+	(E8/0)	-411	[]	LayTile	% Plain
+	(E10/0)	-410	[]	LayTile	% Plain
+	(E12/0)	-411	[]	LayTile	% Plain
+	(E14/0)	-411	[]	LayTile	% Plain
+	(E14/5)	-456	[]	LayTile
+	(E16/0)	-412	[]	LayTile	% Plain
+	(E18/1)	-425	[(#Sevilla)]	LayTile	% Plain
+	(E20/0)	-421	[(#Cadiz)]	LayTile	% Plain
+	(E20/2)	-457	[]	LayTile
+
+	(F1/1)	-428	[(#Gijon)]	LayTile	% Plain
+	(F3/0)	-413	[]	LayTile	% Plain
+	(F3/2)	-460	[]	LayTile
+	(F5/0)	-440	[(#Leon)]	LayTile	% Plain
+	(F7/0)	-411	[]	LayTile	% Plain
+	(F9/1)	-440	[(#Salamanca)]	LayTile	% Plain
+	(F9/5)	-462	[]	LayTile
+	(F11/0)	-413	[]	LayTile	% Plain
+	(F13/0)	-411	[]	LayTile	% Plain
+	(F13/2)	-455	[]	LayTile
+	(F15/0)	-411	[]	LayTile	% Plain
+	(F17/0)	-410	[]	LayTile	% Plain
+	(F17/0)	-458	[]	LayTile
+	(F19/1)	-441	[(#Marchena)]	LayTile	% Plain
+	(F21/3)	-417	[]	LayTile	% Plain
+
+	(G2/0)	-412	[]	LayTile	% Plain
+	(G4/0)	-410	[]	LayTile	% Plain
+	(G4/4)	-461	[]	LayTile
+	(G6/1)	-440	[(#Palencia)]	LayTile	% Plain
+	(G8/1)	-420	[(#Valladolid)]	LayTile	% Plain
+	(G10/1)	-440	[(#Avila)]	LayTile	% Plain
+	(G10/4)	-463	[]	LayTile
+	(G12/1)	-441	[(#Talavera)]	LayTile	% Plain
+	(G14/0)	-411	[]	LayTile	% Plain
+	(G16/0)	-410	[]	LayTile	% Plain
+	(G18/1)	-421	[(#Cordoba)]	LayTile	% Plain
+	(G20/0)	-425	[(#Malaga)]	LayTile	% Plain
+	(G20/2)	-459	[]	LayTile
+
+	(H3/1)	-422	[(#Santander)]	LayTile	% Plain
+	(H5/1)	-440	[(#Burgos)]	LayTile	% Plain
+	(H7/0)	-410	[]	LayTile	% Plain
+	(H9/0)	-413	[]	LayTile	% Plain
+	(H9/2)	-450	[(#Madrid)]	LayTile
+	(H11/0)	-429	[]	LayTile	% Plain
+	(H13/5)	-58		[(#Aranjuez)]	LayTile	% Plain
+	(H13/3)	-465	[]	LayTile
+	(H15/1)	-440	[(#Ciudad Real)]	LayTile	% Plain
+	(H17/4)	-442	[(#Linares)(#Jaen)]	LayTile	% Plain
+	(H19/1)	-420	[(#Granada)]	LayTile	% Plain
+	(H21/2)	-415	[]	LayTile	% Plain
+
+	(I2/1)	-420	[(#Bilbao)]	LayTile	% Plain
+	(I2/5)	-464	[]	LayTile
+	(I4/1)	-440	[(#Vitoria)]	LayTile	% Plain
+	(I6/0)	-413	[]	LayTile	% Plain
+	(I8/0)	-413	[]	LayTile	% Plain
+	(I10/1)	-440	[(#Guadalajara)]	LayTile	% Plain
+	(I12/0)	-410	[]	LayTile	% Plain
+	(I14/5)	-9		[]	LayTile	% Plain
+	(I16/0)	-413	[]	LayTile	% Plain
+	(I18/0)	-412	[]	LayTile	% Plain
+	(I20/0)	-414	[]	LayTile	% Plain
+
+	(J1/1)	-405	[]	LayTile	% Plain
+	(J1/SW)	//tlNoHex	LayFlash
+	(J3/1)	-440	[(#San Sebastian)]	LayTile	% Plain
+	(J5/1)	-440	[(#Logrono)]	LayTile	% Plain
+	(J7/0)	-410	[]	LayTile	% Plain
+	(J9/0)	-410	[]	LayTile	% Plain
+	(J9/0)	-466	[]	LayTile
+	(J11/0)	-410	[]	LayTile	% Plain
+	(J13/0)	-410	[]	LayTile	% Plain
+	(J15/1)	-440	[(#Albacete)]	LayTile	% Plain
+	(J17/0)	-410	[]	LayTile	% Plain
+	(J19/0)	-410	[]	LayTile	% Plain
+
+	(K2/0)	-402	[(#France)]	LayTile
+	(K2/SW)	//tlNoHex	LayFlash
+	(K2/S)	//tlNoHex	LayFlash
+	(K4/1)	-440	[(#Pamplona)]	LayTile	% Plain
+	(K6/0)	-411	[]	LayTile	% Plain
+	(K6/4)	-467	[]	LayTile
+	(K8/0)	-410	[]	LayTile	% Plain
+	(K10/0)	-413	[]	LayTile	% Plain
+	(K12/0)	-410	[]	LayTile	% Plain
+	(K14/0)	-410	[]	LayTile	% Plain
+	(K16/0)	-410	[]	LayTile	% Plain
+	(K18/1)	-421	[(#Murcia)]	LayTile	% Plain
+	(K20/2)	-415	[]	LayTile
+
+	(L3/5)	-403	[(#France)]	LayTile
+	(L3/SW)	//tlNoHex	LayFlash
+	(L3/S)	//tlNoHex	LayFlash
+	(L3/SE)	//tlNoHex	LayFlash
+	(L5/0)	-413	[]	LayTile	% Plain
+	(L7/2)	-430	[(#Zaragoza)]	LayTile	% Plain
+	(L9/0)	-410	[]	LayTile	% Plain
+	(L11/0)	-413	[]	LayTile	% Plain
+	(L13/1)	-425	[(#Valencia)]	LayTile	% Plain
+	(L13/3)	-470	[]	LayTile
+	(L15/0)	-410	[]	LayTile	% Plain
+	(L17/1)	-444	[]	LayTile	% Plain
+	(L17/2)	-450	[(#Alicante)]	LayTile
+	(L19/2)	-445	[(#Cartagena)]	LayTile	% Plain
+	(L19/2)	-471	[]	LayTile
+
+	(M2/0)	-401	[(#France)]	LayTile
+	(M2/S)	//tlNoHex	LayFlash
+	(M4/0)	-414	[]	LayTile	% Plain
+	(M6/0)	-412	[]	LayTile	% Plain
+	(M8/0)	-411	[]	LayTile	% Plain
+	(M10/1)	-441	[(#Tortosa)]	LayTile	% Plain
+	(M12/1)	-440	[(#Castellon)]	LayTile	% Plain
+
+	(N3/0)	-402	[(#France)]	LayTile
+	(N3/SW)	//tlNoHex	LayFlash
+	(N3/S)	//tlNoHex	LayFlash
+	(N5/0)	-414	[]	LayTile	% Plain
+	(N7/1)	-440	[(#Lerida)]	LayTile	% Plain
+	(N9/4)	-442	[(#Reus)(#Tarragona)]	LayTile	% Plain
+	(N9/2)	-469	[]	LayTile
+
+	(O4/0)	-402	[(#France)]	LayTile
+	(O4/SW)	//tlNoHex	LayFlash
+	(O4/S)	//tlNoHex	LayFlash
+	(O6/0)	-413	[]	LayTile	% Plain
+	(O8/1)	-423	[(#Barcelona)]	LayTile	% Plain
+	(O8/1)	-468	[]	LayTile
+
+	(P5/0)	-402	[(#France)]	LayTile
+	(P5/SW)	//tlNoHex	LayFlash
+	(P5/S)	//tlNoHex	LayFlash
+	(P7/1)	-446	[(#Gerona)]	LayTile	% Plain
+
+		/Bookman 120 selectfont
+	(N13/7) LayText moveto (1858) show 
+
+	% =================================
+	% INSERT YOUR TILES AND TOKENS HERE
+	% =================================
+
+	(A14/1) 1 cm (B13/3) 1 cm //tlNoHex LayPrivate
+	(B5/1) 1 cm (C4/4) 1 cm //tlGreen LayPrivate
+	(B9/4) 1.5 cm (B11/3) 1 cm //tlNoHex LayPrivate
+	(C2/4) 1.5 cm (C4/1) 1 cm //tlGreen LayPrivate
+	(D13/0) 1 cm (E12/4) 1 cm //tlGreen LayPrivate
+	(E12/4) 1 cm (F13/2) 0.5 cm //tlGreen LayPrivate
+	(F13/2) 0.5 cm (G12/5) 1 cm //tlGreen LayPrivate
+	(G12/5) 1 cm (H11/3) 1.6 cm //tlGreen LayPrivate
+	(D15/0) 1 cm (E14/4) 0.5 cm //tlNoHex LayPrivate
+	(E14/4) 0.5 cm (F15/2) 0.5 cm //tlNoHex LayPrivate
+	(E18/4) 1.5 cm (E20/2) 1.2 cm //tlNoHex LayPrivate
+	(E18/1) 1 cm (F17/3) 1 cm //tlNoHex LayPrivate
+	(F17/3) 1 cm (G18/2) 1 cm //tlNoHex LayPrivate
+	(G18/4) 1.5 cm (G20/2) 1.2 cm //tlNoHex LayPrivate
+	(F1/5) 1.2 cm (F3/0) 1 cm //tlGreen LayPrivate
+	(F3/0) 1 cm (F5/1) 1 cm //tlGreen LayPrivate
+	(F9/4) 1 cm (F9/5) 1 cm //tlGreen LayPrivate
+	(G8/5) 1 cm (G10/0) 1 cm //tlNoHex LayPrivate
+	(G10/0) 1 cm (H11/2) 1.6 cm //tlNoHex LayPrivate
+	(G4/0) 0.5 cm (H3/4) 1 cm //tlNoHex LayPrivate
+	(I2/4) 1 cm (I2/5) 1 cm //tlNoHex LayPrivate
+	(H11/5) 1.6 cm (H13/1) 1.2 cm //tlNoHex LayPrivate
+	(I10/5) 0.0 cm (J9/5) 0.5 cm //tlNoHex LayPrivate
+	(J9/5) 0.5 cm (K8/5) 0.5 cm //tlNoHex LayPrivate
+	(K8/5) 0.5 cm (L7/4) 1.6 cm //tlNoHex LayPrivate
+	(K4/3) 1 cm (K6/1) 1 cm //tlNoHex LayPrivate
+	(K6/1) 1 cm (L7/2) 1.6 cm //tlNoHex LayPrivate
+	(O8/3) 1 cm (O8/4) 1 cm //tlNoHex LayPrivate
+	(N9/1) 1 cm (N9/2) 1 cm //tlNoHex LayPrivate
+	(L13/0) 1 cm (L13/5) 1 cm //tlNoHex LayPrivate
+	(K18/0) 1 cm (L19/2) 1 cm //tlNoHex LayPrivate
+
+	(A14/SE)	Barrier
+
+	(B5/S)		Frontier
+	(B11/SW)	Frontier
+	(B11/S)		Frontier
+	(C6/SE)		Frontier
+	(C6/S)		Frontier
+	(C6/SW)		Frontier
+	(C12/SW)	Frontier
+	(C12/S)		Frontier
+	(D5/S)		Frontier
+	(D11/S)		Frontier
+	(D11/SE)	Frontier
+	(D13/NW)	Frontier
+	(D13/SW)	Frontier
+	(D15/NW)	Frontier
+	(D15/SW)	Frontier
+	(D17/NW)	Frontier
+	(D17/SW)	Frontier
+	(D17/S)		Frontier
+	(D17/SE)	Frontier
+	(D19/NW)	Frontier
+	(D19/SW)	Frontier
+	(E2/NW)		Frontier
+	(E2/SW)		Frontier
+	(E2/S)		Frontier
+	(E4/NW)		Frontier
+	(E4/SW)		Frontier
+	(E6/NW)		Frontier
+	(E6/SW)		Frontier
+	(E8/N)		Frontier
+	(E8/NE)		Frontier
+	(E8/SE)		Frontier
+	(E8/S)		Frontier
+	(E10/NW)	Frontier
+	(E10/SW)	Frontier
+	(E10/S)		Frontier
+	(E16/S)		Frontier
+	(E16/SE)	Frontier
+	(F3/SW)		Frontier
+	(F3/S)		Frontier
+	(F3/SE)		Frontier
+	(F11/SW)	Frontier
+	(F11/S)		Frontier
+	(F11/SE)	Frontier
+	(F13/NE)	Frontier
+	(F13/SE)	Frontier
+	(F15/NE)	Frontier
+	(F15/SE)	Frontier
+	(F15/S)		Frontier
+	(G2/S)		Frontier
+	(G2/SE)		Frontier
+	(G4/Sw)		Frontier
+	(G6/Nw)		Frontier
+	(G6/Sw)		Frontier
+	(G8/Nw)		Frontier
+	(G8/Sw)		Frontier
+	(G10/Nw)	Frontier
+	(G10/Sw)	Frontier
+	(G10/S)		Frontier
+	(G10/SE)	Frontier
+	(G14/S)		Frontier
+	(H3/SW)		Frontier
+	(H3/S)		Frontier
+	(H3/SE)		Frontier
+	(H3/NE)		Frontier
+	(H9/S)		Frontier
+	(H9/SE)		Frontier
+	(H15/SW)	Frontier
+	(H15/S)		Frontier
+	(I4/SW)		Frontier
+	(I4/S)		Frontier
+	(I8/S)		Frontier
+	(I8/SE)		Frontier
+	(I16/SW)	Frontier
+	(I16/S)		Frontier
+	(I16/SE)	Frontier
+	(I18/NE)	Frontier
+	(I18/SE)	Frontier
+	(I20/NE)	Frontier
+	(J5/SW)		Frontier
+	(J5/S)		Frontier
+	(J5/SE)		Frontier
+	(J7/NE)		Frontier
+	(J7/S)		Frontier
+	(J7/SE)		Frontier
+	(J9/NE)		Frontier
+	(J9/SE)		Frontier
+	(J11/NE)	Frontier
+	(J11/SE)	Frontier
+	(J13/NE)	Frontier
+	(J13/SE)	Frontier
+	(J15/NE)	Frontier
+	(J15/SE)	Frontier
+	(J15/S)		Frontier
+	(K4/S)		Frontier
+	(K4/SE)		Frontier
+	(K10/S)		Frontier
+	(K10/SE)	Frontier
+	(K16/N)		Frontier
+	(K16/NE)	Frontier
+	(L9/S)		Frontier
+	(L15/S)		Frontier
+	(M10/N)		Frontier
+	(M10/NW)	Frontier
+	(M10/SW)	Frontier
+	(M10/S)		Frontier
+	(N5/NW)		Frontier
+	(N5/SW)		Frontier
+	(N7/NW)		Frontier
+	(N7/SW)		Frontier
+	(N9/NW)		Frontier
+
+	mapFrame

@@ -1,0 +1,168 @@
+%!
+% ----------------------------------------------------------------------
+% 1850 map
+
+	newpath
+
+	/mapRows 13 def
+	/mapCols 20 def
+	/mapScale 0.5 def
+	/CM { 28.35 1 mapScale div mul mul } def
+	mapScale dup scale
+	/mapFrame {
+	1.5 CM 1.2 CM mapCols mapRows 0 0 //hexHeight 4 mul 0 Map
+	} def
+	mapFrame
+
+	(A2/4)	-430	[(#Northwest)]	LayTile
+	(A2/5)	-445	[(GN)]	LayTile
+	(A2/3)	-445	[(NP)]	LayTile
+	(A2/3)	-446	[]	LayTile
+	(A4/0)	-401	[]	LayTile	% Plain
+	(A6/0)	-401	[]	LayTile	% Plain
+	(A8/0)	-401	[]	LayTile	% Plain
+	(A10/1)	-405	[]	LayTile
+	(A10/0)	-441	[]	LayTile
+	(A10/0)	-442	[]	LayTile
+	(A12/0)	-403	[]	LayTile	% Plain
+	(A14/0)	-401	[]	LayTile	% Plain
+
+	(B1/4)	-430	[]	LayTile
+	(B1/0)	-445	[(MR)]	LayTile
+	(B1/3)	-446	[]	LayTile
+	(B3/0)	-401	[]	LayTile	% Plain
+	(B5/0)	-420	[(#Fargo)]	LayTile	% Plain
+	(B7/0)	-410	[]	LayTile	% Plain
+	(B9/0)	-401	[]	LayTile	% Plain
+	(B11/0)	-420	[(NP)(#Duluth)]	LayTile	% Plain
+	(B13/0)	-402	[]	LayTile	% Plain
+
+	(C2/0)	-401	[]	LayTile	% Plain
+	(C4/0)	-401	[]	LayTile	% Plain
+	(C6/0)	-401	[]	LayTile	% Plain
+	(C8/0)	-402	[]	LayTile	% Plain
+	(C10/0)	-401	[]	LayTile	% Plain
+	(C12/0)	-401	[]	LayTile	% Plain
+	(C14/0)	-401	[]	LayTile	% Plain
+	(C16/0)	-410	[]	LayTile	% Plain
+	(C18/0)	-401	[]	LayTile	% Plain
+	(C20/0)	-431	[(#Sault Ste Marie)]	LayTile
+	(C20/2)	-445	[(SOO)]	LayTile
+	(C20/0)	-440	[]	LayTile
+
+	(D3/0)	-401	[]	LayTile	% Plain
+	(D5/0)	-401	[]	LayTile	% Plain
+	(D7/0)	-410	[]	LayTile	% Plain
+	(D9/0)	-421	[(GN)(#Minn./St Paul)]	LayTile	% KMS
+	(D11/0)	-401	[]	LayTile	% Plain
+	(D13/0)	-410	[]	LayTile	% Plain
+	(D15/0)	-401	[]	LayTile	% Plain
+	(D17/0)	-401	[]	LayTile	% Plain
+	(D19/0)	-402	[]	LayTile	% Plain
+
+	(E2/0)	-401	[]	LayTile	% Plain
+	(E4/0)	-420	[(#Sioux Falls)]	LayTile	% Plain
+	(E6/0)	-401	[]	LayTile	% Plain
+	(E8/0)	-401	[]	LayTile	% Plain
+	(E10/0)	-413	[]	LayTile	% Plain
+	(E12/0)	-402	[]	LayTile	% Plain
+	(E14/0)	-401	[]	LayTile	% Plain
+	(E16/0)	-401	[]	LayTile	% Plain
+	(E18/0)	-420	[(#Green Bay)]	LayTile	% Plain
+
+	(F1/3)	-432	[(#West)]	LayTile
+	(F1/3)	-445	[(UP)]	LayTile
+	(F1/3)	-446	[]	LayTile
+	(F3/0)	-402	[]	LayTile	% Plain
+	(F5/0)	-401	[]	LayTile	% Plain
+	(F7/0)	-401	[]	LayTile	% Plain
+	(F9/0)	-401	[]	LayTile	% Plain
+	(F11/0)	-401	[]	LayTile	% Plain
+	(F13/0)	-421	[(SOO)(#La Crosse)]	LayTile	% Plain
+	(F15/0)	-410	[]	LayTile	% Plain
+	(F17/0)	-401	[]	LayTile	% Plain
+
+	(G2/0)	-401	[]	LayTile	% Plain
+	(G4/0)	-421	[(#Sioux City)]	LayTile	% Plain
+	(G6/0)	-401	[]	LayTile	% Plain
+	(G8/0)	-401	[]	LayTile	% Plain
+	(G10/0)	-410	[]	LayTile	% Plain
+	(G12/0)	-402	[]	LayTile	% Plain
+	(G14/0)	-401	[]	LayTile	% Plain
+	(G16/0)	-420	[(#Madison)]	LayTile	% Plain
+	(G18/1)	-424	[(MR)(#Milwaukee)]	LayTile	% Plain
+
+	(H3/0)	-401	[]	LayTile	% Plain
+	(H5/0)	-402	[]	LayTile	% Plain
+	(H7/0)	-401	[]	LayTile	% Plain
+	(H9/0)	-420	[(#Des Moines)]	LayTile	% Plain
+	(H11/1)	-423	[(CRIP)(#Cedar Rapids)]	LayTile	% Plain
+	(H13/0)	-402	[]	LayTile	% Plain
+	(H15/0)	-401	[]	LayTile	% Plain
+	(H17/0)	-410	[]	LayTile	% Plain
+
+	(I2/0)	-410	[]	LayTile	% Plain
+	(I4/0)	-421	[(UP)(#Omaha)]	LayTile	% Plain
+	(I6/0)	-401	[]	LayTile	% Plain
+	(I8/0)	-412	[]	LayTile	% Plain
+	(I10/0)	-401	[]	LayTile	% Plain
+	(I12/5)	-411	[(#Rock Island)]	LayTile	% Plain
+	(I12/0)	-443	[]	LayTile
+	(I14/0)	-401	[]	LayTile	% Plain
+	(I16/0)	-410	[]	LayTile	% Plain
+	(I18/0)	-425	[(BR)( )(#Chicago)]	LayTile	% Plain
+	(I20/0)	-404	[]	LayTile
+
+	(J3/0)	-401	[]	LayTile	% Plain
+	(J5/0)	-402	[]	LayTile	% Plain
+	(J7/0)	-401	[]	LayTile	% Plain
+	(J9/0)	-401	[]	LayTile	% Plain
+	(J11/4)	-413	[(#Burlington)(#Quincy)]	LayTile	% Plain
+	(J13/0)	-401	[]	LayTile	% Plain
+	(J15/0)	-401	[]	LayTile	% Plain
+	(J17/0)	-401	[]	LayTile	% Plain
+	(J19/0)	-401	[]	LayTile	% Plain
+
+	(K2/0)	-401	[]	LayTile	% Plain
+	(K4/0)	-420	[(#Topeka)]	LayTile	% Plain
+	(K6/0)	-421	[(Katy)(#Kansas City)]	LayTile	% KMS
+	(K8/0)	-411	[]	LayTile	% Plain
+	(K10/0)	-401	[]	LayTile	% Plain
+	(K12/0)	-402	[]	LayTile	% Plain
+	(K14/0)	-420	[(#Springfield)]	LayTile	% Plain
+	(K16/0)	-401	[]	LayTile	% Plain
+	(K18/0)	-401	[]	LayTile	% Plain
+	(K20/0)	-433	[(#East)]	LayTile
+
+	(L3/0)	-401	[]	LayTile	% Plain
+	(L5/0)	-401	[]	LayTile	% Plain
+	(L7/0)	-401	[]	LayTile	% Plain
+	(L9/0)	-402	[]	LayTile	% Plain
+	(L11/0)	-402	[]	LayTile	% Plain
+	(L13/4)	-426	[(MP)(#St Louis)]	LayTile	% KMS
+	(L13/1)	-444	[]	LayTile
+	(L15/0)	-401	[]	LayTile	% Plain
+	(L17/0)	-401	[]	LayTile	% Plain
+	(L19/0)	-401	[]	LayTile	% Plain
+
+	(M2/3)	-430	[(#South West)]	LayTile
+	(M2/3)	-445	[(Katy)]	LayTile
+	(M2/3)	-446	[]	LayTile
+	(M4/0)	-410	[]	LayTile	% Plain
+	(M6/0)	-401	[]	LayTile	% Plain
+	(M8/0)	-420	[(#Springfield)]	LayTile	% Plain
+	(M10/0)	-401	[]	LayTile	% Plain
+	(M12/0)	-411	[]	LayTile	% Plain
+	(M14/0)	-401	[]	LayTile	% Plain
+	(M16/0)	-401	[]	LayTile	% Plain
+	(M18/0)	-410	[]	LayTile	% Plain
+	(M20/1)	-435	[(#South)]	LayTile
+
+		/Bookman 120 selectfont
+	(@1/7) LayText moveto (1850) show 
+
+	% =================================
+	% INSERT YOUR TILES AND TOKENS HERE
+	% =================================
+
+	mapFrame

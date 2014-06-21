@@ -1,0 +1,75 @@
+% 1825 unit 2 map definition
+
+	newpath
+
+	/mapRows 17 def
+	/mapCols 20 def
+	/colStart 7 def
+	/rowStart 11 def
+	/mapScale 0.75 def
+	/CM { 28.35 1 mapScale div mul mul } def
+	mapScale dup scale
+	18 CM 0 translate
+	90 rotate
+
+	/mapFrame {
+	1.6 CM 1.0 CM mapCols mapRows
+		-1 cm 6 hexHeight mul sub
+		0.5 cm
+		0.7 cm 9.5 hexHeight 2 mul mul sub
+		0.7 cm
+		Map
+	} def
+	mapFrame
+
+(L8/0) -401 [] LayTile % Plain
+(L10/0) -401 [] LayTile % Plain
+(L12/0) -401 [] LayTile % Plain
+(L14/2) -406 [(NER)(#NER Reserved)] LayTile % City
+(L16/0) -401 [] LayTile % Plain
+(L18/0) -404 [] LayTile % Village
+(M9/0) -430 [] LayTile
+(M11/0) -401 [] LayTile % Plain
+(M13/0) -401 [] LayTile % Plain
+(M15/1)	-405	[]	LayTile % DoubleDot
+(M17/0) -401 [] LayTile % Plain
+(M19/0) -401 [] LayTile % Plain
+(N10/0) -406 [(#LYR Reserved)] LayTile % City
+(N12/1)	-405	[]	LayTile % DoubleDot
+(N14/0) -421 [] LayTile % OOCity
+(N16/0) -401 [] LayTile % Plain
+(N18/5) -406 [] LayTile % City
+(N18/0) -431 [] LayTile
+(O9/0) -424 [] LayTile % L
+(O11/0) -408 [(   )(L&Y)(   )] LayTile % M
+(O13/0) -401 [] LayTile % Plain
+
+% GNR/GCR Home
+(O15/3) -434 [] LayTile
+(O15/5) -433 [] LayTile
+(O15/2) -432 [(GNR)(GCR)] LayTile
+
+(O17/0) -401 [] LayTile % Plain
+(O17/0) -431 [] LayTile
+(O19/0) -401 [] LayTile % Plain
+(O19/0) -431 [] LayTile
+(P8/1) -416 [] LayTile
+(P10/0) -401 [] LayTile % Plain
+(P10/0) -431 [] LayTile
+(P12/0) -401 [] LayTile % Plain
+(P14/0) -401 [] LayTile % Plain
+(P16/0) -421 [] LayTile % OOCity
+(P18/0) -404 [] LayTile % Village
+(P20/0) -401 [] LayTile % Plain
+(Q9/0) -401 [] LayTile % Plain
+(Q11/5) -411 [(LNWR)] LayTile
+(Q13/0) -405 [] LayTile % DoubleDot
+(Q15/0) -406 [(MR)(#MR Reserved)] LayTile % City
+(Q17/0) -406 [] LayTile % City
+(Q19/0) -401 [] LayTile % Plain
+
+	% =================================
+	% INSERT YOUR TILES AND TOKENS HERE
+	% =================================
+
+	mapFrame

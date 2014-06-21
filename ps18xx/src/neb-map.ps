@@ -1,0 +1,113 @@
+%
+% $Header: neb $
+%
+% ----------------------------------------------------------------------
+% the 18neb variant was done by Steve Thomas (maisnestce@btinternet.com)
+% ----------------------------------------------------------------------
+% 18neb map
+
+	newpath
+
+	/mapRows 13 def
+	/mapCols 12 def
+	/axesSwapped true def
+	/mapScale 0.666 def
+	/CM { 28.35 1 mapScale div mul mul } def
+	mapScale dup scale
+	0 0 1 cm 0 360 arc
+	21.5 CM 0 translate
+	90 rotate
+	/mapFrame {
+	1.2 CM 1.2 CM mapCols mapRows
+	0 //hexSide 0.5 mul //hexHeight 2 mul //hexHeight 0 mul Map
+	} def
+	mapFrame
+
+	(A5/4)		-403	[(#Powder River)]	LayTile
+	(A7/4)		-404	[(SP)(#West)]	LayTile
+	(A7/5)		-452	[]	LayTile
+
+	(B2/5)		-401	[(#Pacific Northwest)]	LayTile
+	(B4/0)		-420	[]	LayTile	% Plain
+	(B6/0)		-440	[(#Scottsbluff)]	LayTile	% Plain
+	(B8/0)		-420	[]	LayTile	% Plain
+	(B8/1)		-453	[]	LayTile
+
+	(C3/0)		-440	[(#Chadron)]	LayTile	% CCity
+	(C5/0)		-420	[]	LayTile	% Plain
+	(C7/0)		-440	[(#Sidney)]	LayTile	% Plain
+	(C7/1)		-454	[]	LayTile
+	(C9/5)		-430	[(DRG)]	LayTile	% Plain
+	(C9/5)		-451	[(#Denver)]	LayTile
+
+	(D2/0)		-420	[]	LayTile	% Plain
+	(D4/0)		-420	[]	LayTile	% Plain
+	(D6/0)		-420	[]	LayTile	% Plain
+	(D8/2)		-424	[]	LayTile
+	(D10/2)		-423	[]	LayTile
+
+	(E3/0)		-420	[]	LayTile	% Plain
+	(E5/0)		-420	[]	LayTile	% Plain
+	(E7/0)		-441	[(#Sutherland)]	LayTile	% Plain
+	(E9/2)		-425	[]	LayTile
+
+	(F2/0)		-420	[]	LayTile	% Plain
+	(F4/0)		-420	[]	LayTile	% Plain
+	(F6/0)		-441	[(#North Platte)]	LayTile	% Plain
+	(F8/0)		-420	[]	LayTile	% Plain
+	(F10/0)		-420	[]	LayTile	% Plain
+	(F12/0)		-420	[]	LayTile	% Plain
+
+	(G1/0)		-402	[(#Valentine)]	LayTile
+	(G3/0)		-420	[]	LayTile	% Plain
+	(G5/0)		-420	[]	LayTile	% Plain
+	(G7/0)		-441	[(#Kearney)]	LayTile	% Plain
+	(G9/0)		-420	[]	LayTile	% Plain
+	(G11/0)		-420	[(#McCook)]	LayTile	% Plain
+
+	(H2/0)		-440	[(#O'Neill)]	LayTile	% Plain
+	(H4/0)		-420	[]	LayTile	% Plain
+	(H6/0)		-420	[]	LayTile	% Plain
+	(H8/0)		-441	[(#Grand Island)]	LayTile	% Plain
+	(H10/0)		-440	[(#Holdrege)]	LayTile	% Plain
+	(H12/0)		-420	[]	LayTile	% Plain
+
+	(I3/0)		-420	[]	LayTile	% Plain
+	(I5/0)		-440	[(#Norfolk)]	LayTile	% Plain
+	(I7/0)		-421	[]	LayTile	% Plain
+	(I9/0)		-420	[]	LayTile	% Plain
+	(I11/0)		-420	[]	LayTile	% Plain
+
+	(J2/0)		-420	[]	LayTile	% Plain
+	(J4/0)		-420	[]	LayTile	% Plain
+	(J6/0)		-420	[]	LayTile	% Plain
+	(J8/0)		-442	[(#Lincoln)]	LayTile	% LCity
+	(J10/0)		-420	[]	LayTile	% Plain
+	(J12/0)		-440	[(#Beatrice)]	LayTile	% Plain
+
+	(K1/0)		-426	[]	LayTile
+	(K3/0)		-443	[(#South Sioux City)]	LayTile	% Plain
+	(K5/0)		-422	[]	LayTile	% Plain
+	(K7/1)		-431	[(UP)(#Omaha)]	LayTile	% Plain
+	(K9/0)		-420	[]	LayTile	% Plain
+	(K11/0)		-420	[]	LayTile	% Plain
+	(K13/2)		-426	[]	LayTile
+
+	(L4/1)		-405	[(CNW)]	LayTile
+	(L4/4)		-450	[]	LayTile
+	(L6/0)		-406	[(CBQ)]	LayTile
+	(L8/0)		-422	[]	LayTile	% Plain
+	(L10/0)		-443	[(#Nebraska City)]	LayTile	% Plain
+	(L12/2)		-405	[(MP)]	LayTile
+	(L12/4)		-450	[]	LayTile
+
+	(M9/1)		-426	[]	LayTile
+
+		/Bookman 80 selectfont
+	(A0/7) LayText moveto (18neb) show 
+
+	% =================================
+	% INSERT YOUR TILES AND TOKENS HERE
+	% =================================
+
+mapFrame

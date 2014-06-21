@@ -1,0 +1,158 @@
+%
+% $Header: $
+%
+
+% ----------------------------------------------------------------------
+% 1848 Australia tile codes
+
+/18xxVariant (1848A) def
+/maxTile 950 def
+
+	/tileCodes //maxTile array def
+
+	tileCodes   1 [   1 0 //tlYellow //tlPlain ()   (10)  1 ] put
+	tileCodes   2 [   2 0 //tlYellow //tlPlain ()   (10)  1 ] put
+	tileCodes   5 [   5 0 //tlYellow //tlPlain ()   (20)  3 ] put
+	tileCodes   6 [   6 0 //tlYellow //tlPlain ()   (20)  4 ] put
+	tileCodes   7 [   7 0 //tlYellow //tlPlain ()   ()    4 ] put
+	tileCodes   8 [   8 0 //tlYellow //tlPlain ()   ()    9 ] put
+	tileCodes   9 [   9 0 //tlYellow //tlPlain ()   ()   12 ] put
+	tileCodes  55 [  55 0 //tlYellow //tlPlain ()   (10)  1 ] put
+	tileCodes  56 [  56 0 //tlYellow //tlPlain ()   (10)  1 ] put
+	tileCodes  57 [  57 0 //tlYellow //tlPlain ()   (20)  3 ] put
+	tileCodes  69 [  69 0 //tlYellow //tlPlain ()   (10)  1 ] put
+	tileCodes 235 [ 362 2 //tlYellow //tlPlain (OO) (30)  3 ] put
+
+	tileCodes  14 [  14 1 //tlGreen  //tlPlain ()    (30)  3 ] put
+	tileCodes  15 [  15 3 //tlGreen  //tlPlain ()    (30)  6 ] put
+	tileCodes  16 [  16 1 //tlGreen  //tlPlain ()    ()    1 ] put
+	tileCodes  18 [  18 3 //tlGreen  //tlPlain ()    ()    1 ] put
+	tileCodes  19 [  19 3 //tlGreen  //tlPlain ()    ()    1 ] put
+	tileCodes  20 [  20 0 //tlGreen  //tlPlain ()    ()    1 ] put
+
+	tileCodes  23 [  23 0 //tlGreen  //tlPlain ()    ()    2 ] put
+	tileCodes  24 [  24 0 //tlGreen  //tlPlain ()    ()    2 ] put
+	tileCodes  25 [  25 0 //tlGreen  //tlPlain ()    ()    2 ] put
+	tileCodes  26 [  26 0 //tlGreen  //tlPlain ()    ()    1 ] put
+	tileCodes  27 [  27 0 //tlGreen  //tlPlain ()    ()    1 ] put
+	tileCodes  28 [  28 0 //tlGreen  //tlPlain ()    ()    1 ] put
+	tileCodes  29 [  29 0 //tlGreen  //tlPlain ()    ()    1 ] put
+	tileCodes  30 [  30 0 //tlGreen  //tlPlain ()    ()    1 ] put
+	tileCodes  31 [  31 0 //tlGreen  //tlPlain ()    ()    1 ] put
+
+	tileCodes  59 [  59 2 //tlGreen  //tlPlain (OO)  (40)  2 ] put
+	tileCodes 236 [ 132 3 //tlGreen  //tlPlain (K)   (40)  1 ] put
+	tileCodes 237 [ 133 0 //tlGreen  //tlPlain (K)   (40)  1 ] put
+	tileCodes 238 [ 405 4 //tlGreen  //tlPlain (K)   (40)  2 ] put
+
+	tileCodes  39 [  39 1 //tlBrown  //tlPlain ()    ()    1 ] put
+	tileCodes  40 [  40 0 //tlBrown  //tlPlain ()    ()    1 ] put
+	tileCodes  41 [  41 0 //tlBrown  //tlPlain ()    ()    1 ] put
+	tileCodes  42 [  42 0 //tlBrown  //tlPlain ()    ()    1 ] put
+	tileCodes  43 [  43 3 //tlBrown  //tlPlain ()    ()    1 ] put
+	tileCodes  44 [  44 0 //tlBrown  //tlPlain ()    ()    1 ] put
+	tileCodes  45 [  45 0 //tlBrown  //tlPlain ()    ()    1 ] put
+	tileCodes  46 [  46 0 //tlBrown  //tlPlain ()    ()    1 ] put
+	tileCodes  47 [  47 1 //tlBrown  //tlPlain ()    ()    1 ] put
+	tileCodes  70 [  70 3 //tlBrown  //tlPlain ()    ()    1 ] put
+
+	tileCodes  64 [  64 0 //tlBrown  //tlPlain (OO)  (50)  1 ] put
+	tileCodes  65 [  65 0 //tlBrown  //tlPlain (OO)  (50)  1 ] put
+	tileCodes  66 [  66 0 //tlBrown  //tlPlain (OO)  (50)  1 ] put
+	tileCodes  67 [  67 1 //tlBrown  //tlPlain (OO)  (50)  1 ] put
+	tileCodes  68 [  68 0 //tlBrown  //tlPlain (OO)  (50)  1 ] put
+	tileCodes 239 [ 168 3 //tlBrown  //tlPlain (K)   (60)  3 ] put
+	tileCodes 611 [  51 2 //tlBrown  //tlPlain ()    (40)  4 ] put
+
+	tileCodes 240 [ 168 3 //tlGray   //tlPlain (K)   (80)  2 ] put
+	tileCodes 915 [ 209 4 //tlGray   //tlPlain ()    (50)  1 ] put
+
+	tileCodes 241 [ 506 2 //tlBlue   //tlPort  (Tas) (50)  1 ] put
+
+	%tile codes for map definition
+
+% Plain track
+	tileCodes 400 [ 500 0 //tlGround //tlPlain    ()    ()   0 ] put
+	tileCodes 401 [ 500 0 //tlGround //tlYucca    (£40) ()   0 ] put
+	tileCodes 402 [ 500 0 //tlGround //tlMountain (£50) ()   0 ] put
+	tileCodes 403 [ 500 0 //tlGray   //tlPlain    ()    ()   0 ] put
+
+% Small cities
+	tileCodes 410 [ 502 0 //tlGround //tlPlain    ()    ()   0 ] put
+	tileCodes 411 [ 502 0 //tlGround //tlMountain (£50) ()   0 ] put
+
+% Large cities
+	tileCodes 420 [ 246 0 //tlGround //tlPlain    ()    ()   0 ] put
+	tileCodes 421 [ 246 0 //tlGround //tlPlain    (K)   ()   0 ] put
+	tileCodes 422 [ 246 0 //tlGround //tlMountain (£50) ()   0 ] put
+	tileCodes 423 [ 504 0 //tlGround //tlPlain    ()    ()   0 ] put
+	tileCodes 424 [ 504 0 //tlGround //tlMountain (£50) ()   0 ] put
+
+% Off-board areas
+	tileCodes 430 [ 506 0 //tlRed    //tlPlain    ()  (1/2/4/6) 0 ] put
+	tileCodes 431 [ 506 0 //tlRed    //tlPlain    ()  (1/2/3/4) 0 ] put
+	tileCodes 432 [ 508 0 //tlRed    //tlPlain    (K) (2/4/6/8) 0 ] put
+	tileCodes 433 [ 509 0 //tlNoHex  //tlPort     ()  (1/1/2/2) 0 ] put
+
+% Overlays
+	tileCodes 440 [ 500 0 //tlTransparent //tlPlain ()  ()    0 ] put
+	tileCodes 441 [ 500 0 //tlTransparent //tlPlain (K)  ()   0 ] put
+	tileCodes 442 [ 500 0 //tlTransparent //tlPlain (@Com) () 0 ] put
+	tileCodes 443 [ 500 0 //tlTransparent //tlPlain (@BoE) () 0 ] put
+
+% Upgrade Plain 400 => 7/* 8/* 9/*
+% Upgrade Plain 401 => 7/* 8/* 9/*
+% Upgrade Plain 402 => 7/* 8/* 9/*
+% Upgrade Tasman 403 => 241/=0
+% Upgrade DoubleDot 410 => 1/* 2/* 55/* 56/* 69/*
+% Upgrade DoubleDot 411 => 1/* 2/* 55/* 56/* 69/*
+% Upgrade City 420 => 5/* 6/* 57/*
+% Upgrade City 422 => 5/* 6/* 57/*
+% Upgrade KCity 421 => 5/* 6/* 57/*
+% Upgrade OOCity 423 => 235/*
+% Upgrade OOCity 424 => 235/*
+
+% Upgrade Plain 7 => 18/2 26/1 27/0 28/1 29/0 30/0 31/1
+% Upgrade Plain 8 => 16/01 19/4 23/2 24/0 25/02 28/2 29/0 30/2 31/0
+% Upgrade Plain 9 => 18/03 19/03 20/0235 23/03 24/03 26/03 27/03
+% Upgrade City 5 => 14/25 15/012
+% Upgrade City 6 => 14/03 15/01
+% Upgrade City 57 => 14/0235 15/03
+% Upgrade KCity 5 => 236/2 237/3 238/23
+% Upgrade KCity 6 => 236/0 237/4 238/2
+% Upgrade KCity 57 => 236/03 237/03
+% Upgrade OOCity 235 => 59/02
+
+% Upgrade Plain 16 => 43/2 70/2
+% Upgrade Plain 18 => 43/0
+% Upgrade Plain 19 => 45/0 46/0
+% Upgrade Plain 20 => 44/03 47/03
+% Upgrade Plain 23 => 41/0 43/0 45/0 47/03
+% Upgrade Plain 24 => 42/0 43/3 46/0 47/25
+% Upgrade Plain 25 => 40/024 45/2 46/4
+% Upgrade Plain 26 => 42/3 44/25 45/3
+% Upgrade Plain 27 => 41/3 44/03 46/3
+% Upgrade Plain 28 => 43/1 46/2 70/0
+% Upgrade Plain 29 => 43/2 45/4 70/3
+% Upgrade Plain 30 => 42/4
+% Upgrade Plain 31 => 41/2
+% Upgrade City 14 => 611/03
+% Upgrade City 15 => 611/23
+% Upgrade KCity 236 => 239/0
+% Upgrade KCity 237 => 239/3
+% Upgrade KCity 238 => 239/45
+% Upgrade OOCity 59 => 64/24 65/24 66/05 67/35 68/03
+
+% Upgrade City 611 => 915/0
+% Upgrade KCity 239 => 240/0
+
+% Token CAR 3
+% Token QR 5
+% Token WA 5
+% Token NSW 4
+% Token SA 4
+% Token FT 4
+% Token VR 3
+% Token Com 3
+% Token BoE 99
+

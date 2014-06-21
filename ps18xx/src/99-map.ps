@@ -1,0 +1,132 @@
+%
+% $Header: 99-map.ps[1.0] Tue Apr 23 11:25:37 1996 doko@cs.tu-berlin.de saved $
+%
+
+%!
+% ----------------------------------------------------------------------
+% 1899 map
+
+	newpath
+
+	/mapRows 10 def
+	/mapCols 23 def
+	/mapScale 0.6 def
+	/CM { 28.35 1 mapScale div mul mul } def
+	mapScale dup scale
+	21 CM 0 translate
+	90 rotate
+        /axesSwapped true def
+	/axisDirection //axisLetBack def
+	/mapFrame {
+	1.5 CM 1.2 CM mapCols mapRows //hexHeight neg 1 cm add 0
+		//hexHeight //hexHeight neg Map
+	} def
+	mapFrame
+
+	(T0/5)	-430	[]	LayTile
+	(L0/0)	-440	[]	LayTile
+	(J0/0)	-409	[]	LayTile
+	(H0/1)	-431	[(FSR)]	LayTile
+	(F0/5)	-452	[]	LayTile
+	(B0/5)	-453	[]	LayTile
+
+	(W1/4)	-450	[]	LayTile
+	(U1/0)	-405	[]	LayTile
+	(S1/0)	-405	[]	LayTile
+	(Q1/0)	-433	[]	LayTile
+	(O1/0)	-404	[]	LayTile
+	(M1/0)	-404	[]	LayTile
+	(K1/0)	-441	[]	LayTile
+	(I1/0)	-401	[]	LayTile
+	(G1/0)	-421	[]	LayTile
+	(E1/0)	-406	[]	LayTile
+	(C1/0)	-404	[]	LayTile
+	(A1/2)	-439	[]	LayTile
+
+	(V2/3)	-451	[]	LayTile
+	(T2/0)	-405	[]	LayTile
+	(R2/0)	-404	[]	LayTile
+	(P2/0)	-402	[]	LayTile
+	(N2/0)	-432	[]	LayTile
+	(L2/2)	-410	[]	LayTile
+	(J2/0)	-401	[]	LayTile
+	(H2/0)	-426	[]	LayTile
+	(F2/0)	-401	[]	LayTile
+	(D2/0)	-443	[]	LayTile
+
+	(U3/0)	-427	[]	LayTile
+	(S3/0)	-401	[]	LayTile
+	(Q3/0)	-402	[]	LayTile
+	(O3/0)	-401	[]	LayTile
+	(K3/0)	-401	[]	LayTile
+	(I3/2)	-412	[]	LayTile
+	(G3/0)	-401	[]	LayTile
+	(E3/0)	-434	[]	LayTile
+
+	(V4/0)	-402	[]	LayTile
+	(T4/0)	-445	[(CSB)]	LayTile
+	(R4/0)	-425	[]	LayTile
+	(P4/1)	-410	[]	LayTile
+	(L4/0)	-435	[]	LayTile
+	(F4/0)	-434	[(NRC)]	LayTile
+	(D4/0)	-404	[]	LayTile
+
+	(W5/4)	-454	[]	LayTile
+	(U5/0)	-401	[]	LayTile
+	(S5/0)	-436	[]	LayTile
+	(M5/5)	-413	[]	LayTile
+	(G5/0)	-401	[]	LayTile
+	(E5/0)	-401	[]	LayTile
+	(C5/0)	-402	[]	LayTile
+	(A5/0)	-410	[]	LayTile
+
+	(V6/0)	-432	[(SJZ)]	LayTile
+	(T6/0)	-420	[]	LayTile
+	(R6/0)	-403	[]	LayTile
+	(N6/4)	-411	[]	LayTile
+	(L6/5)	-422	[]	LayTile
+	(F6/2)	-411	[]	LayTile
+	(D6/0)	-428	[]	LayTile
+	(B6/0)	-408	[]	LayTile
+	(@6/0)	-410	[]	LayTile
+
+	(U7/0)	-402	[]	LayTile
+	(S7/0)	-403	[]	LayTile
+	(Q7/0)	-444	[]	LayTile
+	(O7/0)	-401	[]	LayTile
+	(M7/0)	-432	[(TT)]	LayTile
+	(K7/1)	-410	[]	LayTile
+	(E7/5)	-446	[(1st)]	LayTile
+	(C7/0)	-401	[]	LayTile
+	(A7/5)	-437	[(B&M)]	LayTile
+
+	(V8/0)	-401	[]	LayTile
+	(T8/0)	-402	[]	LayTile
+	(R8/0)	-432	[]	LayTile
+	(P8/0)	-407	[]	LayTile
+	(N8/0)	-401	[]	LayTile
+	(F8/3)	-410	[]	LayTile
+	(D8/0)	-401	[]	LayTile
+	(B8/0)	-442	[]	LayTile
+	(@8/1)	-423	[]	LayTile
+
+	(W9/3)	-455	[]	LayTile
+	(U9/0)	-402	[]	LayTile
+	(S9/0)	-402	[]	LayTile
+	(Q9/0)	-402	[]	LayTile
+	(O9/0)	-401	[]	LayTile
+	(E9/3)	-423	[]	LayTile
+	(C9/0)	-401	[]	LayTile
+	(A9/0)	-401	[]	LayTile
+
+	(V10/3)	-455	[]	LayTile
+	(T10/0)	-401	[]	LayTile
+	(R10/4)	-438	[(XZS)]	LayTile
+	(P10/0)	-421	[]	LayTile
+	(N10/2)	-456	[]	LayTile
+
+	% =================================
+	% INSERT YOUR TILES AND TOKENS HERE
+	% =================================
+
+	mapFrame

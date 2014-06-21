@@ -1,0 +1,250 @@
+%!
+% ----------------------------------------------------------------------
+% 18nyc map
+
+	newpath
+
+	/mapRows 11 def
+	/mapCols 25 def
+	/mapScale 0.5 def
+	/CM { 28.35 1 mapScale div mul mul } def
+	mapScale dup scale
+	21 CM 0 translate
+	90 rotate
+	/mapFrame {
+	1.5 CM 1.2 CM mapCols mapRows //hexHeight 0.5 mul //hexHeight 1 mul
+		//hexSide 0.5 mul //hexSide 0.5 mul Map
+	} def
+	mapFrame
+
+	(A11/5)		-401	[]	LayTile
+	(A13/5)		-410	[]	LayTile
+	(A13/5)		-456	[(#Ottawa)]	LayTile
+	(A13/1)		-457	[]	LayTile
+	(A15/5)		-402	[]	LayTile
+	(A17/5)		-406	[]	LayTile
+	(A17/5)		-456	[(#Montreal)]	LayTile
+	(A17/1)		-457	[]	LayTile
+	(A19/5)		-402	[]	LayTile
+	(A21/5)		-402	[]	LayTile
+	(A23/5)		-405	[]	LayTile
+	(A23/5)		-456	[(#Burlington)]	LayTile
+	(A23/1)		-457	[]	LayTile
+	(A25/0)		-401	[]	LayTile
+
+	(B12/1)		-440	[(#Watertown)]	LayTile	% Plain
+	(B12/1)		-457	[]	LayTile
+	(B14/0)		-420	[]	LayTile	% Plain
+	(B16/0)		-422	[]	LayTile	% Plain
+	(B18/0)		-423	[]	LayTile	% Plain
+	(B20/0)		-422	[]	LayTile	% Plain
+	(B22/0)		-420	[]	LayTile	% Plain
+	(B24/0)		-422	[]	LayTile	% Plain
+	(B26/1)		-401	[]	LayTile
+
+	(C11/1)		-440	[(#Oswego)]	LayTile	% Plain
+	(C11/1)		-457	[]	LayTile
+	(C13/0)		-420	[]	LayTile	% Plain
+	(C15/0)		-422	[]	LayTile	% Plain
+	(C17/0)		-422	[]	LayTile	% Plain
+	(C19/0)		-422	[]	LayTile	% Plain
+	(C21/0)		-420	[]	LayTile	% Plain
+	(C23/1)		-440	[(#Rutland)]	LayTile	% Plain
+	(C23/1)		-457	[]	LayTile
+	(C25/0)		-416	[]	LayTile
+	(C25/5)		-456	[(#Montpelier)]	LayTile
+	(C25/4)		-457	[]	LayTile
+
+	(D0/4)		-401	[]	LayTile
+	(D2/1)		-431	[(8)(#Niagara Falls)]	LayTile	% Plain
+	(D4/1)		-430	[(9)(#Lockport)]	LayTile	% Plain
+	(D4/0)		-458	[]	LayTile
+	(D6/0)		-420	[]	LayTile	% Plain
+	(D6/0)		-458	[]	LayTile
+	(D8/1)		-430	[(3)(#Rochester)]	LayTile	% Rochester
+	(D8/5)		-458	[]	LayTile
+	(D10/0)		-420	[]	LayTile	% Plain
+	(D10/0)		-458	[]	LayTile
+	(D12/3)		-430	[(10)(#Syracuse)]	LayTile	% Syracuse
+	(D12/0)		-458	[]	LayTile
+	(D14/1)		-430	[(RWO)(#Rome)]	LayTile	% Plain
+	(D14/0)		-458	[]	LayTile
+	(D16/0)		-420	[]	LayTile	% Plain
+	(D18/1)		-440	[(#Amsterdam)]	LayTile	% Plain
+	(D18/1)		-457	[]	LayTile
+	(D20/1)		-440	[(#Saratoga Springs)]	LayTile	% Plain
+	(D20/1)		-457	[]	LayTile
+	(D22/0)		-420	[]	LayTile	% Plain
+	(D24/0)		-422	[]	LayTile	% Plain
+	(D26/1)		-401	[]	LayTile
+
+	(E1/3)		-407	[]	LayTile
+	(E1/4)		-456	[(#Toronto)]	LayTile
+	(E1/4)		-457	[]	LayTile
+	(E3/2)		-432	[(6)(#Buffalo)]	LayTile	% Buffalo
+	(E3/3)		-454	[(Erie)]	LayTile
+	(E5/1)		-430	[(11)(#Batavia)]	LayTile	% Plain
+	(E7/0)		-420	[]	LayTile	% Plain
+	(E9/1)		-440	[(#Geneva)]	LayTile	% Plain
+	(E9/1)		-457	[]	LayTile
+	(E11/1)		-430	[(5)(#Auburn)]	LayTile	% Plain
+	(E13/0)		-420	[]	LayTile	% Plain
+	(E13/0)		-458	[]	LayTile
+	(E15/1)		-430	[(4)(#Utica)]	LayTile	% Plain
+	(E15/0)		-458	[]	LayTile
+	(E17/0)		-420	[]	LayTile	% Plain
+	(E17/0)		-458	[]	LayTile
+	(E19/1)		-433	[(2)(#Schenectady)]	LayTile	% Plain
+	(E19/0)		-458	[]	LayTile
+	(E21/1)		-430	[(7)(#Troy)]	LayTile	% Plain
+	(E23/0)		-422	[]	LayTile	% Plain
+	(E25/0)		-403	[]	LayTile
+	(E25/0)		-451	[(B&A)]	LayTile
+	(E25/4)		-453	[]	LayTile
+	(E25/5)		-456	[(#Springfield)]	LayTile
+
+	(F0/4)		-401	[]	LayTile
+	(F2/0)		-422	[]	LayTile	% Plain
+	(F4/0)		-420	[]	LayTile	% Plain
+	(F6/0)		-422	[]	LayTile	% Plain
+	(F8/0)		-422	[]	LayTile	% Plain
+	(F10/2)		-441	[(#Ithaca)]	LayTile	% Plain
+	(F10/1)		-457	[]	LayTile
+	(F12/2)		-441	[(#Cortland)]	LayTile	% Plain
+	(F12/1)		-457	[]	LayTile
+	(F14/0)		-422	[]	LayTile	% Plain
+	(F16/0)		-422	[]	LayTile	% Plain
+	(F18/0)		-422	[]	LayTile	% Plain
+	(F20/0)		-434	[(1)(#Albany)]	LayTile	% Plain
+	(F22/0)		-422	[]	LayTile	% Plain
+	(F24/0)		-420	[]	LayTile	% Plain
+	(F26/1)		-401	[]	LayTile
+
+	(G1/3)		-408	[]	LayTile
+	(G1/4)		-456	[(#Jamestown)]	LayTile
+	(G1/0)		-459	[]	LayTile
+	(G3/0)		-422	[]	LayTile	% Plain
+	(G5/0)		-422	[]	LayTile	% Plain
+	(G7/0)		-420	[]	LayTile	% Plain
+	(G9/1)		-440	[(#Elmira)]	LayTile	% Plain
+	(G9/1)		-457	[]	LayTile
+	(G11/0)		-420	[]	LayTile	% Plain
+	(G13/1)		-440	[(#Binghampton)]	LayTile	% Plain
+	(G13/1)		-457	[]	LayTile
+	(G15/0)		-422	[]	LayTile	% Plain
+	(G17/0)		-423	[]	LayTile	% Plain
+	(G19/1)		-440	[(#Kingston)]	LayTile	% Plain
+	(G19/1)		-457	[]	LayTile
+	(G21/1)		-440	[(#Hudson)]	LayTile	% Plain
+	(G21/1)		-457	[]	LayTile
+	(G23/0)		-422	[]	LayTile	% Plain
+	(G25/0)		-413	[]	LayTile
+	(G25/5)		-456	[(#Hartford)]	LayTile
+	(G25/4)		-457	[]	LayTile
+
+	(H2/3)		-401	[]	LayTile
+	(H2/4)		-459	[]	LayTile
+	(H4/2)		-409	[]	LayTile
+	(H4/2)		-456	[(#Pittsburgh)]	LayTile
+	(H6/2)		-402	[]	LayTile
+	(H6/4)		-459	[]	LayTile
+	(H8/2)		-412	[]	LayTile
+	(H8/2)		-456	[(#Williamsport)]	LayTile
+	(H10/2)		-402	[]	LayTile
+	(H12/2)		-415	[]	LayTile
+	(H12/2)		-456	[(#Scranton)]	LayTile
+	(H14/1)		-430	[(D&H)(#Carbondale)]	LayTile	% Plain
+	(H16/0)		-422	[]	LayTile	% Plain
+	(H18/0)		-420	[]	LayTile	% Plain
+	(H20/1)		-430	[(HR)(#Poughkeepsie)]	LayTile	% Plain
+	(H22/3)		-422	[]	LayTile	% Plain
+	(H24/0)		-420	[]	LayTile	% Plain
+	(H26/1)		-401	[]	LayTile
+
+	(I13/3)		-402	[]	LayTile
+	(I13/2)		-459	[]	LayTile
+	(I15/0)		-422	[]	LayTile	% Plain
+	(I17/0)		-422	[]	LayTile	% Plain
+	(I19/1)		-440	[(#Newburgh)]	LayTile	% Plain
+	(I19/1)		-457	[]	LayTile
+	(I21/0)		-420	[]	LayTile	% Plain
+	(I23/1)		-440	[(#Bridgeport)]	LayTile	% Plain
+	(I23/1)		-457	[]	LayTile
+	(I25/1)		-402	[]	LayTile
+	(I25/0)		-451	[(NH)]	LayTile
+	(I25/4)		-452	[]	LayTile
+	(I25/5)		-456	[(#New Haven)]	LayTile
+
+	(J14/3)		-411	[]	LayTile
+	(J14/2)		-456	[(#Allentown)]	LayTile
+	(J14/1)		-459	[]	LayTile
+	(J16/0)		-422	[]	LayTile	% Plain
+	(J18/1)		-430	[(#Newark)]	LayTile	% Plain
+	(J18/1)		-457	[]	LayTile
+	(J20/3)		-435	[(NYH)(#New York)]	LayTile	% Plain
+	(J22/1)		-440	[(#Henpstead)]	LayTile	% Plain
+	(J22/1)		-457	[]	LayTile
+	(J24/0)		-420	[]	LayTile	% Plain
+	(J26/1)		-404	[]	LayTile
+	(J26/5)		-456	[(#Long Island)]	LayTile
+	(J26/5)		-457	[]	LayTile
+
+	(K15/3)		-401	[]	LayTile
+	(K15/4)		-459	[]	LayTile
+	(K17/2)		-414	[]	LayTile
+	(K17/2)		-456	[(#Philadelphia)]	LayTile
+	(K19/1)		-431	[(#Brooklyn)]	LayTile	% Brooklyn
+	(K19/1)		-457	[]	LayTile
+	(K21/0)		-420	[]	LayTile	% Plain
+
+		/Bookman 120 selectfont
+	(B1/7) LayText moveto (18NYC) show 
+
+%	(I13/4) 1 cm (I15/2) 1 cm //tlNoHex LayPrivate
+
+	% =================================
+	% INSERT YOUR TILES AND TOKENS HERE
+	% =================================
+
+	(A15/W)	Barrier
+	(A22/W)	Barrier
+	(A23/E)	Barrier
+	(B20/E) (80) CostBarrier
+	(B20/SE)	Barrier
+	(C13/SW)	Barrier
+	(C17/SE)	Barrier
+	(C25/SE)	Barrier
+	(D8/W)	(60) CostBarrier
+	(D16/SW)	(40) CostBarrier
+	(D16/SE)	(60) CostBarrier
+	(D18/SW)	(60) CostBarrier
+	(D20/NE)	(40) CostBarrier
+	(D20/E)	(60) CostBarrier
+	(D20/SE)	(60) CostBarrier
+	(E1/SW)	Barrier
+	(E3/W)	(80) CostBarrier
+	(E7/NW)	(60) CostBarrier
+	(E7/W)	(60) CostBarrier
+	(E7/SW)	(40) CostBarrier
+	(E11/W)	Barrier
+	(E11/SW)	Barrier
+	(E19/E)	(80) CostBarrier
+	(F10/W)	Barrier
+	(G1/SE)	Barrier
+	(G19/E)	(80) CostBarrier
+	(G25/NE)	Barrier
+	(H6/W)	Barrier
+	(H10/E)	Barrier
+	(H20/NE)	(80) CostBarrier
+	(H20/E)	(80) CostBarrier
+	(H20/SE)	(80) CostBarrier
+	(I13/SE)	Barrier
+	(I19/E)	(80) CostBarrier
+	(I25/NE)	Barrier
+	(I25/SE)	Barrier
+	(J14/SE)	Barrier
+	(J22/NW)	Barrier
+	(J22/NE)	Barrier
+	(J24/NW)	Barrier
+
+	mapFrame

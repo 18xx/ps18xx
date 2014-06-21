@@ -1,0 +1,74 @@
+%
+% $Header: va-tc.ps[1.1] Wed Nov 15 17:27:03 1995 doko@cs.tu-berlin.de saved $
+%
+% ----------------------------------------------------------------------
+% the 18va variant was done by Steve Thomas (maisnestce@aol.com)
+% ----------------------------------------------------------------------
+% 18va tile codes
+
+/18xxVariant (18va) def
+/tileSitting true def
+
+/maxTile 550 def
+
+	/tileCodes //maxTile array def
+
+	tileCodes   4 [   4 0 //tlYellow //tlPlain ()	(10)  4 ] put
+	tileCodes   5 [   5 0 //tlYellow //tlPlain ()	(20)  4 ] put
+	tileCodes   6 [   6 0 //tlYellow //tlPlain ()	(20)  4 ] put
+	tileCodes   7 [   7 5 //tlYellow //tlPlain ()	()    4 ] put
+	tileCodes   8 [   8 4 //tlYellow //tlPlain ()	()   12 ] put
+	tileCodes   9 [   9 0 //tlYellow //tlPlain ()	()   12 ] put
+	tileCodes  57 [  57 0 //tlYellow //tlPlain ()	(20)  4 ] put
+	tileCodes  58 [  58 4 //tlYellow //tlPlain ()	(10)  4 ] put
+
+	tileCodes  14 [  14 1 //tlGreen  //tlPlain ()	(30)  4 ] put
+	tileCodes  15 [  15 0 //tlGreen  //tlPlain ()	(30)  6 ] put
+	tileCodes  80 [ 215 1 //tlGreen  //tlPlain ()	()    3 ] put
+	tileCodes  81 [ 216 5 //tlGreen  //tlPlain ()	()    3 ] put
+	tileCodes  82 [ 214 3 //tlGreen  //tlPlain ()	()    4 ] put
+	tileCodes  83 [ 213 3 //tlGreen  //tlPlain ()	()    4 ] put
+	tileCodes 141 [ 141 0 //tlGreen  //tlPlain ()	(10)  2 ] put
+	tileCodes 142 [ 142 0 //tlGreen  //tlPlain ()	(10)  2 ] put
+	tileCodes 143 [ 143 0 //tlGreen  //tlPlain ()	(10)  1 ] put
+	tileCodes 144 [ 203 1 //tlGreen  //tlPlain ()	(10)  1 ] put
+
+	tileCodes  63 [  63 0 //tlBrown  //tlPlain ()	(40)  4 ] put
+	tileCodes 544 [ 217 0 //tlBrown  //tlPlain ()	()	  2 ] put
+	tileCodes 545 [ 218 3 //tlBrown  //tlPlain ()	()    2 ] put
+	tileCodes 546 [ 219 3 //tlBrown  //tlPlain ()	()    2 ] put
+	tileCodes 170 [  51 1 //tlBrown  //tlPlain (P)  (50)  5 ] put
+
+	tileCodes 171 [ 522 0 //tlGray   //tlPlain (Ric) (60) 1 ] put
+	tileCodes 172 [  63 0 //tlGray   //tlPlain (Was) (60) 1 ] put
+
+	%tile codes for map definition
+	% Off-board areas
+	tileCodes 401 [ 271 0 //tlRed    //tlPlain    ()   (20/G) 0 ] put
+	tileCodes 403 [ 516 0 //tlRed    //tlPlain    ()   (20/40) 0 ] put
+	tileCodes 404 [ 516 0 //tlRed    //tlPlain    ()   (30/50) 0 ] put
+	tileCodes 405 [ 272 0 //tlRed    //tlPlain    ()   (40/70) 0 ] put
+	tileCodes 406 [ 509 0 //tlNoHex  //tlPort     ()   (30/20) 0 ] put
+	tileCodes 407 [ 509 0 //tlNoHex  //tlPort     ()   (20/10) 0 ] put
+	tileCodes 408 [ 509 0 //tlNoHex  //tlPort     ()   (20/40) 0 ] put
+	tileCodes 409 [ 509 0 //tlNoHex  //tlPort     ()   (30/50) 0 ] put
+
+	% Plain track
+	tileCodes 410 [ 500 0 //tlGround //tlPlain    ()   ()   0 ] put
+	tileCodes 411 [ 242 0 //tlGround //tlPlain    ()   ()   0 ] put
+
+	% Large cities
+	tileCodes 420 [ 553 0 //tlGround //tlPlain    ()   ()   0 ] put
+	tileCodes 421 [ 553 0 //tlGround //tlPlain    (P)  ()   0 ] put
+	tileCodes 422 [ 553 0 //tlGround //tlPlain    (P/Was)  ()   0 ] put
+	tileCodes 423 [ 553 0 //tlGround //tlPlain    (P/Ric)  ()   0 ] put
+
+	% Overlays
+	tileCodes 430 [ 529 0 //tlTransparent //tlPlain (P) ()  0 ] put
+	tileCodes 431 [ 529 0 //tlTransparent //tlPlain (@B&O) ()  0 ] put
+	tileCodes 432 [ 529 0 //tlTransparent //tlPlain (@C&O) ()  0 ] put
+	tileCodes 433 [ 529 0 //tlTransparent //tlPlain (@N&W) ()  0 ] put
+	tileCodes 434 [ 529 0 //tlTransparent //tlPlain (@RF&P) ()  0 ] put
+	tileCodes 435 [ 529 0 //tlTransparent //tlPlain (@SR) ()  0 ] put
+	tileCodes 436 [ 529 0 //tlTransparent //tlPlain (@VGN) ()  0 ] put
+	tileCodes 437 [ 529 0 //tlTransparent //tlPlain (@WM) ()  0 ] put

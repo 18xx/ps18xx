@@ -1,0 +1,200 @@
+%
+% $Header: 70-map.ps[1.1] Wed Nov 15 17:27:05 1995 doko@cs.tu-berlin.de saved $
+%
+% ----------------------------------------------------------------------
+% the 1870 variant was done by Steve Thomas (Steve.Thomas@insignia.co.uk)
+% ----------------------------------------------------------------------
+% 1870 map
+
+	newpath
+
+	/mapRows 15 def
+	/mapCols 22 def
+	/mapScale 0.5 def
+	/CM { 28.35 1 mapScale div mul mul } def
+	mapScale dup scale
+	0 1 CM translate
+	/mapFrame {
+		1.1 CM 2 CM mapCols mapRows //hexHeight -0.5 mul
+			-1 cm //hexSide 1.5 mul //hexSide -0.75 mul Map
+	} def
+	mapFrame
+
+	% ORIENTATION OF GENERIC TILES!!!
+	(A2/4)	-401	[]	LayTile
+	(A4/1)	-405	[]	LayTile	% Plain
+	(A6/1)	-405	[]	LayTile	% Plain
+	(A8/1)	-405	[]	LayTile	% Plain
+	(A10/1)	-420	[]	LayTile% Plain
+	(A12/1)	-405	[]	LayTile	% Plain
+	(A14/1)	-405	[]	LayTile	% Plain
+	(A16/3)	-423	[]	LayTile% Plain
+	(A18/1)	-405	[]	LayTile	% Plain
+	(A20/1)	-405	[]	LayTile	% Plain
+	(A22/0)	-402	[]	LayTile
+
+	(B3/1)	-405	[]	LayTile	% Plain
+	(B5/1)	-405	[]	LayTile	% Plain
+	(B7/1)	-419	[]	LayTile	% Plain
+	(B9/3)	-411	[(ATS)(#Topeka)]	LayTile	% Plain
+	(B11/3)	-416	[(MKT)(#Kansas City)]	LayTile	% Kansas
+	(B13/1)	-420	[]	LayTile% Plain
+	(B15/1)	-405	[]	LayTile	% Plain
+	(B17/1)	-406	[]	LayTile	% Plain
+	(B19/3)	-411	[(#Springfield)]	LayTile	% Plain
+	(B21/1)	-405	[]	LayTile	% Plain
+
+	(C2/1)	-405	[]	LayTile	% Plain
+	(C4/1)	-405	[]	LayTile	% Plain
+	(C6/1)	-405	[]	LayTile	% Plain
+	(C8/1)	-405	[]	LayTile	% Plain
+	(C10/1)	-405	[]	LayTile	% Plain
+	(C12/1)	-405	[]	LayTile	% Plain
+	(C14/1)	-406	[]	LayTile	% Plain
+	(C16/1)	-406	[]	LayTile	% Plain
+	(C18/3)	-416	[(MPR)(#St Louis)]	LayTile	% StLouis
+	(C20/1)	-405	[]	LayTile	% Plain
+
+	(D1/1)	-405	[]	LayTile	% Plain
+	(D3/1)	-405	[]	LayTile	% Plain
+	(D5/3)	-411	[(#Wichita)]	LayTile	% Plain
+	(D7/1)	-405	[]	LayTile	% Plain
+	(D9/1)	-419	[]	LayTile	% Plain
+	(D11/1)	-405	[]	LayTile	% Plain
+	(D13/1)	-410	[]	LayTile	% Plain
+	(D15/1)	-410	[]	LayTile	% Plain
+	(D17/1)	-420	[]	LayTile% Plain
+	(D19/1)	-405	[]	LayTile	% Plain
+	(D21/1)	-419	[]	LayTile	% Plain
+
+	(E2/1)	-405	[]	LayTile	% Plain
+	(E4/1)	-405	[]	LayTile	% Plain
+	(E6/1)	-405	[]	LayTile	% Plain
+	(E8/1)	-419	[]	LayTile	% Plain
+	(E10/1)	-405	[]	LayTile	% Plain
+	(E12/3)	-415	[(SLS)(#Springfield)]	LayTile	% Plain
+	(E14/1)	-410	[]	LayTile	% Plain
+	(E16/1)	-410	[]	LayTile	% Plain
+	(E18/1)	-407	[]	LayTile	% Plain
+	(E20/1)	-424	[]	LayTile% Plain
+
+	(F1/1)	-405	[]	LayTile	% Plain
+	(F3/1)	-405	[]	LayTile	% Plain
+	(F5/3)	-411	[(#Oklahoma City)]	LayTile	% Plain
+	(F7/1)	-405	[]	LayTile	% Plain
+	(F9/1)	-419	[]	LayTile	% Plain
+	(F11/1)	-410	[]	LayTile	% Plain
+	(F13/1)	-410	[]	LayTile	% Plain
+	(F15/1)	-410	[]	LayTile	% Plain
+	(F17/1)	-405	[]	LayTile	% Plain
+	(F19/1)	-407	[]	LayTile	% Plain
+	(F21/1)	-405	[]	LayTile	% Plain
+
+	(G2/1)	-406	[]	LayTile	% Plain
+	(G4/1)	-405	[]	LayTile	% Plain
+	(G6/1)	-405	[]	LayTile	% Plain
+	(G8/1)	-405	[]	LayTile	% Plain
+	(G10/1)	-419	[]	LayTile	% Plain
+	(G12/1)	-405	[]	LayTile	% Plain
+	(G14/1)	-405	[]	LayTile	% Plain
+	(G16/1)	-405	[]	LayTile	% Plain
+	(G18/1)	-407	[]	LayTile	% Plain
+	(G20/1)	-419	[]	LayTile	% Plain
+
+	(H1/1)	-405	[]	LayTile	% Plain
+	(H3/1)	-420	[]	LayTile% Plain
+	(H5/1)	-406	[]	LayTile	% Plain
+	(H7/1)	-407	[]	LayTile	% Plain
+	(H9/1)	-405	[]	LayTile	% Plain
+	(H11/1)	-405	[]	LayTile	% Plain
+	(H13/3)	-411	[(#Little Rock)]	LayTile	% Plain
+	(H15/1)	-405	[]	LayTile	% Plain
+	(H17/3)	-413	[(SSW)(#Memphis)]	LayTile	% Plain
+	(H19/1)	-405	[]	LayTile	% Plain
+	(H21/1)	-419	[]	LayTile	% Plain
+
+	(I2/1)	-405	[]	LayTile	% Plain
+	(I4/1)	-405	[]	LayTile	% Plain
+	(I6/1)	-405	[]	LayTile	% Plain
+	(I8/1)	-407	[]	LayTile	% Plain
+	(I10/1)	-424	[]	LayTile% Plain
+	(I12/1)	-405	[]	LayTile	% Plain
+	(I14/1)	-419	[]	LayTile	% Plain
+	(I16/1)	-407	[]	LayTile	% Plain
+	(I18/1)	-405	[]	LayTile	% Plain
+	(I20/1)	-405	[]	LayTile	% Plain
+
+	(J1/1)	-405	[]	LayTile	% Plain
+	(J3/3)	-425	[(FWR)(#Fort Worth)]	LayTile	% PCity
+	(J5/3)	-425	[(T&P)(#Dallas)]	LayTile	% PCity
+	(J7/1)	-405	[]	LayTile	% Plain
+	(J9/1)	-419	[]	LayTile	% Plain
+	(J11/1)	-407	[]	LayTile	% Plain
+	(J13/1)	-405	[]	LayTile	% Plain
+	(J15/1)	-407	[]	LayTile	% Plain
+	(J17/1)	-405	[]	LayTile	% Plain
+	(J19/1)	-405	[]	LayTile	% Plain
+	(J21/1)	-405	[]	LayTile	% Plain
+
+	(K2/1)	-405	[]	LayTile	% Plain
+	(K4/1)	-419	[]	LayTile	% Plain
+	(K6/1)	-405	[]	LayTile	% Plain
+	(K8/1)	-405	[]	LayTile	% Plain
+	(K10/1)	-407	[]	LayTile	% Plain
+	(K12/1)	-405	[]	LayTile	% Plain
+	(K14/1)	-422	[]	LayTile% Plain
+	(K16/3)	-411	[(ICR)(#Jackson)]	LayTile	% Plain
+	(K18/1)	-405	[]	LayTile	% Plain
+	(K20/1)	-419	[]	LayTile	% Plain
+
+	(L1/1)	-405	[]	LayTile	% Plain
+	(L3/1)	-405	[]	LayTile	% Plain
+	(L5/1)	-405	[]	LayTile	% Plain
+	(L7/1)	-405	[]	LayTile	% Plain
+	(L9/1)	-405	[]	LayTile	% Plain
+	(L11/3)	-413	[(#Alexandria)]	LayTile	% Plain
+	(L13/1)	-408	[]	LayTile	% Plain
+	(L15/1)	-405	[]	LayTile	% Plain
+	(L17/1)	-405	[]	LayTile	% Plain
+	(L19/1)	-405	[]	LayTile	% Plain
+	(L21/1)	-405	[]	LayTile	% Plain
+
+	(M2/3)	-411	[(#Austin)]	LayTile	% Plain
+	(M4/1)	-405	[]	LayTile	% Plain
+	(M6/3)	-411	[(#Houston)]	LayTile	% Plain
+	(M8/1)	-419	[]	LayTile	% Plain
+	(M10/1)	-419	[]	LayTile	% Plain
+	(M12/1)	-405	[]	LayTile	% Plain
+	(M14/3)	-414	[(#Baton Rouge)]	LayTile	% Plain
+	(M16/1)	-405	[]	LayTile	% Plain
+	(M18/1)	-405	[]	LayTile	% Plain
+	(M20/3)	-411	[(GMO)(#Mobile)]	LayTile	% Plain
+	(M22/0)	-404	[]	LayTile
+
+	(N1/3)	-403	[(SPR)]	LayTile
+	(N3/1)	-405	[]	LayTile	% Plain
+	(N5/1)	-405	[]	LayTile	% Plain
+	(N7/3)	-414	[(#Galveston)]	LayTile	% Plain
+	(N9/1)	-408	[]	LayTile	% Plain
+	(N11/1)	-408	[]	LayTile	% Plain
+	(N13/1)	-408	[]	LayTile	% Plain
+	(N15/1)	-408	[]	LayTile	% Plain
+	(N17/3)	-418	[(#New Orleans)]	LayTile	% PCity
+	(N19/1)	-408	[]	LayTile	% Plain
+	(N21/1)	-422	[]	LayTile% Plain
+
+	(O2/1)	-407	[]	LayTile	% Plain
+	(O4/1)	-408	[]	LayTile	% Plain
+	(O6/1)	-408	[]	LayTile	% Plain
+	(O14/1)	-409	[]	LayTile	% Plain
+	(O16/1)	-409	[]	LayTile	% Plain
+	(O18/1)	-409	[]	LayTile	% Plain
+
+	% =================================
+	% INSERT YOUR TILES AND TOKENS HERE
+	% =================================
+
+	(N19/W)		Barrier
+	(N19/SW)	Barrier
+
+	mapFrame

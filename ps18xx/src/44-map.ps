@@ -1,0 +1,202 @@
+%
+% $Header: 30-map.ps[1.6] $
+%
+
+%!
+% ----------------------------------------------------------------------
+% 1844 map
+
+	newpath
+
+	/mapRows 14 def
+	/mapCols 35 def
+	/mapScale 0.4 def
+	/CM { 28.35 1 mapScale div mul mul } def
+	mapScale dup scale
+	21 CM 0 translate
+	90 rotate
+	/mapFrame {
+	1.5 CM 1.2 CM mapCols mapRows 0 0 0 0 Map
+	} def
+	mapFrame
+
+	(A20/5)	-410	[]	LayTile
+	(A22/5)	-411	[]	LayTile
+
+	(B13/5)	-412	[]	LayTile
+	(B21/0)	-441	[(#Schaffhausen)]	LayTile	% City
+	(B23/0)	-400	[]	LayTile	% Plain
+	(B25/0)	-430	[(#Rorschach)]	LayTile	% Village
+
+	(C10/4)	-413	[]	LayTile
+	(C12/0)	-400	[]	LayTile	% Plain
+	(C14/0)	-441	[(SCB)(#Basel)]	LayTile	% City
+	(C16/0)	-430	[(#Liestal)]	LayTile	% Village
+	(C18/0)	-401	[]	LayTile	% Plain
+	(C20/0)	-400	[]	LayTile	% Plain
+	(C22/0)	-442	[(#Frauenfeld)(#Winterthur)]	LayTile	% OOCity
+	(C22/1)	-465	[]	LayTile
+	(C24/0)	-402	[]	LayTile	% Plain
+	(C26/0)	-440	[(VSB)(#Sankt Gallen)]	LayTile	% City
+	(C28/0)	-414	[]	LayTile
+
+	(D9/0)	-402	[]	LayTile	% Plain
+	(D11/0)	-402	[]	LayTile	% Plain
+	(D13/0)	-402	[]	LayTile	% Plain
+	(D15/0)	-441	[(#Olten)]	LayTile	% City
+	(D17/4)	-443	[(STB)(#Aarau)]	LayTile	% City
+	(D17/4)	-460	[]	LayTile
+	(D19/0)	-430	[(#Baden)]	LayTile	% Village
+	(D21/0)	-444	[(NOB)(#Zurich)]	LayTile	% Zurich
+	(D23/0)	-430	[(#Rapperswil)]	LayTile	% Village
+	(D25/0)	-402	[]	LayTile	% Plain
+	(D27/0)	-440	[(AB)(#Appenzell)]	LayTile	% City
+
+	(E8/0)	-402	[]	LayTile	% Plain
+	(E10/0)	-430	[(#Biel)]	LayTile	% Village
+	(E12/5)	-431	[(#Solothurn)]	LayTile	% Village
+	(E14/0)	-401	[]	LayTile	% Plain
+	(E16/0)	-400	[]	LayTile	% Plain
+	(E18/0)	-400	[]	LayTile	% Plain
+	(E20/0)	-441	[(#Zug)]	LayTile	% City
+	(E22/0)	-400	[]	LayTile	% Plain
+	(E24/0)	-401	[]	LayTile	% Plain
+	(E26/0)	-400	[]	LayTile	% Plain
+	(E28/5)	-415	[]	LayTile
+
+	(F5/4)	-416	[]	LayTile
+	(F7/0)	-400	[]	LayTile	% Plain
+	(F9/1)	-445	[(JN)(#Neuchatel)]	LayTile	% City
+	(F9/4)	-463	[]	LayTile
+	(F11/0)	-401	[]	LayTile	% Plain
+	(F13/5)	-446	[(BLS)(#Bern)]	LayTile	% Bern
+	(F15/1)	-432	[(#Langnau)]	LayTile	% Village
+	(F17/0)	-402	[]	LayTile	% Plain
+	(F19/1)	-445	[(#Lucerne)]	LayTile	% City
+	(F19/4)	-461	[]	LayTile
+	(F21/2)	-417	[]	LayTile
+	(F21/0)	-471	[]	LayTile
+	(F23/0)	-447	[(#Goldau)]	LayTile	% City
+	(F25/0)	-403	[]	LayTile	% Plain
+	(F27/1)	-431	[(#Sargans)]	LayTile	% Village
+	(F27/1)	-462	[]	LayTile
+	(F29/0)	-400	[]	LayTile	% Plain
+	(F35/0)	-419	[]	LayTile
+
+	(G6/0)	-400	[]	LayTile	% Plain
+	(G8/0)	-400	[]	LayTile	% Plain
+	(G10/0)	-442	[(#Fribourg)(#Romont)]	LayTile	% OOCity
+	(G12/0)	-403	[]	LayTile	% Plain
+	(G14/0)	-400	[]	LayTile	% Plain
+	(G16/1)	-418	[]	LayTile
+	(G16/0)	-471	[]	LayTile
+	(G18/0)	-430	[(#Sarnen)]	LayTile	% Village
+	(G20/0)	-440	[(GB)(#Stans)]	LayTile	% City
+	(G22/1)	-433	[(#Altdorf)]	LayTile
+	(G22/1)	-470	[]	LayTile
+	(G24/0)	-404	[]	LayTile	% Plain
+	(G26/0)	-403	[]	LayTile	% Plain
+	(G28/0)	-445	[(RhB)(#Chur)]	LayTile	% City
+	(G30/0)	-447	[(ChA)(#Arosa)]	LayTile	% City
+	(G32/0)	-402	[]	LayTile	% Plain
+	(G34/0)	-402	[]	LayTile	% Plain
+
+	(H5/1)	-432	[(#Yverdon)]	LayTile	% Village
+	(H7/0)	-402	[]	LayTile	% Plain
+	(H9/0)	-420	[]	LayTile
+	(H9/0)	-471	[]	LayTile
+	(H11/0)	-403	[]	LayTile	% Plain
+	(H13/0)	-403	[]	LayTile	% Plain
+	(H15/0)	-441	[(#Thun)]	LayTile	% City
+	(H15/2)	-468	[]	LayTile
+	(H15/5)	-469	[]	LayTile
+	(H17/0)	-402	[]	LayTile	% Plain
+	(H19/0)	-451	[]	LayTile	% GExpress
+	(H21/0)	-452	[]	LayTile	% GExpress
+	(H21/5)	-464	[]	LayTile
+	(H23/0)	-453	[]	LayTile	% GExpress
+	(H25/0)	-434	[(#Disentis)]	LayTile	% Village
+	(H27/0)	-402	[]	LayTile	% Plain
+	(H29/0)	-455	[]	LayTile
+	(H31/0)	-403	[]	LayTile	% Plain
+	(H33/0)	-403	[]	LayTile	% Plain
+
+	(I4/0)	-400	[]	LayTile	% Plain
+	(I6/0)	-448	[(JS)(#Lausanne)]	LayTile	% Lausanne
+	(I8/0)	-441	[(MOB)(#Montreux)]	LayTile	% City
+	(I10/0)	-402	[]	LayTile	% Plain
+	(I12/0)	-432	[(#Gstaad)]	LayTile	% Village
+	(I14/0)	-454	[]	LayTile
+	(I16/0)	-421	[]	LayTile
+	(I16/0)	-471	[]	LayTile
+	(I18/0)	-450	[]	LayTile	% GExpress
+	(I20/0)	-404	[]	LayTile	% Plain
+	(I22/0)	-404	[]	LayTile	% Plain
+	(I24/0)	-403	[]	LayTile	% Plain
+	(I26/0)	-403	[]	LayTile	% Plain
+	(I28/0)	-403	[]	LayTile	% Plain
+	(I30/0)	-447	[(#St Moritz)]	LayTile	% City
+	(I32/0)	-402	[]	LayTile	% Plain
+
+	(J3/0)	-431	[(#Nyon)]	LayTile	% Village
+	(J9/0)	-402	[]	LayTile	% Plain
+	(J11/0)	-455	[]	LayTile
+	(J13/0)	-432	[(#Visp)]	LayTile	% Village
+	(J15/0)	-435	[(#Brig)]	LayTile
+	(J15/0)	-466	[]	LayTile
+	(J15/3)	-467	[]	LayTile
+	(J17/0)	-403	[]	LayTile	% Plain
+	(J19/1)	-405	[]	LayTile
+	(J21/0)	-403	[]	LayTile	% Plain
+	(J23/0)	-403	[]	LayTile	% Plain
+	(J25/0)	-403	[]	LayTile	% Plain
+	(J29/0)	-403	[]	LayTile	% Plain
+	(J31/0)	-402	[]	LayTile	% Plain
+	(J33/1)	-422	[]	LayTile
+
+	(K2/0)	-449	[(#Geneva)]	LayTile
+	(K8/0)	-403	[]	LayTile	% Plain
+	(K10/0)	-431	[(#Martigny)]	LayTile	% Village
+	(K12/0)	-441	[(VZ)(#Sion)]	LayTile	% City
+	(K14/0)	-403	[]	LayTile	% Plain
+	(K16/0)	-456	[]	LayTile
+	(K22/0)	-441	[(#Locarno)]	LayTile	% City
+	(K24/0)	-441	[(#Bellinzona)]	LayTile	% City
+	(K32/2)	-423	[]	LayTile
+	(K32/0)	-471	[]	LayTile
+
+	(L1/3)	-424	[]	LayTile
+	(L9/0)	-403	[]	LayTile	% Plain
+	(L11/0)	-403	[]	LayTile	% Plain
+	(L13/0)	-432	[(#Zermatt)]	LayTile	% Village
+	(L15/1)	-425	[]	LayTile
+	(L15/0)	-471	[]	LayTile
+	(L17/2)	-426	[]	LayTile
+	(L23/0)	-441	[(#Lugano)]	LayTile	% City
+
+	(M10/2)	-427	[]	LayTile
+	(M18/0)	-428	[]	LayTile
+	(M22/0)	-439	[(FNM)(#Como)]	LayTile	% City
+	(M24/1)	-425	[]	LayTile
+	(M24/0)	-471	[]	LayTile
+
+	(N19/0)	-428	[]	LayTile
+	(N21/3)	-426	[]	LayTile
+	(N23/2)	-426	[]	LayTile
+
+		/Bookman 120 selectfont
+	(B1/7) LayText moveto (1844) show 
+
+	% =================================
+	% INSERT YOUR TILES AND TOKENS HERE
+	% =================================
+
+	(E22/NW)	Barrier
+	(E22/NE)	Barrier
+	(F11/NW)	Barrier
+	(G6/E)		Barrier
+	(G6/SE)		Barrier
+	(G8/NW)		Barrier
+	(I12/SE)	Barrier
+
+	mapFrame

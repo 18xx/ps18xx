@@ -1,0 +1,111 @@
+%
+% $Header: $
+%
+% ----------------------------------------------------------------------
+% the 18ea variant was done by Steve Thomas
+% ----------------------------------------------------------------------
+
+	newpath
+
+	/mapRows 15 def
+	/mapCols 9 def
+	/mapScale 0.65 def
+	/CM { 28.35 1 mapScale div mul mul } def
+	mapScale dup scale
+	20.5 CM 0 translate
+	90 rotate
+	/axesSwapped true def
+	/mapFrame {
+	1.7 CM 0.9 CM mapCols mapRows 0 //hexSide 5 mul
+		//hexHeight 0.5 mul //hexHeight 0.25 mul Map
+	} def
+	mapFrame
+
+	(A2/5)	-420	[] LayTile
+	(A4/4)	-421	[] LayTile
+	(A6/4)	-421	[] LayTile
+	(A8/4)	-422	[] LayTile
+	(A8/2)	-440	[] LayTile
+	(A10/4)	-423	[] LayTile
+	(A12/4)	-422	[] LayTile
+	(A12/2)	-440	[] LayTile
+	(A14/4)	-424	[] LayTile
+
+	(B3/0)	-410	[(#Holbeach)] LayTile	% Plain
+	(B5/1)	-400	[(WStI)(#Wisbech)] LayTile	% Plain
+	(B7/1)	-400	[(#March)] LayTile	% Plain
+	(B9/1)	-402	[(#Cambridge)] LayTile	% Plain
+	(B11/0)	-410	[(#Royston)] LayTile	% Plain
+	(B13/1)	-400	[(N&E)(#B. Stortford)] LayTile	% Plain
+	(B15/3)	-426	[] LayTile
+	(B15/3)	-441	[] LayTile
+
+	(C2/0)	-430	[] LayTile
+	(C4/1)	-401	[(L&H)(#King's Lynn)] LayTile	% Plain
+	(C6/1)	-400	[(L&E)(#Downham Mkt)] LayTile	% Plain
+	(C8/1)	-401	[(E&H)(#Ely)] LayTile	% Plain
+	(C10/1)	-400	[(NGC)(#Newmarket)] LayTile	% Plain
+	(C12/0)	-410	[(#Great Dunmow)] LayTile	% Plain
+	(C14/2)	-425	[(#London)] LayTile
+
+	(D1/5)	-430	[] LayTile
+	(D3/0)	-410	[(#Hunstanton)] LayTile	% Plain
+	(D5/1)	-400	[(L&D)(#Swaffham)] LayTile	% Plain
+	(D7/0)	-410	[(#Brandon)] LayTile	% Plain
+	(D9/1)	-401	[(I&B)(#Bury St Ed.)] LayTile	% Plain
+	(D11/1)	-400	[(SVR)(#Sudbury)] LayTile	% Plain
+	(D13/1)	-400	[(ECR)(#Witham)] LayTile	% Plain
+	(D15/3)	-426	[] LayTile
+	(D15/3)	-442	[] LayTile
+
+	(E0/0)	-436	[]	LayTile
+	(E2/1)	-400	[(WNR)(#Wells)] LayTile	% Plain
+	(E4/1)	-400	[(W&F)(#Fakenham)] LayTile	% Plain
+	(E6/0)	-410	[(#Watton)] LayTile	% Plain
+	(E8/1)	-400	[(N&B)(#Thetford)] LayTile	% Plain
+	(E10/0)	-410	[(#Stowmarket)] LayTile	% Plain
+	(E12/1)	-402	[(EUR)(#Colchester)] LayTile	% Plain
+	(E14/0)	-410	[(#Tiptree)] LayTile	% Plain
+
+	(F1/0)	-435	[] LayTile
+	(F1/1)	-440	[] LayTile
+	(F3/1)	-400	[(ENR)(#Cromer)] LayTile	% Plain
+	(F5/1)	-402	[(#Norwich)] LayTile	% Plain
+	(F7/1)	-400	[(#Diss)] LayTile	% Plain
+	(F9/0)	-410	[(#Framingham)] LayTile	% Plain
+	(F11/1)	-402	[(ESR)(#Ipswich)] LayTile	% Ipswich
+	(F13/1)	-401	[(#Harwich)] LayTile	% Harwich
+	(F15/3)	-438	[] LayTile
+
+	(G2/0)	-437	[] LayTile
+	(G4/0)	-410	[(#N Walsham)] LayTile	% Plain
+	(G6/0)	-410	[(#Acle)] LayTile	% Plain
+	(G8/1)	-400	[(WVR)(#Beccles)] LayTile	% Plain
+	(G10/0)	-410	[(#Woodbridge)] LayTile	% Plain
+	(G12/1)	-400	[(FDR)(#Felixstowe)] LayTile	% Plain
+	(G14/2)	-435	[] LayTile
+	(G14/0)	-440	[] LayTile
+
+	(H5/1)	-401	[(Y&N)(#Gt Yarmouth)] LayTile	% Plain
+	(H7/1)	-400	[(N&S)(#Lowestoft)] LayTile	% Plain
+	(H9/3)	-433	[] LayTile
+	(H11/1)	-432	[] LayTile
+	(H13/2)	-432	[] LayTile
+
+	(I4/1)	-434	[] LayTile
+	(I6/1)	-435	[] LayTile
+	(I6/2)	-440	[] LayTile
+	(I8/2)	-433	[] LayTile
+
+		/Bookman 120 selectfont
+	(I11/7) LayText moveto (18ea) show 
+
+	% =================================
+	% INSERT YOUR TILES AND TOKENS HERE
+	% =================================
+
+	(E14/NE)	Barrier
+	(F13/N)	Barrier
+	(F13/NE)	Barrier
+
+	mapFrame
