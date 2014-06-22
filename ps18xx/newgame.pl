@@ -162,11 +162,11 @@ my %layout = (
 		roundcoord => '@17',
 	},
 	"25u2" => {
-		nameformat => "",
-		namefont => "/Bookman 40",
-		namecoord => 'R9',
-		roundfont => "/Bookman 40",
-		roundcoord => 'R11',
+		nameformat => "%s",
+		namefont => "/Bookman 90",
+		namecoord => 'K19',
+		roundfont => "/Bookman 90",
+		roundcoord => 'L20',
 	},
   "25u3" => {
     nameformat => "%s",

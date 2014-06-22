@@ -6,17 +6,17 @@
 	/mapCols 20 def
 	/colStart 7 def
 	/rowStart 11 def
-	/mapScale 0.75 def
+	/mapScale 0.80 def
 	/CM { 28.35 1 mapScale div mul mul } def
 	mapScale dup scale
 	18 CM 0 translate
 	90 rotate
 
 	/mapFrame {
-	1.6 CM 1.0 CM mapCols mapRows
+	1.6 CM -2.5 CM mapCols mapRows
 		-1 cm 6 hexHeight mul sub
-		0.5 cm
-		0.7 cm 9.5 hexHeight 2 mul mul sub
+		6.5 cm
+		4.7 cm 9.5 hexHeight 2 mul mul sub
 		0.7 cm
 		Map
 	} def
@@ -67,6 +67,9 @@
 (Q15/0) -406 [(MR)(#MR Reserved)] LayTile % City
 (Q17/0) -406 [] LayTile % City
 (Q19/0) -401 [] LayTile % Plain
+
+		/Bookman 90 selectfont
+	(K8/7) LayText moveto (1825u2) show
 
 	% =================================
 	% INSERT YOUR TILES AND TOKENS HERE
