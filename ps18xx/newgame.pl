@@ -656,6 +656,14 @@ my %layout = (
 		roundfont => "/Bookman 120",
 		roundcoord => "S1",
 	},
+  "neb" => {
+		copycoords => [ qw( I12 B3 D11 Q14 ) ],
+		nameformat => "'%s",
+		namefont => "/Bookman 70",
+		namecoord => "A11",
+		roundfont => "/Bookman 80",
+		roundcoord => "A13",
+  },
 	"nyc" => {
 		copycoords => [ qw( E3 F20 J20 ) ],
 		overlays => {
