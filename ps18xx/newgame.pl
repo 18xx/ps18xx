@@ -649,7 +649,6 @@ my %layout = (
 		roundcoord => "O6",
 	},
 	"mex" => {
-		copycoords => [ qw( I12 B3 D11 Q14 ) ],
 		nameformat => "'%s",
 		namefont => "/Bookman 120",
 		namecoord => "Q1",
