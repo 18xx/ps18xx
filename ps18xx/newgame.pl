@@ -492,7 +492,7 @@ my %layout = (
 		roundcoord => "T6",
 	},
 	"ard" => {
-		copycoords => [ qw( A8 A16 C7 D18 E5 E9 E15 E25
+		copycoords => [ qw( B8 B16 C7 D18 E5 E9 E15 E25
 	   						F10 G25 H6 I21 J24 K11 M7 M27 ) ],
 		nameformat => "'%s",
 		namefont => "/Bookman 80",
@@ -803,7 +803,7 @@ if ($opts{g}) {
 	if (exists $layout{$title}{copycoords}) {
 		while (<SRCFILE>) {
 			s/(^|\s+)%.*//;	# Remove comments
-			next unless /^\s*\(.+\/.+\)\s*-?\d+\s*\[.*\]\s*LayTile$/;
+			next unless /^\s*\(.+\/.+\)\s*-?\d+\s*\[.*\([a-zA-Z0-9]+\).*\]\s*LayTile.*$/;
 			my ($coord) = /^\s*\((.+)\/.+\)/;
 			if (grep { $_ eq $coord } @{$layout{$title}{copycoords}}) {
 				print MAPFILE "\%";
