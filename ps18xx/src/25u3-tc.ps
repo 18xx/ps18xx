@@ -68,10 +68,10 @@
 
 	% Double small station
 	tileCodes 406 [ 502 0 //tlGround //tlPlain    ()     ()   0 ] put
-  tileCodes 407 [ 502 0 //tlGround //tlWater    (£120) ()   0 ] put
+  tileCodes 407 [ 502 0 //tlGround //tlPlain    (£120) ()   0 ] put
 
 	% Large station
-	tileCodes 408 [ 337 0 //tlGround //tlPlain    ()     ()   0 ] put
+	tileCodes 408 [ 503 0 //tlGround //tlPlain    ()     ()   0 ] put
   tileCodes 409 [ 553 0 //tlGround //tlWater    (£80)  ()   0 ] put
   % HR Home Hex
   tileCodes 410 [   5 0 //tlBrown  //tlPlain    ()     (20) 0 ] put
@@ -81,11 +81,13 @@
   tileCodes 412 [  14 0 //tlBrown  //tlPlain    ()     (10) 0 ] put
   % K7 Custom Hex
   tileCodes 413 [   8 0 //tlBrown //tlPlain     ()     ()   0 ] put
-  tileCodes 414 [ 531 0 //tlTransparent //tlPlain ()   (10) 0 ] put
+  tileCodes 414 [ 531 0 //tlTransparent //tlPlain ()   () 0 ] put
+  tileCodes 425 [ 500 0 //tlTransparent //tlPlain () (10) 0 ] put
 
   % OO City Hex
-	tileCodes 415 [ 504 0 //tlYellow //tlPlain    ()       () 0 ] put
-	tileCodes 416 [ 504 0 //tlYellow //tlPlain    (£40)    () 0 ] put
+	tileCodes 415 [ 504 0 //tlYellow //tlPlain    (OO)    () 0 ] put
+	tileCodes 416 [ 504 0 //tlYellow //tlPlain    (OO)    () 0 ] put
+  tileCodes 424 [ 529 0 //tlTransparent //tlPlain (£40) () 0 ] put
 
   % Glasgow
 	tileCodes 417 [ 525 0 //tlGreen  //tlPlain    (BGM)  (40) 0 ] put
@@ -99,6 +101,11 @@
 
   % Water overlay for Mountain + Water hex F4
   tileCodes 421 [ 529 0 //tlTransparent //tlWater () () 0 ] put
+
+  % Plain transparent overlay for city name placement
+  tileCodes 422 [ 500 0 //tlTransparent //tlPlain () () 0 ] put
+  tileCodes 423 [ 529 0 //tlTransparent //tlWater () () 0 ] put
+  tileCodes 426 [ 550 0 //tlTransparent //tlPlain (GSWR) () 0 ] put
 
 
 % Upgrade Plain 401 => 7/* 8/* 9/*

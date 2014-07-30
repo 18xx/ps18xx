@@ -69,23 +69,27 @@
 
 	% Plain track
 	tileCodes 401 [ 500 0 //tlGround //tlPlain    ()     ()   0 ] put
-  tileCodes 402 [ 500 0 //tlGround //tlMountain ()     ()   0 ] put
+  tileCodes 402 [ 500 4 //tlGround //tlMountain (£100)     ()   0 ] put
 	tileCodes 416 [  41 0 //tlBrown  //tlPlain    ()     ()   0 ] put
+  % Plain hex for overlay text
+  tileCodes 417 [ 500 0 //tlTransparent //tlPlain ()   ()   0 ] put
 
 	% Small station
-	tileCodes 404 [ 243 0 //tlGround //tlPlain    ()     ()   0 ] put
+	tileCodes 404 [ 242 0 //tlGround //tlPlain    ()     ()   0 ] put
 
 	% Double small station
 	tileCodes 405 [ 502 0 //tlGround //tlPlain    ()     ()   0 ] put
 
 	% Large station
 	tileCodes 406 [ 553 0 //tlGround //tlPlain    ()     ()   0 ] put
+	tileCodes 407 [ 553 0 //tlGround //tlPlain    (NER)     ()   0 ] put
+	tileCodes 408 [ 553 0 //tlGround //tlPlain    (LYR)     ()   0 ] put
 
   % OO City Hex
 	tileCodes 421 [ 504 0 //tlYellow //tlPlain    (00)     ()   0 ] put
 
   % Manchester
-	tileCodes 408 [ 525 0 //tlGreen  //tlPlain    (M)     (40) 0 ] put
+	tileCodes 410 [ 525 0 //tlGreen  //tlPlain    (M)     (40) 0 ] put
 
   % LNWR Home
 	tileCodes 411 [  61 0 //tlBrown  //tlPlain    ()     (10) 0 ] put
@@ -98,28 +102,31 @@
   tileCodes 430 [ 523 0 //tlBrown  //tlPlain    ()     (10) 0 ] put
 
 	% Transparent overlay for river hexes
-  tileCodes 431 [ 500 0 //tlTransparent //tlWater () () 0 ] put
+  tileCodes 431 [ 500 4 //tlTransparent //tlWater (£40) () 0 ] put
 
   % Special home hext for GCR/GNR
   tileCodes 432 [  65 0 //tlTransparent //tlPlain () () 0 ] put
   tileCodes 433 [   8 0 //tlTransparent //tlPlain () () 0 ] put
   tileCodes 434 [   7 0 //tlBrown //tlPlain () () 0 ] put
+  tileCodes 435 [ 500 0 //tlTransparent //tlPlain () (20) 0 ] put
 
 
 % Upgrade Plain 401 => 7/* 8/* 9/*
 % Upgrade Plain 402 => 7/* 8/* 9/*
 % Upgrade Village 404 => 3/* 4/*
 % Upgrade City 406 => 5/* 6/*
+% Upgrade City 407 => 5/* 6/*
+% Upgrade City 408 => 5/* 6/*
 % Upgrade DoubleDot 405 => 1/* 2/* 55/* 56/* 69/*
 % Upgrade OOCity 421 => 52/*
 % Upgrade L 424 => 33/3
-% Upgrade M 408 => 34/024
+% Upgrade M 410 => 34/024
 
 % Upgrade Village 1 => 14/14
 % Upgrade City 2 => 15/3
 % Upgrade City 3 => 14/14 15/045 12/01
-% Upgrade City 5 => 14/03 15/345
-% Upgrade City 6 => 14/14 15/34
+% Upgrade City 5 => 14/03 15/345 12/05
+% Upgrade City 6 => 14/14 15/34 12/5
 % Upgrade Plain 7 => 18/4 26/0 27/5 28/0 29/5
 % Upgrade Plain 8 => 16/05 19/5 23/0 24/4 25/04 28/0 29/4
 % Upgrade Plain 9 => 18/03 19/03 20/0235 23/03 24/03 26/03 27/03
