@@ -803,7 +803,7 @@ if ($opts{g}) {
 	if (exists $layout{$title}{copycoords}) {
 		while (<SRCFILE>) {
 			s/(^|\s+)%.*//;	# Remove comments
-			next unless /^\s*\(.+\/.+\)\s*-?\d+\s*\[.*\([a-zA-Z0-9]+\).*\]\s*LayTile.*$/;
+			next unless /^\s*\(.+\/.+\)\s*-?\d+\s*\[.*\]\s*LayTile.*$/;
 			my ($coord) = /^\s*\((.+)\/.+\)/;
 			if (grep { $_ eq $coord } @{$layout{$title}{copycoords}}) {
 				print MAPFILE "\%";
