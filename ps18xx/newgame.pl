@@ -161,7 +161,16 @@ my %layout = (
 		roundfont => "/Bookman 120",
 		roundcoord => '@17',
 	},
+	"25u1" => {
+		copycoords => [ qw( S13 T16 U25 V10 V14 V20 V22 W23 W25 X20 Y13 ) ],
+		nameformat => "%s",
+		namefont => "/Bookman 70",
+		namecoord => 'Z20',
+		roundfont => "/Bookman 70",
+		roundcoord => 'Z24',
+	},
 	"25u2" => {
+		copycoords => [ qw( L14 M9 O9 O11 O15 Q11 Q15 ) ],
 		nameformat => "%s",
 		namefont => "/Bookman 90",
 		namecoord => 'K19',
@@ -169,6 +178,7 @@ my %layout = (
 		roundcoord => 'L20',
 	},
   "25u3" => {
+		copycoords => [ qw( B8 B12 E1 E7 G5 K7 ) ],
     nameformat => "%s",
     namefont => "/Bookman 80",
     namecoord => 'A6',

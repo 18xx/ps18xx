@@ -12,7 +12,7 @@
 	/mapCols 26 def
 	/colStart 8 def
 	/rowStart 17 def
-	/mapScale 0.75 def
+	/mapScale 0.70 def
 	/CM { 28.35 1 mapScale div mul mul } def
 	mapScale dup scale
 	21 CM 0 translate
@@ -20,10 +20,10 @@
 
 	/mapFrame {
 	1.6 CM 1.0 CM mapCols mapRows
-		-1 cm 7 hexHeight mul sub
-		0.5 cm neg
+		0 cm 7 hexHeight mul sub
+		-1.5 cm neg
 		0.7 cm 15 hexHeight 2 mul mul sub
-		0 cm
+		2 cm
 		Map
 	} def
 	mapFrame
@@ -40,70 +40,71 @@
 	(R24/0)	-406	[(#Norwich)]	LayTile % City
 	(R26/3)	-404	[(#Great Yarmouth)]	LayTile % Village
 
-	(S9/0)	-401	[]	LayTile
-	(S11/0)	-401	[]	LayTile
-	(S13/1)	-408	[]	LayTile
-	(S15/3)	-404	[(#Northampton)]	LayTile
-	(S17/0)	-401	[]	LayTile
-	(S19/0)	-401	[]	LayTile
-	(S21/0)	-401	[]	LayTile
-	(S23/0)	-401	[]	LayTile
-	(S25/0)	-401	[]	LayTile
+	(S9/0)	-401	[]	LayTile % Plain
+	(S11/0)	-401	[]	LayTile % Plain
+	(S13/1)	-408	[]	LayTile % BGM
+	(S15/3)	-404	[(#Northampton)]	LayTile % Village
+	(S17/0)	-401	[]	LayTile % Plain
+	(S19/0)	-401	[]	LayTile % Plain
+	(S21/0)	-401	[]	LayTile % Plain
+	(S23/0)	-401	[]	LayTile % Plain
+	(S25/0)	-401	[]	LayTile % Plain
 
-	(T8/0)	-402	[]	LayTile
-	(T10/0)	-401	[]	LayTile
-	(T12/0)	-401	[]	LayTile
-	(T14/0)	-401	[]	LayTile
+	(T8/4)	-402	[]	LayTile % Plain
+	(T10/0)	-401	[]	LayTile % Plain
+	(T12/0)	-401	[]	LayTile % Plain
+	(T14/0)	-401	[]	LayTile % Plain
 	(T16/5)	-411	[(LNWR)]	LayTile
-	(T18/0)	-401	[]	LayTile
-	(T20/1)	-404	[(#Cambridge)]	LayTile
-	(T22/0)	-401	[]	LayTile
-	(T24/1)	-404	[(#Ipswich)]	LayTile
+	(T18/0)	-401	[]	LayTile % Plain
+	(T20/1)	-404	[(#Cambridge)]	LayTile % Village
+	(T22/0)	-401	[]	LayTile % Plain
+	(T24/1)	-404	[(#Ipswich)]	LayTile % Village
 
-	(U9/0)	-401	[]	LayTile
-	(U11/1)	-404	[(#Gloucester)]	LayTile
-	(U13/0)	-401	[]	LayTile
-	(U15/0)	-401	[]	LayTile
-	(U17/4)	-419	[]	LayTile
-	(U19/0)	-401	[]	LayTile
-	(U21/0)	-401	[]	LayTile
-	(U23/1)	-418	[(#Colchester)]	LayTile
+	(U9/0)	-401	[]	LayTile % Plain
+	(U11/1)	-404	[(#Gloucester)]	LayTile % Village
+	(U13/0)	-401	[]	LayTile % Plain
+	(U15/0)	-401	[]	LayTile % Plain
+	(U17/4)	-419	[]	LayTile % Plain
+	(U19/0)	-401	[]	LayTile % Plain
+	(U21/0)	-401	[]	LayTile % Plain
+	(U23/1)	-418	[(#Colchester)]	LayTile % Village
 	(U25/1)	-414	[(#Harwich)]	LayTile
 
-	(V8/0)	-421	[]	LayTile
-	(V10/0)	-409	[(#Bristol)]	LayTile
-	(V12/0)	-401	[]	LayTile
+	(V8/0)	-421	[(#Cardiff)(#Newport)]	LayTile % OOCity
+	(V10/0)	-409	[(#Bristol)]	LayTile % City
+	(V12/0)	-401	[]	LayTile % Plain
 	(V14/0)	-412	[(GWR)]	LayTile
   (V14/2) -430  [(#Swindon)] LayTile
-	(V16/1)	-404	[(#Reading)]	LayTile
-	(V18/4)	-420	[]	LayTile
-	(V20/0)	-415	[(LSWR)( )( )( )(GER)( )]	LayTile
+	(V16/1)	-404	[(#Reading)]	LayTile % Village
+	(V18/4)	-420	[]	LayTile % Plain
+	(V20/0)	-415	[(LSWR)( )( )( )(GER)( )]	LayTile % L
 	(V22/0)	-413	[]	LayTile
   (V22/4) -430  [(#Southend)] LayTile
 
 	(W9/0)	-416	[]	LayTile
-	(W11/0)	-405	[(#Trowbridge)(#Bath)]	LayTile
-	(W13/0)	-401	[]	LayTile
-	(W15/0)	-401	[]	LayTile
-	(W17/0)	-401	[]	LayTile
-	(W19/5)	-423	[(#Reigate)]	LayTile
+	(W11/0)	-405	[(#Trowbridge)(#Bath)]	LayTile % DoubleDot
+	(W13/0)	-401	[]	LayTile % Plain
+	(W15/0)	-401	[]	LayTile % Plain
+	(W17/0)	-401	[]	LayTile % Plain
+	(W19/5)	-423	[(#Reigate)]	LayTile % DoubleDot
   (W19/3) -430  [(#Kingston on Thames)] LayTile
-	(W21/0)	-401	[]	LayTile
-	(W23/0)	-407	[(SECR)]	LayTile
+	(W21/0)	-401	[]	LayTile % Plain
+	(W23/0)	-407	[(SECR)(#Ashford)]	LayTile % City
 	(W25/1)	-410	[]	LayTile
+	(W25/5)	-430	[(#Dover)]	LayTile
 
-	(X8/0)	-401	[]	LayTile
-	(X10/0)	-401	[]	LayTile
-	(X12/0)	-401	[]	LayTile
-	(X14/0)	-406	[]	LayTile
-	(X16/0)	-421	[]	LayTile
-	(X18/0)	-401	[]	LayTile
-	(X20/0)	-422	[(LBSC)]	LayTile
-	(X22/1)	-404	[]	LayTile
-	(X24/0)	-401	[]	LayTile
+	(X8/0)	-401	[]	LayTile % Plain
+	(X10/0)	-401	[]	LayTile % Plain
+	(X12/0)	-401	[]	LayTile % Plain
+	(X14/0)	-406	[(#Southampton)]	LayTile % City
+	(X16/3)	-421	[(#Gosport)(#Portsmouth)]	LayTile % OOCity
+	(X18/0)	-401	[]	LayTile % Plain
+	(X20/0)	-422	[(LBSC)(#Brighton)]	LayTile % City
+	(X22/1)	-404	[(#Hastings)]	LayTile % Village
+	(X24/0)	-401	[]	LayTile % Plain
 
-	(Y9/0)	-401	[]	LayTile
-	(Y11/1)	-404	[]	LayTile
+	(Y9/0)	-401	[]	LayTile % Plain
+	(Y11/1)	-404	[(#Weymouth)]	LayTile % Village
 	(Y13/3)	-417	[]	LayTile
 	(Y17/2)	-403	[]	LayTile
 	(Y19/2)	-403	[]	LayTile
