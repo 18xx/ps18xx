@@ -84,6 +84,14 @@ die "$version\n" if $opts{v};
 
 # Set up a database of things we know about various games.
 my %layout = (
+	"00" => {
+		nameformat => "'%s",
+		copycoords => [ qw( A5 E5 C1 ) ],
+		namefont => "/Bookman 60",
+		namecoord => 'E3',
+		roundfont => "/Bookman 60",
+		roundcoord => 'E9',
+	},
 	"00bc" => {
 		nameformat => "'%s",
 		copycoords => [ qw( A7 A11 A13 A15 A17 A19 A21
