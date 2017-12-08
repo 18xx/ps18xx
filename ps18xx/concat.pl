@@ -1,4 +1,4 @@
-#!perl
+#! /usr/bin/env perl
 
 use strict;
 use warnings;
@@ -56,7 +56,7 @@ use charnames ':full';
 # 1.11 Warn about mismatched parentheses in token lists
 # 1.12 Warn about placing too many or invalid tokens; support new privates
 # 1.13 Add support for printing tile sheets for cutting out
-# 1.14 Suppress warnings for too many tiles when really unlimited.
+# 1.14 Suppress wornings for too many tiles when really unlimited.
 # 1.15 5/2/11 Cutting-out tile sheets are 28 tiles per page
 # 1.16 6/2/11 Fix LayFlash lines
 # 1.17 24/2/11 Support -e, -i, -s to enhance *-MAP.tl files
@@ -66,10 +66,13 @@ my $version = "concat 1.18 26/3/11";
 
 use constant GENERICTILESPERROW => 8;
 use constant GENERICROWSPERPAGE => 9;
+
 use constant TILESHEETSTANDINGTILESPERROW => 9;
 use constant TILESHEETSITTINGTILESPERROW => 8;
+
 use constant TILESHEETSTANDINGROWSPERPAGE => 9;
 use constant TILESHEETSITTINGROWSPERPAGE => 10;
+
 use constant ALTTILESHEETSTANDINGTILESPERROW => 17;
 use constant ALTTILESHEETSITTINGTILESPERROW => 15;
 use constant ALTROWSPERPAGE => 3;
@@ -443,7 +446,7 @@ sub processTileFile ($$) {
 		for my $spec (keys %tileMap) {
 			$tiles += $tileMap{$spec}{count};
 		}
-		return roundUpDivide($tiles, 28);
+		return roundUpDivide($tiles, 25);
 	} elsif ($opts{w}) {
 		my $tc = 0;
 		for my $colour (keys %colours) {
@@ -910,10 +913,25 @@ sub outputProlog ($) {
 }
 
 sub outputSetup () {
-	printOut "%%EndProlog\n";
-	printOut "%%BeginSetup\n";
-	printOut "%%PaperSize: A4\n";
-	printOut "%%EndSetup\n";
+  # http://h20564.www2.hp.com/hpsc/doc/public/display?docId=emr_na-bpp01888
+  my %page_size = (
+      "letter" => "<</PageSize [612 792]>>setpagedevice",
+      "A4" => "<</PageSize [595 842]>>setpagedevice",
+      "A3" => "<</PageSize [842 1191]>>setpagedevice",
+      "A2" => "<</PageSize [1191 1684]>>setpagedevice",
+      "A1" => "<</PageSize [1684 2384]>>setpagedevice",
+      "A0" => "<</PageSize [2384 3370]>>setpagedevice",
+      "B4" => "<</PageSize [729 1032]>>setpagedevice",
+      "B3" => "<</PageSize [1032 1460]>>setpagedevice",
+      "B2" => "<</PageSize [1460 2064]>>setpagedevice",
+      "B1" => "<</PageSize [2064 2920]>>setpagedevice",
+      );
+  my $sz = $ENV{"PAPERSIZE"};
+  printOut "%%EndProlog\n";
+  printOut "%%BeginSetup\n";
+  printOut "%%PaperSize: $sz\n";
+  printOut "$page_size{$sz}\n";
+  printOut "%%EndSetup\n";
 }
 
 sub outputEOF () {
@@ -927,4 +945,3 @@ sub findColour ($) {
 	}
 	warn "Warning: illegal colour $col";
 }
-
