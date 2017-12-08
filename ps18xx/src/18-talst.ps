@@ -247,8 +247,11 @@
 /cuttingTileAvailability {
 	/numPages exch def
 	/page exch def
-	/tStart page 28 mul def
-	/listScale 1.1 def
+%       /tStart page 28 mul def
+	/tStart page 25 mul def
+%       /listScale 1.1 def
+	/listScale 1.15 def
+        /tileSitting false def
 	gsave
 	listScale dup scale
 	/CM { 28.35 1 listScale div mul mul } def
@@ -282,7 +285,8 @@
 				tile 6 get 0 gt
 				tile 2 get color eq and {
 					1 1 tile 6 get {
-						count tStart ge count tStart 28 add lt and {
+%						count tStart ge count tStart 28 add lt and {
+						count tStart ge count tStart 25 add lt and {
 							% print it
 							x xdist col mul add
 							y ydist row mul sub
